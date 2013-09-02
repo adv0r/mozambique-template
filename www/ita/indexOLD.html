@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Report su Land Grabbing in Mozambico</title>
+	  <link rel="stylesheet" href="css/style.css">
+	  <link href='http://fonts.googleapis.com/css?family=Convergence' rel='stylesheet' type='text/css'>
+	  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+	  <script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+	  <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+	  <script type="text/javascript" src="scripts/jquery.inview.js"></script>
+	  <script type="text/javascript" src="scripts/parallax.js"></script>
+	  <script type="text/javascript" src="scripts/animateText.js"></script><!-- EFFETTI AL TESTO, E' IL PRIMO CHE HO TROVATO, NON CREDO SIA LA SOLUZIONE MIGLIORE-->
+	  <!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	  <![endif]-->
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#nav').localScroll();
+			});
+			
+			$(document).ready(function() {
+				var $window = $(window);
+			    var $one = $("#one");
+			    var $two = $("#two");
+			    var $three = $("#three");
+			    var $four = $("#four");
+			    var cricket = $("#two .bg");
+			    var windowHeight = $window.height();
+			});
+			
+			$('#one, #two, #three, #four').bind('inview', function (event, visible) {
+	        if (visible == true) {
+	            $(this).addClass("inview");
+	        } else{
+	            $(this).removeClass("inview");
+	        }});
+		
+		</script>
+		
+		<ul id="nav">
+		    <li><a href="#one" title="Next Section"><img src="images/spot.png" alt="Link" /></a></li>
+		    <li><a href="#two" title="Next Section"><img src="images/spot.png" alt="Link" /></a></li>
+		    <li><a href="#three" title="Next Section"><img src="images/spot.png" alt="Link" /></a></li>
+		    <li><a href="#four" title="Next Section"><img src="images/spot.png" alt="Link" /></a></li>
+		    <li><a href="#five" title="Next Section"><img src="images/spot.png" alt="Link" /></a></li>
+		</ul>
+		
+		 
+		<div id="one"><div id="video_pattern"></div>
+			    <video id="video_background" preload="auto" autoplay="true" loop="loop" > 
+					<source src="data/video/01-gf.mp4" type="video/mp4"> 
+					<source src="data/video/01-gf.webm" type="video/webm"> 
+					Video not supported 
+				</video>
+
+		    <div class="content" >		        
+		        <div class="center">
+		        	<h2>Lo Sfondo si muove più lentamente!</h2>
+					<ul id="primoTesto"><li>THIS IS <br/>MOZAMBICO!</li></ul>
+					<script type="text/javascript">
+					    $("#primoTesto").animateText([
+					            {
+					                offset: 35500,
+					                duration: 1000,
+					                animation: "explode"
+					            }
+					    ], options={repeat:0});
+					</script>
+		        </div>
+		    </div>
+		</div>
+		 
+		<div id="two">
+		    <div class="content"><div class="bg"></div>
+		        <div class="right">
+		            <h2>Due immagni di Sfondo</h2>
+		            <p>Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.</p>
+		            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
+		        </div>
+		    </div>
+		     
+		</div>
+		 
+		<div id="three">
+		    <div class="content">
+		        <div class="left">
+		            <h2>Lo Sfondo si muove più Lentamente</h2>
+		            <p>Questa terza sezione è simile alla prima del sito e possiede l'effetto parallasse che consente allo sfondo di muoversi ad una velocità leggermente più lenta rispetto al contenuto della pagina.</p>
+		        </div>
+		    </div>
+		</div>
+		 
+		<div id="four">
+		    <div class="content">
+		        <div class="left">
+		            <h2>Backgrounds Differenti</h2>
+		            <p>Qua utilizziamo più sfondi in maniera un po' differente: questa sezione ha tre sfondi su altrettanti livelli, per dare un maggiore senzo di profondità.</p>
+		            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
+		        </div>
+		    </div>
+		</div>
+		 
+		<div id="five">
+		    <div class="content">
+		        <h2>Hai Raggiunto la fine della Pagina!</h2>
+		            <p>Hai fatto scorrere la pagina fino in fondo e sei riuscito a vedere l'intero sito apparire su di essa.</p>
+		<p>Probabilmente non sarà una buona idea utilizzare questo metodo per un sito con un sacco di contenuti, poichè la pagina si appesantirebbe, rallentandosi.</p>
+		    </div>
+		</div>
+	</body>
+</html>

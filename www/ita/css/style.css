@@ -1,0 +1,90 @@
+/* INIZIO CSS CUSTOM */
+
+#nav{
+	list-style: none;
+	position: fixed;
+	right: 20px;
+	z-index: 1000;
+}
+
+#nav li{
+	margin: 0 0 10px 0;	
+}
+
+#one {
+	position: relative;
+	height: 700px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0 0 0 0;
+}
+
+#video_background {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	z-index: -1;
+}
+
+#video_pattern {
+	background-image: url(../images/pattern.png);
+	opacity: 0.6;
+	width: 100%;
+	height: 700px;
+	z-index: 1;
+}
+
+#two {
+	background: url(../images/cloud.jpg) 50% 0 no-repeat fixed;
+	color: #FFF;
+	height: 700px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+#three{
+	background: url(../images/golf.jpg) 0% 0 no-repeat fixed;
+	color: #FFF;
+	height: 650px;
+}
+
+#three .bg{
+	background: url(../images/cBall.png) 20% 0 no-repeat fixed;
+	height: 650px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 700px;
+	z-index: 200;
+}
+
+.content{
+	margin: 0 auto;
+	min-width: 980px;
+	width: 980px;
+}
+
+.content .left, .content .right{
+	padding: 0px 0 0 0;
+	position: relative;
+	width: 350px;	
+}
+
+
+.right{
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+.title_with_grid{
+	position:absolute; 
+	top:0;
+	left:0;
+	color:white;
+}

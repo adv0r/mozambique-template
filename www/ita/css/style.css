@@ -11,9 +11,12 @@
 	margin: 0 0 10px 0;	
 }
 
+.page_height{
+	height: 300px;
+}
+
 #one {
 	position: relative;
-	height: 700px;
 	overflow: hidden;
 	margin: 0px;
 	padding: 0 0 0 0;
@@ -40,7 +43,7 @@
 }
 
 #two {
-	background: url(../images/cloud.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/cloud.jpg) 20% 0 no-repeat fixed;
 	color: #FFF;
 	height: 700px;
 	margin: 0;
@@ -49,19 +52,13 @@
 }
 
 #three{
-	background: url(../images/golf.jpg) 0% 0 no-repeat fixed;
+	-moz-box-shadow: inset 0 0 5px 2px #000;
+	-webkit-box-shadow: inset 0 0 5px 2px #000;
+	box-shadow: inset 0 0 5px 2px #000;
+	background: url(../images/golf.jpg) 20% 0 no-repeat fixed;
 	color: #FFF;
 	height: 650px;
-}
-
-#three .bg{
-	background: url(../images/cBall.png) 20% 0 no-repeat fixed;
-	height: 650px;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	width: 700px;
-	z-index: 200;
+	overflow: hidden;
 }
 
 .content{

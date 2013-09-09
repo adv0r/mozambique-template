@@ -44,8 +44,12 @@ $(document).ready(function() {
 			$three.css({'backgroundPosition': movePos(50, windowHeight, pos, windowHeight*3, 0.3)});
 		}
 		if($four.hasClass("inview")){
-			$four.css({'backgroundPosition': movePos(0, windowHeight, pos, 200, 0.9) + ", " + movePos(50, windowHeight, pos, 0, 0.7) + ", " + movePos(50, windowHeight, pos, 0, 0.5) + ", " + movePos(50, windowHeight, pos, 3700, 0.3)});
+			$four.css({'backgroundPosition': movePos(50, windowHeight, pos, windowHeight*4, 0.3)});
 		}
+		/* NICO : TODO, I commented this line because I'm not what it does!
+		if($four.hasClass("inview")){
+			$four.css({'backgroundPosition': movePos(0, windowHeight, pos, 200, 0.9) + ", " + movePos(50, windowHeight, pos, 0, 0.7) + ", " + movePos(50, windowHeight, pos, 0, 0.5) + ", " + movePos(50, windowHeight, pos, 3700, 0.3)});
+		}*/
 		
 	}
 	

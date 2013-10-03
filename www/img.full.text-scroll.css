@@ -24,5 +24,16 @@
 }
 
 #first-div {
-	background: url(images/colour.jpg) 20% 0 no-repeat ;
+	/*background: url(images/colour.jpg) 20% 0 no-repeat ;*/
+}
+
+#scroll-pos{
+	background-color: black;
+	color:white;
+	font-size: 26px;
+	position: fixed;
+	top : 0;
+	left:50%;
+	opacity: 0.6;
+	z-index: 9999;
 }

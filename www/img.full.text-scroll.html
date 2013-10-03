@@ -1,9 +1,10 @@
 <html>
 	<head>
-		    <link href="nico-style.css" rel="stylesheet">
+		    <link href="img.full.text-scroll.css" rel="stylesheet">
 	</head>
 	<body>
-		<div id="first-div" class="other-div">
+		<div id="scroll-pos">0px</div>
+		<div id="first-div" class="other-div" data-0="background-color:rgb(0,0,255);transform[bounce]:rotate(0deg);" data-500="background-color:rgb(255,0,0);transform[bounce]:rotate(360deg);" ><h2>first-div</h2> 
 		</div><!--first div-->
 		<div id="section-container">
 			<div id="text-container">
@@ -15,6 +16,12 @@
 		<div id="last-div" class="other-div">
 		</div><!--last div -->
 	
-	<script src="js/parallax.js"></script>
+
+	 <script src="js/skrollr.min.js"></script>
+	 <script src="js/jquery.js"></script>
+	 <script src="img.full.text-scroll.js"></script>
+	 <script type="text/javascript">
+	    var s = skrollr.init();
+	    </script>
 	</body>
 </html>

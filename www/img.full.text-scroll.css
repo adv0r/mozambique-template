@@ -15,8 +15,9 @@
 	color: #FFF;
 	margin-left: 60%;
 	margin-right: 10%;
-	height:  500px;
+	max-height:  100px;
 	border:  solid 2px black;
+	overflow: scroll;
 }
 
 #last-div{

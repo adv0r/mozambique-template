@@ -1,3 +1,24 @@
+ var sectionContainer =  document.getElementById('section-container');
+ var textLength = 300  ; //The length (px) of the text to scroll
+ var startScrollText =  sectionContainer.offsetTop;//at this height block the image and start scrolling text
+ var stopScrollText = startScrollText+textLength; //ad this height stop scrolling text and go down
+
+
+/* -  When the user scrolls -  */ 
+$(window).scroll(function() { 
+    currentScroll = getScrollTop(); //get the current position
+     $('#scroll-pos').html(currentScroll+"px"); //update the view with the current height
+
+     if(currentScroll>startScrollText && currentScroll < stopScrollText)
+     {
+            //Scroll down the text
+            console.log(currentScroll +' Must be Scrolling the text');
+     }
+
+});
+
+
+/* -  Get the position from top, cross browser -  */ 
 function getScrollTop(){
     if(typeof pageYOffset!= 'undefined'){
         //most browsers except IE before #9
@@ -10,8 +31,3 @@ function getScrollTop(){
         return D.scrollTop;
     }
 }
-
-$(window).scroll(function() { 
-    currentScroll = getScrollTop();
-     $('#scroll-pos').html(currentScroll+"px");
-});

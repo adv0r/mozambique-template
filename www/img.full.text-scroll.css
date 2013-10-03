@@ -1,0 +1,28 @@
+.other-div{
+	color: #FFF;
+	height: 700px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+#section-container{
+	background: url(images/golf.jpg) 20% 0 no-repeat fixed ;
+	height: 900px;
+}
+
+#text-container{
+	color: #FFF;
+	margin-left: 60%;
+	margin-right: 10%;
+	height:  500px;
+	border:  solid 2px black;
+}
+
+#last-div{
+	background: url(images/cloud.jpg) 20% 0 no-repeat ;
+}
+
+#first-div {
+	background: url(images/colour.jpg) 20% 0 no-repeat ;
+}

@@ -70,7 +70,8 @@ a{
 
 
 .sottosezioneMenu{
-	background-color: rgb(207,207,205);	
+	background-color: rgb(207,207,205);
+	height: 100%;
 }
 
 .page_height{
@@ -157,4 +158,6 @@ a{
 	top:0;
 	left:0;
 	color:white;
+	margin-top: 100px;
+	margin-left: 80px;
 }

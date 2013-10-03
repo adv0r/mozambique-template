@@ -89,7 +89,7 @@ a{
 	width: auto;
 	height: auto;
 	overflow: hidden;
-	z-index: 0; /*-1*/
+	z-index: 0; /*ERA -1 Ma il fuckin chrome scapocciava*/
 }
 
 #video_pattern {

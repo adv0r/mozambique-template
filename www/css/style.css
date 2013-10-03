@@ -42,8 +42,8 @@ a{
 #nav{
 	list-style: none;
 	position: fixed;
-	height: 100%;
 	background-color: rgb(235,233,233);
+	top: 0px;
 	right: 0px;
 	z-index: 1000;
 }
@@ -71,33 +71,29 @@ a{
 
 .sottosezioneMenu{
 	background-color: rgb(207,207,205);
-	height: 100%;
 }
 
-.page_height{
-	height: 300px;
-}
 
 #one {
-	position: relative;
 	overflow: hidden;
 	margin: 0px;
-	padding: 0 0 0 0;
+	padding: 0px;
 }
 
 #video_background {
 	position: absolute;
-	bottom: 0px;
-	right: 0px;
+	top: 0px;
+	left: 0px;
 	min-width: 100%;
 	min-height: 100%;
 	width: auto;
 	height: auto;
 	overflow: hidden;
-	z-index: -1;
+	z-index: 0; /*-1*/
 }
 
 #video_pattern {
+	position: absolute;
 	background-image: url(../images/pattern.png);
 	opacity: 0.6;
 	width: 100%;
@@ -160,4 +156,5 @@ a{
 	color:white;
 	margin-top: 100px;
 	margin-left: 80px;
+	z-index: 1000;
 }

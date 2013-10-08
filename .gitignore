@@ -1,2 +1,5 @@
 .DS_Store
 template/Screens
+.floo
+.flooignore
+.sublime-project

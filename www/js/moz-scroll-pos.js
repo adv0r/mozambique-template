@@ -15,7 +15,9 @@
     z-index: 9999;
 }
 
-3) include   <script src="js/moz-scroll-pos.js"></script>
+3) include   
+     <script src="js/jquery.js"></script>
+     <script src="js/moz-scroll-pos.js"></script>
 
 /* -  When the user scrolls -  */ 
 $(window).scroll(function() { 

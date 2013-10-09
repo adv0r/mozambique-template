@@ -2,29 +2,50 @@
 	<head>
 		    <link href="img.full.text-scroll.css" rel="stylesheet">
 		    <meta charset="utf-8">
+    	    	   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
 	</head>
 
 	<body>
-		<div id="scroll-pos">
-			0px
-		</div>
-		<div id="first-div" data-0="background-color:rgb(0,0,255)" data-300="background-color:rgb(255,0,255)">
-			<h2>first-div</h2> 
-		</div><!--first div-->
-		<div id="section-container" data-301="background-color:rgb(0,255,255)" data-601="background-color:rgb(12,45,255)">
-					<h2>mid-div</h2> 
-		</div><!--Section container-->
+      	<div id="scroll-pos">0px</div>
 
-		<div id="last-div" data-602="background-color:rgb(50,255,255)" data-900="background-color:rgb(20,20,20)">
-			<h2>last-div</h2> 
-		</div><!--last div -->
-	
+	<div id="skrollr-body">
+			<div id="first-div" data-0="opacity:1;" data-800="opacity:0" class="sezione">
+				<h2>first-div</h2> 
+
+			</div><!--first div-->
+							
+
+			<div id="second-div" class="sezione"  data-800="top: 0%;" data-1600="top:0%;">
+				<h2>mid-div</h2> 
+				<div id="testo" data-800="top: 100%;" data-1600="top:-100%;">
+					<p>
+						Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>
+					</p>
+						<p>
+						Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>
+					</p>
+						<p>
+						Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit Ipse dixit </br>
+					</p>
+				</div><!--testo-->
+			</div><!--second div-->
+
+			<div id="last-div" data-1500="opacity:0;" data-1600="opacity:1;" class="sezione">
+				<h2>last-div</h2> 
+
+			</div><!--last div -->
+	</div><!--skrollr-body -->
 	 <script src="js/jquery.js"></script>
-	 <script src="js/moz-scroll-pos.js"></script>
 	 <script src="js/skrollr.min.js"></script>
-
+	 <script src="js/moz-scroll-pos.js"></script>
 	 <script type="text/javascript">
-	    var s = skrollr.init();
+
+	  	 	skrollr.init({
+				forceHeight: false
+			});
+
+
 	  </script>
 	</body> 
-</html>
+</html> 

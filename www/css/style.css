@@ -3,6 +3,8 @@
 *{
 	font-family: 'Roboto', sans-serif !important;	
 	font-weight: 300;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -115,19 +117,15 @@ a{
 #two {
 	background: url(../images/cloud.jpg) 20% 0 no-repeat fixed;
 	color: #FFF;
-	height: 700px;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
+	z-index: 2;
 }
 
 #three{
 	-moz-box-shadow: inset 0 0 5px 2px #000;
 	-webkit-box-shadow: inset 0 0 5px 2px #000;
 	box-shadow: inset 0 0 5px 2px #000;
-	background: url(../images/golf.jpg) 20% 0 no-repeat fixed;
+	background: url(../images/golf.jpg) 20% 0 no-repeat;
 	color: #FFF;
-	height: 650px;
 	overflow: hidden;
 }
 

@@ -188,13 +188,10 @@
 		
 		<section id="four" class="col-sm-12 allPages" data-0="transform:translate(0,300%);" data-300p="transform:translate(0,0%)" data-_container-300p="" data-_container-400p="transform:translate(0,-100%);">
 
-		       <section class="container" data-300p="top:0%;" data-_container-400p="top:-100%">
-		            <h2>Due immagni di Sfondo</h2>
-		            <p>
-		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
-		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
-		            	
-		            </p>
+		       <section class="" data-300p="top:0%;" data-_container-400p="top:-100%">
+		            <img style="position:fixed;top:0%;" data-300p="opacity:1;" data-333p="opacity:0;" src="images/anim1.png"/>
+		            <img style="position:fixed;top:0%;" data-318p="opacity:0;" data-333p="opacity:1;" data-348="opacity:0;" src="images/anim2.png"/>
+		            <img style="position:fixed;top:0%;" data-340p="opacity:0;" data-350p="opacity:1;" src="images/anim3.png"/>
 		    </section>
 		</section><!-- END FOUR-->
 
@@ -203,9 +200,11 @@
 	    ================================================== -->
 	    <!-- Placed at the end of the document so the pages load faster -->
 	   
-	   	<script src="js/jquery.js"></script>
+	    
 	   	<script src="js/bootstrap.min.js"></script>
 		<script src="js/skrollr.min.js"></script>
+		<script src="js/jquery.queryloader2.js"></script>
+	   	<script src="js/jquery.js"></script>
 	   	<script src="js/moz-scroll-pos.js"></script>	
 	    <script>
 		    skrollr.init({
@@ -213,8 +212,16 @@
 				//fill the box for a "duration" of 150% of the viewport (pause for 150%)
 				//adjust for shorter/longer pause
 				container: 200
-			}
-		});
+				}
+			});
+			
+			$(document).ready(function () {
+			    $("body").queryLoader2();
+			});
+			
+			window.addEventListener('DOMContentLoaded', function() {
+			    $("body").queryLoader2();
+			});
 		</script>	
 			
   </body>

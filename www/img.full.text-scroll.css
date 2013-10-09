@@ -10,7 +10,7 @@ background: url(images/cloud.jpg) no-repeat ;
 
 #second-div{
     background: url(images/colour.jpg) no-repeat ;
-    position: fixed;
+    width: 100%;
 }
 
 #last-div{

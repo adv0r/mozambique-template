@@ -17,13 +17,11 @@
 
 3) include   <script src="js/moz-scroll-pos.js"></script>
 
-
 /* -  When the user scrolls -  */ 
 $(window).scroll(function() { 
     currentScroll = getScrollTop(); //get the current position
      $('#scroll-pos').html(currentScroll+"px"); //update the view with the current height
 });
-
 
 
 /* -  Get the position from top, cross browser -  */ 

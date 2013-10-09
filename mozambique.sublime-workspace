@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-size"
+			],
+			[
 				"mar",
 				"margin-top"
 			],
@@ -124,11 +128,13 @@
 	},
 	"file_history":
 	[
+		"/Users/advanced/Dropbox/playground/mozambique-template/www/img.full.text-scroll.html",
+		"/Users/advanced/Dropbox/playground/mozambique-template/www/img.full.text-scroll.js",
+		"/Users/advanced/Dropbox/playground/mozambique-template/www/img.full.text-scroll.css",
+		"/Users/advanced/Dropbox/playground/mozambique-template/www/index.html",
 		"/Users/advanced/Dropbox/playground/mozambique-template/www/nico-style.css",
 		"/Users/advanced/Dropbox/playground/mozambique-template/www/nico-test.html",
 		"/Users/advanced/Dropbox/playground/mozambique-template/www/css/style.css",
-		"/Users/advanced/Dropbox/playground/mozambique-template/www/img.full.text-scroll.html",
-		"/Users/advanced/Dropbox/playground/mozambique-template/www/index.html",
 		"/Users/advanced/Dropbox/playground/mozambique-template/www/js/parallax.js",
 		"/Users/advanced/Dropbox/playground/ist/article/ist.sublime-project",
 		"/Users/advanced/Dropbox/playground/mozambique-template/www/ita/index.html",
@@ -249,9 +255,7 @@
 		"/Users/advanced/github/startupgenomeproduct/genome-nightly/README",
 		"/Users/advanced/github/startupgenomeproduct/genome-nightly/config/mongod.conf",
 		"/Users/advanced/github/startupgenomeproduct/genome-nightly/config/mongo.conf",
-		"/Users/advanced/github/startupgenomeproduct/genome-master/.gitignore",
-		"/Users/advanced/github/startupgenomeproduct/genome-nightly/.gitignore",
-		"/Users/advanced/github/startupgenomeproduct/genome.sublime-project"
+		"/Users/advanced/github/startupgenomeproduct/genome-master/.gitignore"
 	],
 	"find":
 	{
@@ -277,6 +281,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sectionContainer",
+			"scrollTextAt",
+			"stopstartScrollText",
+			"scrollTextAt",
+			"ScrollTextAt",
+			"scrollTextAt",
+			"stopScrollingText",
+			"startScrollingText",
+			"currentScroll",
 			"backgroundPosition",
 			";\n",
 			"fixed",
@@ -395,16 +408,7 @@
 			"(.pdf)",
 			"</em><a ",
 			"(.pdf)",
-			"pdf",
-			"em",
-			"sshPass",
-			"pre",
-			"Title",
-			"title",
-			"Title",
-			"title",
-			"Title",
-			"title"
+			"pdf"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -437,6 +441,11 @@
 			"sheets":
 			[
 			]
+		},
+		{
+			"sheets":
+			[
+			]
 		}
 	],
 	"incremental_find":
@@ -456,11 +465,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":

@@ -49,7 +49,7 @@
 		    	</section>
 		</ul>
 		
-		<section class="col-sm-12" id="one"><!-- VID.BG.GRID.TITLE -->
+		<section class="col-sm-12 allPages" data-0="transform:translate(0,0%);" data-100p="transform:translate(0,-100%);" id="one"><!-- VID.BG.GRID.TITLE -->
 			<section class="title_with_grid">
 				<p>
 					<h1 class="ombreggiaturaTesto">VID.BG.GRID.TITLE</h1>
@@ -57,15 +57,15 @@
 				</p>
 			</section>
 			<section id="video_pattern"></section><!-- Aggiunge la griglia-->
-			<video id="video_background" preload="auto" autoplay="true" loop="loop" > 
-				<source src="data/video/video_loop-moz.m4v" type="video/mp4"> 
-				<source src="data/video/video_loop-moz.webm" type="video/webm"> 
-				Video not supported 
-			</video>
+				<video id="video_background" preload="auto" autoplay="true" loop="loop" > 
+					<source src="data/video/video_loop-moz.m4v" type="video/mp4"> 
+					<source src="data/video/video_loop-moz.webm" type="video/webm"> 
+					Video not supported 
+				</video>
 		</section>
-		
-		<section id="two" class="col-sm-12" data-0="background-position:0px -100px;" data-857="background-position:0px 0px; height:100%;" data-1000="height:100%;" data-1460="height:53%;" data-1373="background-position:0px 0px;" data-2800="background-position:0px -1000px;">
-		    <section class="container" data-857="margin-top:100%;" data-1100="margin-top:0.2%;">
+
+		<section id="two" class="col-sm-12 allPages" data-0="transform:translate(0,100%);" data-100p="transform:translate(0,0%)" data-_container-100p="" data-_container-200p="transform:translate(0,-100%)">
+		    <section class="container" data-100p="top:0%;" data-_container-100p="top:-100%">
 		            <h2>Due immagni di Sfondo</h2>
 		            <p>Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
 		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
@@ -96,7 +96,7 @@
 		    </section>
 		</section>
 		
-		<section id="three" class="col-sm-12">
+		<section id="three" class="col-sm-12 allPages" data-0="transform:translate(0,100%);" data-100p="transform:translate(0,0%)" data-_box-200p="transform:translate(0,0%);">
 		    <section class="container">
 		        <section>
 		            <h2>Due immagni di Sfondo</h2>
@@ -123,10 +123,13 @@
 	<script src="js/skrollr.min.js"></script>
    	<script src="js/moz-scroll-pos.js"></script>	
     <script>
-	    var s = skrollr.init();
-	   	$('#one').height($(window).height());
-	   	$('#two').height($(window).height());
-	   	$('#three').height($(window).height());
+	    skrollr.init({
+		constants: {
+			//fill the box for a "duration" of 150% of the viewport (pause for 150%)
+			//adjust for shorter/longer pause
+			container: 150
+		}
+	});
 	</script>	
 		
   </body>

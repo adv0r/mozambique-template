@@ -39,6 +39,17 @@ a{
 	text-shadow:6px 6px rgba(0,0,0,0.4);
 }
 
+#scroll-pos{
+	background-color: black;
+	color:white;
+	font-size: 26px;
+	position: fixed;
+	top : 0;
+	left:50%;
+	opacity: 0.6;
+	z-index: 9999;
+}
+
 #nav{
 	list-style: none;
 	position: fixed;

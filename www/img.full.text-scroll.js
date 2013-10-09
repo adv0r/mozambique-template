@@ -9,7 +9,6 @@
 /* -  When the user scrolls -  */ 
 $(window).scroll(function() { 
     currentScroll = getScrollTop(); //get the current position
-     $('#scroll-pos').html(currentScroll+"px"); //update the view with the current height
      if(currentScroll>startScrollText && currentScroll < stopScrollText)
      {
             //Scroll down the text

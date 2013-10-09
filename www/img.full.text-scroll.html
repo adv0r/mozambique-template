@@ -1,27 +1,30 @@
 <html>
 	<head>
 		    <link href="img.full.text-scroll.css" rel="stylesheet">
+		    <meta charset="utf-8">
 	</head>
-	<body>
-		<div id="scroll-pos">0px</div>
-		<div id="first-div" class="other-div" data-0="background-color:rgb(0,0,255);transform[bounce]:rotate(0deg);" data-500="background-color:rgb(255,0,0);transform[bounce]:rotate(360deg);" ><h2>first-div</h2> 
-		</div><!--first div-->
-		<div id="section-container">
-			<div id="text-container">
-				<h1>Title of the text</h1>
-				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat q uo voluptas nulla pariatur?</p>
-			</div> <!--text container-->
-		</div> <!--Section container-->
 
-		<div id="last-div" class="other-div">
+	<body>
+		<div id="scroll-pos">
+			0px
+		</div>
+		<div id="first-div" data-0="background-color:rgb(0,0,255)" data-300="background-color:rgb(255,0,255)">
+			<h2>first-div</h2> 
+		</div><!--first div-->
+		<div id="section-container" data-301="background-color:rgb(0,255,255)" data-601="background-color:rgb(12,45,255)">
+					<h2>mid-div</h2> 
+		</div><!--Section container-->
+
+		<div id="last-div" data-602="background-color:rgb(50,255,255)" data-900="background-color:rgb(20,20,20)">
+			<h2>last-div</h2> 
 		</div><!--last div -->
 	
-
-	 <script src="js/skrollr.min.js"></script>
 	 <script src="js/jquery.js"></script>
-	 <script src="img.full.text-scroll.js"></script>
+	 <script src="js/moz-scroll-pos.js"></script>
+	 <script src="js/skrollr.min.js"></script>
+
 	 <script type="text/javascript">
 	    var s = skrollr.init();
-	    </script>
-	</body>
+	  </script>
+	</body> 
 </html>

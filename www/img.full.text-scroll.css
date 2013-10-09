@@ -1,41 +1,21 @@
-.other-div{
-	color: #FFF;
-	height: 700px;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-}
-
-#section-container{
-	background: url(images/golf.jpg) 20% 0 no-repeat fixed ;
-	height: 900px;
-}
-
-#text-container{
-	color: #FFF;
-	margin-left: 60%;
-	margin-right: 10%;
-	max-height:  100px;
-	border:  solid 2px black;
-	overflow: scroll;
-	top : 200;
-}
-
-#last-div{
-	background: url(images/cloud.jpg) 20% 0 no-repeat ;
+*{
+	padding: 0px;
+	margin: 0px;
 }
 
 #first-div {
-	/*background: url(images/colour.jpg) 20% 0 no-repeat ;*/
+	/*background: url(images/colour.jpg) no-repeat;*/
+	border: solid 2px black;
+
 }
 
-#scroll-pos{
-	background-color: black;
-	color:white;
-	font-size: 26px;
-	position: fixed;
-	top : 0;
-	left:50%;
-	opacity: 0.6;
-	z-index: 9999;
+#section-container{
+	/*background: url(images/golf.jpg) no-repeat ;*/
+	border: solid 2px black;
+}
+
+#last-div{
+	/*background: url(images/cloud.jpg) no-repeat ;*/
+	border: solid 2px black;
+
 }

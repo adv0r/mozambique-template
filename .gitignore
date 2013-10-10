@@ -3,3 +3,4 @@ template/Screens
 .floo
 .flooignore
 .sublime-project
+sftp-config.json

@@ -102,11 +102,9 @@ a{
 #video_background {
 	position: absolute;
 	top: 0px;
-	left: 0px;
+	left: 0px !important;
 	min-width: 100%;
 	min-height: 100%;
-	width: auto;
-	height: auto;
 	overflow: hidden;
 	z-index: 0; /*ERA -1 Ma il fuckin chrome scapocciava*/
 }
@@ -153,10 +151,10 @@ a{
 
 
 .containerVideo{
-position: absolute;
+	position: absolute;
 	z-index: 1000;
 	margin-left: 10%;
-	margin-top: 5%;
+	margin-top: 10%;
 	background-color: rgba(255,255,255,0.5);
 	padding:20px;
 }

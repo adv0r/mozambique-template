@@ -3,32 +3,35 @@ var menuItem1, menuItem2,menuItem3, menuitem4, menuitem5;
 var menuItem6, menuItem7,menuItem8, menuitem9, menuitem10;
 var menuItem11, menuItem12,menuitem13;
 
+/*This function is called on page load, works on iOs*/
+window.addEventListener('DOMContentLoaded', function() {	
+
+	initTemplate();  //Comment if you UNCOMMENT the queryloader below
+
+	//uncomment to see the preloader  and comment the line above
+	/* 
+	 $("body").queryLoader2(
+		{
+		        	percentage: true,
+                   	        	barHeight: 80,
+	                	completeAnimation: "grow",
+	                	onComplete : initSkrollr() 
+		});
+	*/
+});
+
+
+/* On document load!*/
 function initTemplate()
 {
 	initMenuItemVars();
 	updateMenuHrefHeights($(window).height());
 	initSkrollr();
+	initSkrollrMenu(s); 	
+
 }
 
-/*Only sets the variables - TODO dynamic*/
-function initMenuItemVars()
-{
-	menuItem1 = document.getElementById("#menu-item-1"); 
-	menuItem2 = document.getElementById("#menu-item-2"); 
-	menuItem3 = document.getElementById("#menu-item-3"); 
-	menuItem4 = document.getElementById("#menu-item-4"); 
-	menuItem5 = document.getElementById("#menu-item-5"); 
-	menuItem6 = document.getElementById("#menu-item-6"); 
-	menuItem7 = document.getElementById("#menu-item-7"); 
-	menuItem8 = document.getElementById("#menu-item-8"); 
-	menuItem9 = document.getElementById("#menu-item-9"); 
-	menuItem10 = document.getElementById("#menu-item-10"); 
-	menuItem11 = document.getElementById("#menu-item-11"); 
-	menuItem12 = document.getElementById("#menu-item-12"); 
-	menuItem13 = document.getElementById("#menu-item-13"); 
-}
-
-// Init skrollr
+/* Init skrollr  plugin */
 function initSkrollr()
 {
 	var s=skrollr.init({
@@ -37,22 +40,18 @@ function initSkrollr()
 			container2: 50	
 		}
 	});
-	initSkrollrMenu(s); //init the menu	
 }
 
 function initSkrollrMenu(s)
 {
 	skrollr.menu.init(s, {
-	//skrollr will smoothly animate to the new position using `animateTo`.
 	animate: true,
-	//The easing function to use.
 	easing: 'sqrt',
-	//How long the animation should take in ms.
 	duration: function(currentTop, targetTop) {
 		//By default, the duration is hardcoded at 500ms.
-		return 500;
+		//return 500;
 		//But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
-		//return Math.abs(currentTop - targetTop) * 10;
+		return Math.abs(currentTop - targetTop) * 1;
 		},
 	});
 }
@@ -72,10 +71,7 @@ function updateMenuHrefHeights(viewportH)
 	menuItem10.setAttribute( 'data-menu-top', 9* viewportH); 
 	menuItem11.setAttribute( 'data-menu-top', 10* viewportH); 
 	menuItem12.setAttribute( 'data-menu-top', 11* viewportH); 
-	menuItem13.setAttribute( 'data-menu-top', 12* viewportH);  
-	
-	
-	//element.setAttribute("data-menu-top", "1337"); 
+	menuItem13.setAttribute( 'data-menu-top', 12* viewportH);  	
 }
 
 
@@ -86,19 +82,22 @@ $(window).resize(function(e){
 });
 
 
-/*This function is called on page load, works on iOs*/
-window.addEventListener('DOMContentLoaded', function() {	
 
-	initTemplate();  //Comment if you UNCOMMENT the queryloader below
 
-	//uncomment to see the preloader  and comment the line above
-	/* 
-	 $("body").queryLoader2(
-		{
-		        	percentage: true,
-                   	        	barHeight: 80,
-	                	completeAnimation: "grow",
-	                	onComplete : initSkrollr() 
-		});
-	*/
-});
+/*Only sets the variables - TODO dynamic using arrays*/
+function initMenuItemVars()
+{
+	menuItem1 = document.getElementById("#menu-item-1"); 
+	menuItem2 = document.getElementById("#menu-item-2"); 
+	menuItem3 = document.getElementById("#menu-item-3"); 
+	menuItem4 = document.getElementById("#menu-item-4"); 
+	menuItem5 = document.getElementById("#menu-item-5"); 
+	menuItem6 = document.getElementById("#menu-item-6"); 
+	menuItem7 = document.getElementById("#menu-item-7"); 
+	menuItem8 = document.getElementById("#menu-item-8"); 
+	menuItem9 = document.getElementById("#menu-item-9"); 
+	menuItem10 = document.getElementById("#menu-item-10"); 
+	menuItem11 = document.getElementById("#menu-item-11"); 
+	menuItem12 = document.getElementById("#menu-item-12"); 
+	menuItem13 = document.getElementById("#menu-item-13"); 
+}

@@ -2,7 +2,7 @@
 var menuItem1, menuItem2,menuItem3, menuitem4, menuitem5;
 var menuItem6, menuItem7,menuItem8, menuitem9, menuitem10;
 var menuItem11, menuItem12,menuitem13;
-var skrollr;
+var s;
 
 /*This function is called on page load, works on iOs*/
 window.addEventListener('DOMContentLoaded', function() {	
@@ -34,7 +34,7 @@ function initTemplate()
 /* Init skrollr  plugin */
 function initSkrollr()
 {
-	skrollr=skrollr.init({
+	s=skrollr.init({
 	constants: {
 			container: 400,
 			container2: 50	
@@ -44,7 +44,7 @@ function initSkrollr()
 
 function initSkrollrMenu()
 {
-	skrollr.menu.init(skrollr, {
+	skrollr.menu.init(s, {
 	animate: true,
 	easing: 'sqrt',
 	duration: function(currentTop, targetTop) {

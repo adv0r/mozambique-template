@@ -2,6 +2,7 @@
 var menuItem1, menuItem2,menuItem3, menuitem4, menuitem5;
 var menuItem6, menuItem7,menuItem8, menuitem9, menuitem10;
 var menuItem11, menuItem12,menuitem13;
+var skrollr;
 
 /*This function is called on page load, works on iOs*/
 window.addEventListener('DOMContentLoaded', function() {	
@@ -27,14 +28,13 @@ function initTemplate()
 	initMenuItemVars();
 	updateMenuHrefHeights($(window).height());
 	initSkrollr();
-	initSkrollrMenu(s); 	
-
+	initSkrollrMenu(); 	
 }
 
 /* Init skrollr  plugin */
 function initSkrollr()
 {
-	var s=skrollr.init({
+	skrollr=skrollr.init({
 	constants: {
 			container: 400,
 			container2: 50	
@@ -42,9 +42,9 @@ function initSkrollr()
 	});
 }
 
-function initSkrollrMenu(s)
+function initSkrollrMenu()
 {
-	skrollr.menu.init(s, {
+	skrollr.menu.init(skrollr, {
 	animate: true,
 	easing: 'sqrt',
 	duration: function(currentTop, targetTop) {

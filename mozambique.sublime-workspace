@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ba",
+				"background-color"
+			],
+			[
 				"font",
 				"font-size"
 			],
@@ -63,13 +67,78 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"description\" content=\"\">\n    <meta name=\"author\" content=\"\">\n    <link rel=\"shortcut icon\" href=\"ico/favicon.png\">\n\n	<title>Report of Land Grabbing in Mozambico</title>\n\n    <!-- Bootstrap core CSS -->\n    <link href=\"css/bootstrap.css\" rel=\"stylesheet\">\n\n    <!-- Custom styles for this template -->\n    <link href=\"css/style.css\" rel=\"stylesheet\">\n    <link href='http://fonts.googleapis.com/css?family=Roboto:900,700,400,300,100' rel='stylesheet' type='text/css'>\n    \n    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->\n    <!--[if lt IE 9]>\n      <script src=\"js/html5shiv.js\"></script>\n      <script src=\"js/respond.min.js\"></script>\n    \n    <![endif]-->\n  </head>\n\n  <body>\n	  <div id=\"scroll-pos\" >0px</div>\n		<ul id=\"nav\" class=\"col-sm-2 noPadding\" >\n			<div class=\"row\">\n				<span class=\"col-sm-1 col-sm-offset-8\">\n					<h3>LORD OF LAND</h3>\n					<h5>MENU</h5>\n				</span>\n				\n				<span class=\"col-sm-1 col-sm-offset-8\">\n					<img src=\"images/bottonearancione.png\"/>\n				</span>\n			</div>\n		    <a href=\"#one\" title=\"Next div\"><li><h3>INTRODUCTION</h3><h4>WHAT IS THE LANDGRABBING?</h4></li></a>\n		    <a href=\"#two\" title=\"Next div\"><li><h3>PART 1</h3><h4>LANDGRABBING IN AFRICA</h4></li></a>\n		    <a href=\"#three\" title=\"Next div\"><li><h3>PART 2</h3><h4>LAND GRABBING IN MOZAMBICO</h4></li></a>\n		    <p><h3 id=\"casesAnalysis\">CASES ANALYSIS</h3></p>\n		    	<div class=\"sottosezioneMenu\">\n		    		<a href=\"#three\" title=\"Next div\"><li><h3>CASE 1</h3><h4>SAMMARTINI <br> XAI XAI</h4></li></a>\n		    		<a href=\"#three\" title=\"Next div\"><li><h3>CASE 2</h3><h4>SAMMARTINI <br> XAI XAI</h4></li></a>\n		    		<a href=\"#three\" title=\"Next div\"><li><h3>CASE 3</h3><h4>SAMMARTINI <br> XAI XAI</h4></li></a>\n		    		<a href=\"#three\" title=\"Next div\"><li><h3>CASE 4</h3><h4>SAMMARTINI <br> XAI XAI</h4></li></a>\n		    	</div>\n		</ul>\n		\n		<div class=\"col-sm-12\" id=\"one\"><!-- VID.BG.GRID.TITLE -->\n			<div class=\"title_with_grid\">\n				<p>\n					<h1 class=\"ombreggiaturaTesto\">VID.BG.GRID.TITLE</h1>\n					<h2>AN INVESTIGATION ON <br> THE LAND INVESTMENT IN AFRICA</h2>\n				</p>\n			</div>\n			<div id=\"video_pattern\"></div><!-- Aggiunge la griglia-->\n			<video id=\"video_background\" preload=\"auto\" autoplay=\"true\" loop=\"loop\" > \n				<source src=\"data/video/video_loop-moz.m4v\" type=\"video/mp4\"> \n				<source src=\"data/video/video_loop-moz.webm\" type=\"video/webm\"> \n				Video not supported \n			</video>\n		</div>\n		\n		<div id=\"two\" class=\"col-sm-12\" data-0=\"background-position:0px -100px;\" data-857=\"background-position:0px 0px;\" data-858=\"top:0%; posistion:fixed;\" data-1200=\"top:0%;\">\n		    <div class=\"container\" data-500=\"top:100%;\" data-900=\"top:0%;\" style=\"position:fixed;\">\n		            <h2>Due immagni di Sfondo</h2>\n		            <p>Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. \n		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.\n		            </p>\n		            \n		            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n		            	Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. \n		            	Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. \n		            	Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. \n		            	Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>\n		    </div>\n		</div>\n		\n		<div id=\"three\" class=\"col-sm-12\">\n		    <div class=\"container\">\n		        <div>\n		            <h2>Due immagni di Sfondo</h2>\n		            <p>Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. \n		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.\n		            </p>\n		            \n		            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n		            	Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. \n		            	Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. \n		            	Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. \n		            	Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>\n		        </div>\n		    </div>\n		</div>\n		\n\n    <!-- Bootstrap core JavaScript\n    ================================================== -->\n    <!-- Placed at the end of the document so the pages load faster -->\n   \n   	<script src=\"js/jquery.js\"></script>\n   	<script src=\"js/bootstrap.min.js\"></script>\n	<script src=\"js/skrollr.min.js\"></script>\n   	<script src=\"js/moz-scroll-pos.js\"></script>	\n    <script>\n	    var s = skrollr.init();\n	   	$('#one').height($(window).height());\n	   	$('#two').height($(window).height());\n	   	$('#three').height($(window).height());\n	</script>	\n		\n  </body>\n</html>",
+			"file": "www/index.html",
+			"file_size": 5423,
+			"file_write_time": 1381308109000000,
+			"settings":
+			{
+				"buffer_size": 5429,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "www/img.full.text-scroll.html",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n	<meta charset=\"utf-8\">\n\n	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=no\">\n\n	<title>Anchors</title>\n\n	<style type=\"text/css\">\n	body {font-family:sans-serif;}\n\n	#content {\n		width:90%;\n		background:#eee;\n		border:1px solid #444;\n		margin:1em auto;\n	}\n\n	#content > div {\n		padding:1em;\n	}\n\n	.box {\n		float:left;\n		padding:6em 1em;\n		margin:2px;\n	}\n\n	p {margin:1em 0;}\n	</style>\n</head>\n\n<body>\n	<div id=\"skrollr-body\">\n\n		<div id=\"content\">\n			<div>\n				<h1>Different anchor types</h1>\n\n				<p>\n					<strong>Scroll down to see different anchors in action.</strong>\n				</p>\n\n				<p>Biltong pastrami kielbasa short ribs, turducken shoulder pork chop boudin ground round speck cow. Fatback leberkas shank hamburger, tail pork belly tongue bresaola short ribs corned beef speck tri-tip ribeye. Filet mignon shoulder speck pastrami. Ham hock turducken corned beef shankle. Meatloaf shankle sausage boudin, shank flank turducken tenderloin pancetta ball tip. Biltong boudin jowl drumstick pig.</p>\n\n				<p>Sirloin venison bresaola andouille pastrami short ribs. Short loin cow capicola tail ham hock leberkas. Frankfurter meatloaf capicola, swine ball tip jerky pork loin pork belly cow ribeye brisket strip steak jowl beef ribs ham hock. Pastrami ham hock rump turkey, pork belly capicola jerky. Turkey chuck beef, bresaola filet mignon jerky tri-tip pastrami. Bacon capicola jowl fatback short ribs. Speck shankle bacon chuck.</p>\n\n				<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>\n\n				<p>Cow fatback short loin, hamburger speck jowl turducken capicola ham hock. Hamburger corned beef strip steak shank filet mignon, jerky capicola chicken jowl ribeye pork ham hock ground round bresaola. Jowl ribeye kielbasa drumstick pork belly leberkas. Spare ribs fatback shankle, hamburger meatloaf sausage pork loin andouille pork kielbasa. Pancetta shank tongue, leberkas turducken shoulder rump meatball pork belly pig hamburger brisket biltong. Tenderloin short ribs pig, rump tail chuck turducken.</p>\n\n				<p>Cow tri-tip pork loin salami corned beef. T-bone turkey ham frankfurter, brisket cow chicken bacon rump sirloin. Pancetta ribeye salami leberkas speck shank. Ribeye prosciutto swine venison speck beef.</p>\n\n				<p>Biltong pastrami kielbasa short ribs, turducken shoulder pork chop boudin ground round speck cow. Fatback leberkas shank hamburger, tail pork belly tongue bresaola short ribs corned beef speck tri-tip ribeye. Filet mignon shoulder speck pastrami. Ham hock turducken corned beef shankle. Meatloaf shankle sausage boudin, shank flank turducken tenderloin pancetta ball tip. Biltong boudin jowl drumstick pig.</p>\n\n				<p>Sirloin venison bresaola andouille pastrami short ribs. Short loin cow capicola tail ham hock leberkas. Frankfurter meatloaf capicola, swine ball tip jerky pork loin pork belly cow ribeye brisket strip steak jowl beef ribs ham hock. Pastrami ham hock rump turkey, pork belly capicola jerky. Turkey chuck beef, bresaola filet mignon jerky tri-tip pastrami. Bacon capicola jowl fatback short ribs. Speck shankle bacon chuck.</p>\n\n				<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>\n\n				<p>Cow fatback short loin, hamburger speck jowl turducken capicola ham hock. Hamburger corned beef strip steak shank filet mignon, jerky capicola chicken jowl ribeye pork ham hock ground round bresaola. Jowl ribeye kielbasa drumstick pork belly leberkas. Spare ribs fatback shankle, hamburger meatloaf sausage pork loin andouille pork kielbasa. Pancetta shank tongue, leberkas turducken shoulder rump meatball pork belly pig hamburger brisket biltong. Tenderloin short ribs pig, rump tail chuck turducken.</p>\n\n				<p>Cow tri-tip pork loin salami corned beef. T-bone turkey ham frankfurter, brisket cow chicken bacon rump sirloin. Pancetta ribeye salami leberkas speck shank. Ribeye prosciutto swine venison speck beef.</p>\n\n				<p>Biltong pastrami kielbasa short ribs, turducken shoulder pork chop boudin ground round speck cow. Fatback leberkas shank hamburger, tail pork belly tongue bresaola short ribs corned beef speck tri-tip ribeye. Filet mignon shoulder speck pastrami. Ham hock turducken corned beef shankle. Meatloaf shankle sausage boudin, shank flank turducken tenderloin pancetta ball tip. Biltong boudin jowl drumstick pig.</p>\n\n				<p>Sirloin venison bresaola andouille pastrami short ribs. Short loin cow capicola tail ham hock leberkas. Frankfurter meatloaf capicola, swine ball tip jerky pork loin pork belly cow ribeye brisket strip steak jowl beef ribs ham hock. Pastrami ham hock rump turkey, pork belly capicola jerky. Turkey chuck beef, bresaola filet mignon jerky tri-tip pastrami. Bacon capicola jowl fatback short ribs. Speck shankle bacon chuck.</p>\n\n				<p>Sirloin venison bresaola andouille pastrami short ribs. Short loin cow capicola tail ham hock leberkas. Frankfurter meatloaf capicola, swine ball tip jerky pork loin pork belly cow ribeye brisket strip steak jowl beef ribs ham hock. Pastrami ham hock rump turkey, pork belly capicola jerky. Turkey chuck beef, bresaola filet mignon jerky tri-tip pastrami. Bacon capicola jowl fatback short ribs. Speck shankle bacon chuck.</p>\n\n				<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>\n\n				<p>Cow fatback short loin, hamburger speck jowl turducken capicola ham hock. Hamburger corned beef strip steak shank filet mignon, jerky capicola chicken jowl ribeye pork ham hock ground round bresaola. Jowl ribeye kielbasa drumstick pork belly leberkas. Spare ribs fatback shankle, hamburger meatloaf sausage pork loin andouille pork kielbasa. Pancetta shank tongue, leberkas turducken shoulder rump meatball pork belly pig hamburger brisket biltong. Tenderloin short ribs pig, rump tail chuck turducken.</p>\n\n				<div class=\"box\" data-start=\"background:hsl(0,50%,75%);\" data-end=\"background:hsl(180,50%,75%);\">\n					start<br>end\n				</div>\n\n				<div class=\"box\" data-bottom-top=\"background:hsl(0,50%,75%);\" data-top-bottom=\"background:hsl(180,50%,75%);\">\n					bottom-top<br>top-bottom\n				</div>\n\n				<div class=\"box\" data-top-top=\"background:hsl(0,50%,75%);\" data-bottom-bottom=\"background:hsl(180,50%,75%);\">\n					top-top<br>bottom-bottom\n				</div>\n\n				<div class=\"box\" data-center-top=\"background:hsl(0,50%,75%);\" data-center-bottom=\"background:hsl(180,50%,75%);\">\n					center-top<br>center-bottom\n				</div>\n\n				<div id=\"bacon\" class=\"box\" data-center-center=\"background:hsl(0,50%,75%);\" data-1-center-center=\"background:hsl(180,50%,75%);\">\n					center-center<br>1-center-center\n				</div>\n\n				<div class=\"box\" data-50-bottom-bottom=\"background:hsl(0,50%,75%);\" data--50-top-top=\"background:hsl(180,50%,75%);\">\n					50-bottom-bottom<br>-50-top-top\n				</div>\n\n				<p style=\"clear:both;\">Cow tri-tip pork loin salami corned beef. T-bone turkey ham frankfurter, brisket cow chicken bacon rump sirloin. Pancetta ribeye salami leberkas speck shank. Ribeye prosciutto swine venison speck beef.</p>\n\n				<p>Biltong pastrami kielbasa short ribs, turducken shoulder pork chop boudin ground round speck cow. Fatback leberkas shank hamburger, tail pork belly tongue bresaola short ribs corned beef speck tri-tip ribeye. Filet mignon shoulder speck pastrami. Ham hock turducken corned beef shankle. Meatloaf shankle sausage boudin, shank flank turducken tenderloin pancetta ball tip. Biltong boudin jowl drumstick pig.</p>\n\n				<p>Sirloin venison bresaola andouille pastrami short ribs. Short loin cow capicola tail ham hock leberkas. Frankfurter meatloaf capicola, swine ball tip jerky pork loin pork belly cow ribeye brisket strip steak jowl beef ribs ham hock. Pastrami ham hock rump turkey, pork belly capicola jerky. Turkey chuck beef, bresaola filet mignon jerky tri-tip pastrami. Bacon capicola jowl fatback short ribs. Speck shankle bacon chuck.</p>\n\n				<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>\n\n				<p>Cow fatback short loin, hamburger speck jowl turducken capicola ham hock. Hamburger corned beef strip steak shank filet mignon, jerky capicola chicken jowl ribeye pork ham hock ground round bresaola. Jowl ribeye kielbasa drumstick pork belly leberkas. Spare ribs fatback shankle, hamburger meatloaf sausage pork loin andouille pork kielbasa. Pancetta shank tongue, leberkas turducken shoulder rump meatball pork belly pig hamburger brisket biltong. Tenderloin short ribs pig, rump tail chuck turducken.</p>\n\n				<p>Cow tri-tip pork loin salami corned beef. T-bone turkey ham frankfurter, brisket cow chicken bacon rump sirloin. Pancetta ribeye salami leberkas speck shank. Ribeye prosciutto swine venison speck beef.</p>\n\n				<p>Biltong pastrami kielbasa short ribs, turducken shoulder pork chop boudin ground round speck cow. Fatback leberkas shank hamburger, tail pork belly tongue bresaola short ribs corned beef speck tri-tip ribeye. Filet mignon shoulder speck pastrami. Ham hock turducken corned beef shankle. Meatloaf shankle sausage boudin, shank flank turducken tenderloin pancetta ball tip. Biltong boudin jowl drumstick pig.</p>\n\n				<p>Sirloin venison bresaola andouille pastrami short ribs. Short loin cow capicola tail ham hock leberkas. Frankfurter meatloaf capicola, swine ball tip jerky pork loin pork belly cow ribeye brisket strip steak jowl beef ribs ham hock. Pastrami ham hock rump turkey, pork belly capicola jerky. Turkey chuck beef, bresaola filet mignon jerky tri-tip pastrami. Bacon capicola jowl fatback short ribs. Speck shankle bacon chuck.</p>\n\n				<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>\n\n				<p>Cow fatback short loin, hamburger speck jowl turducken capicola ham hock. Hamburger corned beef strip steak shank filet mignon, jerky capicola chicken jowl ribeye pork ham hock ground round bresaola. Jowl ribeye kielbasa drumstick pork belly leberkas. Spare ribs fatback shankle, hamburger meatloaf sausage pork loin andouille pork kielbasa. Pancetta shank tongue, leberkas turducken shoulder rump meatball pork belly pig hamburger brisket biltong. Tenderloin short ribs pig, rump tail chuck turducken.</p>\n\n				<p>Cow tri-tip pork loin salami corned beef. T-bone turkey ham frankfurter, brisket cow chicken bacon rump sirloin. Pancetta ribeye salami leberkas speck shank. Ribeye prosciutto swine venison speck beef.</p>\n\n				<p>Biltong pastrami kielbasa short ribs, turducken shoulder pork chop boudin ground round speck cow. Fatback leberkas shank hamburger, tail pork belly tongue bresaola short ribs corned beef speck tri-tip ribeye. Filet mignon shoulder speck pastrami. Ham hock turducken corned beef shankle. Meatloaf shankle sausage boudin, shank flank turducken tenderloin pancetta ball tip. Biltong boudin jowl drumstick pig.</p>\n\n				<p>Sirloin venison bresaola andouille pastrami short ribs. Short loin cow capicola tail ham hock leberkas. Frankfurter meatloaf capicola, swine ball tip jerky pork loin pork belly cow ribeye brisket strip steak jowl beef ribs ham hock. Pastrami ham hock rump turkey, pork belly capicola jerky. Turkey chuck beef, bresaola filet mignon jerky tri-tip pastrami. Bacon capicola jowl fatback short ribs. Speck shankle bacon chuck.</p>\n\n				<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>\n\n				<p>Cow fatback short loin, hamburger speck jowl turducken capicola ham hock. Hamburger corned beef strip steak shank filet mignon, jerky capicola chicken jowl ribeye pork ham hock ground round bresaola. Jowl ribeye kielbasa drumstick pork belly leberkas. Spare ribs fatback shankle, hamburger meatloaf sausage pork loin andouille pork kielbasa. Pancetta shank tongue, leberkas turducken shoulder rump meatball pork belly pig hamburger brisket biltong. Tenderloin short ribs pig, rump tail chuck turducken.</p>\n\n				<div class=\"box\" data-300-end=\"background:hsl(0,50%,75%);\" data-end=\"background:hsl(180,50%,75%);\">\n					300-end<br>end\n				</div>\n\n				<p style=\"clear:both;\">Cow tri-tip pork loin salami corned beef. T-bone turkey ham frankfurter, brisket cow chicken bacon rump sirloin. Pancetta ribeye salami leberkas speck shank. Ribeye prosciutto swine venison speck beef.</p>\n\n				<p>Biltong pastrami kielbasa short ribs, turducken shoulder pork chop boudin ground round speck cow. Fatback leberkas shank hamburger, tail pork belly tongue bresaola short ribs corned beef speck tri-tip ribeye. Filet mignon shoulder speck pastrami. Ham hock turducken corned beef shankle. Meatloaf shankle sausage boudin, shank flank turducken tenderloin pancetta ball tip. Biltong boudin jowl drumstick pig.</p>\n\n				<p>Sirloin venison bresaola andouille pastrami short ribs. Short loin cow capicola tail ham hock leberkas. Frankfurter meatloaf capicola, swine ball tip jerky pork loin pork belly cow ribeye brisket strip steak jowl beef ribs ham hock. Pastrami ham hock rump turkey, pork belly capicola jerky. Turkey chuck beef, bresaola filet mignon jerky tri-tip pastrami. Bacon capicola jowl fatback short ribs. Speck shankle bacon chuck.</p>\n\n				<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>\n\n				<p>Cow tri-tip pork loin salami corned beef. T-bone turkey ham frankfurter, brisket cow chicken bacon rump sirloin. Pancetta ribeye salami leberkas speck shank. Ribeye prosciutto swine venison speck beef.</p>\n			</div>\n		</div>\n\n	</div>\n\n	<script type=\"text/javascript\" src=\"../dist/skrollr.min.js\"></script>\n\n	<script type=\"text/javascript\">\n	skrollr.init({\n		forceHeight: false\n	});\n	</script>\n</body>\n\n</html>",
+			"settings":
+			{
+				"buffer_size": 15996,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "www/js/moz-scroll-pos.js",
+			"settings":
+			{
+				"buffer_size": 992,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/* INIZIO CSS CUSTOM */\n\n*{\n	font-family: 'Roboto', sans-serif !important;	\n	font-weight: 300;\n	margin: 0;\n	padding: 0;\n}\n\n\nh1{\n	font-size: 70px;\n	font-weight: 700;	\n}\n\nh2{\n	font-size: 24px;\n	font-weight: 100;	\n}\n\nh3{\n	font-size: 14px;/*ERA 15, l'ho rimpicciolito per far entrare tutto il menu nella safe area*/\n	font-weight: 700;	\n}\n\nh4{\n	font-size: 15px; /*ERA 18, l'ho rimpicciolito per far entrare tutto il menu nella safe area*/\n	font-weight: 100;	\n}\n\nh5{\n	font-size: 10px;/*ERA 12, l'ho rimpicciolito per far entrare tutto il menu nella safe area*/\n	font-weight: 100;	\n}\n\na{\n	text-decoration: none !important;	\n}\n\n.ombreggiaturaTesto{\n	text-shadow:6px 6px rgba(0,0,0,0.4);\n}\n\n#scroll-pos{\n	background-color: black;\n	color:white;\n	font-size: 26px;\n	position: fixed;\n	top : 0;\n	left:50%;\n	opacity: 0.6;\n	z-index: 9999;\n}\n\n#nav{\n	list-style: none;\n	position: fixed;\n	background-color: rgb(235,233,233);\n	top: 0px;\n	right: 0px;\n	z-index: 1000;\n}\n\n#nav li{\n	padding: 1px 30px 1px 30px;	\n	color: rgb(76,76,76);\n}\n\n.noPadding{\n	padding: 0 0 0 0;\n}\n\n#casesAnalysis{\n	padding-left:30px;	\n	color: rgb(76,76,76);\n}\n\n#nav li:hover{\n	background-color: rgb(76,76,76);\n	color: white;\n	text-decoration: none;\n}\n\n\n.sottosezioneMenu{\n	background-color: rgb(207,207,205);\n}\n\n\n#one {\n	overflow: hidden;\n	margin: 0px;\n	padding: 0px;\n}\n\n#video_background {\n	position: absolute;\n	top: 0px;\n	left: 0px;\n	min-width: 100%;\n	min-height: 100%;\n	width: auto;\n	height: auto;\n	overflow: hidden;\n	z-index: 0; /*ERA -1 Ma il fuckin chrome scapocciava*/\n}\n\n#video_pattern {\n	position: absolute;\n	background-image: url(../images/pattern.png);\n	opacity: 0.6;\n	width: 100%;\n	height: 100%;\n	z-index: 1;\n}\n\n#two {\n	background: url(../images/cloud.jpg) 20% 0 no-repeat fixed;\n	color: #FFF;\n	z-index: 2;\n}\n\n#three{\n	-moz-box-shadow: inset 0 0 5px 2px #000;\n	-webkit-box-shadow: inset 0 0 5px 2px #000;\n	box-shadow: inset 0 0 5px 2px #000;\n	background: url(../images/golf.jpg) 20% 0 no-repeat;\n	color: #FFF;\n	overflow: hidden;\n}\n\n#four{\n	-moz-box-shadow: inset 0 0 5px 2px #000;\n	-webkit-box-shadow: inset 0 0 5px 2px #000;\n	box-shadow: inset 0 0 5px 2px #000;\n	background: url(../images/containers.jpg) 20% 0 no-repeat fixed;\n	color: #FFF;\n	height: 650px;\n	overflow: hidden;\n}\n\n\n.content{\n	margin: 0 auto;\n	min-width: 980px;\n	width: 980px;\n}\n\n.content .left, .content .right{\n	padding: 0px 0 0 0;\n	position: relative;\n	width: 350px;	\n}\n\n\n.right{\n	float: right;\n	margin: 0 20px 0 0;\n}\n\n.title_with_grid{\n	position:absolute; \n	top:0;\n	left:0;\n	color:white;\n	margin-top: 100px;\n	margin-left: 80px;\n	z-index: 1000;\n}",
+			"file": "www/css/style.css",
+			"file_size": 2589,
+			"file_write_time": 1381307023000000,
+			"settings":
+			{
+				"buffer_size": 2577,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "www/img.full.text-scroll.css",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 47.0,
+		"height": 74.0,
 		"selected_items":
 		[
+			[
+				"join",
+				"Floobits - Join Recent Workspace"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
@@ -91,10 +160,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"inst",
-				"Package Control: Install Package"
-			],
-			[
 				"disable",
 				"SublimeCodeIntel: Disable Live Autocompletion"
 			],
@@ -111,11 +176,11 @@
 				"Snippet: for (…) {…} (Improved Native For-Loop)"
 			]
 		],
-		"width": 449.0
+		"width": 570.0
 	},
 	"console":
 	{
-		"height": 89.0
+		"height": 245.0
 	},
 	"distraction_free":
 	{
@@ -128,13 +193,23 @@
 	},
 	"file_history":
 	[
-		"/Users/advanced/Dropbox/playground/mozambique-template/www/img.full.text-scroll.html",
+		"/Users/advanced/floobits/msgs.floobits.log",
 		"/Users/advanced/Dropbox/playground/mozambique-template/www/img.full.text-scroll.js",
-		"/Users/advanced/Dropbox/playground/mozambique-template/www/img.full.text-scroll.css",
+		"/Users/advanced/Dropbox/playground/mozambique-template/www/release1.html",
 		"/Users/advanced/Dropbox/playground/mozambique-template/www/index.html",
+		"/Users/advanced/Dropbox/playground/mozambique-template/sftp-config.json",
+		"/Users/advanced/Dropbox/playground/mozambique-template/www/img.full.text-scroll.css",
+		"/Users/advanced/Dropbox/playground/mozambique-template/www/css/style.css",
+		"/Users/advanced/Dropbox/playground/mozambique-template/www/img.full.text-scroll.html",
+		"/Users/advanced/Dropbox/playground/mozambique-template/www/prova.css",
+		"/Users/advanced/Dropbox/playground/mozambique-template/www/prova.html",
+		"/Users/advanced/Dropbox/playground/mozambique-template/www/prova.js",
+		"/Users/advanced/Dropbox/playground/mozambique-template/www/js/moz-scroll-pos.js",
+		"/Users/advanced/Dropbox/playground/mozambique-template/.gitignore",
+		"/Users/advanced/.floorc",
+		"/Users/advanced/floobits/welcome.md",
 		"/Users/advanced/Dropbox/playground/mozambique-template/www/nico-style.css",
 		"/Users/advanced/Dropbox/playground/mozambique-template/www/nico-test.html",
-		"/Users/advanced/Dropbox/playground/mozambique-template/www/css/style.css",
 		"/Users/advanced/Dropbox/playground/mozambique-template/www/js/parallax.js",
 		"/Users/advanced/Dropbox/playground/ist/article/ist.sublime-project",
 		"/Users/advanced/Dropbox/playground/mozambique-template/www/ita/index.html",
@@ -245,17 +320,7 @@
 		"/Users/advanced/Desktop/goToMe.sh",
 		"/Users/advanced/Desktop/botcoinDir",
 		"/Users/advanced/github/startupgenomeproduct/genome-nightly/vendor/initial-db-import/rebuild_data.rb",
-		"/Users/advanced/github/startupgenomeproduct/genome-nightly/runMongo.sh",
-		"/Users/advanced/github/startupgenomeproduct/genome-nightly/script/rails",
-		"/Users/advanced/github/startupgenomeproduct/genome-nightly/vendor/initial-db-import/rawdata_new.csv",
-		"/Users/advanced/Dropbox/playground/botcoin.js/remote scripts/connectToAmazon.sh",
-		"/Users/advanced/Dropbox/playground/botcoin.js/remote scripts/restartRemoteProcess.sh",
-		"/Users/advanced/Dropbox/playground/botcoin.js/remote scripts/runRemoteProcess.sh",
-		"/Users/advanced/github/startupgenomeproduct/genome-nightly/Gemfile.lock",
-		"/Users/advanced/github/startupgenomeproduct/genome-nightly/README",
-		"/Users/advanced/github/startupgenomeproduct/genome-nightly/config/mongod.conf",
-		"/Users/advanced/github/startupgenomeproduct/genome-nightly/config/mongo.conf",
-		"/Users/advanced/github/startupgenomeproduct/genome-master/.gitignore"
+		"/Users/advanced/github/startupgenomeproduct/genome-nightly/runMongo.sh"
 	],
 	"find":
 	{
@@ -281,6 +346,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"data",
+			"data-0-top-bottom=",
+			"stopScrollText",
+			"startScrollText",
+			"textLength",
+			"textContainer",
 			"sectionContainer",
 			"scrollTextAt",
 			"stopstartScrollText",
@@ -402,13 +473,7 @@
 			"**",
 			"discussed",
 			"Research type",
-			"research type Facet",
-			"research type facet",
-			"jpg",
-			"(.pdf)",
-			"</em><a ",
-			"(.pdf)",
-			"pdf"
+			"research type Facet"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -438,13 +503,1083 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "www/index.html",
+					"settings":
+					{
+						"buffer_size": 5429,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5421,
+								5421
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"sublime_auto_complete": true,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1503.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "www/img.full.text-scroll.html",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"sublime_auto_complete": true,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"settings":
+					{
+						"buffer_size": 15996,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15996,
+								15996
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"sublime_auto_complete": true,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1235.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "www/js/moz-scroll-pos.js",
+					"settings":
+					{
+						"buffer_size": 992,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								31,
+								70
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"sublime_auto_complete": true,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "www/css/style.css",
+					"settings":
+					{
+						"buffer_size": 2577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2242,
+								2242
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"sublime_auto_complete": true,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		},
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 5,
+					"file": "www/img.full.text-scroll.css",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"sublime_auto_complete": true,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -492,7 +1627,7 @@
 	},
 	"output.sftp":
 	{
-		"height": 118.0
+		"height": 73.0
 	},
 	"replace":
 	{

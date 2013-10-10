@@ -49,9 +49,9 @@ function initSkrollrMenu()
 	easing: 'sqrt',
 	duration: function(currentTop, targetTop) {
 		//By default, the duration is hardcoded at 500ms.
-		//return 500;
+		return 500;
 		//But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
-		return Math.abs(currentTop - targetTop) * 1;
+		//return Math.abs(currentTop - targetTop) * 1;
 		},
 	});
 }

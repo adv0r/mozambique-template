@@ -17,12 +17,27 @@
 
 3) include   
      <script src="js/jquery.js"></script>
-     <script src="js/moz-scroll-pos.js"></script>
-
+     <script src="js/mozambique-scroll.js"></script>
 /* -  When the user scrolls -  */ 
+
+
 $(window).scroll(function() { 
-    currentScroll = getScrollTop(); //get the current position
+     currentScroll = getScrollTop(); //get the current position
      $('#scroll-pos').html(currentScroll+"px"); //update the view with the current height
+
+    //Auto toggle the video
+     var videoContainer = document.getElementById('VIDEOPLAYERAUTOTOGGLE');
+     var videoElem = document.getElementById('videoToggle');
+     if(isScrolledIntoView(videoContainer))
+     {
+        if (videoElem.paused) 
+                  videoElem.play();
+     }
+     else
+     {
+        if (!videoElem.paused) 
+                videoElem.pause();
+     }
 });
 
 
@@ -39,3 +54,38 @@ function getScrollTop(){
         return D.scrollTop;
     }
 }
+
+
+/* The following part is used to detect the auto toggle of the video based on scroll*/
+
+/*http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling*/
+/* Detect if an element is visible in the viewport after scrolling
+Note that this only works if the document is the element being scrolled, i.e. you aren't checking visibility of some element inside a scrolling inner pane
+*/
+
+
+function isScrolledIntoView(elem)
+{
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+
+/* Detect if an element is  COMPLETELY visible in the viewport after scrolling*/
+
+function isCompletelyScrolledIntoView(elem)
+{
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return ((docViewTop < elemTop) && (docViewBottom > elemBottom));
+}
+

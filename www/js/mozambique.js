@@ -85,9 +85,6 @@ $(window).resize(function(e){
 	updateMenuHrefHeights(viewportH);
 });
 
-
-
-
 /*Only sets the variables - TODO dynamic using arrays*/
 function initMenuItemVars()
 {

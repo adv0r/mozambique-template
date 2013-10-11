@@ -115,25 +115,6 @@ a{
 	z-index: 1;
 }
 
-.imgsection{
-	position: absolute;
-	height: 100%;
-    	width:100%;
-	overflow: hidden;
-}
-
-#IMGFULL
-{
-	background: url(../images/cloud.jpg) 0 no-repeat fixed;
-}
-
-
-#IMGFULLTEXT
-{
-	background: url(../images/golf.jpg) 0 no-repeat fixed;
-}
-
-
 .container{ 
 	position:absolute;
 	left:0;

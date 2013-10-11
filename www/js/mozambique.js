@@ -36,6 +36,8 @@ function initSkrollr()
 {
 	s=skrollr.init({
 	constants: {
+		//Qui dobbiamo dichiarare l'altezza in pixels delle varie sezioni, da utilizzare in pixel
+		//https://github.com/Prinzhorn/skrollr#working-with-constants
 			container: 400,
 			container2: 50	
 		}

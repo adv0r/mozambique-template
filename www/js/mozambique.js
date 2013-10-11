@@ -1,7 +1,7 @@
 /* Global variables */
 var menuItem1, menuItem2,menuItem3, menuitem4, menuitem5;
 var menuItem6, menuItem7,menuItem8, menuitem9, menuitem10;
-var menuItem11, menuItem12,menuitem13,menuitem14,menuitem15;
+var menuItem11, menuItem12,menuitem13,menuitem14,menuitem15,menuitem16;
 var s;
 
 /*This function is called on page load, works on iOs*/
@@ -76,6 +76,7 @@ function updateMenuHrefHeights(viewportH)
 	menuItem13.setAttribute( 'data-menu-top', 12* viewportH);  	
 	menuItem14.setAttribute( 'data-menu-top', 13* viewportH);  	
 	menuItem15.setAttribute( 'data-menu-top', 14* viewportH);  		
+	menuItem16.setAttribute( 'data-menu-top', 15* viewportH);  		
 }
 
 
@@ -103,4 +104,5 @@ function initMenuItemVars()
 	menuItem13 = document.getElementById("#menu-item-13"); 
 	menuItem14 = document.getElementById("#menu-item-14"); 
 	menuItem15 = document.getElementById("#menu-item-15"); 
+	menuItem16 = document.getElementById("#menu-item-16"); 
 }

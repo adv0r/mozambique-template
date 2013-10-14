@@ -51,14 +51,7 @@ a{
 }
 
 #scroll-pos{
-	background-color: black;
-	color:white;
-	font-size: 26px;
-	position: fixed;
-	top : 0;
-	left:50%;
-	opacity: 0.6;
-	z-index: 9999;
+color: red;
 }
 
 #nav{
@@ -66,12 +59,15 @@ a{
 	position: fixed;
 	background-color: rgb(235,233,233);
 	top: 0px;
-	right: 0px;
+	left: 0px;
 	z-index: 1000;
 }
 
 #nav li{
-	padding: 1px 30px 1px 30px;	
+	border-bottom: solid whitesmoke 2px;
+	border-right: solid whitesmoke 2px;
+	float: left;
+	padding: 1px 2px 1px 2px;	
 	color: rgb(76,76,76);
 }
 

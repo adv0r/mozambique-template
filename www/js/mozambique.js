@@ -25,10 +25,19 @@ window.addEventListener('DOMContentLoaded', function() {
 /* On document load!*/
 function initTemplate()
 {
+	loadMenu();
 	initMenuItemVars();
 	updateMenuHrefHeights($(window).height());
 	initSkrollr();
 	initSkrollrMenu(); 	
+}
+
+/* Load the content of file menu.html into the index*/
+function loadMenu()
+{
+	$(function(){
+		$("#menutop").load("menu.html"); 
+	});
 }
 
 /* Init skrollr  plugin */

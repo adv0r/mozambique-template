@@ -26,8 +26,14 @@ function initTemplate()
 	updateMenuHrefHeights($(window).height());
 	initSkrollr();
 	initSkrollrMenu(); 	
+	loadSlider();
 }
 
+/**/
+function loadSlider()
+{
+	$('.flexslider').flexslider();
+}
 
 /* Init skrollr  plugin */
 function initSkrollr()

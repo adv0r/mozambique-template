@@ -27,7 +27,11 @@ $(window).scroll(function() {
 
     //Auto toggle the video
      var videoContainer = document.getElementById('VIDEOPLAYERAUTOTOGGLE');
+     var videoContainer2 = document.getElementById('VIDPLAYERAUTOTOGGLESIDETEXT');
+
      var videoElem = document.getElementById('videoToggle');
+     var videoElem2 = document.getElementById('videoToggle2');
+
      if(isScrolledIntoView(videoContainer))
      {
         if (videoElem.paused) 
@@ -38,8 +42,18 @@ $(window).scroll(function() {
         if (!videoElem.paused) 
                 videoElem.pause();
      }
-});
 
+     if(isScrolledIntoView(videoContainer2))
+     {
+        if (videoElem2.paused) 
+                  videoElem2.play();
+     }
+     else
+     {
+        if (!videoElem2.paused) 
+                videoElem2.pause();
+     }
+});
 
 /* -  Get the position from top, cross browser -  */ 
 function getScrollTop(){

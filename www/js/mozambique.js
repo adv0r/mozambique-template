@@ -35,9 +35,7 @@ function initTemplate()
 /* Load the content of file menu.html into the index*/
 function loadMenu()
 {
-	$(function(){
-		$("#menutop").load("menu.html"); 
-	});
+	$("#menutop").load("menu.html"); 
 }
 
 /* Init skrollr  plugin */

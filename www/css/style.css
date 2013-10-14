@@ -176,6 +176,19 @@ color: red;
 	z-index: 1000;
 }
 
+.flex-caption{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	font-family: 'Roboto', sans-serif !important;	
+	font-weight: 700;
+	background-color: black;
+	text-transform: uppercase;
+	font-size: 30px;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
 /*_________SFONDI_______*/
 
 #IMGFULL{

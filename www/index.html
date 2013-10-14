@@ -15,6 +15,7 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:900,700,400,300,100' rel='stylesheet' type='text/css'>
+    <link href="css/flexslider.css" rel="stylesheet">
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -226,8 +227,8 @@
 
 	       		<section class="containerVideo">
 		       		<video id="videoNonFull" preload="auto" controls > 
-						<source src="data/video/video_loop-moz.m4v" type="video/mp4"> 
-						<source src="data/video/video_loop-moz.webm" type="video/webm"> 
+						<source src="data/video/moz-long.m4v" type="video/mp4"> 
+						<source src="data/video/moz-long.webm" type="video/webm"> 
 						Video not supported 
 					</video>
 		       </section>
@@ -238,8 +239,8 @@
 		<section class="col-sm-12 allPages" style="background-color:whitesmoke;" data-0="transform:translate(0,1600%);" data-1600p="transform:translate(0,0%)" data-_container-1800p="" data-_container-1800p="transform:translate(0,-100%);" id="VID.PLAYER.SIDE-TEXT">
 		      <section class="videoSxVideoConTesto" >
 		       		<video class="col-sm-6" preload="auto" controls > 
-						<source src="data/video/sunflowersHD.m4v" type="video/mp4"> 
-						<source src="data/video/sunflowersHD.webm" type="video/webm"> 
+						<source src="data/video/moz-long.m4v" type="video/mp4"> 
+						<source src="data/video/moz-long.webm" type="video/webm"> 
 						Video not supported 
 					</video>
 		       </section>
@@ -414,6 +415,19 @@
 		</section>
 		<!-- 16 END ANIM.DOUBLE.TEXT -->
 		
+		<!-- 17 IMG.GALLERY-->
+		<section id="IMGGALLERY" class="col-sm-12 allPages" data-0="transform:translate(0,3800%);" data-_container-3800p="transform:translate(0,0%)" data-_container-3900="" data-_container-3900="transform:translate(0,-100%);">
+			<section class="title_with_grid flexslider">
+				<ul class="slides">
+				    <li><img src="images/moz1.jpg" alt="Slide" /></li>
+				    <li><img src="images/moz2.jpg" alt="Slide" /></li>
+				    <li><img src="images/moz3.jpg" alt="Slide" /></li>
+				</ul>
+			</section>	
+		</section>
+		<!-- 17 END IMG.GALLERY-->
+
+		
 	<!--- ===-======-======-======-=== Js Libraries ===-======-======-======-======-===-->
 	<script src="js/ext/jquery.js"></script>	
 	<script src="js/ext/jquery.queryloader2.js"></script>
@@ -421,10 +435,15 @@
 	<script src="js/ext/bootstrap.min.js"></script>
 	<script src="js/ext/skrollr.min.js"></script>
 	<script src="js/ext/skrollr.menu.min.js"></script>
+	<script src="js/ext/jquery.flexslider-min.js"></script>
 	<script src="js/mozambique.js"></script>
 	<script src="js/mozambique-scroll.js"></script>
 	<script src="js/mozambique-menu.js"></script>	
-	
+	<script type="text/javascript" charset="utf-8">
+			  $(window).load(function() {
+			    $('.flexslider').flexslider();
+			  });
+			</script>
 			
   </body>
 </html>  

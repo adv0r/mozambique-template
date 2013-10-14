@@ -183,26 +183,26 @@ a{
 /*_________SFONDI_______*/
 
 #IMGFULL{
-	background-image: url(../images/campesino.png);
+	background-image: url(../images/moz1.jpg);
 	background-size: cover;
 }
 
 #IMGFULLGRID{
-	background-image: url(../images/cloud.jpg);
+	background-image: url(../images/moz2.jpg);
 	background-size: cover;
 }
 
 #IMGFULLTEXT{
-	background-image: url(../images/colour.jpg);
+	background-image: url(../images/moz3.jpg);
 	background-size: cover;
 }
 
 #IMGFULLTEXTGRID{
-	background-image: url(../images/golf.jpg);
+	background-image: url(../images/moz4.jpg);
 	background-size: cover;
 	}
 	
 #VIDBGSCROLLTEXT{
-	background-image: url(../images/colour.jpg);
+	background-image: url(../images/moz5.jpg);
 	background-size: cover;	
 }

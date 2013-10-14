@@ -179,3 +179,30 @@ a{
 	margin-left: 10%;
 	z-index: 1000;
 }
+
+/*_________SFONDI_______*/
+
+#IMGFULL{
+	background-image: url(../images/campesino.png);
+	background-size: cover;
+}
+
+#IMGFULLGRID{
+	background-image: url(../images/cloud.jpg);
+	background-size: cover;
+}
+
+#IMGFULLTEXT{
+	background-image: url(../images/colour.jpg);
+	background-size: cover;
+}
+
+#IMGFULLTEXTGRID{
+	background-image: url(../images/golf.jpg);
+	background-size: cover;
+	}
+	
+#VIDBGSCROLLTEXT{
+	background-image: url(../images/colour.jpg);
+	background-size: cover;	
+}

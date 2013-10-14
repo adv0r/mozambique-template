@@ -1,0 +1,25 @@
+127.0.0.1 - - [14/Oct/2013 11:02:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /css/bootstrap.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] code 404, message File not found
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /css/style.css HTTP/1.1" 404 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /images/bottonearancione.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /images/anim1.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /images/anim2.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /js/ext/jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /js/ext/jquery.queryloader2.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /js/ext/jquery.resize.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /js/ext/bootstrap.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /js/ext/skrollr.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /js/ext/skrollr.menu.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /js/mozambique.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /js/mozambique-scroll.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /images/anim3.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /data/video/video_loop-moz.m4v HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /data/video/video-loop-australia.m4v HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /data/video/motionHD.m4v HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /data/video/sunflowersHD.m4v HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /data/video/video_loop-moz.m4v HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /data/video/video_loop-moz.m4v HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /data/video/video_loop-moz.m4v HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /data/video/video-loop-australia.m4v HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2013 11:02:24] "GET /data/video/sunflowersHD.m4v HTTP/1.1" 200 -

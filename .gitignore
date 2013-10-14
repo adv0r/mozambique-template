@@ -5,3 +5,4 @@ template/Screens
 .sublime-project
 sftp-config.json
 mozambique.sublime-workspace
+logs/simplehttpserver.log

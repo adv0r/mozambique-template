@@ -37,7 +37,6 @@ function updateMenuHrefHeights(viewportH)
 	cumulativeLenght+=2000;		
 	menuItem19.setAttribute( 'data-menu-top', 18* viewportH + cumulativeLenght);  	
 	menuItem20.setAttribute( 'data-menu-top', 19* viewportH + cumulativeLenght);  		
-	
 }
 
 

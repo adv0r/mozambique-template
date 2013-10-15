@@ -32,7 +32,10 @@ function initTemplate()
 /**/
 function loadSlider()
 {
-	$('.flexslider').flexslider();
+	$('.flexslider').flexslider({
+		prevText: " ",
+		nextText: " "  	
+	});
 }
 
 /* Init skrollr  plugin */

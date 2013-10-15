@@ -57,7 +57,7 @@ color: red;
 #nav{
 	list-style: none;
 	position: fixed;
-	background-color: rgb(235,233,233);
+	background-color: rgba(235,233,233, 0.7);
 	top: 0px;
 	left: 0px;
 	z-index: 1000;

@@ -245,3 +245,66 @@ color: red;
 	background-image: url(../images/moz5.jpg);
 	background-size: cover;	
 }
+
+/*_________ MULTIPLE.DIV start____________*/
+
+#MULTIPLEDIV
+   	{
+   		background-color: #282A2B;
+   		width: 100%;
+   		height: 100%;
+   	}
+	#mdleft
+	{
+		height: 60%;
+		background-color:  #282A2B;
+	}
+
+	#mdright
+	{
+		height: 60%;
+		background-color: #EAEAEA;
+	}
+
+	#mdleftheader
+	{
+		background-color: #EAEAEA;
+	}
+
+	#mdleftbody
+	{
+		background-color: #EAEAEA;
+	}
+
+	#mdTextHeader{
+
+	}
+
+	#mdTextSubHeader{
+		font-size: 16px;
+		color:grey;
+	}
+
+	#mdText{
+	}
+
+	#mdrighttextcontainer{
+		background-color: #EAEAEA;
+	}
+
+	#mdArrows{
+	}
+
+	#arrowContainer{
+		background-color: #EAEAEA;
+		font-size: 18px;
+	}
+
+	#blackContainer{
+		background-color: #282A2B;
+	}
+
+	.mdSelected{
+		
+	}
+/*_________ MULTIPLE.DIV end____________*/

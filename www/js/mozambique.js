@@ -22,11 +22,11 @@ window.addEventListener('DOMContentLoaded', function() {
 /* On document load!*/
 function initTemplate()
 {
-	initMenuItemVars();
 	updateMenuHrefHeights($(window).height());
 	initSkrollr();
 	initSkrollrMenu(); 	
 	loadSlider();
+	changeDiv(1);  
 }
 
 /**/
@@ -81,3 +81,66 @@ $(window).resize(function(e){
 	var viewportH = $(window).height();
 	updateMenuHrefHeights(viewportH);
 });
+
+
+/*__________________ Multiple div functions [start]__________________*/
+function changeDiv(elem)
+{
+	var header, subheader, textBody;
+	var selectedImage;
+	if (elem==1)
+	{
+		header=$('#md_header1').html();
+		subheader=$('#md_subheader1').html();
+		textBody=$('#md_text1').html();
+
+		$("#idmdimg1").addClass('mdSelected');
+		$("#idmdimg2").removeClass('mdSelected');
+		$("#idmdimg3").removeClass('mdSelected');
+	}
+	else if (elem==2)
+	{
+		header=$('#md_header2').html();
+		subheader=$('#md_subheader2').html();
+		textBody=$('#md_text2').html();
+		$("#idmdimg2").addClass('mdSelected');
+		$("#idmdimg1").removeClass('mdSelected');
+		$("#idmdimg3").removeClass('mdSelected');
+	}
+
+	else {
+		header=$('#md_header3').html();
+		subheader=$('#md_subheader3').html();
+		textBody=$('#md_text3').html();
+		$("#idmdimg3").addClass('mdSelected');
+		$("#idmdimg2").removeClass('mdSelected');
+		$("#idmdimg1").removeClass('mdSelected');
+	}
+
+	$('#mdTextHeader').html(header);
+	$('#mdTextSubHeader').html(subheader);
+	$('#mdText').html(textBody);
+
+	$('#mdArrows').html(generateArrowsLinks(elem));
+
+
+}
+
+function generateArrowsLinks(elem)
+{
+	if (elem==1)
+	{
+		return "<a href='javascript: changeDiv(2)'>> </a>" ; 
+	}
+	else if (elem==2)
+	{
+		return "<a href='javascript: changeDiv(1)'>< </a> / <a href='javascript: changeDiv(3)'>> </a>" ; 
+
+	}
+
+	else {
+		return "<a href='javascript: changeDiv(2)'>< </a>" ; 
+	}
+}
+
+/*__________________ Multiple div functions [end]__________________*/

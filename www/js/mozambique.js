@@ -38,10 +38,11 @@ function loadSlider()
 	});
 
 	$('.flexslider2').flexslider({
-	        prevText: " ",
-	        nextText: " ",
-	        animation: "slide",
-	        direction: "horizontal"    
+        prevText: " ",
+        nextText: " ",
+        animation: "slide",
+        direction: "horizontal",
+		slideshow: "false"	 	    
 	 });
 }
 

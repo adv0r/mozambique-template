@@ -15,7 +15,7 @@
 .flex-container a:active,
 .flexslider a:active,
 .flex-container a:focus,
-.flexslider a:focus  {outline: none;}
+.flexslider a:focus, .flexslider2 a:focus  {outline: none;}
 .slides,
 .flex-control-nav,
 .flex-direction-nav {margin: 0; padding: 0; list-style: none;}
@@ -36,11 +36,11 @@
 
 /* FlexSlider Necessary Styles
 *********************************/
-.flexslider {margin: 0; padding: 0;}
-.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider, .flexslider2 {margin: 0; padding: 0;}
+.flexslider .slides > li, .flexslider2 .slides > li{display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {width: 100%; height:100%; display: block;}
 .flex-pauseplay span {text-transform: capitalize;}
-
+.flexslider2 .slides img{ display: block; margin-left: auto; margin-right: auto; margin-top: 100px;}
 /* Clearfix for the .slides element */
 .slides:after {content: "\0020"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
 html[xmlns] .slides {display: block;}
@@ -53,10 +53,12 @@ html[xmlns] .slides {display: block;}
 
 /* FlexSlider Default Theme
 *********************************/
-.flexslider { margin: 0 0 60px; background: #fff; -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2); box-shadow: 0 1px 4px rgba(0,0,0,.2); zoom: 1; }
+.flexslider { margin: 0 0 60px; background: #fff;/* -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2); box-shadow: 0 1px 4px rgba(0,0,0,.2); */ zoom: 1;}
+.flexslider2 { margin: 0 0 60px;  background-image: url(images/img.gallery-trans-background.png); background-position:center; background-repeat:no-repeat; zoom: 1; }
+
 .flex-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
 .loading .flex-viewport { max-height: 300px; }
-.flexslider .slides { zoom: 1; }
+.flexslider .slides, .flexslider2 .slides { zoom: 1; }
 .carousel li { margin-right: 5px; }
 
 /* Direction Nav */
@@ -64,9 +66,9 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav a  { display: block; width: 50px; height: 50px; margin: -20px 0 0; position: absolute; top: 40%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(0,0,0,0.8); text-shadow: 1px 1px 0 rgba(255,255,255,0.3); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
 .flex-direction-nav .flex-prev { background-image: url(images/arrow-prev.png);  height: 61px; width: 82px; left: 0px;}
 .flex-direction-nav .flex-next { background-image: url(images/arrow-next.png);  height: 61px; width: 82px; right: 0px;}
-.flexslider:hover .flex-prev { opacity: 1; }
-.flexslider:hover .flex-next { opacity: 1; }
-.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
+.flexslider:hover .flex-prev, .flexslider2:hover .flex-prev  { opacity: 1; }
+.flexslider:hover .flex-next, .flexslider2:hover .flex-next { opacity: 1; }
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover, .flexslider2:hover .flex-next:hover, .flexslider2:hover .flex-prev:hover { opacity: 1; }
 .flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
 .flex-direction-nav a:before  { display: inline-block;  }
 .flex-direction-nav a.flex-next:before  { }

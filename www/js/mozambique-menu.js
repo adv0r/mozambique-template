@@ -2,6 +2,7 @@ var menuItem1, menuItem2,menuItem3, menuitem4, menuitem5;
 var menuItem6, menuItem7,menuItem8, menuitem9, menuitem10;
 var menuItem11, menuItem12,menuitem13,menuitem14,menuitem15;
 var menuitem16,menuItem17,menuItem18, menuItem19,menuItem20;
+var menuitem21;
 
 //To be able to use anchor we need to tell the page to scroll to the right position.  
 function updateMenuHrefHeights(viewportH)
@@ -36,7 +37,9 @@ function updateMenuHrefHeights(viewportH)
 	menuItem18.setAttribute( 'data-menu-top', 17* viewportH + cumulativeLenght);  		
 	cumulativeLenght+=2000;		
 	menuItem19.setAttribute( 'data-menu-top', 18* viewportH + cumulativeLenght);  	
-	menuItem20.setAttribute( 'data-menu-top', 19* viewportH + cumulativeLenght);  		
+	menuItem20.setAttribute( 'data-menu-top', 19* viewportH + cumulativeLenght);  
+	menuItem21.setAttribute( 'data-menu-top', 19* viewportH + cumulativeLenght);  		
+		
 }
 
 
@@ -63,5 +66,7 @@ function initMenuItemVars()
 	menuItem18 = document.getElementById("#menu-item-18"); 
 	menuItem19 = document.getElementById("#menu-item-19"); 
 	menuItem20= document.getElementById("#menu-item-20"); 
+	menuItem21= document.getElementById("#menu-item-21"); 
+
 
 }

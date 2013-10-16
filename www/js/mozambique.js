@@ -36,6 +36,13 @@ function loadSlider()
 		prevText: " ",
 		nextText: " "  	
 	});
+
+	$('.flexslider2').flexslider({
+	        prevText: " ",
+	        nextText: " ",
+	        animation: "slide",
+	        direction: "horizontal"    
+	 });
 }
 
 /* Init skrollr  plugin */

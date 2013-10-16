@@ -74,6 +74,7 @@
 
 	#arrowContainer{
 		background-color: #EAEAEA;
+		font-size: 18px;
 	}
 
 	#blackContainer{
@@ -113,9 +114,7 @@
 		  	</div><!-- mdrighttextcontainer-->  	
 
 		  	<div class ="col-sm-3" id="arrowContainer">
-		  		<span id="mdArrows">
-		  		<p> < / > </p>
-		  		</span>
+		  		<span id="mdArrows"> 	</span>
 		  	</div>	<!-- arrowContainer-->  
   		</div> <!-- mdright-->
 
@@ -164,12 +163,31 @@
 		else {
 			header=$('#md_header3').html();
 			subheader=$('#md_subheader3').html();
-			textBody=$('#md_text4').html();
+			textBody=$('#md_text3').html();
 		}
 
 		$('#mdTextHeader').html(header);
 		$('#mdTextSubHeader').html(subheader);
 		$('#mdText').html(textBody);
+
+		$('#mdArrows').html(generateArrowsLinks(elem));
+	}
+
+	function generateArrowsLinks(elem)
+	{
+		if (elem==1)
+		{
+			return "<a href='javascript: changeDiv(2)'>> </a>" ; 
+		}
+		else if (elem==2)
+		{
+			return "<a href='javascript: changeDiv(1)'>< </a> / <a href='javascript: changeDiv(3)'>> </a>" ; 
+
+		}
+
+		else {
+			return "<a href='javascript: changeDiv(2)'>< </a>" ; 
+		}
 	}
 	</script>
 

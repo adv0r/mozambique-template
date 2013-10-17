@@ -13,25 +13,34 @@
     }
 
 </style>
+
+    <!--- ===-======-======-======-=== Stylesheets ===-======-======-======-======-===-->
+
 <link rel="stylesheet" href="css/leaflet.awesome-markers.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/leaflet.fullscreen.css" />
 <link  rel='stylesheet' href='css/mapbox.css'/>
+<link  rel='stylesheet' href='css/style.css'/>
 
 
 <!--[if lte IE 8]>
-      <link href='http://api.tiles.mapbox.com/mapbox.js/v1.0.3/mapbox.ie.css' rel='stylesheet' /> 
+      <link href='css/mapbox.ie.css' rel='stylesheet' /> 
     <![endif]-->
 </head>
+
+ <!--- ===-======-======-======-=== Js Libraries ===-======-======-======-======-===-->
 <script src='js/ext/mapbox.js'></script>
 <script src="js/ext/leaflet.awesome-markers.js"></script>
 <script src="js/ext/Leaflet.fullscreen.js"></script>
 <script src="js/ext/cartodb.js"></script>
 <script src="js/ext/oms.min.js"></script>
 
-   
+<script src="js/mozambique-map.js"></script>
 
-    <script src="js/mozambique-map.js"></script>
+<script type="text/javascript">
+                window.onload = loadMap;
+
+</script>
 
 <body>
 <div id="map">

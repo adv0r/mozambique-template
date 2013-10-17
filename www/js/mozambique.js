@@ -54,7 +54,42 @@ function initSkrollr()
 		//Qui dobbiamo dichiarare l'altezza in pixels delle varie sezioni, da utilizzare in pixel
 		//https://github.com/Prinzhorn/skrollr#working-with-constants
 			container: 400,
-			container2: 50	
+			container2: 50,
+			offset1 : getOffset(1),
+			offset2 : getOffset(2),
+			offset3 : getOffset(3),
+			offset4 : getOffset(4),
+			offset5 : getOffset(5),
+			offset6 : getOffset(6),
+			offset7 : getOffset(7),
+			offset8 : getOffset(8),
+			offset9 : getOffset(9),
+			offset10 : getOffset(10),
+			offset11: getOffset(11),
+			offset12 : getOffset(12),
+			offset13 : getOffset(13),
+			offset14 : getOffset(14),
+			offset15 : getOffset(15),
+			offset16 : getOffset(16),
+			offset17 : getOffset(17),
+			offset18 : getOffset(18),
+			offset19 : getOffset(19),
+			offset20 : getOffset(20),
+			offset21 : getOffset(21),
+			offset22 : getOffset(22),
+			offset23 : getOffset(23),
+			offset24 : getOffset(24),
+			offset25 : getOffset(25),
+			offset26 : getOffset(26),
+			offset27 : getOffset(27),
+			offset28 : getOffset(28),
+			offset29 : getOffset(29),
+			offset30 : getOffset(30),
+			offset31 : getOffset(31),
+			offset32 : getOffset(32),
+			offset33 : getOffset(33),
+			offset34 : getOffset(34),
+			offset35 : getOffset(35)
 		}
 	});
 }
@@ -81,6 +116,8 @@ $(window).resize(function(e){
 	var viewportH = $(window).height();
 	updateMenuHrefHeights(viewportH);
 });
+
+
 
 
 /*__________________ Multiple div functions [start]__________________*/

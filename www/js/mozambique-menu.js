@@ -51,8 +51,8 @@ function getOffset(sectionNumber)
 		case 2: sectionOffset = 0; break;
 		case 3: sectionOffset = 0; break;
 		case 4: sectionOffset = 0; break;
-		case 5: sectionOffset = $('vidbgscrollabletext-text').innerHeight(); break;
-		case 6: sectionOffset = $('vidbggridscrollabletext-text').innerHeight(); break;
+		case 5: sectionOffset = $('vidbgscrollabletext-text').innerHeight(); break; 
+		case 6: sectionOffset = $('vidbggridscrollabletext-text').innerHeight(); break; 
 		case 7: sectionOffset = 0; break;
 		case 8: sectionOffset = 0; break;
 		case 9: sectionOffset = 0; break;

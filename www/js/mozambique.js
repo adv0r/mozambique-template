@@ -53,8 +53,8 @@ function initSkrollr()
 	constants: {
 		//Qui dobbiamo dichiarare l'altezza in pixels delle varie sezioni, da utilizzare in pixel
 		//https://github.com/Prinzhorn/skrollr#working-with-constants
-			container: 400,
-			container2: 50,
+			container: 400, //TODO delete
+			container2: 50, //TODO delete
 			offset1 : getOffset(1),
 			offset2 : getOffset(2),
 			offset3 : getOffset(3),

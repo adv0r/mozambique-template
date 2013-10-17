@@ -27,6 +27,7 @@ function initTemplate()
 	initSkrollrMenu(); 	
 	loadSlider();
 	changeDiv(1);  
+	loadMap();
 }
 
 /**/

@@ -1,6 +1,6 @@
 
 //To be able to use anchor we need to tell the page to scroll to the right position.  
-function updateMenuHrefHeights(viewportH)
+function updateMenuHrefHeights()
 {	
 	 $("#menu-item-1").attr('data-menu-top',  getStartingPixelOfSection(1,viewportH)) ; 
 	 $("#menu-item-2").attr( 'data-menu-top', getStartingPixelOfSection(2,viewportH)); 
@@ -29,7 +29,7 @@ function updateMenuHrefHeights(viewportH)
 }
 
 
-function getStartingPixelOfSection(sectionNumber,viewportH)
+function getStartingPixelOfSection(sectionNumber)
 {
 	var startingPixel ;
 	if(sectionNumber==0)
@@ -53,8 +53,8 @@ function getOffset(sectionNumber)
 		case 2: sectionOffset = 0; break;
 		case 3: sectionOffset = 0; break;
 		case 4: sectionOffset = 0; break;
-		case 5: sectionOffset = $('vidbgscrollabletext-text').innerHeight(); break; 
-		case 6: sectionOffset = $('vidbggridscrollabletext-text').innerHeight(); break; 
+		case 5: sectionOffset = getHeightInPercentage($('vidbgscrollabletext-text').innerHeight()); break; 
+		case 6: sectionOffset = getHeightInPercentage($('vidbggridscrollabletext-text').innerHeight()); break; 
 		case 7: sectionOffset = 0; break;
 		case 8: sectionOffset = 0; break;
 		case 9: sectionOffset = 0; break;
@@ -79,4 +79,10 @@ function getOffset(sectionNumber)
 		default: sectionOffset = 0; break;
 	}
 	return sectionOffset;
+}
+
+/*Returns a height expressed in terms of the % of viewportheight*/
+function getHeightInPercentage(int absoluteValue)
+{
+	return (absoluteValue/viewportH) *100
 }

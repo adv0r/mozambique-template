@@ -82,7 +82,7 @@ function getOffset(sectionNumber)
 }
 
 /*Returns a height expressed in terms of the % of viewportheight*/
-function getHeightInPercentage(int absoluteValue)
+function getHeightInPercentage(absoluteValue)
 {
-	return (absoluteValue/viewportH) *100
+	return (absoluteValue/viewportH) *100;
 }

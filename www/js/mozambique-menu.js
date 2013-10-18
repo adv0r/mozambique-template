@@ -57,7 +57,7 @@ function getOffset(sectionNumber)
 		case 5: sectionOffset = getHeightInPercentage('#vidbgscrollabletext-text'); break; 
 		case 6: sectionOffset = getHeightInPercentage('#vidbggridscrollabletext-text') ; break; 
 		case 7: sectionOffset = 0; break;
-		case 8: sectionOffset = getHeightInPercentage('#vidbggridscrollabletext-text'); break; vidPlayerSide-text
+		case 8: sectionOffset = getHeightInPercentage('#vidbggridscrollabletext-text'); break; 
 		case 9: sectionOffset = 0; break;
 		case 10: sectionOffset = 0; break;
 		case 11: sectionOffset = getHeightInPercentage('#imgFullText-text'); break;

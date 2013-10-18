@@ -39,12 +39,12 @@ function loadSlider()
 	});
 
 	$('.flexslider2').flexslider({
-        prevText: " ",
-        nextText: " ",
-        animation: "slide",
-        direction: "horizontal",
-		slideshow: "false"	 	    
-	 });
+		prevText: " ",
+		nextText: " ",
+		animation: "slide",
+		direction: "horizontal",
+		slideshow: "false"
+	});
 }
 
 /* Init skrollr  plugin */

@@ -23,7 +23,9 @@ function updateMenuHrefHeights(viewportH)
 	 $("#menu-item-19").attr( 'data-menu-top', getStartingPixelOfSection(19,viewportH));  	
 	 $("#menu-item-20").attr( 'data-menu-top', getStartingPixelOfSection(20,viewportH));  
 	 $("#menu-item-21").attr( 'data-menu-top', getStartingPixelOfSection(21,viewportH));  		
-	 $("#menu-item-22").attr('data-menu-top', getStartingPixelOfSection(22,viewportH));	
+	 $("#menu-item-22").attr('data-menu-top', getStartingPixelOfSection(22,viewportH));
+	 $("#menu-item-23").attr('data-menu-top', getStartingPixelOfSection(23,viewportH));	
+	
 }
 
 

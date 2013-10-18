@@ -53,8 +53,8 @@ function getOffset(sectionNumber)
 		case 2: sectionOffset = 0; break;
 		case 3: sectionOffset = 0; break;
 		case 4: sectionOffset = 0; break;
-		case 5: sectionOffset = getHeightInPercentage($('vidbgscrollabletext-text').innerHeight()); break; 
-		case 6: sectionOffset = getHeightInPercentage($('vidbggridscrollabletext-text').innerHeight()); break; 
+		case 5: sectionOffset = getHeightInPercentage($('#vidbgscrollabletext-text').innerHeight()); break; 
+		case 6: sectionOffset = getHeightInPercentage($('#vidbggridscrollabletext-text').innerHeight()); break; 
 		case 7: sectionOffset = 0; break;
 		case 8: sectionOffset = 0; break;
 		case 9: sectionOffset = 0; break;
@@ -84,5 +84,5 @@ function getOffset(sectionNumber)
 /*Returns a height expressed in terms of the % of viewportheight*/
 function getHeightInPercentage(absoluteValue)
 {
-	return (absoluteValue/viewportH) *100;
+	return (absoluteValue/$(window).height()) *100;
 }

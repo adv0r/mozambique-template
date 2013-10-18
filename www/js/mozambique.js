@@ -56,6 +56,7 @@ function initSkrollr()
 		//https://github.com/Prinzhorn/skrollr#working-with-constants
 			container: 400, //TODO delete
 			container2: 50, //TODO delete
+			offset1 : 0,
 			offset1 : getOffset(1),
 			offset2 : getOffset(2),
 			offset3 : getOffset(3),

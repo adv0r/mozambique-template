@@ -43,7 +43,8 @@ function getStartingPixelOfSection(sectionNumber)
 
 
 
-/* Compute the number of pixels scrolled in which each section must be frozen into the viewport */
+/* Compute the number of pixels scrolled expressed in terms of a % of the viewpoer , in which each section must be frozen into the viewport 
+e.g  400 = 400% of the viewport*/
 function getOffset(sectionNumber)
 {
 	var sectionOffset ;
@@ -53,22 +54,22 @@ function getOffset(sectionNumber)
 		case 2: sectionOffset = 0; break;
 		case 3: sectionOffset = 0; break;
 		case 4: sectionOffset = 0; break;
-		case 5: sectionOffset = getHeightInPercentage($('#vidbgscrollabletext-text').innerHeight()); break; 
-		case 6: sectionOffset = getHeightInPercentage($('#vidbggridscrollabletext-text').innerHeight()); break; 
+		case 5: sectionOffset = getHeightInPercentage('#vidbgscrollabletext-text'); break; 
+		case 6: sectionOffset = getHeightInPercentage('#vidbggridscrollabletext-text') ; break; 
 		case 7: sectionOffset = 0; break;
-		case 8: sectionOffset = 0; break;
+		case 8: sectionOffset = getHeightInPercentage('#vidbggridscrollabletext-text'); break; vidPlayerSide-text
 		case 9: sectionOffset = 0; break;
 		case 10: sectionOffset = 0; break;
-		case 11: sectionOffset = 0; break;
-		case 12: sectionOffset = 0; break;
-		case 13: sectionOffset = 0; break;
+		case 11: sectionOffset = getHeightInPercentage('#imgFullText-text'); break;
+		case 12: sectionOffset = getHeightInPercentage('#imgFullTextGrid-text'); break; 
+		case 13: sectionOffset = getHeightInPercentage('#imgFullTextScroll-text'); break;
 		case 14: sectionOffset = 0; break;
 		case 15: sectionOffset = 0; break;
 		case 16: sectionOffset = 0; break;
-		case 17: sectionOffset = 0; break;
+		case 17: sectionOffset = getHeightInPercentage('#animDoubleText-text'); break;
 		case 18: sectionOffset = 0; break;
-		case 19: sectionOffset = 0; break;
-		case 20: sectionOffset = 0; break;
+		case 19: sectionOffset = getHeightInPercentage('#vidPlayerAutotoggleSideText-text'); break;
+		case 20: sectionOffset = getHeightInPercentage('#animTextImg-text'); break;
 		case 21: sectionOffset = 0; break;
 		case 22: sectionOffset = 0; break;
 		case 23: sectionOffset = 0; break;
@@ -82,7 +83,8 @@ function getOffset(sectionNumber)
 }
 
 /*Returns a height expressed in terms of the % of viewportheight*/
-function getHeightInPercentage(absoluteValue)
+function getHeightInPercentage(elementID)
 {
+	absoluteValue = $(elementID).innerHeight()
 	return (absoluteValue/$(window).height()) *100;
 }

@@ -1,6 +1,6 @@
 /* Global variables */
 var s;
-
+var viewportH;
 /*This function is called on page load, works on iOs*/
 window.addEventListener('DOMContentLoaded', function() {	
 
@@ -39,12 +39,12 @@ function loadSlider()
 	});
 
 	$('.flexslider2').flexslider({
-		prevText: " ",
-		nextText: " ",
-		animation: "slide",
-		direction: "horizontal",
-		slideshow: "false"
-	});
+        prevText: " ",
+        nextText: " ",
+        animation: "slide",
+        direction: "horizontal",
+		slideshow: "false"	 	    
+	 });
 }
 
 /* Init skrollr  plugin */
@@ -115,8 +115,8 @@ function initSkrollrMenu()
 
 /* This function is called when the window is resized*/
 $(window).resize(function(e){
-	var viewportH = $(window).height();
-	updateMenuHrefHeights(viewportH);
+	viewportH = $(window).height();
+	updateMenuHrefHeights();
 });
 
 

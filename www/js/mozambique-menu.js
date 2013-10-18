@@ -36,55 +36,61 @@ function getStartingPixelOfSection(sectionNumber)
 		startingPixel=0
 	else
 	{
-		startingPixel = getStartingPixelOfSection(sectionNumber-1) + viewportH + getOffset(sectionNumber-1)
+		startingPixel = getStartingPixelOfSection(sectionNumber-1) + viewportH + getPausing(sectionNumber-1,false)
 	}	
 	return startingPixel;
 }
 
 
 
-/* Compute the number of pixels scrolled expressed in terms of a % of the viewpoer , in which each section must be frozen into the viewport 
-e.g  400 = 400% of the viewport*/
-function getOffset(sectionNumber)
+/* Compute the number of pixels (percentage=false) scrolled (call it with (percentage=true) if you want it expressed in terms of a % of the viewport) ,
+ in which each section must be frozen into the viewport .
+  examples
+	getPausing(3,true) = 400
+	getPausing(3,false) = 3435
+*/
+function getPausing(sectionNumber,percentage)
 {
-	var sectionOffset ;
+	var sectionPausingPx ;
 	switch(sectionNumber)
 	{
-		case 1: sectionOffset = 0; break;
-		case 2: sectionOffset = 0; break;
-		case 3: sectionOffset = 0; break;
-		case 4: sectionOffset = 0; break;
-		case 5: sectionOffset = getHeightInPercentage('#vidbgscrollabletext-text'); break; 
-		case 6: sectionOffset = getHeightInPercentage('#vidbggridscrollabletext-text') ; break; 
-		case 7: sectionOffset = 0; break;
-		case 8: sectionOffset = getHeightInPercentage('#vidbggridscrollabletext-text'); break; 
-		case 9: sectionOffset = 0; break;
-		case 10: sectionOffset = 0; break;
-		case 11: sectionOffset = getHeightInPercentage('#imgFullText-text'); break;
-		case 12: sectionOffset = getHeightInPercentage('#imgFullTextGrid-text'); break; 
-		case 13: sectionOffset = getHeightInPercentage('#imgFullTextScroll-text'); break;
-		case 14: sectionOffset = 0; break;
-		case 15: sectionOffset = 0; break;
-		case 16: sectionOffset = 0; break;
-		case 17: sectionOffset = getHeightInPercentage('#animDoubleText-text'); break;
-		case 18: sectionOffset = 0; break;
-		case 19: sectionOffset = getHeightInPercentage('#vidPlayerAutotoggleSideText-text'); break;
-		case 20: sectionOffset = getHeightInPercentage('#animTextImg-text'); break;
-		case 21: sectionOffset = 0; break;
-		case 22: sectionOffset = 0; break;
-		case 23: sectionOffset = 0; break;
-		case 24: sectionOffset = 0; break;
-		case 25: sectionOffset = 0; break;
-		case 26: sectionOffset = 0; break;
-		case 27: sectionOffset = 0; break;		
-		default: sectionOffset = 0; break;
+		case 1: sectionPausingPx = 0; break;
+		case 2: sectionPausingPx = 0; break;
+		case 3: sectionPausingPx = 0; break;
+		case 4: sectionPausingPx = 0; break;
+		case 5: sectionPausingPx = $('#vidbgscrollabletext-text').innerHeight(); break; 
+		case 6: sectionPausingPx = $('#vidbggridscrollabletext-text').innerHeight() ; break; 
+		case 7: sectionPausingPx = 0; break;
+		case 8: sectionPausingPx = $('#vidbggridscrollabletext-text').innerHeight(); break; 
+		case 9: sectionPausingPx = 0; break;
+		case 10: sectionPausingPx = 0; break;
+		case 11: sectionPausingPx = $('#imgFullText-text').innerHeight(); break;
+		case 12: sectionPausingPx = $('#imgFullTextGrid-text').innerHeight(); break; 
+		case 13: sectionPausingPx = $('#imgFullTextScroll-text').innerHeight(); break;
+		case 14: sectionPausingPx = 0; break;
+		case 15: sectionPausingPx = 0; break;
+		case 16: sectionPausingPx = 0; break;
+		case 17: sectionPausingPx = $('#animDoubleText-text').innerHeight(); break;
+		case 18: sectionPausingPx = 0; break;
+		case 19: sectionPausingPx = $('#vidPlayerAutotoggleSideText-text').innerHeight(); break;
+		case 20: sectionPausingPx = $('#animTextImg-text').innerHeight(); break;
+		case 21: sectionPausingPx = 0; break;
+		case 22: sectionPausingPx = 0; break;
+		case 23: sectionPausingPx = 0; break;
+		case 24: sectionPausingPx = 0; break;
+		case 25: sectionPausingPx = 0; break;
+		case 26: sectionPausingPx = 0; break;
+		case 27: sectionPausingPx = 0; break;		
+		default: sectionPausingPx = 0; break;
 	}
-	return sectionOffset;
+	if(percentage)
+		return getPausingInPercentage(sectionPausingPx);
+	else
+		return sectionPausingPx;
 }
 
 /*Returns a height expressed in terms of the % of viewportheight*/
-function getHeightInPercentage(elementID)
+function getPausingInPercentage(pausing)
 {
-	absoluteValue = $(elementID).innerHeight()
-	return (absoluteValue/$(window).height()) *100;
+	return (pausing/$(window).height()) *100;
 }

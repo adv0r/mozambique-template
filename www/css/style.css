@@ -75,25 +75,65 @@ a{
 }
 
 #scroll-pos{
-color: red;
-}
-
-#nav{
-	list-style: none;
+ 	background-color: black;
+ 	color:red;
+	font-size: 26px;
 	position: fixed;
-	background-color: rgba(235,233,233, 0.7);
-	top: 0px;
-	left: 0px;
-	z-index: 1000;
+	top : 0;
+	left:50%;
+	opacity: 0.6;
+	z-index: 99999;
 }
 
-#nav li{
-	border-bottom: solid whitesmoke 2px;
-	border-right: solid whitesmoke 2px;
-	float: left;
-	padding: 1px 2px 1px 2px;	
-	color: rgb(76,76,76);
+/* ----------- Menu START----------- */
+
+
+#toggleMenu{
+ 	background-color: red;
+	font-size: 26px;
+	position: fixed;
+	top : 0;
+	right:0%;
+	opacity: 0.6;
+	z-index: 99999;
 }
+
+#menuSection{
+	position: fixed;
+	background-color: black;
+	opacity: 0.9;
+	z-index: 9999;
+	height: 100%;
+	width: 100%;
+	display :none;
+}
+
+
+.nav{
+	list-style: none;
+	z-index: 9999;
+	display: block;
+	top:20%;
+}
+
+.nav li{
+	padding: 1px 2px 1px 2px;	
+	color: white;
+	z-index: 9999;
+
+}
+
+.nav li:hover{
+	background-color: rgb(76,76,76);
+	color: white;
+	text-decoration: none;
+	z-index: 9999;
+
+}
+
+
+/* ----------- Menu END----------- */
+
 
 .noPadding{
 	padding: 0 0 0 0;
@@ -102,12 +142,6 @@ color: red;
 #casesAnalysis{
 	padding-left:30px;	
 	color: rgb(76,76,76);
-}
-
-#nav li:hover{
-	background-color: rgb(76,76,76);
-	color: white;
-	text-decoration: none;
 }
 
 

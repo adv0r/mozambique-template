@@ -1,0 +1,654 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+	<title>Report of Land Grabbing in Mozambico</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+     <!--- ===-======-======-======-=== Style sheets ===-======-======-======-======-===-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:900,700,400,300,100' rel='stylesheet' type='text/css'>
+    <link href="css/flexslider.css" rel="stylesheet">
+        <!--- ===-======-======-======-=== Stylesheets for map ===-======-======-======-======-===-->
+
+    <link rel="stylesheet" href="css/leaflet.awesome-markers.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/leaflet.fullscreen.css" />
+    <link  rel='stylesheet' href='css/mapbox.css'/>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    
+    <![endif]-->
+  </head>
+
+  <body>
+  	<div id="toggleMenu"><a href="javascript:toggleMenu()">OpenMenu</a></div>
+  	<div id="scroll-pos">0px</div>
+  	<section id="menuSection" class="col-sm-12">
+		<ul class="col-sm-4 noPadding nav" >
+			<a href="#VID.BG.GRID.TITLE" id="#menu-item-1" title="page1" ><li><h2>1 vid.bg.grid.title</h2></li></a>
+			<a href="#VID.BG.TITLE" id="#menu-item-2" title="page2" ><li><h2>2 vid.bg.title</h2> </li></a>
+			<a href="#VID.BG.NO-TITLE" id="#menu-item-3" title="page3" ><li><h2>3 vid.bg.no-title</h2> </li></a>
+			<a href="#VID.BG.GRID.NO-TITLE" id="#menu-item-4" title="page4" ><li><h2>4 vid.bg.grid.no-title</h2></li></a>
+			<a href="#VID.BG.SCROLL-TEXT" id="#menu-item-5"title="page5" ><li><h2>5 vid.bg.scroll-text</h2></li></a>
+			<a href="#VID.BG.GRID.SCROLL-TEXT" id="#menu-item-6" title="page6" ><li><h2>6 vid.bg.grid.scroll-text</h2></li></a>
+			<a href="#VID.PLAYER" id="#menu-item-7" title="page7" ><li><h2>7 vid.player</h2></li></a>
+			<a href="#VID.PLAYER.SIDE-TEXT" id="#menu-item-8" title="page8" ><li><h2>8 vid.player.side-text</h2></li></a>
+		</ul>
+
+		<ul class="col-sm-4 noPadding nav" >
+			<a href="#IMGFULL"  id="#menu-item-9" title="page9" ><li><h2>9 img.full</h2></li></a>
+			<a href="#IMGFULLGRID"  id="#menu-item-10" title="page10" ><li><h2>10 img.full.grid</h2></li></a>
+			<a href="#IMGFULLTEXT"  id="#menu-item-11" title="page11" ><li><h2>11 img.full.text</h2></li></a>
+			<a href="#IMGFULLTEXTGRID"  id="#menu-item-12" title="page12" ><li><h2>12 img.full.text.grid</h2></li></a>
+			<a href="#IMG.FULL.TEXT-SCROLL"  id="#menu-item-13" title="page13" ><li><h2>13 img.full.text-scroll</h2></li></a>
+			<a href="#ANIM.IMAGES" id="#menu-item-14" title="page14" ><li><h2>14 anim.images</h2></li></a>
+			<a href="#ANIMTEXTS" id="#menu-item-15" title="page15" ><li><h2>15 anim.texts</h2></li></a>
+			<a href="#VIDEOPLAYERAUTOTOGGLE" id="#menu-item-16" title="page16" ><li><h2> 16 vid.player.auto-toggle</h2></li></a>	
+			<a href="#ANIMDOUBLETEXT" id="#menu-item-17" title="page17" ><li><h2> 17 anim.double.text</h2></li></a>
+		</ul>
+
+		<ul class="col-sm-4 noPadding nav" >
+			<a href="#IMGGALLERY" id="#menu-item-18" title="page18" ><li><h2> 18 img.gallery</h2></li></a>	
+			<a href="#VIDPLAYERAUTOTOGGLESIDETEXT" id="#menu-item-19" title="page19" ><li><h2> 19 vid.player.autotoggle.sidetext</h2></li></a>	
+			<a href="#ANIMTEXTIMG" id="#menu-item-20" title="page20" ><li><h2> 20 anim.text-img</h2></li></a>	
+			<a href="#IMGGALLERYTRANS" id="#menu-item-21" title="page21" ><li><h2> 21 img.gallery.trans</h2></li></a>	
+			<a href="#MULTIPLEDIV" id="#menu-item-22" title="page22" ><li><h2> 22 multiplediv</h2></li></a>	
+			<a href="#map" id="#menu-item-23" title="page22" ><li><h2> 23 map</h2></li></a>
+		</ul>	
+	</section>  <!-- menuSection END-->
+
+
+
+
+
+
+		<!-- 1 VID.BG.GRID.TITLE -->
+		<section class="col-sm-12 allPages" 
+		data-0="transform:translate(0,0%);" 
+		data-_pausing1-100p="" 
+		data-_pausing1-200p="transform:translate(0,-100%);" 
+		id="VID.BG.GRID.TITLE">
+			<section class="title_with_grid">
+				<p>
+					<h1 class="ombreggiaturaTesto">1. VID.BG.<br>GRID.TITLE</h1>
+					<h2>AN INVESTIGATION ON <br> THE LAND INVESTMENT IN AFRICA</h2>
+				</p>
+			</section>
+			<section id="video_pattern"></section><!-- Aggiunge la griglia-->
+				<video id="video_background" preload="auto" autoplay="true" loop="loop" > 
+					<source src="data/video/video_loop-moz.m4v" type="video/mp4"> 
+					<source src="data/video/video_loop-moz.webm" type="video/webm"> 
+					Video not supported 
+				</video>
+		</section>
+		<!-- 1 END VID.BG.GRID.TITLE -->
+		
+		<!-- 2 VID.BG.TITLE -->
+		<section class="col-sm-12 allPages" id="VID.BG.TITLE"
+		data-0="transform:translate(0,100%);" 
+		data-_pausing2-100p="transform:translate(0,0%)" 
+		data-_pausing2-200p="" 
+		data-_pausing2-300p="transform:translate(0,-100%)">
+			<section class="title_with_grid">
+				<p>
+					<h1 class="ombreggiaturaTesto">2. VID.BG.<br>TITLE</h1>
+					<h2>AN INVESTIGATION ON <br> THE LAND INVESTMENT IN AFRICA</h2>
+				</p>
+			</section>
+				<video id="video_background" preload="auto" autoplay="true" loop="loop"> 
+					<source src="data/video/video-loop-australia.m4v" type="video/mp4"> 
+					<source src="data/video/video-loop-australia.webm" type="video/webm"> 
+					Video not supported 
+				</video>
+		</section>
+		<!-- 2 END VID.BG.TITLE -->
+		
+		<!-- 3 VID.BG.NO-TITLE -->
+		<section class="col-sm-12 allPages" id="VID.BG.NO-TITLE"
+		data-0="transform:translate(0,200%);" 
+		data-_pausing3-200p="transform:translate(0,0%)" 
+		data-_pausing3-300p="" 
+		data-_pausing3-400p="transform:translate(0,-100%)" >
+		<section class="title_with_grid">
+				<p>
+					<h1 class="ombreggiaturaTesto">3.</h1>
+				</p>
+			</section>
+				<video id="video_background" preload="auto" autoplay="true" loop="loop" > 
+					<source src="data/video/motionHD.m4v" type="video/mp4"> 
+					<source src="data/video/motionHD.webm" type="video/webm"> 
+					Video not supported 
+				</video>
+		</section>
+		<!-- 3 END VID.BG.NO-TITLE -->
+		
+		<!-- 4 VID.BG.GRID.NO-TITLE -->
+		<section class="col-sm-12 allPages" id="VID.BG.GRID.NO-TITLE"
+		data-0="transform:translate(0,300%);" 
+		data-_pausing4-300p="transform:translate(0,0%);" 
+		data-_pausing4-400p="" 
+		data-_pausing4-500p="transform:translate(0,-100%);" >
+		<section class="title_with_grid">
+				<p>
+					<h1 class="ombreggiaturaTesto">4.</h1>
+				</p>
+			</section>
+				<section id="video_pattern"></section><!-- Aggiunge la griglia-->
+				<video id="video_background" preload="auto" autoplay="true" loop="loop" > 
+					<source src="data/video/sunflowersHD.m4v" type="video/mp4"> 
+					<source src="data/video/sunflowersHD.webm" type="video/webm"> 
+					Video not supported 
+				</video>
+		</section>
+		<!-- 4 END VID.BG.GRID.NO-TITLE -->
+		
+		<!-- 5 VID.BG.SCROLL-TEXT -->
+		<section class="col-sm-12 allPages" id="VID.BG.SCROLL-TEXT"
+		data-0="transform:translate(0,400%);" 
+		data-_pausing4-400p="transform:translate(0,0%)" 
+		data-_pausing5-500p="" 
+		data-_pausing5-600p="transform:translate(0,-100%);">
+		      <section class="containerVideo" id="vidbgscrollabletext-text" 
+		      data-_pausing4-400p="top:0%;" 
+		      data-_pausing5-400p="top:-130%">
+					<h1 class="ombreggiaturaTesto">5. VID.BG.<br>SCROLL-TEXT</h1>
+					<p class="testoContenuto">
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            </p>
+			</section>
+					<video id="video_background" preload="auto" autoplay="true" loop="loop" > 
+						<source src="data/video/video_loop-moz.m4v" type="video/mp4"> 
+						<source src="data/video/video_loop-moz.webm" type="video/webm"> 
+						Video not supported 
+					</video>
+
+				
+		</section>
+		<!-- 5 END VID.BG.SCROLL-TEXT -->
+		
+		<!-- 6 VID.BG.GRID.SCROLL-TEXT -->
+		<section class="col-sm-12 allPages" id="VID.BG.SCROLL-TEXT"
+		data-0="transform:translate(0,500%);" 
+		data-_pausing5-500p="transform:translate(0,0%)" 
+		data-_pausing6-600p="" 
+		data-_pausing6-700p="transform:translate(0,-100%);" >
+		      <section class="containerVideo" id="vidbggridscrollabletext-text" 
+		      data-_pausing5-500p="transform:translate(0,0%)" 
+		      data-_pausing6-600p="transform:translate(0,-100%)">
+				<p>
+					<h1 class="ombreggiaturaTesto">VID.BG.GRID.<br>SCROLL-TEXT</h1>
+					<p class="testoContenuto">
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            </p>
+
+				</p>
+			</section>
+				<section id="video_pattern"></section><!-- Aggiunge la griglia-->
+				<video id="video_background" preload="auto" autoplay="true" loop="loop" > 
+					<source src="data/video/video-loop-australia.m4v" type="video/mp4"> 
+					<source src="data/video/video-loop-australia.webm" type="video/webm"> 
+					Video not supported 
+				</video>
+		</section>
+		<!-- 6 END VID.BG.GRID.SCROLL-TEXT -->
+		
+		<!-- 7 VID.PLAYER -->
+		<section id="VID.PLAYER" class="col-sm-12 allPages sfondoBiancoFumoSemplice" 
+		data-0="transform:translate(0,600%);" 
+		data-_pausing7-600p="transform:translate(0,0%)" 
+		data-_pausing7-700p="" 
+		data-_pausing7-800p="transform:translate(0,-100%);">
+
+	       		<section class="containerVideo">
+		       		<video id="videoNonFull" preload="auto" controls > 
+						<source src="data/video/moz-long.m4v" type="video/mp4"> 
+						<source src="data/video/moz-long.webm" type="video/webm"> 
+						Video not supported 
+					</video>
+		       </section>
+		</section>
+		<!-- 7 END VID.PLAYER -->
+		
+		<!-- 8 VID.PLAYER.SIDE-TEXT -->
+		<section class="col-sm-12 allPages" style="background-color:whitesmoke;" data-0="transform:translate(0,1600%);" data-_pausing8-1600p="transform:translate(0,0%)" data-_pausing8-1800p="" data-_pausing8-1800p="transform:translate(0,-100%);" id="VID.PLAYER.SIDE-TEXT">
+		      <section class="videoSxVideoConTesto" >
+		       		<video class="col-sm-6" preload="auto" controls > 
+						<source src="data/video/moz-long.m4v" type="video/mp4"> 
+						<source src="data/video/moz-long.webm" type="video/webm"> 
+						Video not supported 
+					</video>
+		       </section>
+		       
+		       <section class="col-sm-3 containerVideoConTesto" id="vidPlayerSide-text" data-_pausing8-1600p="top:0%;" data-_pausing8-1800p="top:-150%">
+				<h2>VID.PLAYER.<br>SIDE-TEXT</h2>
+				<p>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            </p>
+			</section>
+
+		</section>
+		<!-- 8 END VID.PLAYER.SIDE-TEXT -->
+		
+		<!-- 9 IMG.FULL-->
+		<section id="IMGFULL" class="col-sm-12 allPages" data-0="transform:translate(0,1800%);" data-_pausing9-1800p="transform:translate(0,0%)" data-_pausing9-1900p="" data-_pausing9-1900p="transform:translate(0,-100%);">
+		</section>
+		<!-- 9 END IMG.FULL-->
+		
+		<!-- 10 IMG.FULL.GRID-->
+		<section id="IMGFULLGRID" class="col-sm-12 allPages" data-0="transform:translate(0,1900%);" data-_pausing10-1900p="transform:translate(0,0%)" data-_pausing10-2000="" data-_pausing10-2000="transform:translate(0,-100%);">
+				<section id="video_pattern"></section><!-- Aggiunge la griglia-->
+		</section>
+		<!-- 10 END IMG.FULL.GRID-->
+		
+		<!-- 11 IMG.FULL.TEXT-->
+		<section id="IMGFULLTEXT" class="col-sm-12 allPages" data-0="transform:translate(0,2000%);" data-_pausing11-2000p="transform:translate(0,0%)" data-_pausing11-2100="" data-_pausing11-2100="transform:translate(0,-100%);">
+			<section class="title_with_grid" id="imgFullText-text">
+				<h2>AN INVESTIGATION ON <br> THE LAND INVESTMENT IN AFRICA</h2>
+				<p>Il mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>
+				</p>
+			</section>	
+		</section>
+		<!-- 11 END IMG.FULL.TEXT-->
+
+		<!-- 12 IMG.FULL.TEXT.GRID-->
+		<section id="IMGFULLTEXTGRID" class="col-sm-12 allPages" data-0="transform:translate(0,2100%);" data-_pausing12-2100p="transform:translate(0,0%)" data-_pausing12-2200="" data-_pausing12-2200="transform:translate(0,-100%);">
+			<section class="title_with_grid" id="imgFullTextGrid-text">
+				<h2>LA FOGLIA AN INVESTIGATION ON <br> THE LAND INVESTMENT IN AFRICA</h2>
+				<p>Il mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. </br>
+				</p>
+			</section>	
+			<section id="video_pattern"></section><!-- Aggiunge la griglia-->
+		</section>
+		<!-- 12 END IMG.FULL.TEXT.GRID-->
+		
+		<!-- 13 IMG.FULL.TEXT-SCROLL -->
+<section class="col-sm-12 allPages" data-0="transform:translate(0,2600%);" data-_pausing13-2600p="transform:translate(0,0%)" data-_pausing13-2600p="" data-_pausing13-2700p="transform:translate(0,0%);" id="VIDBGSCROLLTEXT">
+		      <section class="containerVideo" id="imgFullTextScroll-text" data-_pausing13-2600p="top:0%;" data-_pausing13-2700p="top:-150%">
+					<h1 class="ombreggiaturaTesto">IMG.FULL.<br>TEXT-SCROLL</h1>
+					<p class="testoContenuto">
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+		            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+		            </p>
+			</section>
+		</section>
+		<!-- 13 END IMG.FULL.TEXT-SCROLL -->
+		
+		<!-- 14 ANIM.IMAGES -->
+		 <section id="ANIMIMAGES" class="col-sm-12 sfondoBiancoFumo" data-0="transform:translate(0,2900%);" data-_pausing14-2900p="transform:translate(0,0%)" data-_pausing14-2900p="" data-_pausing14-3000p="transform:translate(0,0%);">
+
+		       <section class="" data-_pausing14-3000p="top:0%;" data-_pausing14-3100p="top:-100%">
+		            <img style="position:fixed;top:0%; width:100%; left:0;" data-_pausingx-3000p="opacity:1;" data-_pausingx-3033p="opacity:0;" src="images/anim1.png"/>
+		            <img style="position:fixed;top:0%; width:100%; left:0;" data-_pausingx-3018p="opacity:0;" data-_pausingx-3033p="opacity:1;" data-_pausingx-3048="opacity:0;" src="images/anim2.png"/>
+		            <img style="position:fixed;top:0%; width:100%; left:0;" data-_pausingx-3040p="opacity:0;" data-_pausingx-3100p="opacity:1;" src="images/anim3.png"/>
+		    </section>
+		</section>
+		<!-- 14 END ANIM.IMAGES-->
+		
+		<!-- 15 ANIM.TEXTS -->
+		<section id="ANIMTEXTS" class="col-sm-12 sfondoBiancoFumo" data-0="transform:translate(0,3200%);" data-_pausing15-3200p="transform:translate(0,0%)" data-_pausing15-3200p="" data-_pausing15-3300p="transform:translate(0,-100%);">
+
+		       <section class="ombreggiaturaTesto" data-_pausing15-3200p="top:0%;" data-_pausing15-3300p="top:-100%">
+		            <h1 data-_pausing15-3200p="opacity:1;" data-_pausing15-3233p="opacity:0;"> APPENA ARRIVI IN CIMA <br> CONTINUA A SCROLLARMI <br> CHE SPARISCO</h1>
+		            <h1 data-_pausing15-3233p="opacity:0;" data-_pausing15-3263p="opacity:1;"  data-_pausing15-3263p="opacity:1;" data-_pausing15-3293p="opacity:0;">COMPAIO IO.. <br> ADESSO</h1>
+		            <h1 data-_pausing15-3293p="opacity:0;" data-_pausing15-3323p="opacity:1;" >NOI NON SIAMO <br> NAPOLETANI</h1>
+		    </section>
+		</section>
+		<!-- 15END ANIM.TEXTS-->
+
+		<!-- 16 VIDEO.PLAYER.AUTO-TOGGLE-->
+		<section id="VIDEOPLAYERAUTOTOGGLE" class="col-sm-12 allPages sfondoBiancoFumo" data-0="transform:translate(0,3400%);" data-_pausing16-3400p="transform:translate(0,0%)" data-_pausing16-3500p="" data-_pausing16-3600p="transform:translate(0,-100%);">
+	       		<section class="containerVideo">
+		       		<video muted id="videoToggle" preload="auto" controls > 
+						<source src="data/video/moz-long.m4v" type="video/mp4"> 
+						<source src="data/video/moz-long.webm" type="video/webm"> 
+						Video not supported 
+					</video>
+		       </section>
+		</section>
+		<!-- 16 END VIDEO.PLAYER.AUTO-TOGGLE -->
+		
+		<!-- 17 ANIM.DOUBLE.TEXT -->
+		<section id="ANIMDOUBLETEXT" class="col-sm-12 allPages sfondoBiancoFumo" data-0="transform:translate(0,3600%);" data-_pausing17-3600p="transform:translate(0,0%)" data-_pausing17-3700p="" data-_pausing17-3800p="transform:translate(0,0%);">
+		       
+		       <section class="col-sm-3 containerVideoConTesto" id="animDoubleText-text" data-_pausing17-3600p="top:8%;" data-_pausing17-3800p="top:-150%">
+				<h2>SIDE-TEXT</h2>
+				<p>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            </p>
+			</section>
+			
+			
+			<section class="col-sm-3" >
+		       		<h1 style="position:fixed; top:8%;" data-_pausing17-3620p="opacity:1;" data-_pausing17-3663p="opacity:0;" class="ombreggiaturaTesto" >ANIM DOUBLE TEXT 1</h1>
+		       		<h1 style="position:fixed;top:8%;" data-_pausing17-3663p="opacity:0;" data-_pausing17-3723p="opacity:1;" data-_pausing17-3723p="opacity:1;" data-_pausing17-3763p="opacity:0;" class="ombreggiaturaTesto" >ANIM DOUBLE TEXT 2</h1>
+		       		<h1 style="position:fixed;top:8%;" data-_pausing17-3763p="opacity:0;" data-_pausing17-3783p="opacity:1;" class="ombreggiaturaTesto" >ANIM DOUBLE TEXT 3</h1>
+		       </section>
+		       
+		</section>
+		<!-- 17 END ANIM.DOUBLE.TEXT -->
+		
+		<!-- 18 IMG.GALLERY-->
+		<section id="IMGGALLERY" class="col-sm-12 allPages" data-0="transform:translate(0,3800%);" data-_pausing18-3900p="transform:translate(0,0%)" data-_pausing18-4000=""data-_pausing18-4000="transform:translate(0,-100%);">
+			<section class="title_with_grid flexslider">
+				<ul class="slides">
+				    <li><img src="images/moz1.jpg" alt="Slide" /><p class="flex-caption">Captions and cupcakes. Winning combination.</p></li>
+				    <li><img src="images/moz1337.png" alt="Slide" /><p class="flex-caption">Mozambique poors singing out loud</p</li>
+				    <li><img src="images/moz3.jpg" alt="Slide" /><p class="flex-caption">Captions and cupcakes. Winning combination.</p</li>
+				</ul>
+			</section>	
+		</section>
+		<!-- 18 END IMG.GALLERY-->
+
+
+                              <!-- 19 VID.PLAYER.AUTO-TOGGLE.SIDE-TEX -->
+		<section class="col-sm-12 allPages" style="background-color:whitesmoke;" data-0="transform:translate(0,4000%);" data-_pausing19-4100p="transform:translate(0,0%)" data-_pausing19-4200p="" data-_pausing19-4200p="transform:translate(0,-100%);" id="VIDPLAYERAUTOTOGGLESIDETEXT">
+		      <section class="videoSxVideoConTesto" >
+		       		<video muted id="videoToggle2" class="col-sm-6" preload="auto" controls > 
+						<source src="data/video/moz-long.m4v" type="video/mp4"> 
+						<source src="data/video/moz-long.webm" type="video/webm"> 
+						Video not supported 
+					</video>
+		       </section>
+		       
+		       <section class="col-sm-3 containerVideoConTesto" id="vidPlayerAutotoggleSideText-text">
+				<h2>VID.PLAYER.<br>AUTO-TOGGLE.SIDE-TEXT</h2>
+				<p>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	     
+	            </p>
+			</section>
+
+		</section>
+		<!-- 19 END VID.PLAYER.AUTO-TOGGLE.SIDE-TEX-->
+
+
+		<!-- 20 ANIM.TEXT-IMG -->
+		<section id="ANIMTEXTIMG" class="col-sm-12 allPages sfondoBiancoFumo" data-0="transform:translate(0,4300%);" data-_pausing20-4600p="transform:translate(0,0%)" data-_pausing20-4700p="" data-_pausing20-4800p="transform:translate(0,0%);">
+		       
+		       <section class="col-sm-3 containerVideoConTesto" id="animTextImg-text" data-_pausing20-4600p="top:8%;" data-_pausing20-4800p="top:-150%">
+				<h2>SIDE-TEXT</h2>
+				<p>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            	Sono Impostati per muoversi a velocità differenti così che l'immagine sopra si muova più velocemente di quella sullo sfondo.<br>
+	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
+	            </p>
+			</section>
+			
+			
+			<section class="col-sm-3" >
+		       		<img  src="images/moz1.jpg" alt="Slide" style="position:fixed; top:8%;" data-_pausing20-4600p="opacity:1;" data-_pausing20-4680p="opacity:0;"></img>
+		       		<img  src="images/moz2.jpg" alt="Slide" style="position:fixed;top:8%;" data-_pausing20-4660p="opacity:0;" data-_pausing20-4780p="opacity:1;" data-_pausing20-4720p="opacity:1;" data-_pausing20-4780p="opacity:0;"></img>
+		       		<img  src="images/moz3.jpg" alt="Slide"style="position:fixed;top:8%;" data-_pausing20-4760p="opacity:0;" data-_pausing20-4810p="opacity:1;"></img>
+		       </section>
+		       
+		</section>
+		<!-- 20 END ANIM.TEXT-IMG -->
+
+
+
+		<!-- 21 IMG.GALLERY-TRANS-->
+		<section id="IMGGALLERYTRANS" class="col-sm-12 allPages" data-0="transform:translate(0,4800%);" data-_pausing21-4800p="transform:translate(0,0%)" data-_pausing21-4900="" data-_pausing21-4900="transform:translate(0,-100%);">
+			<section class="title_with_grid flexslider2 sfondoBiancoFumoSlider">
+				<ul class="slides">
+				    <li><img src="images/img1.png" alt="Slide" /> <p class="flex-caption2">PROVA</p></li>
+				    <li><img src="images/img2.png" alt="Slide" /><p class="flex-caption2">prova 2</p></li>
+				</ul>
+			</section>	
+		</section>
+		<!-- 21 END IMG.GALLERY-TRANS-->
+
+
+		<!-- 22 MULTIPLE.DIV -->
+	  	<section id="MULTIPLEDIV" class="col-sm-12 allPages" data-0="transform:translate(0,4900%);" data-_pausing22-5000p="transform:translate(0,0%)" data-_pausing22-5100="" data-_pausing22-5100="transform:translate(0,-100%);">
+	  		<div id="mdleft" class="col-sm-6" >
+	  			<div id="mdleftheader">
+	  				<div class="col-sm-4" id="mdimg1"><a href="javascript: changeDiv(1)" ><img src="images/md1.png" /></a></div>
+	  				<div class="col-sm-4" id="mdimg2"><a href="javascript: changeDiv(2)" ><img src="images/md2.png" /></a></div>
+	  				<div class="col-sm-4" id="mdimg3"><a href="javascript: changeDiv(3)" ><img src="images/md3.png" /></a></div>
+	  			</div> <!-- mdleftheader-->
+
+	   			<div id="mdleftbody">
+	   				  <img style="width:100%; height:100%" src="images/deletethis.png"></img>
+	  			</div> <!-- mdleftbody--> 			
+	  		</div> <!-- mdleft-->
+
+	  		<div  class="col-sm-5" id="mdright">
+		  		<div id="mdrighttextcontainer">
+		  			<p></p>
+			  		<span id="mdTextHeader">
+			  		</span>
+
+			  		<span id="mdTextSubHeader">
+			  		</span>
+
+			  		<span id="mdText">
+			  		</span>
+
+			  	</div><!-- mdrighttextcontainer-->  	
+
+			  	<div class ="col-sm-3" id="arrowContainer">
+			  		<span id="mdArrows"> 	</span>
+			  	</div>	<!-- arrowContainer-->  
+	  		</div> <!-- mdright-->
+
+	  	<!-- Insert texts below-->
+	  	<span id="md_header1" style ="display:none"><h1>Employee</h1> <div>
+	  	<span id="md_subheader1" style ="display:none"> Lorem Ipsum ha un po rotto u cazzum<div>
+		<span id="md_text1" style ="display:none"><p>mus. Ut velit quam, iaculis vitae pellentesque vitae, aliquam vel magna. Maecenas tempus, nisl eu lobortis scelerisque, sem purus porta orci, a dapibus lacus tortor a leo. 	Duis a dictum turpis. Ut ac fringilla lectus, id blandit tortor. Mauris porttitor dui nulla, quis bibendum elit luctus laoreet. Etiam auctor scelerisque tempus. Integer blandit ut felis in viverra. Quisque venenatis consequat arcu, et tincidunt arcu blandit vel. </p>	<div>
+
+	  	<span id="md_header2" style ="display:none"><h1>Employer</h1> <div>
+	  	<span id="md_subheader2" style ="display:none"> Questo si che è un sottotitolo decente<div>
+		<span id="md_text2" style ="display:none"><p> Fagiani gialloi volavano con i miei nipoti. Fagiani gialloi volavano con i miei nipoti. Fagiani gialloi volavano con i miei nipoti. Fagiani gialloi volavano con i miei nipoti. Fagiani gialloi volavano con i miei nipoti. Fagiani gialloi volavano con i miei nipoti. Fagiani gialloi volavano con i miei nipoti. Fagiani gialloi volavano con i miei nipoti. Fagiani gialloi volavano con i miei nipoti. Fagiani gialloi volavano con i miei nipoti. Fagiani gialloi volavano con i miei nipoti. </p><div>
+	  
+	  	<span id="md_header3" style ="display:none"><h1>Chiafsacco</h1> <div>
+	  	<span id="md_subheader3" style ="display:none"> Anche se secondo me stai a di una <div>
+	  	<span id="md_text3" style ="display:none"> La vita non è poi cosi lunga quanto si crede, disse la vacca al mulo.La vita non è poi cosi lunga quanto si crede, disse la vacca al mulo.La vita non è poi cosi lunga quanto si crede, disse la vacca al mulo.La vita non è poi cosi lunga quanto si crede, disse la vacca al mulo.La vita non è poi cosi lunga quanto si crede, disse la vacca al mulo.La vita non è poi cosi lunga quanto si crede, disse la vacca al mulo.La vita non è poi cosi lunga quanto si crede, disse la vacca al mulo.La vita non è poi cosi lunga quanto si crede, disse la vacca al mulo. <div>
+
+	  	</section> 
+	  	<!-- 22 MULTIPLE.DIV -->
+
+
+	  	<!-- 23 MULTIPLE.DIV -->
+		<div id="map" data-0="transform:translate(0,2200%);" data-_pausing23-2200p="transform:translate(0,0%);" data-_pausing23-2300p="" data-_pausing23-2400p="transform:translate(0,-100%);">	  	
+		</div>
+	  	<!-- 24 MULTIPLE.DIV -->
+
+
+	<!--- ===-======-======-======-=== Js Libraries ===-======-======-======-======-===-->
+	<script src="js/ext/jquery.js"></script>	
+	<script src="js/ext/jquery.queryloader2.js"></script>
+	<script src="js/ext/jquery.resize.min.js"></script>
+	<script src="js/ext/bootstrap.min.js"></script>
+	<script src="js/ext/skrollr.min.js"></script>
+	<script src="js/ext/skrollr.menu.min.js"></script>
+	<script src="js/ext/jquery.flexslider-min.js"></script>
+	<script src="js/ext/mapbox.js"></script>
+	<script src="js/ext/leaflet.awesome-markers.js"></script>
+	<script src="js/ext/Leaflet.fullscreen.js"></script>
+	<script src="js/ext/cartodb.js"></script>
+	<script src="js/ext/oms.min.js"></script>
+	<script src="js/mozambique-map.js"></script>
+	<script src="js/mozambique-menu.js"></script>	
+	<script src="js/mozambique.js"></script>
+	<script src="js/mozambique-scroll.js"></script>
+			
+  </body>
+</html>  

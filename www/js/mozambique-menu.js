@@ -1,3 +1,24 @@
+var menuVisible = false;
+
+
+/* Toggle Menu*/
+function toggleMenu()
+{
+	if(menuVisible)
+	{
+		//off
+		menuVisible=false;
+		$('#menuSection').hide();
+	}
+	else
+	{
+		//on
+		$('#menuSection').show();
+		menuVisible=true;
+
+	}
+}
+
 
 //To be able to use anchor we need to tell the page to scroll to the right position.  
 function updateMenuHrefHeights()
@@ -88,6 +109,7 @@ function getPausing(sectionNumber,percentage)
 	else
 		return sectionPausingPx;
 }
+
 
 /*Returns a height expressed in terms of the % of viewportheight*/
 function getPausingInPercentage(pausing)

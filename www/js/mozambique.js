@@ -52,7 +52,8 @@ function initSkrollr()
 {
 	s=skrollr.init({
 	constants: {
-		//Qui dobbiamo dichiarare l'altezza in pixels delle varie sezioni, da utilizzare in pixel
+		//Qui dobbiamo dichiarare l'altezza in pixels delle varie sezioni, da utilizzare in pixel  
+		// The boolean set to true returns the value expressed in % of the viewport, false in pixels
 		//https://github.com/Prinzhorn/skrollr#working-with-constants
 			container: 400, //TODO delete
 			container2: 50, //TODO delete
@@ -176,7 +177,6 @@ function generateArrowsLinks(elem)
 		return "<a href='javascript: changeDiv(1)'>< </a> / <a href='javascript: changeDiv(3)'>> </a>" ; 
 
 	}
-
 	else {
 		return "<a href='javascript: changeDiv(2)'>< </a>" ; 
 	}

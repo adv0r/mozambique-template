@@ -116,16 +116,11 @@ function initSkrollrMenu()
 }
 
 
-
-
 /* This function is called when the window is resized*/
 $(window).resize(function(e){
 	viewportH = $(window).height();
 	updateMenuHrefHeights();
 });
-
-
-
 
 /*__________________ Multiple div functions [start]__________________*/
 function changeDiv(elem)

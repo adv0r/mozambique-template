@@ -23,6 +23,7 @@ function closeMenu()
 {
 	 $( "#menuSection" ).fadeOut( "fast", function() {
 	  });
+	menuVisible=false;
 }
 
 

@@ -1,4 +1,4 @@
-var currentSectionID = 1;
+var currentSectionID = '#lid1';
 /* USAGE: 
 1) markup this div 
         <div id="scroll-pos">0px</div>
@@ -58,6 +58,7 @@ $(window).scroll(function() {
      var newSectionID= getCurrentElementID(currentScroll);
      if(newSectionID!=currentSectionID)
     {
+        //console.log("Scrolled to a new section . Menu Section id = " +newSectionID);
        $(currentSectionID).removeClass('currentMenuItem');
        $(newSectionID).addClass('currentMenuItem');
         currentSectionID= newSectionID;
@@ -71,15 +72,15 @@ $(window).scroll(function() {
 function getCurrentElementID(currentScroll){
     for(i=1;i<=totalNumberOfSections;i++)
     {
-        initialPixel = startingPixel[i];
+        initialPixel = startingPixel[i-1];
         finalPixel= startingPixel[i];
-
-        if(initialPixel<= currentScroll<=finalPixel)
+        if(currentScroll >= initialPixel && currentScroll <=finalPixel)
         {
             //The user is inside the i-th section!
-            return "#menu-item-"+i;
+            return "#lid"+i;
         }
     }
+     return "#lid1";
 }
 
 

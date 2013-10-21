@@ -22,12 +22,14 @@ window.addEventListener('DOMContentLoaded', function() {
 /* On document load!*/
 function initTemplate()
 {
-	updateMenuHrefHeights($(window).height());
+	viewportH = $(window).height();
 	initSkrollr();
 	initSkrollrMenu(); 	
 	loadSlider();
-	changeDiv(1);  
+	changeDiv(1);  //Multiple div selector
 	loadMap();
+	updateMenuHrefHeights($(window).height());
+
 	//$('#scroll-pos').hide(); //un-comment if you want to see pixels
 }
 

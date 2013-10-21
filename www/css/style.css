@@ -76,7 +76,7 @@ a{
 
 #scroll-pos{
  	background-color: black;
- 	color:red;
+ 	color:white;
 	font-size: 26px;
 	position: fixed;
 	top : 0;
@@ -89,13 +89,17 @@ a{
 
 
 #toggleMenu{
- 	background-color: red;
-	font-size: 26px;
+ 	background-color: white;
+	font-size: 16px;
 	position: fixed;
 	top : 0;
 	right:0%;
-	opacity: 0.6;
+	opacity: 1;
 	z-index: 99999;
+}
+
+#toggleMenu:hover{ 
+ 	background-color: #AAA;
 }
 
 #menuSection{
@@ -117,18 +121,26 @@ a{
 }
 
 .nav li{
-	padding: 1px 2px 1px 2px;	
+	padding: 5px 2px 5px 2px;	
 	color: white;
 	z-index: 9999;
-
+	font-size: 24px !important;
+	font-weight: 100;
 }
+
+.currentMenuItem
+{
+	color:orange !important;
+	font-weight: 700 !important;
+	background-color: lime;
+}
+
 
 .nav li:hover{
 	background-color: rgb(76,76,76);
 	color: white;
 	text-decoration: none;
 	z-index: 9999;
-
 }
 
 

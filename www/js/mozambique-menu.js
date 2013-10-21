@@ -8,15 +8,20 @@ function toggleMenu()
 	{
 		//off
 		menuVisible=false;
-		$('#menuSection').hide();
+		 $( "#menuSection" ).fadeOut( "slow", function() {});	
 	}
 	else
 	{
 		//on
-		$('#menuSection').show();
+		 $( "#menuSection" ).fadeIn( "slow", function() {});	
 		menuVisible=true;
-
 	}
+}
+
+function closeMenu()
+{
+	 $( "#menuSection" ).fadeOut( "slow", function() {
+	  });
 }
 
 

@@ -28,7 +28,9 @@ function initTemplate()
 	loadSlider();
 	changeDiv(1);  
 	loadMap();
+	//$('#scroll-pos').hide(); //un-comment if you want to see pixels
 }
+
 
 /**/
 function loadSlider()

@@ -1,5 +1,6 @@
 var menuVisible = false;
-
+var startingPixel = new Array();
+var totalNumberOfSections= 23; //TODO CHANGE WHEN ADD A NEW SECTION!!!!
 
 /* Toggle Menu*/
 function toggleMenu()
@@ -8,19 +9,19 @@ function toggleMenu()
 	{
 		//off
 		menuVisible=false;
-		 $( "#menuSection" ).fadeOut( "slow", function() {});	
+		 $( "#menuSection" ).fadeOut( "fast", function() {});	
 	}
 	else
 	{
 		//on
-		 $( "#menuSection" ).fadeIn( "slow", function() {});	
+		 $( "#menuSection" ).fadeIn( "fast", function() {});	
 		menuVisible=true;
 	}
 }
 
 function closeMenu()
 {
-	 $( "#menuSection" ).fadeOut( "slow", function() {
+	 $( "#menuSection" ).fadeOut( "fast", function() {
 	  });
 }
 
@@ -28,30 +29,41 @@ function closeMenu()
 //To be able to use anchor we need to tell the page to scroll to the right position.  
 function updateMenuHrefHeights()
 {	
-	 $("#menu-item-1").attr('data-menu-top',  getStartingPixelOfSection(1,viewportH)) ; 
-	 $("#menu-item-2").attr( 'data-menu-top', getStartingPixelOfSection(2,viewportH)); 
-	 $("#menu-item-3").attr( 'data-menu-top', getStartingPixelOfSection(3,viewportH)); 
-	 $("#menu-item-4").attr( 'data-menu-top', getStartingPixelOfSection(4,viewportH)); 
-	 $("#menu-item-5").attr( 'data-menu-top', getStartingPixelOfSection(5,viewportH)); 
-	 $("#menu-item-6").attr( 'data-menu-top', getStartingPixelOfSection(6,viewportH)); 
-	 $("#menu-item-7").attr( 'data-menu-top', getStartingPixelOfSection(7,viewportH)); 
-	 $("#menu-item-8").attr( 'data-menu-top', getStartingPixelOfSection(8,viewportH)); 
-	 $("#menu-item-9").attr( 'data-menu-top', getStartingPixelOfSection(9,viewportH)); 
-	 $("#menu-item-10").attr( 'data-menu-top', getStartingPixelOfSection(10,viewportH)); 
-	 $("#menu-item-11").attr( 'data-menu-top', getStartingPixelOfSection(11,viewportH)); 
-	 $("#menu-item-12").attr( 'data-menu-top', getStartingPixelOfSection(12,viewportH)); 
-	 $("#menu-item-13").attr( 'data-menu-top', getStartingPixelOfSection(13,viewportH));  	
-	 $("#menu-item-14").attr( 'data-menu-top', getStartingPixelOfSection(14,viewportH));  	
-	 $("#menu-item-15").attr( 'data-menu-top', getStartingPixelOfSection(15,viewportH));  		
-	 $("#menu-item-16").attr( 'data-menu-top', getStartingPixelOfSection(16,viewportH));  		
-	 $("#menu-item-17").attr( 'data-menu-top', getStartingPixelOfSection(17,viewportH));  		
-	 $("#menu-item-18").attr( 'data-menu-top', getStartingPixelOfSection(18,viewportH));  		
-	 $("#menu-item-19").attr( 'data-menu-top', getStartingPixelOfSection(19,viewportH));  	
-	 $("#menu-item-20").attr( 'data-menu-top', getStartingPixelOfSection(20,viewportH));  
-	 $("#menu-item-21").attr( 'data-menu-top', getStartingPixelOfSection(21,viewportH));  		
-	 $("#menu-item-22").attr('data-menu-top', getStartingPixelOfSection(22,viewportH));
-	 $("#menu-item-23").attr('data-menu-top', getStartingPixelOfSection(23,viewportH));	
-	
+	i=0;
+	startingPixel[i]=0; //useless
+	i++;
+	//Compute starting pixels and put into a global array
+	for(i=1;i<=totalNumberOfSections;i++)
+	{
+		startingPixel[i]=getStartingPixelOfSection(i,viewportH);
+	}
+	i++;
+	startingPixel[i]=$(document).height(); //needed for the last section
+
+	 $("#menu-item-1").attr('data-menu-top',  startingPixel[1]) ; 
+	 $("#menu-item-2").attr( 'data-menu-top', startingPixel[2]); 
+	 $("#menu-item-3").attr( 'data-menu-top', startingPixel[3]); 
+	 $("#menu-item-4").attr( 'data-menu-top', startingPixel[4]); 
+	 $("#menu-item-5").attr( 'data-menu-top', startingPixel[5]); 
+	 $("#menu-item-6").attr( 'data-menu-top', startingPixel[6]); 
+	 $("#menu-item-7").attr( 'data-menu-top', startingPixel[7]); 
+	 $("#menu-item-8").attr( 'data-menu-top', startingPixel[8]); 
+	 $("#menu-item-9").attr( 'data-menu-top', startingPixel[9]); 
+	 $("#menu-item-10").attr( 'data-menu-top', startingPixel[10]);
+	 $("#menu-item-11").attr( 'data-menu-top', startingPixel[11]);
+	 $("#menu-item-12").attr( 'data-menu-top', startingPixel[12]);
+	 $("#menu-item-13").attr( 'data-menu-top', startingPixel[13]); 	
+	 $("#menu-item-14").attr( 'data-menu-top', startingPixel[14]); 	
+	 $("#menu-item-15").attr( 'data-menu-top', startingPixel[15]); 		
+	 $("#menu-item-16").attr( 'data-menu-top', startingPixel[16]); 		
+	 $("#menu-item-17").attr( 'data-menu-top', startingPixel[17]); 		
+	 $("#menu-item-18").attr( 'data-menu-top', startingPixel[18]); 		
+	 $("#menu-item-19").attr( 'data-menu-top', startingPixel[19]); 	
+	 $("#menu-item-20").attr( 'data-menu-top', startingPixel[20]); 
+	 $("#menu-item-21").attr( 'data-menu-top', startingPixel[21]); 		
+	 $("#menu-item-22").attr('data-menu-top', startingPixel[22]);
+	 $("#menu-item-23").attr('data-menu-top', startingPixel[23]);	
+	 //!!!Remember! if you add one  section change the variable totalNumberOfSections
 }
 
 
@@ -114,6 +126,7 @@ function getPausing(sectionNumber,percentage)
 	else
 		return sectionPausingPx;
 }
+
 
 
 /*Returns a height expressed in terms of the % of viewportheight*/

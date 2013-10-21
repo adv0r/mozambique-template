@@ -1,3 +1,4 @@
+var currentSectionID = 1;
 /* USAGE: 
 1) markup this div 
         <div id="scroll-pos">0px</div>
@@ -21,6 +22,7 @@
 /* -  When the user scrolls -  */ 
 
 
+/* called on scroll*/
 $(window).scroll(function() { 
      currentScroll = getScrollTop(); //get the current position
      $('#scroll-pos').html(currentScroll+"px"); //update the view with the current height
@@ -53,7 +55,35 @@ $(window).scroll(function() {
         if (!videoElem2.paused) 
                 videoElem2.pause();
      }
+     var newSectionID= getCurrentElementID(currentScroll);
+     if(newSectionID!=currentSectionID)
+    {
+       $(currentSectionID).removeClass('currentMenuItem');
+       $(newSectionID).addClass('currentMenuItem');
+        currentSectionID= newSectionID;
+    } 
+     
 });
+
+
+
+/* Returns the ID of the current element based on scrollPosition*/
+function getCurrentElementID(currentScroll){
+    for(i=1;i<=totalNumberOfSections;i++)
+    {
+        initialPixel = startingPixel[i];
+        finalPixel= startingPixel[i];
+
+        if(initialPixel<= currentScroll<=finalPixel)
+        {
+            //The user is inside the i-th section!
+            return "#menu-item-"+i;
+        }
+    }
+}
+
+
+
 
 /* -  Get the position from top, cross browser -  */ 
 function getScrollTop(){

@@ -21,9 +21,9 @@ function toggleMenu()
 
 function closeMenu()
 {
+	 menuVisible=false;
 	 $( "#menuSection" ).fadeOut( "fast", function() {
-	  });
-	menuVisible=false;
+	  });	
 }
 
 

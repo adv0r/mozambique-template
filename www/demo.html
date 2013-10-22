@@ -16,6 +16,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:900,700,400,300,100' rel='stylesheet' type='text/css'>
     <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/video-js.css" rel="stylesheet">
+
         <!--- ===-======-======-======-=== Stylesheets for map ===-======-======-======-======-===-->
 
     <link rel="stylesheet" href="css/leaflet.awesome-markers.css">
@@ -28,11 +30,18 @@
       <script src="js/respond.min.js"></script>
     
     <![endif]-->
+
+ <!-- Needed by video.js . better using a plugin -->
+ <script type="text/javascript">
+  document.createElement('video');document.createElement('audio');
+</script>
+
   </head>
 
   <body>
   	<div id="toggleMenu"><a href="javascript:toggleMenu()">INDEX <img id="menuToggleIcon" src="images/menu-open.png"></img></a> </div>
-  	<div id="scroll-pos">0px</div>
+	<div id="scroll-pos">0px ; 0p</div>
+	<div id="sectionTracker">section1</div>
   	<section id="menuSection" class="col-sm-12" onclick="javascript:closeMenu();">
 		<ul class="col-sm-4 noPadding nav" >
 			<a href="#VID.BG.GRID.TITLE" id="menu-item-1" title="page1" ><li id="lid1"  class="currentMenuItem">1 vid.bg.grid.title</li></a>
@@ -290,11 +299,14 @@
 	data-_pausing7-1100p="transform:translate(0,-100%);">
        		<section class="containerVideo">
        			<h1 class="ombreggiaturaTesto">7. VIDPLAYER</h1>
-	       		<video id="videoNonFull" preload="auto" controls > 
-					<source src="data/video/moz-long.m4v" type="video/m4v"> 
-					<source src="data/video/moz-long.webm" type="video/webm"> 
-					Video not supported 
-				</video>
+			<video id="videoNonFull" class="video-js vjs-default-skin vjs-big-play-centered"
+			  controls preload="auto" width="640" height="264"
+			  poster="images/moz3.jpg"
+			  data-setup='{"example_option":true}'>
+				<source src="data/video/moz-long.m4v" type="video/mp4"> 
+				<source src="data/video/moz-long.webm" type="video/webm"> 
+				Video not supported 
+			</video>
 	       </section>
 	</section>
 	<!-- 7 END VID.PLAYER -->
@@ -307,11 +319,15 @@
 	data-_pausing8-1550p="transform:translate(0,-150%);">
 	      <section class="videoSxVideoConTesto" >
 	      <h1 class="ombreggiaturaTesto">8 VID.PLAYER.SIDE-TEXT</h1>
-	       		<video id="VIDPLAYERSIDE" class="col-sm-6" preload="auto" controls > 
-					<source src="data/video/moz-long.m4v" type="video/m4v"> 
-					<source src="data/video/moz-long.webm" type="video/webm"> 
-					Video not supported 
-				</video>
+	      <video id="VIDPLAYERSIDE" class="col-sm-6 video-js vjs-default-skin vjs-big-play-centered"
+		  controls preload="auto" width="640" height="264"
+		  poster="images/moz5.jpg"
+		  data-setup='{"example_option":true}'>
+			<source src="data/video/moz-long.m4v" type="video/m4v"> 
+			<source src="data/video/moz-long.webm" type="video/webm"> 
+			Video not supported 
+    	        </video>
+
 	       </section>
 	       
 	       <section class="col-sm-3 containerVideoConTesto" id="vidPlayerSide-text" 
@@ -478,11 +494,14 @@
 	data-_pausing16-4700p="transform:translate(0,-150%);">
        		<section class="containerVideo">
 	       		<h1 class="ombreggiaturaTesto">16. VIDEO.PLAYER.AUTO-TOGGLE</h1>
-	       		<video muted id="videoToggle" preload="auto" controls > 
-					<source src="data/video/moz-long.m4v" type="video/mp4"> 
-					<source src="data/video/moz-long.webm" type="video/webm"> 
-					Video not supported 
-				</video>
+	       		<video id="videoToggle" class="col-sm-6 video-js vjs-default-skin vjs-big-play-centered"
+				  controls preload="auto" width="640" height="264"
+				  poster="images/moz1.jpg"
+				  data-setup='{"example_option":true}'>
+				 <source src="data/video/moz-long.m4v" type='video/mp4' />
+				 <source src="data/video/moz-long.webm" type='video/webm' />
+				 Video not supported 
+			</video>
 	       </section>
 	</section>
 	<!-- 16 END VIDEO.PLAYER.AUTO-TOGGLE -->
@@ -559,6 +578,7 @@
 	<script src="js/ext/Leaflet.fullscreen.js"></script>
 	<script src="js/ext/cartodb.js"></script>
 	<script src="js/ext/oms.min.js"></script>
+	<script src="js/ext/video.js"></script>
 	<script src="js/mozambique-map.js"></script>
 	<script src="js/mozambique-menu.js"></script>	
 	<script src="js/mozambique.js"></script>

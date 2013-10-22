@@ -37,8 +37,7 @@ $(window).scroll(function() {
     videoList.push({videoid:"VIDPLAYERSIDE", containerid:"VIDPLAYERSIDE-TEXT",autotoggle:false});
                
     
-    
-    for (i=0; i<=videoList.length;i++)
+    for (i=0; i<videoList.length;i++)
     {
             tempVideoObj = videoList[i];
             videoContainer = document.getElementById(tempVideoObj.containerid);

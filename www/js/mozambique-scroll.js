@@ -42,20 +42,21 @@ $(window).scroll(function() {
     {
             tempVideoObj = videoList[i];
             videoContainer = document.getElementById(tempVideoObj.containerid);
-            videoElem = videojs(tempVideoObj.videoid);
+            videojs(tempVideoObj.videoid)).ready(function(){ //wait until the video is ready
+                    var videoElem = this;
+                    if(isScrolledIntoView(videoContainer))
+                    {
 
-
-            if(isScrolledIntoView(videoContainer))
-            {
-                  if (videoElem.paused && tempVideoObj.autotoggle) 
-                  videoElem.play(); //play the video if the autotoggle is set to true
-            }
-            else
-            {
-                if (!videoElem.paused) 
-                    videoElem.pause(); //pause the video and set position to 0
-                    restartVideo(tempVideoObj.videoid);
-            }
+                          if (videoElem.paused && tempVideoObj.autotoggle) 
+                          videoElem.play(); //play the video if the autotoggle is set to true
+                    }
+                    else
+                    {
+                        if (!videoElem.paused) 
+                            videoElem.pause(); //pause the video and set position to 0
+                            restartVideo(tempVideoObj.videoid);
+                    }
+                });
     }
 
      var newSectionID= getCurrentElementID(currentScroll);

@@ -167,8 +167,9 @@ function changeDiv(elem)
 
 /* Stops the video */
     function restartVideo(elemID) {
-        var video = document.getElementById(elemID);
-        video.currentTime = 0;
+
+        var video = videojs(elemID);
+        video.currentTime(0);
     }
 
 

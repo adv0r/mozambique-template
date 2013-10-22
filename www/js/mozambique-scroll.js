@@ -42,7 +42,8 @@ $(window).scroll(function() {
     {
             tempVideoObj = videoList[i];
             videoContainer = document.getElementById(tempVideoObj.containerid);
-            videoElem = document.getElementById(tempVideoObj.videoid);
+            videoElem = videojs(tempVideoObj.videoid);
+
 
             if(isScrolledIntoView(videoContainer))
             {

@@ -85,6 +85,17 @@ a{
 	z-index: 99999;
 }
 
+#sectionTracker{
+ 	background-color: black;
+ 	color:white;
+	font-size: 26px;
+	position: fixed;
+	top : 0;
+	left:0;
+	opacity: 0.6;
+	z-index: 99999;
+}
+
 /* ----------- Menu START----------- */
 
 

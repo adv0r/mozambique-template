@@ -42,7 +42,7 @@ $(window).scroll(function() {
     {
             tempVideoObj = videoList[i];
             videoContainer = document.getElementById(tempVideoObj.containerid);
-            videojs(tempVideoObj.videoid)).ready(function(){ //wait until the video is ready
+            videojs(tempVideoObj.videoid).ready(function(){ //wait until the video is ready
                     var videoElem = this;
                     if(isScrolledIntoView(videoContainer))
                     {
@@ -63,7 +63,7 @@ $(window).scroll(function() {
      if(newSectionID!=currentSectionID)
     {
        //console.log("Scrolled to a new section . Menu Section id = " +newSectionID);
-       $('#sectionTracker').html(newSectionID);
+       $('#sectionTracker').html("section "+newSectionID.substring(4));
        $(currentSectionID).removeClass('currentMenuItem');
        $(newSectionID).addClass('currentMenuItem');
         currentSectionID= newSectionID;

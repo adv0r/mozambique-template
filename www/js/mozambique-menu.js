@@ -123,7 +123,7 @@ function getPausing(sectionNumber,percentage)
 		default: sectionPausingPx = 0; break;
 	}
 	if(percentage)
-		return getPausingInPercentage(sectionPausingPx);
+		return getPixelsInPercentage(sectionPausingPx);
 	else
 		return sectionPausingPx;
 }
@@ -131,7 +131,7 @@ function getPausing(sectionNumber,percentage)
 
 
 /*Returns a height expressed in terms of the % of viewportheight*/
-function getPausingInPercentage(pausing)
+function getPixelsInPercentage(pausing)
 {
 	return (pausing/$(window).height()) *100;
 }

@@ -29,8 +29,9 @@ function initTemplate()
 	changeDiv(1);  //Multiple div selector
 	loadMap();
 	updateMenuHrefHeights($(window).height());
+	videojs.options.flash.swf = "data/video-js.swf";
 
-	//$('#scroll-pos').hide(); //un-comment if you want to see pixels
+	//$('#scroll-pos').hide(); //un-comment if you want to hide pixels
 }
 
 

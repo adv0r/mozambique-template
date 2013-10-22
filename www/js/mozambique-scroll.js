@@ -25,7 +25,8 @@ var currentSectionID = '#lid1';
 /* called on scroll*/
 $(window).scroll(function() { 
      currentScroll = getScrollTop(); //get the current position
-     $('#scroll-pos').html(currentScroll+"px"); //update the view with the current height
+     currentScrollP = Math.round(getPixelsInPercentage(currentScroll));
+     $('#scroll-pos').html(currentScroll+"px ; "+currentScrollP+"p"); //update the view with the current height
 
 
      //Create an array of object for videos with all the video IDs and the corresponding containers and the autotoggle
@@ -59,7 +60,8 @@ $(window).scroll(function() {
      var newSectionID= getCurrentElementID(currentScroll);
      if(newSectionID!=currentSectionID)
     {
-        //console.log("Scrolled to a new section . Menu Section id = " +newSectionID);
+       //console.log("Scrolled to a new section . Menu Section id = " +newSectionID);
+       $('#sectionTracker').html(newSectionID);
        $(currentSectionID).removeClass('currentMenuItem');
        $(newSectionID).addClass('currentMenuItem');
         currentSectionID= newSectionID;

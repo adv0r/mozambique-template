@@ -161,9 +161,15 @@ function changeDiv(elem)
 	$('#mdText').html(textBody);
 
 	$('#mdArrows').html(generateArrowsLinks(elem));
-
-
 }
+
+
+/* Stops the video */
+    function restartVideo(elemID) {
+        var video = document.getElementById(elemID);
+        video.currentTime = 0;
+    }
+
 
 function generateArrowsLinks(elem)
 {

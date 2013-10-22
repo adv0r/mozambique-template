@@ -27,34 +27,36 @@ $(window).scroll(function() {
      currentScroll = getScrollTop(); //get the current position
      $('#scroll-pos').html(currentScroll+"px"); //update the view with the current height
 
-    //Auto toggle the video
-     var videoContainer = document.getElementById('VIDEOPLAYERAUTOTOGGLE');
-     var videoContainer2 = document.getElementById('VIDPLAYERAUTOTOGGLESIDETEXT');
 
-     var videoElem = document.getElementById('videoToggle');
-     var videoElem2 = document.getElementById('videoToggle2');
+     //Create an array of object for videos with all the video IDs and the corresponding containers and the autotoggle
+    videoList = new Array();
+    
+    videoList.push({videoid:"videoToggle", containerid:"VIDEOPLAYERAUTOTOGGLE",autotoggle:true});
+    videoList.push({videoid:"videoToggle2", containerid:"VIDPLAYERAUTOTOGGLESIDETEXT",autotoggle:true});
+    videoList.push({videoid:"videoNonFull", containerid:"VIDPLAYER",autotoggle:false});
+    videoList.push({videoid:"VIDPLAYERSIDE", containerid:"VIDPLAYERSIDE-TEXT",autotoggle:false});
+               
+    
+    
+    for (i=0; i<=videoList.length;i++)
+    {
+            tempVideoObj = videoList[i];
+            videoContainer = document.getElementById(tempVideoObj.containerid);
+            videoElem = document.getElementById(tempVideoObj.videoid);
 
-     if(isScrolledIntoView(videoContainer))
-     {
-        if (videoElem.paused) 
-                  videoElem.play();
-     }
-     else
-     {
-        if (!videoElem.paused) 
-                videoElem.pause();
-     }
+            if(isScrolledIntoView(videoContainer))
+            {
+                  if (videoElem.paused && tempVideoObj.autotoggle) 
+                  videoElem.play(); //play the video if the autotoggle is set to true
+            }
+            else
+            {
+                if (!videoElem.paused) 
+                    videoElem.pause(); //pause the video and set position to 0
+                    restartVideo(tempVideoObj.videoid);
+            }
+    }
 
-     if(isScrolledIntoView(videoContainer2))
-     {
-        if (videoElem2.paused) 
-                  videoElem2.play();
-     }
-     else
-     {
-        if (!videoElem2.paused) 
-                videoElem2.pause();
-     }
      var newSectionID= getCurrentElementID(currentScroll);
      if(newSectionID!=currentSectionID)
     {
@@ -63,7 +65,6 @@ $(window).scroll(function() {
        $(newSectionID).addClass('currentMenuItem');
         currentSectionID= newSectionID;
     } 
-     
 });
 
 

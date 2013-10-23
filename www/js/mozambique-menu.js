@@ -71,8 +71,8 @@ function updateMenuHrefHeights()
 function getStartingPixelOfSection(sectionNumber)
 {
 	var startingPixel ;
-	if(sectionNumber==0)
-		startingPixel=0
+	if(sectionNumber==1)
+		startingPixel=1
 	else
 	{
 		startingPixel = getStartingPixelOfSection(sectionNumber-1) + viewportH + getPausing(sectionNumber-1,false)
@@ -91,14 +91,15 @@ function getStartingPixelOfSection(sectionNumber)
 function getPausing(sectionNumber,percentage)
 {
 	var sectionPausingPx ;
+	var defaultTime = 800;
 	switch(sectionNumber)
 	{
 		case 1: sectionPausingPx = 0; break;
 		case 2: sectionPausingPx = 0; break;
 		case 3: sectionPausingPx = 0; break;
 		case 4: sectionPausingPx = 0; break;
-		case 5: sectionPausingPx = $('#vidbgscrollabletext-text').innerHeight(); break; 
-		case 6: sectionPausingPx = $('#vidbggridscrollabletext-text').innerHeight() ; break; 
+		case 5: sectionPausingPx = viewportH + $('#vidbgscrollabletext-text').innerHeight(); break; 
+		case 6: sectionPausingPx = viewportH + $('#vidbggridscrollabletext-text').innerHeight(); break; 
 		case 7: sectionPausingPx = 0; break;
 		case 8: sectionPausingPx = $('#vidbggridscrollabletext-text').innerHeight(); break; 
 		case 9: sectionPausingPx = 0; break;

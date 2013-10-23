@@ -76,8 +76,8 @@ $(window).scroll(function() {
 function getCurrentElementID(currentScroll){
     for(i=1;i<=totalNumberOfSections;i++)
     {
-        initialPixel = startingPixel[i-1];
-        finalPixel= startingPixel[i];
+        initialPixel = startingPixel[i];
+        finalPixel= startingPixel[i+1];
         if(currentScroll >= initialPixel && currentScroll <=finalPixel)
         {
             //The user is inside the i-th section!

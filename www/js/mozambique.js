@@ -30,11 +30,22 @@ function initTemplate()
 	loadMap();
 	updateMenuHrefHeights($(window).height());
 	videojs.options.flash.swf = "data/video-js.swf";
-	$(".fancybox").fancybox();
+	loadOverlays();
 
 	//$('#scroll-pos').hide(); //un-comment if you want to hide pixels
 }
 
+function loadOverlays()
+{
+	$(".fancybox").fancybox({
+	    openEffect  : 'none',
+	    closeEffect : 'none',
+	    afterLoad   : function() {
+	        this.inner.prepend( '<h3>1. Get the code</h4>' );
+	        this.content = '<h4>2. embed it into your blog</h5>' + this.content.html();
+  		  }
+	  });
+}
 
 /**/
 function loadSlider()

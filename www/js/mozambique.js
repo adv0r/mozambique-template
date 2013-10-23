@@ -30,6 +30,7 @@ function initTemplate()
 	loadMap();
 	updateMenuHrefHeights($(window).height());
 	videojs.options.flash.swf = "data/video-js.swf";
+	$(".fancybox").fancybox();
 
 	//$('#scroll-pos').hide(); //un-comment if you want to hide pixels
 }
@@ -161,7 +162,6 @@ function changeDiv(elem)
 	$('#mdTextSubHeader').html(subheader);
 	$('#mdText').html(textBody);
 
-	$('#mdArrows').html(generateArrowsLinks(elem));
 }
 
 
@@ -172,21 +172,5 @@ function changeDiv(elem)
         video.currentTime(0);
     }
 
-
-function generateArrowsLinks(elem)
-{
-	if (elem==1)
-	{
-		return "<a href='javascript: changeDiv(2)'>> </a>" ; 
-	}
-	else if (elem==2)
-	{
-		return "<a href='javascript: changeDiv(1)'>< </a> / <a href='javascript: changeDiv(3)'>> </a>" ; 
-
-	}
-	else {
-		return "<a href='javascript: changeDiv(2)'>< </a>" ; 
-	}
-}
 
 /*__________________ Multiple div functions [end]__________________*/

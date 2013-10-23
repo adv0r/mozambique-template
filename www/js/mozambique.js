@@ -64,6 +64,18 @@ function loadSlider()
 	 });
 }
 
+function getStartingPercentageOfSection(sectionNumber)
+{
+	var startingPercentage ;
+	if(sectionNumber==1)
+		startingPercentage=0;
+	else
+	{
+		startingPercentage = getStartingPercentageOfSection(sectionNumber-1) + 100 + getPausing(sectionNumber-1,true)
+	}	
+	return startingPercentage;
+}
+
 /* Init skrollr  plugin */
 function initSkrollr()
 {
@@ -75,41 +87,41 @@ function initSkrollr()
 			container: 400, //TODO delete
 			container2: 50, //TODO delete
 			pausing0 : 0,
-			pausing1 : getPausing(1,true),
-			pausing2 : getPausing(2,true),
-			pausing3 : getPausing(3,true),
-			pausing4 : getPausing(4,true),
-			pausing5 : getPausing(5,true),
-			pausing6 : getPausing(6,true),
-			pausing7 : getPausing(7,true),
-			pausing8 : getPausing(8,true),
-			pausing9 : getPausing(9,true),
-			pausing10 : getPausing(10,true),
-			pausing11 : getPausing(11,true),
-			pausing12 : getPausing(12,true),
-			pausing13 : getPausing(13,true),
-			pausing14 : getPausing(14,true),
-			pausing15 : getPausing(15,true),
-			pausing16 : getPausing(16,true),
-			pausing17 : getPausing(17,true),
-			pausing18 : getPausing(18,true),
-			pausing19 : getPausing(19,true),
-			pausing20 : getPausing(20,true),
-			pausing21 : getPausing(21,true),
-			pausing22 : getPausing(22,true),
-			pausing23 : getPausing(23,true),
-			pausing24 : getPausing(24,true),
-			pausing25 : getPausing(25,true),
-			pausing26 : getPausing(26,true),
-			pausing27 : getPausing(27,true),
-			pausing28 : getPausing(28,true),
-			pausing29 : getPausing(29,true),
-			pausing30 : getPausing(30,true),
-			pausing31 : getPausing(31,true),
-			pausing32 : getPausing(32,true),
-			pausing33 : getPausing(33,true),
-			pausing34 : getPausing(34,true),
-			pausing35 : getPausing(35,true)
+			pausing1 : getStartingPercentageOfSection(1,true),
+			pausing2 : getStartingPercentageOfSection(2,true),
+			pausing3 : getStartingPercentageOfSection(3,true),
+			pausing4 : getStartingPercentageOfSection(4,true),
+			pausing5 : getStartingPercentageOfSection(5,true),
+			pausing6 : getStartingPercentageOfSection(6,true),
+			pausing7 : getStartingPercentageOfSection(7,true),
+			pausing8 : getStartingPercentageOfSection(8,true),
+			pausing9 : getStartingPercentageOfSection(9,true),
+			pausing10 : getStartingPercentageOfSection(10,true),
+			pausing11 : getStartingPercentageOfSection(11,true),
+			pausing12 : getStartingPercentageOfSection(12,true),
+			pausing13 : getStartingPercentageOfSection(13,true),
+			pausing14 : getStartingPercentageOfSection(14,true),
+			pausing15 : getStartingPercentageOfSection(15,true),
+			pausing16 : getStartingPercentageOfSection(16,true),
+			pausing17 : getStartingPercentageOfSection(17,true),
+			pausing18 : getStartingPercentageOfSection(18,true),
+			pausing19 : getStartingPercentageOfSection(19,true),
+			pausing20 : getStartingPercentageOfSection(20,true),
+			pausing21 : getStartingPercentageOfSection(21,true),
+			pausing22 : getStartingPercentageOfSection(22,true),
+			pausing23 : getStartingPercentageOfSection(23,true),
+			pausing24 : getStartingPercentageOfSection(24,true),
+			pausing25 : getStartingPercentageOfSection(25,true),
+			pausing26 : getStartingPercentageOfSection(26,true),
+			pausing27 : getStartingPercentageOfSection(27,true),
+			pausing28 : getStartingPercentageOfSection(28,true),
+			pausing29 : getStartingPercentageOfSection(29,true),
+			pausing30 : getStartingPercentageOfSection(30,true),
+			pausing31 : getStartingPercentageOfSection(31,true),
+			pausing32 : getStartingPercentageOfSection(32,true),
+			pausing33 : getStartingPercentageOfSection(33,true),
+			pausing34 : getStartingPercentageOfSection(34,true),
+			pausing35 : getStartingPercentageOfSection(35,true)
 		}
 	});
 }

@@ -149,7 +149,7 @@
 
                     L.control.layers(null, overlayMaps).addTo(map);
 
-                    var info = L.control( { position: 'bottomright' } );
+                    var info = L.control( { position: 'bottomleft' } );
 
                 info.onAdd = function (map) {
                         this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"

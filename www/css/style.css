@@ -15,6 +15,7 @@
 	height: 100%;
 	background: transparent center no-repeat;
 	background-size: cover;
+	box-shadow: 0 0 20px #000;
 }
 
 
@@ -26,6 +27,7 @@
 	left:0px;
 	width: 100%;
 	height: 100%;
+	box-shadow: 0 0 20px #000;
 
 }
 .sfondoBiancoFumoSlider{
@@ -35,6 +37,7 @@
 	left:0px;
 	width: 100%;
 	height: 100%;
+	box-shadow: 0 0 20px #000;
 }
 
 .sfondoBiancoFumoSemplice{
@@ -392,8 +395,6 @@ a{
 	font-size: 17px;
 	background: rgba(255,255,255,0.8);
 	box-shadow: 0 0 15px rgba(0,0,0,0.2);
-
-	font-family: "Palatino Linotype";
     }
 
     .info h4 {

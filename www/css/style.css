@@ -388,13 +388,10 @@ a{
 	padding: 6px 8px;
 	width: 220px;
 	padding: 20px;
-	text-align: justify;
 	margin: 10px;
-	font: 17px Arial, Helvetica, sans-serif;
-	background: white;
+	font-size: 17px;
 	background: rgba(255,255,255,0.8);
 	box-shadow: 0 0 15px rgba(0,0,0,0.2);
-	border-radius: 5px;
 
 	font-family: "Palatino Linotype";
     }

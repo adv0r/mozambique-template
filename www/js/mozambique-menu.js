@@ -80,7 +80,7 @@ function getStartingPixelOfSection(sectionNumber)
 	return startingPixel;
 }
 
-/*Returns the startingPercentage of section 'sectionNumber'*/
+/*Returns the startingPercentage of section 'sectionNumber' - the instant in which starts getting into the view*/
 function getStartingPercentageOfSection(sectionNumber)
 {
 	var startingPercentage ;

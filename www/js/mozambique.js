@@ -64,18 +64,6 @@ function loadSlider()
 	 });
 }
 
-function getStartingPercentageOfSection(sectionNumber)
-{
-	var startingPercentage ;
-	if(sectionNumber==1)
-		startingPercentage=0;
-	else
-	{
-		startingPercentage = getStartingPercentageOfSection(sectionNumber-1) + 100 + getPausing(sectionNumber-1,true)
-	}	
-	return startingPercentage;
-}
-
 /* Init skrollr  plugin */
 function initSkrollr()
 {

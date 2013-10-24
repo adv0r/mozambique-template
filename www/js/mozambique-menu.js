@@ -81,6 +81,19 @@ function getStartingPixelOfSection(sectionNumber)
 }
 
 
+function getStartingPercentageOfSection(sectionNumber)
+{
+	var startingPercentage ;
+	if(sectionNumber==1)
+		startingPercentage=0;
+	else
+	{
+		startingPercentage = getStartingPercentageOfSection(sectionNumber-1)  + getPausing(sectionNumber-1,true)
+	}	
+	return startingPercentage;
+}
+
+
 
 /* Compute the number of pixels (percentage=false) scrolled (call it with (percentage=true) if you want it expressed in terms of a % of the viewport) ,
  in which each section must be frozen into the viewport .
@@ -88,6 +101,7 @@ function getStartingPixelOfSection(sectionNumber)
 	getPausing(3,true) = 400
 	getPausing(3,false) = 3435
 */
+
 function getPausing(sectionNumber,percentage)
 {
 	var sectionPausingPx ;

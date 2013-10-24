@@ -9,250 +9,172 @@
  * Licensed under the MIT license:
  *   http://www.opensource.org/licenses/mit-license.php
  *
- * Version:  2.5
- * Last update: 15-09-2013
- *
+ * Version:  2.6
+ * Last update: 2013-10-23
  */
-(function($){
-    $.queryLoader2 = function(el, options){
-        var base = this;
+function OverlayLoader(parent) {
+    this.parent = parent;
+    this.container;
+    this.loadbar;
+    this.percentageContainer;
+};
 
-        // Access to jQuery and DOM versions of element
-        base.$el = $(el);
-        base.el = el;
+OverlayLoader.prototype.createOverlay = function () {
+    
 
-        // Add a reverse reference to the DOM object
-        base.$el.data("queryLoader2", base);
+    //determine postion of overlay and set parent position
+    var overlayPosition = "absolute";
 
-        //declare variables
-        base.qLimageContainer = "";
-        base.qLoverlay = "";
-        base.qLbar = "";
-        base.qLpercentage = "";
-        base.qLimages = [];
-        base.qLbgimages = [];
-        base.qLimageCounter = 0;
-        base.qLdone = 0;
-        base.qLdestroyed = false;
+    if (this.parent.element.tagName.toLowerCase() == "body") {
+        overlayPosition = "fixed";
+    } else {
+        this.parent.$element.css("position", "relative");
+    }
 
-        base.init = function(){
+    //create the overlay container
+    this.container = $("<div id='" + this.parent.options.overlayId + "'></div>").css({
+        width: "100%",
+        height: "100%",
+        backgroundColor: this.parent.options.backgroundColor,
+        backgroundPosition: "fixed",
+        position: overlayPosition,
+        zIndex: 666999, //very high!
+        top: 0,
+        left: 0
+    }).appendTo(this.parent.$element);
 
-            base.options = $.extend({},$.queryLoader2.defaultOptions, options);
+    //create the loading bar
+    this.loadbar = $("<div id='qLbar'></div>").css({
+        height: this.parent.options.barHeight + "px",
+        marginTop: "-" + (this.parent.options.barHeight / 2) + "px",
+        backgroundColor: this.parent.options.barColor,
+        width: "0%",
+        position: "absolute",
+        top: "50%"
+    }).appendTo(this.container);
 
-            //find images
-            base.findImageInElement(base.el);
-            if (base.options.deepSearch == true) {
-                base.$el.find("*:not(script)").each(function() {
-                    base.findImageInElement(this);
-                });
-            }
+    //if percentage is on
+    if (this.parent.options.percentage == true) {
+        this.percentageContainer = $("<div id='qLpercentage'></div>").text("0%").css({
+            height: "40px",
+            width: "100px",
+            position: "absolute",
+            fontSize: "3em",
+            top: "50%",
+            left: "50%",
+            marginTop: "-" + (59 + this.parent.options.barHeight) + "px",
+            textAlign: "center",
+            marginLeft: "-50px",
+            color: this.parent.options.barColor
+        }).appendTo(this.container);
+    }
 
-            //create containers
-            base.createPreloadContainer();
-            base.createOverlayLoader();
-        };
+    //if no images... destroy
+    if (!this.parent.preloadContainer.toPreload.length || this.parent.alreadyLoaded == true) {
+        this.parent.destroyContainers();
+    }
+};
 
-        //the container where unbindable images will go
-        base.createPreloadContainer = function() {
-            base.qLimageContainer = $("<div></div>").appendTo("body").css({
-                display: "none",
-                width: 0,
-                height: 0,
-                overflow: "hidden"
-            });
+OverlayLoader.prototype.updatePercentage = function (percentage) {
+    this.loadbar.stop().animate({
+        width: percentage + "%",
+        minWidth: percentage + "%"
+    }, 200);
 
-            //add background images for loading
-            for (var i = 0; base.qLbgimages.length > i; i++) {
-                $.ajax({
-                    url: base.qLbgimages[i],
-                    type: 'HEAD',
-                    complete: function (data) {
-                        if (!base.qLdestroyed) {
-                            base.addImageForPreload(this['url']);
-                        }
-                    }
-                });
-            }
-        };
+    //update textual percentage
+    if (this.parent.options.percentage == true) {
+        this.percentageContainer.text(Math.ceil(percentage) + "%");
+    }
+};
+function PreloadContainer(parent) {
+    this.toPreload = [];
+    this.parent = parent;
+    this.container;
+};
 
-        base.addImageForPreload = function(url) {
-            var image = $("<img />").attr("src", url);
-            //binding load before the DOM adding
-            base.bindLoadEvent(image);
-            image.appendTo(base.qLimageContainer);
-        };
+PreloadContainer.prototype.create = function () {
+    this.container = $("<div></div>").appendTo("body").css({
+        display: "none",
+        width: 0,
+        height: 0,
+        overflow: "hidden"
+    });
 
-        //create the overlay
-        base.createOverlayLoader = function () {
-            var overlayPosition = "absolute";
+    //process the image queue
+    this.processQueue();
+};
 
-            if (base.$el.prop("tagName") == "BODY") {
-                overlayPosition = "fixed";
-            } else {
-                base.$el.css("position", "relative");
-            }
-
-            base.qLoverlay = $("<div id='" + base.options.overlayId + "'></div>").css({
-                width: "100%",
-                height: "100%",
-                backgroundColor: base.options.backgroundColor,
-                backgroundPosition: "fixed",
-                position: overlayPosition,
-                zIndex: 666999, //very high!
-                top: 0,
-                left: 0
-            }).appendTo(base.$el);
-
-            base.qLbar = $("<div id='qLbar'></div>").css({
-                height: base.options.barHeight + "px",
-                marginTop: "-" + (base.options.barHeight / 2) + "px",
-                backgroundColor: base.options.barColor,
-                width: "0%",
-                position: "absolute",
-                top: "50%"
-            }).appendTo(base.qLoverlay);
-
-            if (base.options.percentage == true) {
-                base.qLpercentage = $("<div id='qLpercentage'></div>").text("0%").css({
-                    height: "40px",
-                    width: "100px",
-                    position: "absolute",
-                    fontSize: "3em",
-                    top: "50%",
-                    left: "50%",
-                    marginTop: "-" + (59 + base.options.barHeight) + "px",
-                    textAlign: "center",
-                    marginLeft: "-50px",
-                    color: base.options.barColor
-                }).appendTo(base.qLoverlay);
-            }
-
-            if (!base.qLimages.length) {
-                base.destroyContainers();
-            }
-        };
-
-        //destroy all containers created by QueryLoader
-        base.destroyContainers = function () {
-            base.qLdestroyed = true;
-            base.qLimageContainer.remove();
-            base.qLoverlay.remove();
-        };
-
-        base.findImageInElement = function (element) {
-            var url = "";
-            var obj = $(element);
-            var type = "normal";
-
-            if (obj.css("background-image") != "none") {
-                url = obj.css("background-image");
-                type = "background";
-            } else if (typeof(obj.attr("src")) != "undefined" && element.nodeName.toLowerCase() == "img") {
-                url = obj.attr("src");
-            }
-
-            if (url.indexOf("gradient") == -1) {
-                url = url.replace(/url\(\"/g, "");
-                url = url.replace(/url\(/g, "");
-                url = url.replace(/\"\)/g, "");
-                url = url.replace(/\)/g, "");
-
-                var urls = url.split(", ");
-
-                for (var i = 0; i < urls.length; i++) {
-                    if (urls[i].length > 0 && base.qLimages.indexOf(urls[i]) == -1 && !urls[i].match(/^(data:)/i)) {
-                        var extra = "";
-
-                        if (base.isIE() || base.isOpera()){
-                            //filthy always no cache for IE, sorry peeps!
-                            extra = "?rand=" + Math.random();
-                            base.qLbgimages.push(urls[i] + extra);
-                        } else {
-                            if (type == "background") {
-                                base.qLbgimages.push(urls[i]);
-                            } else {
-                                base.bindLoadEvent(obj);
-                            }
-                        }
-
-                        base.qLimages.push(urls[i]);
-                    }
-                }
-            }
+PreloadContainer.prototype.processQueue = function () {
+    //add background images for loading
+    for (var i = 0; this.toPreload.length > i; i++) {
+        if (!this.parent.destroyed) {
+            this.preloadImage(this.toPreload[i]);
         }
+    }
+};
 
-        base.isIE = function () {
-            return navigator.userAgent.match(/msie/i);
-        };
+PreloadContainer.prototype.addImage = function (src) {
+    
+    this.toPreload.push(src);
+};
 
-        base.isOpera = function () {
-            return navigator.userAgent.match(/Opera/i);
-        };
+PreloadContainer.prototype.preloadImage = function (url) {
+    
+    var image = new PreloadImage();
+    image.addToPreloader(this, url);
+    image.bindLoadEvent();
+};
+function PreloadImage(parent) {
+    this.element;
+    this.parent = parent;
+};
 
-        base.bindLoadEvent = function (element) {
-            base.qLimageCounter++;
-            element.bind("load error", function () {
-                base.completeImageLoading(this);
-            });
-        }
+PreloadImage.prototype.addToPreloader = function (preloader, url) {
+    
+    this.element = $("<img />").attr("src", url);
+    this.element.appendTo(preloader.container);
+    this.parent = preloader.parent;
+};
 
-        base.completeImageLoading = function (el) {
-            base.qLdone++;
+PreloadImage.prototype.bindLoadEvent = function () {
+    this.parent.imageCounter++;
 
-            var percentage = (base.qLdone / base.qLimageCounter) * 100;
-            base.qLbar.stop().animate({
-                width: percentage + "%",
-                minWidth: percentage + "%"
-            }, 200);
+    this.element.on("load error", this, function (e) {
+        e.data.completeLoading();
+    });
+};
 
-            if (base.options.percentage == true) {
-                base.qLpercentage.text(Math.ceil(percentage) + "%");
-            }
+PreloadImage.prototype.completeLoading = function () {
+    this.parent.imageDone++;
 
-            if (base.qLdone == base.qLimageCounter) {
-                base.endLoader();
-            }
-        };
+    var percentage = (this.parent.imageDone / this.parent.imageCounter) * 100;
 
-        base.endLoader = function () {
-            base.qLdestroyed = true;
-            base.onLoadComplete();
-        };
+    
 
-        base.onLoadComplete = function() {
-            if (base.options.completeAnimation == "grow") {
-                var animationTime = 500;
+    //update the percentage of the loader
+    this.parent.overlayLoader.updatePercentage(percentage);
 
-                base.qLbar.stop().animate({
-                    "width": "100%"
-                }, animationTime, function () {
-                    $(this).animate({
-                        top: "0%",
-                        width: "100%",
-                        height: "100%"
-                    }, 500, function () {
-                        $('#' + base.options.overlayId).fadeOut(500, function () {
-                            $(this).remove();
-                            base.destroyContainers();
-                            base.options.onComplete();
-                        })
-                    });
-                });
-            } else {
-                $('#' + base.options.overlayId).fadeOut(500, function () {
-                    $('#' + base.options.overlayId).remove();
-                    base.destroyContainers();
-                    base.options.onComplete();
-                });
-            }
-        }
+    //all images done!
+    if (this.parent.imageDone == this.parent.imageCounter) {
+        this.parent.endLoader();
+    }
+};
+function QueryLoader2(element, options) {
+    this.element = element;
+    this.$element = $(element);
+    this.options = options;
+    this.foundUrls = [];
+    this.destroyed = false;
+    this.imageCounter = 0;
+    this.imageDone = 0;
+    this.alreadyLoaded = false;
 
-        // Run initializer
-        base.init();
-    };
+    //create objects
+    this.preloadContainer = new PreloadContainer(this);
+    this.overlayLoader = new OverlayLoader(this);
 
     //The default options
-    $.queryLoader2.defaultOptions = {
+    this.defaultOptions = {
         onComplete: function() {},
         backgroundColor: "#000",
         barColor: "#fff",
@@ -264,14 +186,185 @@
         minimumTime: 500
     };
 
-    //function binder
-    $.fn.queryLoader2 = function(options){
-        return this.each(function(){
-            (new $.queryLoader2(this, options));
-        });
-    };
-})(jQuery);
+    //run the init
+    this.init();
+};
 
+QueryLoader2.prototype.init = function() {
+    
+    this.checkIfVisited();
+
+    
+
+    
+    this.options = $.extend({}, this.defaultOptions, this.options);
+
+    
+    var images = this.findImageInElement(this.element);
+    if (this.options.deepSearch == true) {
+        
+        var elements = this.$element.find("*:not(script)");
+        for (var i = 0; i < elements.length; i++) {
+            this.findImageInElement(elements[i]);
+        }
+    }
+
+    //create containers
+    this.preloadContainer.create();
+    this.overlayLoader.createOverlay();
+};
+
+QueryLoader2.prototype.findImageInElement = function (element) {
+    var url = "";
+    var obj = $(element);
+    var type = "normal";
+
+    if (obj.css("background-image") != "none") {
+        //if object has background image
+        url = obj.css("background-image");
+        type = "background";
+    } else if (typeof(obj.attr("src")) != "undefined" && element.nodeName.toLowerCase() == "img") {
+        //if is img and has src
+        url = obj.attr("src");
+    }
+
+    //skip if gradient
+    if (!this.hasGradient(url)) {
+        //remove unwanted chars
+        url = this.stripUrl(url);
+
+        //split urls
+        var urls = url.split(", ");
+
+        for (var i = 0; i < urls.length; i++) {
+            if (this.validUrl(urls[i]) && this.urlIsNew(urls[i])) {
+                
+                var extra = "";
+
+                if (this.isIE() || this.isOpera()){
+                    //filthy always no cache for IE, sorry peeps!
+                    extra = "?rand=" + Math.random();
+
+                    //add to preloader
+                    this.preloadContainer.addImage(urls[i] + extra);
+                } else {
+                    if (type == "background") {
+                        //add to preloader
+                        this.preloadContainer.addImage(urls[i] + extra);
+                    } else {
+                        var image = new PreloadImage(this);
+                        image.element = obj;
+                        image.bindLoadEvent();
+                    }
+                }
+
+                //add image to found list
+                this.foundUrls.push(urls[i]);
+            }
+        }
+    }
+};
+
+QueryLoader2.prototype.hasGradient = function (url) {
+    if (url.indexOf("gradient") == -1) {
+        return false;
+    } else {
+        return true;
+    }
+};
+
+QueryLoader2.prototype.stripUrl = function (url) {
+    url = url.replace(/url\(\"/g, "");
+    url = url.replace(/url\(/g, "");
+    url = url.replace(/\"\)/g, "");
+    url = url.replace(/\)/g, "");
+
+    return url;
+};
+
+QueryLoader2.prototype.isIE = function () {
+    return navigator.userAgent.match(/msie/i);
+};
+
+QueryLoader2.prototype.isOpera = function () {
+    return navigator.userAgent.match(/Opera/i);
+};
+
+QueryLoader2.prototype.validUrl = function (url) {
+    if (url.length > 0 && !url.match(/^(data:)/i)) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+QueryLoader2.prototype.urlIsNew = function (url) {
+    if (this.foundUrls.indexOf(url) == -1) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+QueryLoader2.prototype.destroyContainers = function () {
+    this.destroyed = true;
+    this.preloadContainer.container.remove();
+    this.overlayLoader.container.remove();
+};
+
+QueryLoader2.prototype.endLoader = function () {
+    
+
+    this.setVisited();
+
+    this.destroyed = true;
+    this.onLoadComplete();
+};
+
+QueryLoader2.prototype.onLoadComplete = function() {
+    if (this.options.completeAnimation == "grow") {
+        var animationTime = 500;
+
+        this.overlayLoader.loadbar[0].parent = this; //put object in DOM element
+        this.overlayLoader.loadbar.stop().animate({
+            "width": "100%"
+        }, animationTime, function () {
+            $(this).animate({
+                top: "0%",
+                width: "100%",
+                height: "100%"
+            }, 500, function () {
+                this.parent.overlayLoader.container[0].parent = this.parent; //once again...
+                this.parent.overlayLoader.container.fadeOut(500, function () {
+                    this.parent.destroyContainers();
+                    this.parent.options.onComplete();
+                });
+            });
+        });
+    } else {
+        this.overlayLoader.container[0].parent = this;
+        this.overlayLoader.container.fadeOut(500, function () {
+            this.parent.destroyContainers();
+            this.parent.options.onComplete();
+        });
+    }
+};
+
+QueryLoader2.prototype.setVisited = function () {
+    if (supports_html5_storage()) {
+        localStorage.setItem(window.location.href, "true");
+    }
+};
+
+QueryLoader2.prototype.checkIfVisited = function () {
+    if (supports_html5_storage()) {
+        var visited = localStorage.getItem(window.location.href);
+
+        if (visited == "true") {
+            this.alreadyLoaded = true;
+        }
+    }
+};
 //HERE COMES THE IE SHITSTORM
 if (!Array.prototype.indexOf) {
     Array.prototype.indexOf = function (elt /*, from*/) {
@@ -291,3 +384,19 @@ if (!Array.prototype.indexOf) {
         return -1;
     };
 }
+
+function supports_html5_storage() {
+    try {
+        return 'localStorage' in window && window['localStorage'] !== null;
+    } catch (e) {
+        return false;
+    }
+}
+(function($){
+    //function binder
+    $.fn.queryLoader2 = function(options){
+        return this.each(function(){
+            (new QueryLoader2(this, options));
+        });
+    };
+})(jQuery);

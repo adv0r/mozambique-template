@@ -94,6 +94,11 @@ function getStartingPercentageOfSection(sectionNumber)
 }
 
 
+function getPausingSum(sectionNumber)
+{
+	return getPausing(sectionNumber,true) + getStartingPercentageOfSection(sectionNumber);
+}
+
 
 /* Compute the number of pixels (percentage=false) scrolled (call it with (percentage=true) if you want it expressed in terms of a % of the viewport) ,
  in which each section must be frozen into the viewport .

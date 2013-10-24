@@ -67,7 +67,7 @@ function updateMenuHrefHeights()
 	 //!!!Remember! if you add one  section change the variable totalNumberOfSections
 }
 
-
+/*Returns the startingPixel of section 'sectionNumber'*/
 function getStartingPixelOfSection(sectionNumber)
 {
 	var startingPixel ;
@@ -80,7 +80,7 @@ function getStartingPixelOfSection(sectionNumber)
 	return startingPixel;
 }
 
-
+/*Returns the startingPercentage of section 'sectionNumber'*/
 function getStartingPercentageOfSection(sectionNumber)
 {
 	var startingPercentage ;
@@ -93,7 +93,7 @@ function getStartingPercentageOfSection(sectionNumber)
 	return startingPercentage;
 }
 
-
+/*Returns the sum of cumulative starting percentage + pausing percentage of 'sectionNumber' */
 function getPausingSum(sectionNumber)
 {
 	return getPausing(sectionNumber,true) + getStartingPercentageOfSection(sectionNumber);

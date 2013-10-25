@@ -40,7 +40,7 @@ public class GenerateKeyframes {
 		}
 		else
 		{
-			toReturn = DATA0_KEYFRAME;
+			toReturn = KEYFRAMES_SECTION1;
 		}
 		return toReturn;	
 	}

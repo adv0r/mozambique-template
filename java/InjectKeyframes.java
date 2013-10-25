@@ -14,7 +14,7 @@ public class InjectKeyframes {
 	public static final String END_KEYFRAME="<!--keyframestop-->";
 	public static final String SPECIAL_CHAR="$";
 	
-	public static final String INDENT = "	";
+	public static final String INDENT = "		";
 	public static final String DATA0_KEYFRAME_1 = "data-0=\"transform:translate(0%, 0%);\"\n";
 	public static final String DATA0_KEYFRAME = "data-0=\"transform:translate(0%, 100%);\"\n";
 	public static final String KEYFRAMES_SECTION1 = DATA0_KEYFRAME_1 + 
@@ -99,7 +99,7 @@ public class InjectKeyframes {
 		{
 			toReturn = INDENT+KEYFRAMES_SECTION1;
 		}
-		return "\n"+toReturn+"\n";	
+		return toReturn;	
 	}
 
 	private static String readfromFile(String filePath) {

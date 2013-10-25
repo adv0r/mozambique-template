@@ -33,8 +33,8 @@ public class GenerateKeyframes {
 		String toReturn=DATA0_KEYFRAME;
 		if (n!=1)
 		{
-			toReturn+="data-_pausingCumulative"+n+"-"+(n-1)+"00p =\"transform:translate(0%, 100%);\""+"\n";
-			toReturn+="data-_pausingCumulative"+n+"-"+(n)+"00p= \"transform:translate(0%, 0%);\""+"\n"; 
+			toReturn+="data-_startingPercentage"+n+"-"+(n-1)+"00p =\"transform:translate(0%, 100%);\""+"\n";
+			toReturn+="data-_startingPercentage"+n+"-"+(n)+"00p= \"transform:translate(0%, 0%);\""+"\n"; 
 			toReturn+="data-_pausingSum"+n+"-"+(n+1)+"00p=\"\"\n";
 			toReturn+="data-_pausingSum"+n+"-"+(n+2)+"00p=\"transform:translate(0%, -150%);\"\n";
 		}

@@ -113,7 +113,7 @@ function getPausing(sectionNumber,percentage)
 	var defaultTime = 800;
 	switch(sectionNumber)
 	{
-		case 1: sectionPausingPx = 10000; break;
+		case 1: sectionPausingPx = 100; break;
 		case 2: sectionPausingPx = 0; break;
 		case 3: sectionPausingPx = 0; break;
 		case 4: sectionPausingPx = 0; break;

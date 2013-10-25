@@ -71,7 +71,7 @@ function updateMenuHrefHeights()
 function getStartingPixelOfSection(sectionNumber)
 {
 	var startingPixel ;
-	if(sectionNumber==1)
+	if(sectionNumber==0)
 		startingPixel=1
 	else
 	{
@@ -84,7 +84,7 @@ function getStartingPixelOfSection(sectionNumber)
 function getStartingPercentageOfSection(sectionNumber)
 {
 	var startingPercentage ;
-	if(sectionNumber==1)
+	if(sectionNumber==0)
 		startingPercentage=0;
 	else
 	{

@@ -1,0 +1,77 @@
+		body{margin:0; padding:0; color:#eee; background:#fff; font-family: 'Roboto', sans-serif; font-size:13px; line-height:20px;}
+		a:link,a:visited,a:hover{color:inherit;}
+		h1{font-family: 'Roboto'; font-size:28px; font-weight:100; margin:40px; color:#26beff;}
+		p{margin:0 0 10px 0;}
+		hr{height:0; border:none; border-bottom:1px solid rgba(255,255,255,0.13); border-top:1px solid rgba(0,0,0,1); margin:9px 10px; clear:both;}
+		.links{margin:10px;}
+		.links a{display:inline-block; padding:3px 15px; margin:7px 10px; background:#444; text-decoration:none; -webkit-border-radius:15px; -moz-border-radius:15px; border-radius:15px;}
+		.links a:hover{background:#eb3755; color:#fff;}
+		.content{margin:0; width:500px; height:500px; padding-right:20px; padding-left:20px; overflow:auto; background:#fff; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; background-image:url(images/bkg.png)}
+		.content p:nth-child(even){color:#999; font-family:Georgia,serif; font-size:17px; font-style:italic;}
+		.content p:nth-child(3n+0){color:#c96;}
+		img{ width:470px;}
+		
+		
+
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+ 
+::-webkit-scrollbar-track {
+	background-color:#CCC;
+    border-radius: 7px;
+}
+ 
+::-webkit-scrollbar-thumb {
+	background-color:#95B1CE;
+	
+    border-radius: 7px;
+    
+}
+
+/*Accordion*/
+#wrapper {
+	width: 470px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.accordionButton {	
+	width: 470px;
+	float: left;
+	background: #666;
+	color:#FFF;
+	font-weight:100;
+	font-size:10px;
+	cursor: pointer;
+	padding:10px;
+	margin-top:2px;
+	opacity:0.7;
+	
+	}
+	
+	.accordionButton p { font-size:18px; color:#111;}
+	
+.accordionButton:hover {	
+	
+	background: #999;
+	color:#222;
+
+
+	}
+	
+
+.accordionContent {	
+	width: 470px;
+	float: left;
+	background: #95B1CE;
+	display: none;
+	background-image:url(images/bkg01.png);
+	background-repeat:no-repeat;
+	padding:10px; font-family: 'Roboto', sans-serif; font-weight:100; font-size:12px; 
+	}
+
+.accordionContent h2{  font-family: 'Roboto', sans-serif; font-weight:100; font-size:26px; }
+

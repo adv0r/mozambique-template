@@ -73,7 +73,6 @@ function loadSlider()
 function initSkrollr()
 {
 	computeConstants(); //put the constants in the GLOBAL variable constants
-	alert (constants.pausingCumulative31);
 	s = skrollr.init({
 		constants: constants
 	});

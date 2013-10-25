@@ -23,6 +23,7 @@ window.addEventListener('DOMContentLoaded', function() {
 function initTemplate()
 {
 	viewportH = $(window).height();
+  	document.createElement('video');document.createElement('audio'); // Needed by video.js 
 	initSkrollr();
 	initSkrollrMenu(); 	
 	loadSlider();

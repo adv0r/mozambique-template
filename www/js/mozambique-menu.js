@@ -90,13 +90,13 @@ function getStartingPercentageOfSection(sectionNumber)
 	{
 		startingPercentage = getStartingPercentageOfSection(sectionNumber-1)  + getPausing(sectionNumber-1,true)
 	}	
-	return startingPercentage;
+	return Math.round(startingPercentage);
 }
 
 /*Returns the sum of cumulative starting percentage + pausing percentage of 'sectionNumber' */
 function getPausingSum(sectionNumber)
 {
-	return getPausing(sectionNumber,true) + getStartingPercentageOfSection(sectionNumber);
+	return Math.round(getPausing(sectionNumber,true) + getStartingPercentageOfSection(sectionNumber));
 }
 
 
@@ -143,9 +143,9 @@ function getPausing(sectionNumber,percentage)
 		default: sectionPausingPx = 0; break;
 	}
 	if(percentage)
-		return getPixelsInPercentage(sectionPausingPx);
+		return Math.round(getPixelsInPercentage(sectionPausingPx));
 	else
-		return sectionPausingPx;
+		return Math.round(sectionPausingPx);
 }
 
 

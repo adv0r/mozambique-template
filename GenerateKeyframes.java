@@ -3,11 +3,12 @@ import java.io.PrintWriter;
 
 
 public class GenerateKeyframes {
+	public static final String INDENT = "	";
 	public static final String DATA0_KEYFRAME_1 = "data-0=\"transform:translate(0%, 0%);\"\n";
 	public static final String DATA0_KEYFRAME = "data-0=\"transform:translate(0%, 100%);\"\n";
 	public static final String KEYFRAMES_SECTION1 = DATA0_KEYFRAME_1 + 
-							"data-_pausing1-100p=\"transform:translate(0%, 0%);\"\n"+
-							 "data-_pausing1-200p=\"transform:translate(0%, -150%);\n" ;
+							INDENT+"data-_pausing1-100p=\"transform:translate(0%, 0%);\"\n"+
+							INDENT+"data-_pausing1-200p=\"transform:translate(0%, -150%);\n" ;
 
 	public static void main (String[] a)
 	{
@@ -34,15 +35,15 @@ public class GenerateKeyframes {
 		String toReturn=""; 
 		if (n!=1)
 		{
-			toReturn+=DATA0_KEYFRAME;
-			toReturn+="data-_startingPercentage"+n+"-"+(n-1)+"00p =\"transform:translate(0%, 100%);\""+"\n";
-			toReturn+="data-_startingPercentage"+n+"-"+(n)+"00p= \"transform:translate(0%, 0%);\""+"\n"; 
-			toReturn+="data-_pausingSum"+n+"-"+(n+1)+"00p=\"\"\n";
-			toReturn+="data-_pausingSum"+n+"-"+(n+2)+"00p=\"transform:translate(0%, -150%);\"\n";
+			toReturn+=INDENT+DATA0_KEYFRAME;
+			toReturn+=INDENT+"data-_offset"+n+"-"+(n-1)+"00p =\"transform:translate(0%, 100%);\""+"\n";
+			toReturn+=INDENT+"data-_offset"+n+"-"+(n)+"00p= \"transform:translate(0%, 0%);\""+"\n"; 
+			toReturn+=INDENT+"data-_sumoffset"+n+"-"+(n+1)+"00p=\"\"\n";
+			toReturn+=INDENT+"data-_sumoffset"+n+"-"+(n+2)+"00p=\"transform:translate(0%, -150%);\"\n";
 		}
 		else
 		{
-			toReturn = KEYFRAMES_SECTION1;
+			toReturn = INDENT+KEYFRAMES_SECTION1;
 		}
 		return toReturn;	
 	}

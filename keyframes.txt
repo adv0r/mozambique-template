@@ -1,898 +1,898 @@
 ------------- SECTION 1 start -------------
-data-0="transform:translate(0%, 0%);"
-data-_pausing1-100p="transform:translate(0%, 0%);"
-data-_pausing1-200p="transform:translate(0%, -150%);
+	data-0="transform:translate(0%, 0%);"
+	data-_pausing1-100p="transform:translate(0%, 0%);"
+	data-_pausing1-200p="transform:translate(0%, -150%);
 ------------- SECTION 1 end -------------
 
 
 ------------- SECTION 2 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage2-100p ="transform:translate(0%, 100%);"
-data-_startingPercentage2-200p= "transform:translate(0%, 0%);"
-data-_pausingSum2-300p=""
-data-_pausingSum2-400p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset2-100p ="transform:translate(0%, 100%);"
+	data-_offset2-200p= "transform:translate(0%, 0%);"
+	data-_sumoffset2-300p=""
+	data-_sumoffset2-400p="transform:translate(0%, -150%);"
 ------------- SECTION 2 end -------------
 
 
 ------------- SECTION 3 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage3-200p ="transform:translate(0%, 100%);"
-data-_startingPercentage3-300p= "transform:translate(0%, 0%);"
-data-_pausingSum3-400p=""
-data-_pausingSum3-500p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset3-200p ="transform:translate(0%, 100%);"
+	data-_offset3-300p= "transform:translate(0%, 0%);"
+	data-_sumoffset3-400p=""
+	data-_sumoffset3-500p="transform:translate(0%, -150%);"
 ------------- SECTION 3 end -------------
 
 
 ------------- SECTION 4 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage4-300p ="transform:translate(0%, 100%);"
-data-_startingPercentage4-400p= "transform:translate(0%, 0%);"
-data-_pausingSum4-500p=""
-data-_pausingSum4-600p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset4-300p ="transform:translate(0%, 100%);"
+	data-_offset4-400p= "transform:translate(0%, 0%);"
+	data-_sumoffset4-500p=""
+	data-_sumoffset4-600p="transform:translate(0%, -150%);"
 ------------- SECTION 4 end -------------
 
 
 ------------- SECTION 5 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage5-400p ="transform:translate(0%, 100%);"
-data-_startingPercentage5-500p= "transform:translate(0%, 0%);"
-data-_pausingSum5-600p=""
-data-_pausingSum5-700p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset5-400p ="transform:translate(0%, 100%);"
+	data-_offset5-500p= "transform:translate(0%, 0%);"
+	data-_sumoffset5-600p=""
+	data-_sumoffset5-700p="transform:translate(0%, -150%);"
 ------------- SECTION 5 end -------------
 
 
 ------------- SECTION 6 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage6-500p ="transform:translate(0%, 100%);"
-data-_startingPercentage6-600p= "transform:translate(0%, 0%);"
-data-_pausingSum6-700p=""
-data-_pausingSum6-800p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset6-500p ="transform:translate(0%, 100%);"
+	data-_offset6-600p= "transform:translate(0%, 0%);"
+	data-_sumoffset6-700p=""
+	data-_sumoffset6-800p="transform:translate(0%, -150%);"
 ------------- SECTION 6 end -------------
 
 
 ------------- SECTION 7 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage7-600p ="transform:translate(0%, 100%);"
-data-_startingPercentage7-700p= "transform:translate(0%, 0%);"
-data-_pausingSum7-800p=""
-data-_pausingSum7-900p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset7-600p ="transform:translate(0%, 100%);"
+	data-_offset7-700p= "transform:translate(0%, 0%);"
+	data-_sumoffset7-800p=""
+	data-_sumoffset7-900p="transform:translate(0%, -150%);"
 ------------- SECTION 7 end -------------
 
 
 ------------- SECTION 8 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage8-700p ="transform:translate(0%, 100%);"
-data-_startingPercentage8-800p= "transform:translate(0%, 0%);"
-data-_pausingSum8-900p=""
-data-_pausingSum8-1000p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset8-700p ="transform:translate(0%, 100%);"
+	data-_offset8-800p= "transform:translate(0%, 0%);"
+	data-_sumoffset8-900p=""
+	data-_sumoffset8-1000p="transform:translate(0%, -150%);"
 ------------- SECTION 8 end -------------
 
 
 ------------- SECTION 9 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage9-800p ="transform:translate(0%, 100%);"
-data-_startingPercentage9-900p= "transform:translate(0%, 0%);"
-data-_pausingSum9-1000p=""
-data-_pausingSum9-1100p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset9-800p ="transform:translate(0%, 100%);"
+	data-_offset9-900p= "transform:translate(0%, 0%);"
+	data-_sumoffset9-1000p=""
+	data-_sumoffset9-1100p="transform:translate(0%, -150%);"
 ------------- SECTION 9 end -------------
 
 
 ------------- SECTION 10 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage10-900p ="transform:translate(0%, 100%);"
-data-_startingPercentage10-1000p= "transform:translate(0%, 0%);"
-data-_pausingSum10-1100p=""
-data-_pausingSum10-1200p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset10-900p ="transform:translate(0%, 100%);"
+	data-_offset10-1000p= "transform:translate(0%, 0%);"
+	data-_sumoffset10-1100p=""
+	data-_sumoffset10-1200p="transform:translate(0%, -150%);"
 ------------- SECTION 10 end -------------
 
 
 ------------- SECTION 11 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage11-1000p ="transform:translate(0%, 100%);"
-data-_startingPercentage11-1100p= "transform:translate(0%, 0%);"
-data-_pausingSum11-1200p=""
-data-_pausingSum11-1300p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset11-1000p ="transform:translate(0%, 100%);"
+	data-_offset11-1100p= "transform:translate(0%, 0%);"
+	data-_sumoffset11-1200p=""
+	data-_sumoffset11-1300p="transform:translate(0%, -150%);"
 ------------- SECTION 11 end -------------
 
 
 ------------- SECTION 12 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage12-1100p ="transform:translate(0%, 100%);"
-data-_startingPercentage12-1200p= "transform:translate(0%, 0%);"
-data-_pausingSum12-1300p=""
-data-_pausingSum12-1400p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset12-1100p ="transform:translate(0%, 100%);"
+	data-_offset12-1200p= "transform:translate(0%, 0%);"
+	data-_sumoffset12-1300p=""
+	data-_sumoffset12-1400p="transform:translate(0%, -150%);"
 ------------- SECTION 12 end -------------
 
 
 ------------- SECTION 13 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage13-1200p ="transform:translate(0%, 100%);"
-data-_startingPercentage13-1300p= "transform:translate(0%, 0%);"
-data-_pausingSum13-1400p=""
-data-_pausingSum13-1500p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset13-1200p ="transform:translate(0%, 100%);"
+	data-_offset13-1300p= "transform:translate(0%, 0%);"
+	data-_sumoffset13-1400p=""
+	data-_sumoffset13-1500p="transform:translate(0%, -150%);"
 ------------- SECTION 13 end -------------
 
 
 ------------- SECTION 14 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage14-1300p ="transform:translate(0%, 100%);"
-data-_startingPercentage14-1400p= "transform:translate(0%, 0%);"
-data-_pausingSum14-1500p=""
-data-_pausingSum14-1600p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset14-1300p ="transform:translate(0%, 100%);"
+	data-_offset14-1400p= "transform:translate(0%, 0%);"
+	data-_sumoffset14-1500p=""
+	data-_sumoffset14-1600p="transform:translate(0%, -150%);"
 ------------- SECTION 14 end -------------
 
 
 ------------- SECTION 15 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage15-1400p ="transform:translate(0%, 100%);"
-data-_startingPercentage15-1500p= "transform:translate(0%, 0%);"
-data-_pausingSum15-1600p=""
-data-_pausingSum15-1700p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset15-1400p ="transform:translate(0%, 100%);"
+	data-_offset15-1500p= "transform:translate(0%, 0%);"
+	data-_sumoffset15-1600p=""
+	data-_sumoffset15-1700p="transform:translate(0%, -150%);"
 ------------- SECTION 15 end -------------
 
 
 ------------- SECTION 16 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage16-1500p ="transform:translate(0%, 100%);"
-data-_startingPercentage16-1600p= "transform:translate(0%, 0%);"
-data-_pausingSum16-1700p=""
-data-_pausingSum16-1800p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset16-1500p ="transform:translate(0%, 100%);"
+	data-_offset16-1600p= "transform:translate(0%, 0%);"
+	data-_sumoffset16-1700p=""
+	data-_sumoffset16-1800p="transform:translate(0%, -150%);"
 ------------- SECTION 16 end -------------
 
 
 ------------- SECTION 17 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage17-1600p ="transform:translate(0%, 100%);"
-data-_startingPercentage17-1700p= "transform:translate(0%, 0%);"
-data-_pausingSum17-1800p=""
-data-_pausingSum17-1900p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset17-1600p ="transform:translate(0%, 100%);"
+	data-_offset17-1700p= "transform:translate(0%, 0%);"
+	data-_sumoffset17-1800p=""
+	data-_sumoffset17-1900p="transform:translate(0%, -150%);"
 ------------- SECTION 17 end -------------
 
 
 ------------- SECTION 18 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage18-1700p ="transform:translate(0%, 100%);"
-data-_startingPercentage18-1800p= "transform:translate(0%, 0%);"
-data-_pausingSum18-1900p=""
-data-_pausingSum18-2000p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset18-1700p ="transform:translate(0%, 100%);"
+	data-_offset18-1800p= "transform:translate(0%, 0%);"
+	data-_sumoffset18-1900p=""
+	data-_sumoffset18-2000p="transform:translate(0%, -150%);"
 ------------- SECTION 18 end -------------
 
 
 ------------- SECTION 19 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage19-1800p ="transform:translate(0%, 100%);"
-data-_startingPercentage19-1900p= "transform:translate(0%, 0%);"
-data-_pausingSum19-2000p=""
-data-_pausingSum19-2100p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset19-1800p ="transform:translate(0%, 100%);"
+	data-_offset19-1900p= "transform:translate(0%, 0%);"
+	data-_sumoffset19-2000p=""
+	data-_sumoffset19-2100p="transform:translate(0%, -150%);"
 ------------- SECTION 19 end -------------
 
 
 ------------- SECTION 20 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage20-1900p ="transform:translate(0%, 100%);"
-data-_startingPercentage20-2000p= "transform:translate(0%, 0%);"
-data-_pausingSum20-2100p=""
-data-_pausingSum20-2200p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset20-1900p ="transform:translate(0%, 100%);"
+	data-_offset20-2000p= "transform:translate(0%, 0%);"
+	data-_sumoffset20-2100p=""
+	data-_sumoffset20-2200p="transform:translate(0%, -150%);"
 ------------- SECTION 20 end -------------
 
 
 ------------- SECTION 21 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage21-2000p ="transform:translate(0%, 100%);"
-data-_startingPercentage21-2100p= "transform:translate(0%, 0%);"
-data-_pausingSum21-2200p=""
-data-_pausingSum21-2300p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset21-2000p ="transform:translate(0%, 100%);"
+	data-_offset21-2100p= "transform:translate(0%, 0%);"
+	data-_sumoffset21-2200p=""
+	data-_sumoffset21-2300p="transform:translate(0%, -150%);"
 ------------- SECTION 21 end -------------
 
 
 ------------- SECTION 22 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage22-2100p ="transform:translate(0%, 100%);"
-data-_startingPercentage22-2200p= "transform:translate(0%, 0%);"
-data-_pausingSum22-2300p=""
-data-_pausingSum22-2400p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset22-2100p ="transform:translate(0%, 100%);"
+	data-_offset22-2200p= "transform:translate(0%, 0%);"
+	data-_sumoffset22-2300p=""
+	data-_sumoffset22-2400p="transform:translate(0%, -150%);"
 ------------- SECTION 22 end -------------
 
 
 ------------- SECTION 23 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage23-2200p ="transform:translate(0%, 100%);"
-data-_startingPercentage23-2300p= "transform:translate(0%, 0%);"
-data-_pausingSum23-2400p=""
-data-_pausingSum23-2500p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset23-2200p ="transform:translate(0%, 100%);"
+	data-_offset23-2300p= "transform:translate(0%, 0%);"
+	data-_sumoffset23-2400p=""
+	data-_sumoffset23-2500p="transform:translate(0%, -150%);"
 ------------- SECTION 23 end -------------
 
 
 ------------- SECTION 24 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage24-2300p ="transform:translate(0%, 100%);"
-data-_startingPercentage24-2400p= "transform:translate(0%, 0%);"
-data-_pausingSum24-2500p=""
-data-_pausingSum24-2600p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset24-2300p ="transform:translate(0%, 100%);"
+	data-_offset24-2400p= "transform:translate(0%, 0%);"
+	data-_sumoffset24-2500p=""
+	data-_sumoffset24-2600p="transform:translate(0%, -150%);"
 ------------- SECTION 24 end -------------
 
 
 ------------- SECTION 25 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage25-2400p ="transform:translate(0%, 100%);"
-data-_startingPercentage25-2500p= "transform:translate(0%, 0%);"
-data-_pausingSum25-2600p=""
-data-_pausingSum25-2700p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset25-2400p ="transform:translate(0%, 100%);"
+	data-_offset25-2500p= "transform:translate(0%, 0%);"
+	data-_sumoffset25-2600p=""
+	data-_sumoffset25-2700p="transform:translate(0%, -150%);"
 ------------- SECTION 25 end -------------
 
 
 ------------- SECTION 26 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage26-2500p ="transform:translate(0%, 100%);"
-data-_startingPercentage26-2600p= "transform:translate(0%, 0%);"
-data-_pausingSum26-2700p=""
-data-_pausingSum26-2800p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset26-2500p ="transform:translate(0%, 100%);"
+	data-_offset26-2600p= "transform:translate(0%, 0%);"
+	data-_sumoffset26-2700p=""
+	data-_sumoffset26-2800p="transform:translate(0%, -150%);"
 ------------- SECTION 26 end -------------
 
 
 ------------- SECTION 27 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage27-2600p ="transform:translate(0%, 100%);"
-data-_startingPercentage27-2700p= "transform:translate(0%, 0%);"
-data-_pausingSum27-2800p=""
-data-_pausingSum27-2900p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset27-2600p ="transform:translate(0%, 100%);"
+	data-_offset27-2700p= "transform:translate(0%, 0%);"
+	data-_sumoffset27-2800p=""
+	data-_sumoffset27-2900p="transform:translate(0%, -150%);"
 ------------- SECTION 27 end -------------
 
 
 ------------- SECTION 28 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage28-2700p ="transform:translate(0%, 100%);"
-data-_startingPercentage28-2800p= "transform:translate(0%, 0%);"
-data-_pausingSum28-2900p=""
-data-_pausingSum28-3000p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset28-2700p ="transform:translate(0%, 100%);"
+	data-_offset28-2800p= "transform:translate(0%, 0%);"
+	data-_sumoffset28-2900p=""
+	data-_sumoffset28-3000p="transform:translate(0%, -150%);"
 ------------- SECTION 28 end -------------
 
 
 ------------- SECTION 29 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage29-2800p ="transform:translate(0%, 100%);"
-data-_startingPercentage29-2900p= "transform:translate(0%, 0%);"
-data-_pausingSum29-3000p=""
-data-_pausingSum29-3100p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset29-2800p ="transform:translate(0%, 100%);"
+	data-_offset29-2900p= "transform:translate(0%, 0%);"
+	data-_sumoffset29-3000p=""
+	data-_sumoffset29-3100p="transform:translate(0%, -150%);"
 ------------- SECTION 29 end -------------
 
 
 ------------- SECTION 30 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage30-2900p ="transform:translate(0%, 100%);"
-data-_startingPercentage30-3000p= "transform:translate(0%, 0%);"
-data-_pausingSum30-3100p=""
-data-_pausingSum30-3200p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset30-2900p ="transform:translate(0%, 100%);"
+	data-_offset30-3000p= "transform:translate(0%, 0%);"
+	data-_sumoffset30-3100p=""
+	data-_sumoffset30-3200p="transform:translate(0%, -150%);"
 ------------- SECTION 30 end -------------
 
 
 ------------- SECTION 31 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage31-3000p ="transform:translate(0%, 100%);"
-data-_startingPercentage31-3100p= "transform:translate(0%, 0%);"
-data-_pausingSum31-3200p=""
-data-_pausingSum31-3300p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset31-3000p ="transform:translate(0%, 100%);"
+	data-_offset31-3100p= "transform:translate(0%, 0%);"
+	data-_sumoffset31-3200p=""
+	data-_sumoffset31-3300p="transform:translate(0%, -150%);"
 ------------- SECTION 31 end -------------
 
 
 ------------- SECTION 32 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage32-3100p ="transform:translate(0%, 100%);"
-data-_startingPercentage32-3200p= "transform:translate(0%, 0%);"
-data-_pausingSum32-3300p=""
-data-_pausingSum32-3400p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset32-3100p ="transform:translate(0%, 100%);"
+	data-_offset32-3200p= "transform:translate(0%, 0%);"
+	data-_sumoffset32-3300p=""
+	data-_sumoffset32-3400p="transform:translate(0%, -150%);"
 ------------- SECTION 32 end -------------
 
 
 ------------- SECTION 33 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage33-3200p ="transform:translate(0%, 100%);"
-data-_startingPercentage33-3300p= "transform:translate(0%, 0%);"
-data-_pausingSum33-3400p=""
-data-_pausingSum33-3500p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset33-3200p ="transform:translate(0%, 100%);"
+	data-_offset33-3300p= "transform:translate(0%, 0%);"
+	data-_sumoffset33-3400p=""
+	data-_sumoffset33-3500p="transform:translate(0%, -150%);"
 ------------- SECTION 33 end -------------
 
 
 ------------- SECTION 34 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage34-3300p ="transform:translate(0%, 100%);"
-data-_startingPercentage34-3400p= "transform:translate(0%, 0%);"
-data-_pausingSum34-3500p=""
-data-_pausingSum34-3600p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset34-3300p ="transform:translate(0%, 100%);"
+	data-_offset34-3400p= "transform:translate(0%, 0%);"
+	data-_sumoffset34-3500p=""
+	data-_sumoffset34-3600p="transform:translate(0%, -150%);"
 ------------- SECTION 34 end -------------
 
 
 ------------- SECTION 35 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage35-3400p ="transform:translate(0%, 100%);"
-data-_startingPercentage35-3500p= "transform:translate(0%, 0%);"
-data-_pausingSum35-3600p=""
-data-_pausingSum35-3700p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset35-3400p ="transform:translate(0%, 100%);"
+	data-_offset35-3500p= "transform:translate(0%, 0%);"
+	data-_sumoffset35-3600p=""
+	data-_sumoffset35-3700p="transform:translate(0%, -150%);"
 ------------- SECTION 35 end -------------
 
 
 ------------- SECTION 36 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage36-3500p ="transform:translate(0%, 100%);"
-data-_startingPercentage36-3600p= "transform:translate(0%, 0%);"
-data-_pausingSum36-3700p=""
-data-_pausingSum36-3800p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset36-3500p ="transform:translate(0%, 100%);"
+	data-_offset36-3600p= "transform:translate(0%, 0%);"
+	data-_sumoffset36-3700p=""
+	data-_sumoffset36-3800p="transform:translate(0%, -150%);"
 ------------- SECTION 36 end -------------
 
 
 ------------- SECTION 37 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage37-3600p ="transform:translate(0%, 100%);"
-data-_startingPercentage37-3700p= "transform:translate(0%, 0%);"
-data-_pausingSum37-3800p=""
-data-_pausingSum37-3900p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset37-3600p ="transform:translate(0%, 100%);"
+	data-_offset37-3700p= "transform:translate(0%, 0%);"
+	data-_sumoffset37-3800p=""
+	data-_sumoffset37-3900p="transform:translate(0%, -150%);"
 ------------- SECTION 37 end -------------
 
 
 ------------- SECTION 38 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage38-3700p ="transform:translate(0%, 100%);"
-data-_startingPercentage38-3800p= "transform:translate(0%, 0%);"
-data-_pausingSum38-3900p=""
-data-_pausingSum38-4000p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset38-3700p ="transform:translate(0%, 100%);"
+	data-_offset38-3800p= "transform:translate(0%, 0%);"
+	data-_sumoffset38-3900p=""
+	data-_sumoffset38-4000p="transform:translate(0%, -150%);"
 ------------- SECTION 38 end -------------
 
 
 ------------- SECTION 39 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage39-3800p ="transform:translate(0%, 100%);"
-data-_startingPercentage39-3900p= "transform:translate(0%, 0%);"
-data-_pausingSum39-4000p=""
-data-_pausingSum39-4100p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset39-3800p ="transform:translate(0%, 100%);"
+	data-_offset39-3900p= "transform:translate(0%, 0%);"
+	data-_sumoffset39-4000p=""
+	data-_sumoffset39-4100p="transform:translate(0%, -150%);"
 ------------- SECTION 39 end -------------
 
 
 ------------- SECTION 40 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage40-3900p ="transform:translate(0%, 100%);"
-data-_startingPercentage40-4000p= "transform:translate(0%, 0%);"
-data-_pausingSum40-4100p=""
-data-_pausingSum40-4200p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset40-3900p ="transform:translate(0%, 100%);"
+	data-_offset40-4000p= "transform:translate(0%, 0%);"
+	data-_sumoffset40-4100p=""
+	data-_sumoffset40-4200p="transform:translate(0%, -150%);"
 ------------- SECTION 40 end -------------
 
 
 ------------- SECTION 41 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage41-4000p ="transform:translate(0%, 100%);"
-data-_startingPercentage41-4100p= "transform:translate(0%, 0%);"
-data-_pausingSum41-4200p=""
-data-_pausingSum41-4300p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset41-4000p ="transform:translate(0%, 100%);"
+	data-_offset41-4100p= "transform:translate(0%, 0%);"
+	data-_sumoffset41-4200p=""
+	data-_sumoffset41-4300p="transform:translate(0%, -150%);"
 ------------- SECTION 41 end -------------
 
 
 ------------- SECTION 42 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage42-4100p ="transform:translate(0%, 100%);"
-data-_startingPercentage42-4200p= "transform:translate(0%, 0%);"
-data-_pausingSum42-4300p=""
-data-_pausingSum42-4400p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset42-4100p ="transform:translate(0%, 100%);"
+	data-_offset42-4200p= "transform:translate(0%, 0%);"
+	data-_sumoffset42-4300p=""
+	data-_sumoffset42-4400p="transform:translate(0%, -150%);"
 ------------- SECTION 42 end -------------
 
 
 ------------- SECTION 43 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage43-4200p ="transform:translate(0%, 100%);"
-data-_startingPercentage43-4300p= "transform:translate(0%, 0%);"
-data-_pausingSum43-4400p=""
-data-_pausingSum43-4500p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset43-4200p ="transform:translate(0%, 100%);"
+	data-_offset43-4300p= "transform:translate(0%, 0%);"
+	data-_sumoffset43-4400p=""
+	data-_sumoffset43-4500p="transform:translate(0%, -150%);"
 ------------- SECTION 43 end -------------
 
 
 ------------- SECTION 44 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage44-4300p ="transform:translate(0%, 100%);"
-data-_startingPercentage44-4400p= "transform:translate(0%, 0%);"
-data-_pausingSum44-4500p=""
-data-_pausingSum44-4600p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset44-4300p ="transform:translate(0%, 100%);"
+	data-_offset44-4400p= "transform:translate(0%, 0%);"
+	data-_sumoffset44-4500p=""
+	data-_sumoffset44-4600p="transform:translate(0%, -150%);"
 ------------- SECTION 44 end -------------
 
 
 ------------- SECTION 45 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage45-4400p ="transform:translate(0%, 100%);"
-data-_startingPercentage45-4500p= "transform:translate(0%, 0%);"
-data-_pausingSum45-4600p=""
-data-_pausingSum45-4700p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset45-4400p ="transform:translate(0%, 100%);"
+	data-_offset45-4500p= "transform:translate(0%, 0%);"
+	data-_sumoffset45-4600p=""
+	data-_sumoffset45-4700p="transform:translate(0%, -150%);"
 ------------- SECTION 45 end -------------
 
 
 ------------- SECTION 46 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage46-4500p ="transform:translate(0%, 100%);"
-data-_startingPercentage46-4600p= "transform:translate(0%, 0%);"
-data-_pausingSum46-4700p=""
-data-_pausingSum46-4800p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset46-4500p ="transform:translate(0%, 100%);"
+	data-_offset46-4600p= "transform:translate(0%, 0%);"
+	data-_sumoffset46-4700p=""
+	data-_sumoffset46-4800p="transform:translate(0%, -150%);"
 ------------- SECTION 46 end -------------
 
 
 ------------- SECTION 47 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage47-4600p ="transform:translate(0%, 100%);"
-data-_startingPercentage47-4700p= "transform:translate(0%, 0%);"
-data-_pausingSum47-4800p=""
-data-_pausingSum47-4900p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset47-4600p ="transform:translate(0%, 100%);"
+	data-_offset47-4700p= "transform:translate(0%, 0%);"
+	data-_sumoffset47-4800p=""
+	data-_sumoffset47-4900p="transform:translate(0%, -150%);"
 ------------- SECTION 47 end -------------
 
 
 ------------- SECTION 48 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage48-4700p ="transform:translate(0%, 100%);"
-data-_startingPercentage48-4800p= "transform:translate(0%, 0%);"
-data-_pausingSum48-4900p=""
-data-_pausingSum48-5000p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset48-4700p ="transform:translate(0%, 100%);"
+	data-_offset48-4800p= "transform:translate(0%, 0%);"
+	data-_sumoffset48-4900p=""
+	data-_sumoffset48-5000p="transform:translate(0%, -150%);"
 ------------- SECTION 48 end -------------
 
 
 ------------- SECTION 49 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage49-4800p ="transform:translate(0%, 100%);"
-data-_startingPercentage49-4900p= "transform:translate(0%, 0%);"
-data-_pausingSum49-5000p=""
-data-_pausingSum49-5100p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset49-4800p ="transform:translate(0%, 100%);"
+	data-_offset49-4900p= "transform:translate(0%, 0%);"
+	data-_sumoffset49-5000p=""
+	data-_sumoffset49-5100p="transform:translate(0%, -150%);"
 ------------- SECTION 49 end -------------
 
 
 ------------- SECTION 50 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage50-4900p ="transform:translate(0%, 100%);"
-data-_startingPercentage50-5000p= "transform:translate(0%, 0%);"
-data-_pausingSum50-5100p=""
-data-_pausingSum50-5200p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset50-4900p ="transform:translate(0%, 100%);"
+	data-_offset50-5000p= "transform:translate(0%, 0%);"
+	data-_sumoffset50-5100p=""
+	data-_sumoffset50-5200p="transform:translate(0%, -150%);"
 ------------- SECTION 50 end -------------
 
 
 ------------- SECTION 51 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage51-5000p ="transform:translate(0%, 100%);"
-data-_startingPercentage51-5100p= "transform:translate(0%, 0%);"
-data-_pausingSum51-5200p=""
-data-_pausingSum51-5300p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset51-5000p ="transform:translate(0%, 100%);"
+	data-_offset51-5100p= "transform:translate(0%, 0%);"
+	data-_sumoffset51-5200p=""
+	data-_sumoffset51-5300p="transform:translate(0%, -150%);"
 ------------- SECTION 51 end -------------
 
 
 ------------- SECTION 52 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage52-5100p ="transform:translate(0%, 100%);"
-data-_startingPercentage52-5200p= "transform:translate(0%, 0%);"
-data-_pausingSum52-5300p=""
-data-_pausingSum52-5400p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset52-5100p ="transform:translate(0%, 100%);"
+	data-_offset52-5200p= "transform:translate(0%, 0%);"
+	data-_sumoffset52-5300p=""
+	data-_sumoffset52-5400p="transform:translate(0%, -150%);"
 ------------- SECTION 52 end -------------
 
 
 ------------- SECTION 53 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage53-5200p ="transform:translate(0%, 100%);"
-data-_startingPercentage53-5300p= "transform:translate(0%, 0%);"
-data-_pausingSum53-5400p=""
-data-_pausingSum53-5500p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset53-5200p ="transform:translate(0%, 100%);"
+	data-_offset53-5300p= "transform:translate(0%, 0%);"
+	data-_sumoffset53-5400p=""
+	data-_sumoffset53-5500p="transform:translate(0%, -150%);"
 ------------- SECTION 53 end -------------
 
 
 ------------- SECTION 54 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage54-5300p ="transform:translate(0%, 100%);"
-data-_startingPercentage54-5400p= "transform:translate(0%, 0%);"
-data-_pausingSum54-5500p=""
-data-_pausingSum54-5600p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset54-5300p ="transform:translate(0%, 100%);"
+	data-_offset54-5400p= "transform:translate(0%, 0%);"
+	data-_sumoffset54-5500p=""
+	data-_sumoffset54-5600p="transform:translate(0%, -150%);"
 ------------- SECTION 54 end -------------
 
 
 ------------- SECTION 55 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage55-5400p ="transform:translate(0%, 100%);"
-data-_startingPercentage55-5500p= "transform:translate(0%, 0%);"
-data-_pausingSum55-5600p=""
-data-_pausingSum55-5700p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset55-5400p ="transform:translate(0%, 100%);"
+	data-_offset55-5500p= "transform:translate(0%, 0%);"
+	data-_sumoffset55-5600p=""
+	data-_sumoffset55-5700p="transform:translate(0%, -150%);"
 ------------- SECTION 55 end -------------
 
 
 ------------- SECTION 56 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage56-5500p ="transform:translate(0%, 100%);"
-data-_startingPercentage56-5600p= "transform:translate(0%, 0%);"
-data-_pausingSum56-5700p=""
-data-_pausingSum56-5800p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset56-5500p ="transform:translate(0%, 100%);"
+	data-_offset56-5600p= "transform:translate(0%, 0%);"
+	data-_sumoffset56-5700p=""
+	data-_sumoffset56-5800p="transform:translate(0%, -150%);"
 ------------- SECTION 56 end -------------
 
 
 ------------- SECTION 57 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage57-5600p ="transform:translate(0%, 100%);"
-data-_startingPercentage57-5700p= "transform:translate(0%, 0%);"
-data-_pausingSum57-5800p=""
-data-_pausingSum57-5900p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset57-5600p ="transform:translate(0%, 100%);"
+	data-_offset57-5700p= "transform:translate(0%, 0%);"
+	data-_sumoffset57-5800p=""
+	data-_sumoffset57-5900p="transform:translate(0%, -150%);"
 ------------- SECTION 57 end -------------
 
 
 ------------- SECTION 58 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage58-5700p ="transform:translate(0%, 100%);"
-data-_startingPercentage58-5800p= "transform:translate(0%, 0%);"
-data-_pausingSum58-5900p=""
-data-_pausingSum58-6000p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset58-5700p ="transform:translate(0%, 100%);"
+	data-_offset58-5800p= "transform:translate(0%, 0%);"
+	data-_sumoffset58-5900p=""
+	data-_sumoffset58-6000p="transform:translate(0%, -150%);"
 ------------- SECTION 58 end -------------
 
 
 ------------- SECTION 59 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage59-5800p ="transform:translate(0%, 100%);"
-data-_startingPercentage59-5900p= "transform:translate(0%, 0%);"
-data-_pausingSum59-6000p=""
-data-_pausingSum59-6100p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset59-5800p ="transform:translate(0%, 100%);"
+	data-_offset59-5900p= "transform:translate(0%, 0%);"
+	data-_sumoffset59-6000p=""
+	data-_sumoffset59-6100p="transform:translate(0%, -150%);"
 ------------- SECTION 59 end -------------
 
 
 ------------- SECTION 60 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage60-5900p ="transform:translate(0%, 100%);"
-data-_startingPercentage60-6000p= "transform:translate(0%, 0%);"
-data-_pausingSum60-6100p=""
-data-_pausingSum60-6200p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset60-5900p ="transform:translate(0%, 100%);"
+	data-_offset60-6000p= "transform:translate(0%, 0%);"
+	data-_sumoffset60-6100p=""
+	data-_sumoffset60-6200p="transform:translate(0%, -150%);"
 ------------- SECTION 60 end -------------
 
 
 ------------- SECTION 61 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage61-6000p ="transform:translate(0%, 100%);"
-data-_startingPercentage61-6100p= "transform:translate(0%, 0%);"
-data-_pausingSum61-6200p=""
-data-_pausingSum61-6300p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset61-6000p ="transform:translate(0%, 100%);"
+	data-_offset61-6100p= "transform:translate(0%, 0%);"
+	data-_sumoffset61-6200p=""
+	data-_sumoffset61-6300p="transform:translate(0%, -150%);"
 ------------- SECTION 61 end -------------
 
 
 ------------- SECTION 62 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage62-6100p ="transform:translate(0%, 100%);"
-data-_startingPercentage62-6200p= "transform:translate(0%, 0%);"
-data-_pausingSum62-6300p=""
-data-_pausingSum62-6400p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset62-6100p ="transform:translate(0%, 100%);"
+	data-_offset62-6200p= "transform:translate(0%, 0%);"
+	data-_sumoffset62-6300p=""
+	data-_sumoffset62-6400p="transform:translate(0%, -150%);"
 ------------- SECTION 62 end -------------
 
 
 ------------- SECTION 63 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage63-6200p ="transform:translate(0%, 100%);"
-data-_startingPercentage63-6300p= "transform:translate(0%, 0%);"
-data-_pausingSum63-6400p=""
-data-_pausingSum63-6500p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset63-6200p ="transform:translate(0%, 100%);"
+	data-_offset63-6300p= "transform:translate(0%, 0%);"
+	data-_sumoffset63-6400p=""
+	data-_sumoffset63-6500p="transform:translate(0%, -150%);"
 ------------- SECTION 63 end -------------
 
 
 ------------- SECTION 64 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage64-6300p ="transform:translate(0%, 100%);"
-data-_startingPercentage64-6400p= "transform:translate(0%, 0%);"
-data-_pausingSum64-6500p=""
-data-_pausingSum64-6600p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset64-6300p ="transform:translate(0%, 100%);"
+	data-_offset64-6400p= "transform:translate(0%, 0%);"
+	data-_sumoffset64-6500p=""
+	data-_sumoffset64-6600p="transform:translate(0%, -150%);"
 ------------- SECTION 64 end -------------
 
 
 ------------- SECTION 65 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage65-6400p ="transform:translate(0%, 100%);"
-data-_startingPercentage65-6500p= "transform:translate(0%, 0%);"
-data-_pausingSum65-6600p=""
-data-_pausingSum65-6700p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset65-6400p ="transform:translate(0%, 100%);"
+	data-_offset65-6500p= "transform:translate(0%, 0%);"
+	data-_sumoffset65-6600p=""
+	data-_sumoffset65-6700p="transform:translate(0%, -150%);"
 ------------- SECTION 65 end -------------
 
 
 ------------- SECTION 66 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage66-6500p ="transform:translate(0%, 100%);"
-data-_startingPercentage66-6600p= "transform:translate(0%, 0%);"
-data-_pausingSum66-6700p=""
-data-_pausingSum66-6800p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset66-6500p ="transform:translate(0%, 100%);"
+	data-_offset66-6600p= "transform:translate(0%, 0%);"
+	data-_sumoffset66-6700p=""
+	data-_sumoffset66-6800p="transform:translate(0%, -150%);"
 ------------- SECTION 66 end -------------
 
 
 ------------- SECTION 67 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage67-6600p ="transform:translate(0%, 100%);"
-data-_startingPercentage67-6700p= "transform:translate(0%, 0%);"
-data-_pausingSum67-6800p=""
-data-_pausingSum67-6900p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset67-6600p ="transform:translate(0%, 100%);"
+	data-_offset67-6700p= "transform:translate(0%, 0%);"
+	data-_sumoffset67-6800p=""
+	data-_sumoffset67-6900p="transform:translate(0%, -150%);"
 ------------- SECTION 67 end -------------
 
 
 ------------- SECTION 68 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage68-6700p ="transform:translate(0%, 100%);"
-data-_startingPercentage68-6800p= "transform:translate(0%, 0%);"
-data-_pausingSum68-6900p=""
-data-_pausingSum68-7000p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset68-6700p ="transform:translate(0%, 100%);"
+	data-_offset68-6800p= "transform:translate(0%, 0%);"
+	data-_sumoffset68-6900p=""
+	data-_sumoffset68-7000p="transform:translate(0%, -150%);"
 ------------- SECTION 68 end -------------
 
 
 ------------- SECTION 69 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage69-6800p ="transform:translate(0%, 100%);"
-data-_startingPercentage69-6900p= "transform:translate(0%, 0%);"
-data-_pausingSum69-7000p=""
-data-_pausingSum69-7100p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset69-6800p ="transform:translate(0%, 100%);"
+	data-_offset69-6900p= "transform:translate(0%, 0%);"
+	data-_sumoffset69-7000p=""
+	data-_sumoffset69-7100p="transform:translate(0%, -150%);"
 ------------- SECTION 69 end -------------
 
 
 ------------- SECTION 70 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage70-6900p ="transform:translate(0%, 100%);"
-data-_startingPercentage70-7000p= "transform:translate(0%, 0%);"
-data-_pausingSum70-7100p=""
-data-_pausingSum70-7200p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset70-6900p ="transform:translate(0%, 100%);"
+	data-_offset70-7000p= "transform:translate(0%, 0%);"
+	data-_sumoffset70-7100p=""
+	data-_sumoffset70-7200p="transform:translate(0%, -150%);"
 ------------- SECTION 70 end -------------
 
 
 ------------- SECTION 71 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage71-7000p ="transform:translate(0%, 100%);"
-data-_startingPercentage71-7100p= "transform:translate(0%, 0%);"
-data-_pausingSum71-7200p=""
-data-_pausingSum71-7300p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset71-7000p ="transform:translate(0%, 100%);"
+	data-_offset71-7100p= "transform:translate(0%, 0%);"
+	data-_sumoffset71-7200p=""
+	data-_sumoffset71-7300p="transform:translate(0%, -150%);"
 ------------- SECTION 71 end -------------
 
 
 ------------- SECTION 72 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage72-7100p ="transform:translate(0%, 100%);"
-data-_startingPercentage72-7200p= "transform:translate(0%, 0%);"
-data-_pausingSum72-7300p=""
-data-_pausingSum72-7400p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset72-7100p ="transform:translate(0%, 100%);"
+	data-_offset72-7200p= "transform:translate(0%, 0%);"
+	data-_sumoffset72-7300p=""
+	data-_sumoffset72-7400p="transform:translate(0%, -150%);"
 ------------- SECTION 72 end -------------
 
 
 ------------- SECTION 73 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage73-7200p ="transform:translate(0%, 100%);"
-data-_startingPercentage73-7300p= "transform:translate(0%, 0%);"
-data-_pausingSum73-7400p=""
-data-_pausingSum73-7500p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset73-7200p ="transform:translate(0%, 100%);"
+	data-_offset73-7300p= "transform:translate(0%, 0%);"
+	data-_sumoffset73-7400p=""
+	data-_sumoffset73-7500p="transform:translate(0%, -150%);"
 ------------- SECTION 73 end -------------
 
 
 ------------- SECTION 74 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage74-7300p ="transform:translate(0%, 100%);"
-data-_startingPercentage74-7400p= "transform:translate(0%, 0%);"
-data-_pausingSum74-7500p=""
-data-_pausingSum74-7600p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset74-7300p ="transform:translate(0%, 100%);"
+	data-_offset74-7400p= "transform:translate(0%, 0%);"
+	data-_sumoffset74-7500p=""
+	data-_sumoffset74-7600p="transform:translate(0%, -150%);"
 ------------- SECTION 74 end -------------
 
 
 ------------- SECTION 75 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage75-7400p ="transform:translate(0%, 100%);"
-data-_startingPercentage75-7500p= "transform:translate(0%, 0%);"
-data-_pausingSum75-7600p=""
-data-_pausingSum75-7700p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset75-7400p ="transform:translate(0%, 100%);"
+	data-_offset75-7500p= "transform:translate(0%, 0%);"
+	data-_sumoffset75-7600p=""
+	data-_sumoffset75-7700p="transform:translate(0%, -150%);"
 ------------- SECTION 75 end -------------
 
 
 ------------- SECTION 76 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage76-7500p ="transform:translate(0%, 100%);"
-data-_startingPercentage76-7600p= "transform:translate(0%, 0%);"
-data-_pausingSum76-7700p=""
-data-_pausingSum76-7800p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset76-7500p ="transform:translate(0%, 100%);"
+	data-_offset76-7600p= "transform:translate(0%, 0%);"
+	data-_sumoffset76-7700p=""
+	data-_sumoffset76-7800p="transform:translate(0%, -150%);"
 ------------- SECTION 76 end -------------
 
 
 ------------- SECTION 77 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage77-7600p ="transform:translate(0%, 100%);"
-data-_startingPercentage77-7700p= "transform:translate(0%, 0%);"
-data-_pausingSum77-7800p=""
-data-_pausingSum77-7900p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset77-7600p ="transform:translate(0%, 100%);"
+	data-_offset77-7700p= "transform:translate(0%, 0%);"
+	data-_sumoffset77-7800p=""
+	data-_sumoffset77-7900p="transform:translate(0%, -150%);"
 ------------- SECTION 77 end -------------
 
 
 ------------- SECTION 78 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage78-7700p ="transform:translate(0%, 100%);"
-data-_startingPercentage78-7800p= "transform:translate(0%, 0%);"
-data-_pausingSum78-7900p=""
-data-_pausingSum78-8000p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset78-7700p ="transform:translate(0%, 100%);"
+	data-_offset78-7800p= "transform:translate(0%, 0%);"
+	data-_sumoffset78-7900p=""
+	data-_sumoffset78-8000p="transform:translate(0%, -150%);"
 ------------- SECTION 78 end -------------
 
 
 ------------- SECTION 79 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage79-7800p ="transform:translate(0%, 100%);"
-data-_startingPercentage79-7900p= "transform:translate(0%, 0%);"
-data-_pausingSum79-8000p=""
-data-_pausingSum79-8100p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset79-7800p ="transform:translate(0%, 100%);"
+	data-_offset79-7900p= "transform:translate(0%, 0%);"
+	data-_sumoffset79-8000p=""
+	data-_sumoffset79-8100p="transform:translate(0%, -150%);"
 ------------- SECTION 79 end -------------
 
 
 ------------- SECTION 80 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage80-7900p ="transform:translate(0%, 100%);"
-data-_startingPercentage80-8000p= "transform:translate(0%, 0%);"
-data-_pausingSum80-8100p=""
-data-_pausingSum80-8200p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset80-7900p ="transform:translate(0%, 100%);"
+	data-_offset80-8000p= "transform:translate(0%, 0%);"
+	data-_sumoffset80-8100p=""
+	data-_sumoffset80-8200p="transform:translate(0%, -150%);"
 ------------- SECTION 80 end -------------
 
 
 ------------- SECTION 81 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage81-8000p ="transform:translate(0%, 100%);"
-data-_startingPercentage81-8100p= "transform:translate(0%, 0%);"
-data-_pausingSum81-8200p=""
-data-_pausingSum81-8300p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset81-8000p ="transform:translate(0%, 100%);"
+	data-_offset81-8100p= "transform:translate(0%, 0%);"
+	data-_sumoffset81-8200p=""
+	data-_sumoffset81-8300p="transform:translate(0%, -150%);"
 ------------- SECTION 81 end -------------
 
 
 ------------- SECTION 82 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage82-8100p ="transform:translate(0%, 100%);"
-data-_startingPercentage82-8200p= "transform:translate(0%, 0%);"
-data-_pausingSum82-8300p=""
-data-_pausingSum82-8400p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset82-8100p ="transform:translate(0%, 100%);"
+	data-_offset82-8200p= "transform:translate(0%, 0%);"
+	data-_sumoffset82-8300p=""
+	data-_sumoffset82-8400p="transform:translate(0%, -150%);"
 ------------- SECTION 82 end -------------
 
 
 ------------- SECTION 83 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage83-8200p ="transform:translate(0%, 100%);"
-data-_startingPercentage83-8300p= "transform:translate(0%, 0%);"
-data-_pausingSum83-8400p=""
-data-_pausingSum83-8500p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset83-8200p ="transform:translate(0%, 100%);"
+	data-_offset83-8300p= "transform:translate(0%, 0%);"
+	data-_sumoffset83-8400p=""
+	data-_sumoffset83-8500p="transform:translate(0%, -150%);"
 ------------- SECTION 83 end -------------
 
 
 ------------- SECTION 84 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage84-8300p ="transform:translate(0%, 100%);"
-data-_startingPercentage84-8400p= "transform:translate(0%, 0%);"
-data-_pausingSum84-8500p=""
-data-_pausingSum84-8600p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset84-8300p ="transform:translate(0%, 100%);"
+	data-_offset84-8400p= "transform:translate(0%, 0%);"
+	data-_sumoffset84-8500p=""
+	data-_sumoffset84-8600p="transform:translate(0%, -150%);"
 ------------- SECTION 84 end -------------
 
 
 ------------- SECTION 85 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage85-8400p ="transform:translate(0%, 100%);"
-data-_startingPercentage85-8500p= "transform:translate(0%, 0%);"
-data-_pausingSum85-8600p=""
-data-_pausingSum85-8700p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset85-8400p ="transform:translate(0%, 100%);"
+	data-_offset85-8500p= "transform:translate(0%, 0%);"
+	data-_sumoffset85-8600p=""
+	data-_sumoffset85-8700p="transform:translate(0%, -150%);"
 ------------- SECTION 85 end -------------
 
 
 ------------- SECTION 86 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage86-8500p ="transform:translate(0%, 100%);"
-data-_startingPercentage86-8600p= "transform:translate(0%, 0%);"
-data-_pausingSum86-8700p=""
-data-_pausingSum86-8800p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset86-8500p ="transform:translate(0%, 100%);"
+	data-_offset86-8600p= "transform:translate(0%, 0%);"
+	data-_sumoffset86-8700p=""
+	data-_sumoffset86-8800p="transform:translate(0%, -150%);"
 ------------- SECTION 86 end -------------
 
 
 ------------- SECTION 87 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage87-8600p ="transform:translate(0%, 100%);"
-data-_startingPercentage87-8700p= "transform:translate(0%, 0%);"
-data-_pausingSum87-8800p=""
-data-_pausingSum87-8900p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset87-8600p ="transform:translate(0%, 100%);"
+	data-_offset87-8700p= "transform:translate(0%, 0%);"
+	data-_sumoffset87-8800p=""
+	data-_sumoffset87-8900p="transform:translate(0%, -150%);"
 ------------- SECTION 87 end -------------
 
 
 ------------- SECTION 88 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage88-8700p ="transform:translate(0%, 100%);"
-data-_startingPercentage88-8800p= "transform:translate(0%, 0%);"
-data-_pausingSum88-8900p=""
-data-_pausingSum88-9000p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset88-8700p ="transform:translate(0%, 100%);"
+	data-_offset88-8800p= "transform:translate(0%, 0%);"
+	data-_sumoffset88-8900p=""
+	data-_sumoffset88-9000p="transform:translate(0%, -150%);"
 ------------- SECTION 88 end -------------
 
 
 ------------- SECTION 89 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage89-8800p ="transform:translate(0%, 100%);"
-data-_startingPercentage89-8900p= "transform:translate(0%, 0%);"
-data-_pausingSum89-9000p=""
-data-_pausingSum89-9100p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset89-8800p ="transform:translate(0%, 100%);"
+	data-_offset89-8900p= "transform:translate(0%, 0%);"
+	data-_sumoffset89-9000p=""
+	data-_sumoffset89-9100p="transform:translate(0%, -150%);"
 ------------- SECTION 89 end -------------
 
 
 ------------- SECTION 90 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage90-8900p ="transform:translate(0%, 100%);"
-data-_startingPercentage90-9000p= "transform:translate(0%, 0%);"
-data-_pausingSum90-9100p=""
-data-_pausingSum90-9200p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset90-8900p ="transform:translate(0%, 100%);"
+	data-_offset90-9000p= "transform:translate(0%, 0%);"
+	data-_sumoffset90-9100p=""
+	data-_sumoffset90-9200p="transform:translate(0%, -150%);"
 ------------- SECTION 90 end -------------
 
 
 ------------- SECTION 91 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage91-9000p ="transform:translate(0%, 100%);"
-data-_startingPercentage91-9100p= "transform:translate(0%, 0%);"
-data-_pausingSum91-9200p=""
-data-_pausingSum91-9300p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset91-9000p ="transform:translate(0%, 100%);"
+	data-_offset91-9100p= "transform:translate(0%, 0%);"
+	data-_sumoffset91-9200p=""
+	data-_sumoffset91-9300p="transform:translate(0%, -150%);"
 ------------- SECTION 91 end -------------
 
 
 ------------- SECTION 92 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage92-9100p ="transform:translate(0%, 100%);"
-data-_startingPercentage92-9200p= "transform:translate(0%, 0%);"
-data-_pausingSum92-9300p=""
-data-_pausingSum92-9400p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset92-9100p ="transform:translate(0%, 100%);"
+	data-_offset92-9200p= "transform:translate(0%, 0%);"
+	data-_sumoffset92-9300p=""
+	data-_sumoffset92-9400p="transform:translate(0%, -150%);"
 ------------- SECTION 92 end -------------
 
 
 ------------- SECTION 93 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage93-9200p ="transform:translate(0%, 100%);"
-data-_startingPercentage93-9300p= "transform:translate(0%, 0%);"
-data-_pausingSum93-9400p=""
-data-_pausingSum93-9500p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset93-9200p ="transform:translate(0%, 100%);"
+	data-_offset93-9300p= "transform:translate(0%, 0%);"
+	data-_sumoffset93-9400p=""
+	data-_sumoffset93-9500p="transform:translate(0%, -150%);"
 ------------- SECTION 93 end -------------
 
 
 ------------- SECTION 94 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage94-9300p ="transform:translate(0%, 100%);"
-data-_startingPercentage94-9400p= "transform:translate(0%, 0%);"
-data-_pausingSum94-9500p=""
-data-_pausingSum94-9600p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset94-9300p ="transform:translate(0%, 100%);"
+	data-_offset94-9400p= "transform:translate(0%, 0%);"
+	data-_sumoffset94-9500p=""
+	data-_sumoffset94-9600p="transform:translate(0%, -150%);"
 ------------- SECTION 94 end -------------
 
 
 ------------- SECTION 95 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage95-9400p ="transform:translate(0%, 100%);"
-data-_startingPercentage95-9500p= "transform:translate(0%, 0%);"
-data-_pausingSum95-9600p=""
-data-_pausingSum95-9700p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset95-9400p ="transform:translate(0%, 100%);"
+	data-_offset95-9500p= "transform:translate(0%, 0%);"
+	data-_sumoffset95-9600p=""
+	data-_sumoffset95-9700p="transform:translate(0%, -150%);"
 ------------- SECTION 95 end -------------
 
 
 ------------- SECTION 96 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage96-9500p ="transform:translate(0%, 100%);"
-data-_startingPercentage96-9600p= "transform:translate(0%, 0%);"
-data-_pausingSum96-9700p=""
-data-_pausingSum96-9800p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset96-9500p ="transform:translate(0%, 100%);"
+	data-_offset96-9600p= "transform:translate(0%, 0%);"
+	data-_sumoffset96-9700p=""
+	data-_sumoffset96-9800p="transform:translate(0%, -150%);"
 ------------- SECTION 96 end -------------
 
 
 ------------- SECTION 97 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage97-9600p ="transform:translate(0%, 100%);"
-data-_startingPercentage97-9700p= "transform:translate(0%, 0%);"
-data-_pausingSum97-9800p=""
-data-_pausingSum97-9900p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset97-9600p ="transform:translate(0%, 100%);"
+	data-_offset97-9700p= "transform:translate(0%, 0%);"
+	data-_sumoffset97-9800p=""
+	data-_sumoffset97-9900p="transform:translate(0%, -150%);"
 ------------- SECTION 97 end -------------
 
 
 ------------- SECTION 98 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage98-9700p ="transform:translate(0%, 100%);"
-data-_startingPercentage98-9800p= "transform:translate(0%, 0%);"
-data-_pausingSum98-9900p=""
-data-_pausingSum98-10000p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset98-9700p ="transform:translate(0%, 100%);"
+	data-_offset98-9800p= "transform:translate(0%, 0%);"
+	data-_sumoffset98-9900p=""
+	data-_sumoffset98-10000p="transform:translate(0%, -150%);"
 ------------- SECTION 98 end -------------
 
 
 ------------- SECTION 99 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage99-9800p ="transform:translate(0%, 100%);"
-data-_startingPercentage99-9900p= "transform:translate(0%, 0%);"
-data-_pausingSum99-10000p=""
-data-_pausingSum99-10100p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset99-9800p ="transform:translate(0%, 100%);"
+	data-_offset99-9900p= "transform:translate(0%, 0%);"
+	data-_sumoffset99-10000p=""
+	data-_sumoffset99-10100p="transform:translate(0%, -150%);"
 ------------- SECTION 99 end -------------
 
 
 ------------- SECTION 100 start -------------
-data-0="transform:translate(0%, 100%);"
-data-_startingPercentage100-9900p ="transform:translate(0%, 100%);"
-data-_startingPercentage100-10000p= "transform:translate(0%, 0%);"
-data-_pausingSum100-10100p=""
-data-_pausingSum100-10200p="transform:translate(0%, -150%);"
+	data-0="transform:translate(0%, 100%);"
+	data-_offset100-9900p ="transform:translate(0%, 100%);"
+	data-_offset100-10000p= "transform:translate(0%, 0%);"
+	data-_sumoffset100-10100p=""
+	data-_sumoffset100-10200p="transform:translate(0%, -150%);"
 ------------- SECTION 100 end -------------
 
 

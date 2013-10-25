@@ -3,8 +3,9 @@ import java.io.PrintWriter;
 
 
 public class GenerateKeyframes {
-	public static final String DATA0_KEYFRAME = "data-0=\"transform:translate(0%, 0%);\"\n";
-	public static final String KEYFRAMES_SECTION1 = DATA0_KEYFRAME+ 
+	public static final String DATA0_KEYFRAME_1 = "data-0=\"transform:translate(0%, 0%);\"\n";
+	public static final String DATA0_KEYFRAME = "data-0=\"transform:translate(0%, 100%);\"\n";
+	public static final String KEYFRAMES_SECTION1 = DATA0_KEYFRAME_1 + 
 							"data-_pausing1-100p=\"transform:translate(0%, 0%);\"\n"+
 							 "data-_pausing1-200p=\"transform:translate(0%, -150%);\n" ;
 
@@ -30,9 +31,10 @@ public class GenerateKeyframes {
 	
 	public static String computeExternalKeyframes(int n)
 	{
-		String toReturn=DATA0_KEYFRAME;
+		String toReturn=""; 
 		if (n!=1)
 		{
+			toReturn+=DATA0_KEYFRAME;
 			toReturn+="data-_startingPercentage"+n+"-"+(n-1)+"00p =\"transform:translate(0%, 100%);\""+"\n";
 			toReturn+="data-_startingPercentage"+n+"-"+(n)+"00p= \"transform:translate(0%, 0%);\""+"\n"; 
 			toReturn+="data-_pausingSum"+n+"-"+(n+1)+"00p=\"\"\n";

@@ -255,7 +255,7 @@ function debugSkrollrConstants()
 	{
 		console.log("pausing"+i+"="+getPausing(i,true)); 
 		console.log("pausingCumulative"+i+"="+getStartingPercentageOfSection(i)); 
-		console.log("pausingSum"+i+"="+getPausingSum(35)); 
+		console.log("pausingSum"+i+"="+getPausingSum(i)); 
 	}
 }
 

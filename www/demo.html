@@ -45,7 +45,7 @@
   </head>
 
   <body>
-  	<div id="toggleMenu"><a href="javascript:toggleMenu()"><img id="menuToggleIcon" src="images/menu-open.png" /></a></div>
+  	<div id="toggleMenu"><a href="javascript:toggleMenu();"><img id="menuToggleIcon" src="images/menu-open.png" /></a></div>
 	<div id="scroll-pos">0px ; 0p</div>
 	<div id="sectionTracker">section1</div>
   	<section id="menuSection" class="col-sm-12" onclick="javascript:closeMenu();">
@@ -85,8 +85,8 @@
 
 	<!-- 1 VID.BG.GRID.TITLE -->
 	<section class="col-sm-12 allPages" 
-	data-0="transform:translate(0,0%);" 
-	data-100p="" 
+	data-0="transform:translate(0%,0%);" 
+	data-_pausing1-100p="transform:translate(0%, 0%);"
 	data-_pausing1-200p="transform:translate(0,-150%);" 
 	id="VID.BG.GRID.TITLE">
 		<section class="title_with_grid">
@@ -107,9 +107,10 @@
 	<!-- 2 VID.BG.TITLE -->
 	<section class="col-sm-12 allPages" id="VID.BG.TITLE"
 	data-0="transform:translate(0,100%);" 
-	data-_pausing1-100p="transform:translate(0,0%);" 
-	data-_pausing2-200p="" 
-	data-_pausing2-300p="transform:translate(0,-150%);">
+	data-100p="transform:translate(0%, 0%);"
+	data-_pausingSum2-200p=""
+	data-_pausingSum2-300p="transform:translate(0%, -150%);"
+	>
 		<section class="title_with_grid">
 			<p>
 				<h1 class="ombreggiaturaTesto">2. VID.BG.<br>TITLE</h1>
@@ -126,10 +127,12 @@
 	
 	<!-- 3 VID.BG.NO-TITLE -->
 	<section class="col-sm-12 allPages" id="VID.BG.NO-TITLE"
-	data-0="transform:translate(0,200%);" 
-	data-_pausing2-200p="transform:translate(0,0%);" 
-	data-_pausing3-300p="" 
-	data-_pausing3-400p="transform:translate(0,-150%);" >
+	data-0="transform:translate(0%, 100%);"
+	data-_pausingCumulative3-100p="transform:translate(0%, 100%);"
+	data-_pausingCumulative3-200p="transform:translate(0%, 0%);" 
+	data-_pausingSum3-300p=""
+	data-_pausingSum3-400p="transform:translate(0%, -150%);"
+	>
 	<section class="title_with_grid">
 				<h1 class="ombreggiaturaTesto">3.</h1>
 		</section>
@@ -143,10 +146,11 @@
 	
 	<!-- 4 VID.BG.GRID.NO-TITLE -->
 	<section class="col-sm-12 allPages" id="VID.BG.GRID.NO-TITLE"
-	data-0="transform:translate(0,300%);" 
-	data-_pausing3-300p="transform:translate(0,0%);" 
-	data-_pausing4-400p="" 
-	data-_pausing4-500p="transform:translate(0,-150%);" >
+	data-0="transform:translate(0%, 100%);"
+	data-_pausingCumulative4-200p="transform:translate(0%, 100%);"
+	data-_pausingCumulative4-300p="transform:translate(0%, 0%);" 
+	data-_pausingSum4-400p=""
+	data-_pausingSum4-500p="transform:translate(0%, -150%);" >
 	<section class="title_with_grid">
 			<p>
 				<h1 class="ombreggiaturaTesto">4.</h1>
@@ -163,13 +167,14 @@
 	
 	<!-- 5 VID.BG.SCROLL-TEXT -->
 	<section class="col-sm-12 allPages" id="VID.BG.SCROLL-TEXT"
-	data-0="transform:translate(0,400%);" 
-	data-_pausing4-400p="transform:translate(0,0%)" 
-	data-_pausing5-600p="" 
-	data-_pausing5-700p="transform:translate(0,-150%);">
+	data-0="transform:translate(0%, 100%);"
+	data-_pausingCumulative5-300p="transform:translate(0%, 100%);"
+	data-_pausingCumulative5-400p="transform:translate(0%, 0%);" 
+	data-_pausingSum5-500p=""
+	data-_pausingSum5-600p="transform:translate(0%, -150%);" >
 	      <section class="containerVideo" id="vidbgscrollabletext-text" 
-	      data-_pausing4-400p="top:0%;" 
-	      data-_pausing5-400p="top:-150%">
+	      data-_pausingCumulative5-400p="transform:translate(0%, 0%);" 
+	      data-_pausingSum5-500p="transform:translate(0%, -150%);">
 				<h1 class="ombreggiaturaTesto">5. VID.BG.<br>SCROLL-TEXT</h1>
 				<p class="testoContenuto">
 	            	Ci sono due div contenitori in questa sezione, ai quali vengono applicate due immagini di sfondo. <br>
@@ -225,13 +230,14 @@
 	
 	<!-- 6 VID.BG.GRID.SCROLL-TEXT -->
 	<section class="col-sm-12 allPages" id="VID.BG.SCROLL-TEXT"
-	data-0="transform:translate(0,500%);" 
-	data-_pausing5-600p="transform:translate(0,0%);" 
-	data-_pausing6-800p="" 
-	data-_pausing6-900p="transform:translate(0,-150%);" >
+	data-0="transform:translate(0%, 100%);"
+	data-_pausingCumulative6-400p="transform:translate(0%, 100%);"
+	data-_pausingCumulative6-500p="transform:translate(0%, 0%);" 
+	data-_pausingSum6-600p=""
+	data-_pausingSum6-700p="transform:translate(0%, -150%);" >
 	      <section class="containerVideo" id="vidbggridscrollabletext-text" 
-	      data-_pausing5-600p="transform:translate(0,0%)" 
-	      data-_pausing6-700p="transform:translate(0,-150%)">
+	      data-_pausingCumulative6-500p="transform:translate(0,0%);" 
+	      data-_pausingSum6-600p="transform:translate(0,-150%);">
 			<p>
 				<h1 class="ombreggiaturaTesto">6. VID.BG.GRID.<br>SCROLL-TEXT</h1>
 				<p class="testoContenuto">
@@ -298,9 +304,9 @@
 	<!-- 7 VID.PLAYER -->
 	<section id="VIDPLAYER" class="col-sm-12 allPages sfondoBiancoFumoSemplice" 
 	data-0="transform:translate(0,600%);" 
-	data-_pausing6-800p="transform:translate(0,0%)" 
-	data-_pausing7-900p="" 
-	data-_pausing7-1000p="transform:translate(0,-150%);">
+	data-_pausing6-900p="transform:translate(0,0%)" 
+	data-_pausing7-1000p="" 
+	data-_pausing7-1100p="transform:translate(0,-150%);">
        		<section class="containerVideo">
        			<h1 class="ombreggiaturaTesto">7. VIDPLAYER</h1>
 			<video id="videoNonFull" class="video-js vjs-default-skin vjs-big-play-centered"
@@ -378,8 +384,8 @@
 	<section id="IMGFULLGRID" class="col-sm-12 allPages" 
 	data-0="transform:translate(0,900%);" 
 	data-_pausing9-1400p="transform:translate(0,0%)" 
-	data-_pausing10-1500p="" 
-	data-_pausing10-1600p="transform:translate(0,-150%);">
+	data-_pausing10-1600p="" 
+	data-_pausing10-1700p="transform:translate(0,-150%);">
 	<section id="video_pattern"></section><!-- Aggiunge la griglia-->
 	<h1 class="ombreggiaturaTesto">10. IMG.FULL.GRID</h1>
 	</section>
@@ -388,9 +394,9 @@
 	<!-- 11 IMG.FULL.TEXT-->
 	<section id="IMGFULLTEXT" class="col-sm-12 allPages" 
 	data-0="transform:translate(0,1000%);" 
-	data-_pausing10-2200p="transform:translate(0,0%)" 
-	data-_pausing11-2400p="" 
-	data-_pausing11-2500p="transform:translate(0,-150%);">
+	data-_pausing10-1600p="transform:translate(0,0%)" 
+	data-_pausing11-1700p="" 
+	data-_pausing11-1800p="transform:translate(0,-150%);">
 		<section class="title_with_grid" id="imgFullText-text">
 		<h1 class="ombreggiaturaTesto">11. IMG.FULL.TEXT</h1>
 			<h2>AN INVESTIGATION ON <br> THE LAND INVESTMENT IN AFRICA</h2>

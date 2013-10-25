@@ -33,6 +33,7 @@ function initTemplate()
 	videojs.options.flash.swf = "data/video-js.swf";
 	loadOverlays();
 
+	debugSkrollrConstants();//comment please, it prints on the console many variables TODO
 	//$('#scroll-pos').hide(); //un-comment if you want to hide pixels
 }
 
@@ -246,6 +247,16 @@ function changeDiv(elem)
 	$('#mdTextSubHeader').html(subheader);
 	$('#mdText').html(textBody);
 
+}
+
+function debugSkrollrConstants()
+{
+	for (i=1;i<10;i++)
+	{
+		console.log("pausing"+i+"="+getPausing(i,true)); 
+		console.log("pausingCumulative"+i+"="+getStartingPercentageOfSection(i)); 
+		console.log("pausingSum"+i+"="+getPausingSum(35)); 
+	}
 }
 
 

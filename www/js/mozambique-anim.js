@@ -41,11 +41,11 @@ function updateMenuHrefHeights()
 	i++;
 	startingPixel[i]=$(document).height(); //needed for the last section
 
-	 $("#menu-item-1").attr('data-menu-top',  startingPixel[1]) ; 
-	 $("#menu-item-2").attr( 'data-menu-top', startingPixel[2]); 
-	 $("#menu-item-3").attr( 'data-menu-top', startingPixel[3]); 
-	 $("#menu-item-4").attr( 'data-menu-top', startingPixel[4]); 
-	 $("#menu-item-5").attr( 'data-menu-top', startingPixel[5]); 
+	 $("#menu-item-1").attr('data-menu-top',  startingPixel[1]+1) ; 
+	 $("#menu-item-2").attr( 'data-menu-top', startingPixel[2]+1); 
+	 $("#menu-item-3").attr( 'data-menu-top', startingPixel[3]+1); 
+	 $("#menu-item-4").attr( 'data-menu-top', startingPixel[4]+1); 
+	 $("#menu-item-5").attr( 'data-menu-top', startingPixel[5]+1); 
 	 $("#menu-item-6").attr( 'data-menu-top', startingPixel[6]); 
 	 $("#menu-item-7").attr( 'data-menu-top', startingPixel[7]); 
 	 $("#menu-item-8").attr( 'data-menu-top', startingPixel[8]); 
@@ -126,8 +126,8 @@ function getPausing(sectionNumber,percentage) /*RALLENTA IL CONTENUTO DI UNA SEC
 		case 11: sectionPausingPx = $('#imgFullText-text').innerHeight(); break;
 		case 12: sectionPausingPx = $('#imgFullTextGrid-text').innerHeight(); break; 
 		case 13: sectionPausingPx = viewportH +$('#imgFullTextScroll-text').innerHeight(); break;
-		case 14: sectionPausingPx = viewportH+viewportH+viewportH; break;
-		case 15: sectionPausingPx = 0; break;
+		case 14: sectionPausingPx = (3*viewportH); break;
+		case 15: sectionPausingPx = (3*viewportH); break;
 		case 16: sectionPausingPx = 0; break;
 		case 17: sectionPausingPx = $('#animDoubleText-text').innerHeight(); break;
 		case 18: sectionPausingPx = 0; break;

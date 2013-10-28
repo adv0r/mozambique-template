@@ -19,7 +19,7 @@ public class InjectKeyframes {
 	public static final String DATA0_KEYFRAME = "data-0=\"transform:translate(0%, 100%);\"\n";
 	public static final String KEYFRAMES_SECTION1 = DATA0_KEYFRAME_1 + 
 							INDENT+"data-_pausing1-100p=\"transform:translate(0%, 0%);\"\n"+
-							INDENT+"data-_pausing1-200p=\"transform:translate(0%, -150%);\">\n" ;
+							INDENT+"data-_pausing1-200p=\"transform:translate(0%, -100%);\">\n" ;
 	
 	public static void main (String args[])
 	{
@@ -93,7 +93,7 @@ public class InjectKeyframes {
 			toReturn+=INDENT+"data-_offset"+n+"-"+(n-1)+"00p =\"transform:translate(0%, 100%);\""+"\n";
 			toReturn+=INDENT+"data-_offset"+n+"-"+(n)+"00p= \"transform:translate(0%, 0%);\""+"\n"; 
 			toReturn+=INDENT+"data-_sumoffset"+n+"-"+(n+1)+"00p=\"\"\n";
-			toReturn+=INDENT+"data-_sumoffset"+n+"-"+(n+2)+"00p=\"transform:translate(0%, -150%);\">\n";
+			toReturn+=INDENT+"data-_sumoffset"+n+"-"+(n+2)+"00p=\"transform:translate(0%, -100%);\">\n";
 		}
 		else
 		{

@@ -1,0 +1,57 @@
+#credits{
+	background-color: rgb(31,31,31) !important;
+	position: fixed;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 100%;
+}
+
+#creditsfooter{
+	background-color: rgb(222,105,27) ;
+	bottom:0%;
+	height: 50px;
+	position: absolute;
+}
+
+#creditsfootertext{
+	text-align:right; 
+	color:white; 
+	font-size: 18px;
+	font-weight: 500;
+	padding-top: 15px; /*vertical-align: middle; TODO !*/	
+}
+
+#creditsthanks{
+	top:500px;
+}
+
+.namesbox
+{
+	top:900px;
+}
+.creditstitles{
+	text-align: center;
+	font-weight: 100;
+	font-size: 18px;
+	color: rgb(211,101,27);
+}
+
+.creditsbold{
+	font-weight: 700;
+	padding-left: 15px;
+}
+
+.creditsboldfirst{
+	font-weight: 700;
+}
+
+
+.creditsline{
+	color: rgb(200,200,200);
+}
+
+.creditsnames{
+	top:150px;
+
+}

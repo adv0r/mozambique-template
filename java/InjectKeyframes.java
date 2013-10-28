@@ -18,7 +18,7 @@ public class InjectKeyframes {
 	public static final String DATA0_KEYFRAME_1 = "data-0=\"transform:translate(0%, 0%);\"\n";
 	public static final String DATA0_KEYFRAME = "data-0=\"transform:translate(0%, 110%);\"\n";
 	public static final String KEYFRAMES_SECTION1 = DATA0_KEYFRAME_1 + 
-							INDENT+"data-_pausing1-100p=\"transform:translate(0%, 0%);\"\n"+
+							INDENT+"data-_pausing1-200p=\"transform:translate(0%, 0%);\"\n"+
 							INDENT+"data-_pausing1-300p=\"transform:translate(0%, -100%);\">\n" ;
 	
 	public static void main (String args[])

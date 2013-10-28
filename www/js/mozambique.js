@@ -259,9 +259,9 @@ function debugSkrollrConstants()
 {
 	for (i=1;i<10;i++)
 	{
-		console.log("pausing"+i+"="+getPausing(i,true)); 
-		console.log("offset"+i+"="+getStartingPercentageOfSection(i)); 
-		console.log("sumoffset"+i+"="+getPausingSum(i)); 
+		console.log("pausing"+i+"="+getPausing(i,true)+"px"); 
+		console.log("offset"+i+"="+getStartingPercentageOfSection(i)+"p"); 
+		console.log("sumoffset"+i+"="+getPausingSum(i)+"p"); 
 	}
 }
 

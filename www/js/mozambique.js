@@ -5,11 +5,9 @@ var constants; //for skrollr
 
 /*This function is called on page load, works on iOs*/
 window.addEventListener('DOMContentLoaded', function() {	
+	initTemplate();  
 
-	initTemplate();  //Comment if you UNCOMMENT the queryloader below
-
-	//uncomment to see the preloader  and comment the line above
-	
+	//Loading bar
 	 $("body").queryLoader2(
 		{
 		        	percentage: true,
@@ -34,7 +32,7 @@ function initTemplate()
 	videojs.options.flash.swf = "data/video-js.swf";
 	loadOverlays();
 
-	debugSkrollrConstants();//comment please, it prints on the console many variables TODO
+	debugSkrollrConstants(); //comment please, it prints on the console many variables TODO
 	//$('#scroll-pos').hide(); //un-comment if you want to hide pixels
 }
 

@@ -41,29 +41,29 @@ function updateMenuHrefHeights()
 	i++;
 	startingPixel[i]=$(document).height(); //needed for the last section
 
-	 $("#menu-item-1").attr('data-menu-top',  startingPixel[1]+1) ; 
+	 $("#menu-item-1").attr('data-menu-top',  startingPixel[1]+1); 
 	 $("#menu-item-2").attr( 'data-menu-top', startingPixel[2]+1); 
 	 $("#menu-item-3").attr( 'data-menu-top', startingPixel[3]+1); 
 	 $("#menu-item-4").attr( 'data-menu-top', startingPixel[4]+1); 
 	 $("#menu-item-5").attr( 'data-menu-top', startingPixel[5]+1); 
-	 $("#menu-item-6").attr( 'data-menu-top', startingPixel[6]); 
-	 $("#menu-item-7").attr( 'data-menu-top', startingPixel[7]); 
-	 $("#menu-item-8").attr( 'data-menu-top', startingPixel[8]); 
-	 $("#menu-item-9").attr( 'data-menu-top', startingPixel[9]); 
-	 $("#menu-item-10").attr( 'data-menu-top', startingPixel[10]);
-	 $("#menu-item-11").attr( 'data-menu-top', startingPixel[11]);
-	 $("#menu-item-12").attr( 'data-menu-top', startingPixel[12]);
-	 $("#menu-item-13").attr( 'data-menu-top', startingPixel[13]); 	
-	 $("#menu-item-14").attr( 'data-menu-top', startingPixel[14]); 	
-	 $("#menu-item-15").attr( 'data-menu-top', startingPixel[15]); 		
-	 $("#menu-item-16").attr( 'data-menu-top', startingPixel[16]); 		
-	 $("#menu-item-17").attr( 'data-menu-top', startingPixel[17]); 		
-	 $("#menu-item-18").attr( 'data-menu-top', startingPixel[18]); 		
-	 $("#menu-item-19").attr( 'data-menu-top', startingPixel[19]); 	
-	 $("#menu-item-20").attr( 'data-menu-top', startingPixel[20]); 
-	 $("#menu-item-21").attr( 'data-menu-top', startingPixel[21]); 		
-	 $("#menu-item-22").attr('data-menu-top', startingPixel[22]);
-	 $("#menu-item-23").attr('data-menu-top', startingPixel[23]);	
+	 $("#menu-item-6").attr( 'data-menu-top', startingPixel[6]+1); 
+	 $("#menu-item-7").attr( 'data-menu-top', startingPixel[7]+1); 
+	 $("#menu-item-8").attr( 'data-menu-top', startingPixel[8]+1); 
+	 $("#menu-item-9").attr( 'data-menu-top', startingPixel[9]+1); 
+	 $("#menu-item-10").attr( 'data-menu-top', startingPixel[10]+1);
+	 $("#menu-item-11").attr( 'data-menu-top', startingPixel[11]+1);
+	 $("#menu-item-12").attr( 'data-menu-top', startingPixel[12]+1);
+	 $("#menu-item-13").attr( 'data-menu-top', startingPixel[13]+1); 	
+	 $("#menu-item-14").attr( 'data-menu-top', startingPixel[14]+1); 	
+	 $("#menu-item-15").attr( 'data-menu-top', startingPixel[15]+1); 		
+	 $("#menu-item-16").attr( 'data-menu-top', startingPixel[16]+1); 		
+	 $("#menu-item-17").attr( 'data-menu-top', startingPixel[17]+1); 		
+	 $("#menu-item-18").attr( 'data-menu-top', startingPixel[18]+1); 		
+	 $("#menu-item-19").attr( 'data-menu-top', startingPixel[19]+1); 	
+	 $("#menu-item-20").attr( 'data-menu-top', startingPixel[20]+1); 
+	 $("#menu-item-21").attr( 'data-menu-top', startingPixel[21]+1); 		
+	 $("#menu-item-22").attr('data-menu-top', startingPixel[22]+1);
+	 $("#menu-item-23").attr('data-menu-top', startingPixel[23]+1);	
 	 //!!!Remember! if you add one  section change the variable totalNumberOfSections
 }
 

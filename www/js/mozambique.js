@@ -9,15 +9,14 @@ window.addEventListener('DOMContentLoaded', function() {
 	initTemplate();  //Comment if you UNCOMMENT the queryloader below
 
 	//uncomment to see the preloader  and comment the line above
-	/* 
+	
 	 $("body").queryLoader2(
 		{
 		        	percentage: true,
                    	        	barHeight: 80,
-	                	completeAnimation: "grow",
-	                	onComplete : initSkrollr() 
+	                	completeAnimation: "grow"
 		});
-	*/
+	
 });
 
 

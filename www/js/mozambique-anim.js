@@ -107,7 +107,7 @@ function getPausingSum(sectionNumber)
 	getPausing(3,false) = 3435
 */
 
-function getPausing(sectionNumber,percentage)
+function getPausing(sectionNumber,percentage) /*RALLENTA IL CONTENUTO DI UNA SECTION*/
 {
 	var sectionPausingPx ;
 	var defaultTime = 800;
@@ -118,15 +118,15 @@ function getPausing(sectionNumber,percentage)
 		case 3: sectionPausingPx = 0; break;
 		case 4: sectionPausingPx = 0; break;
 		case 5: sectionPausingPx = viewportH + $('#vidbgscrollabletext-text').innerHeight(); break; 
-		case 6: sectionPausingPx = viewportH + viewportH + $('#vidbggridscrollabletext-text').innerHeight(); break; 
+		case 6: sectionPausingPx = viewportH + $('#vidbggridscrollabletext-text').innerHeight(); break; 
 		case 7: sectionPausingPx = 0; break;
-		case 8: sectionPausingPx = $('#vidbggridscrollabletext-text').innerHeight(); break; 
+		case 8: sectionPausingPx = viewportH + $('#vidbggridscrollabletext-text').innerHeight(); break; 
 		case 9: sectionPausingPx = 0; break;
 		case 10: sectionPausingPx = 0; break;
 		case 11: sectionPausingPx = $('#imgFullText-text').innerHeight(); break;
 		case 12: sectionPausingPx = $('#imgFullTextGrid-text').innerHeight(); break; 
-		case 13: sectionPausingPx = $('#imgFullTextScroll-text').innerHeight(); break;
-		case 14: sectionPausingPx = 0; break;
+		case 13: sectionPausingPx = viewportH +$('#imgFullTextScroll-text').innerHeight(); break;
+		case 14: sectionPausingPx = viewportH+viewportH+viewportH; break;
 		case 15: sectionPausingPx = 0; break;
 		case 16: sectionPausingPx = 0; break;
 		case 17: sectionPausingPx = $('#animDoubleText-text').innerHeight(); break;

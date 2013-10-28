@@ -274,6 +274,12 @@ a{
 	padding: 15px 0px 15px 40px;
 }
 
+.imgFullScreen{ /*i pallocchi fatti da nico*/
+	position:fixed;
+	top:0%; 
+	width:100%; 
+	left:0;
+}
 /*_________SFONDI_______*/
 
 #IMGFULL{

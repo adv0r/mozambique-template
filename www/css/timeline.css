@@ -43,7 +43,9 @@
     border-radius: 7px;
     
 }
-
+#timeline{
+	background-color: black;
+}
 
 /*Accordion*/
 #timeline-wrapper {
@@ -95,4 +97,3 @@
 	font-weight:100; 
 	font-size:26px; 
 }
-

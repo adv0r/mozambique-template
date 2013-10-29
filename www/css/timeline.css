@@ -1,6 +1,5 @@
 .timelinecontent
 	{
-	margin:0; 
 	width:500px; 
 	height:500px; 
 	padding-right:20px; 
@@ -29,7 +28,7 @@
 		
 
 /*Scrollbar*/
-/*
+
 ::-webkit-scrollbar {
     width: 7px;
 }
@@ -44,13 +43,11 @@
     border-radius: 7px;
     
 }
-*/
+
 
 /*Accordion*/
 #timeline-wrapper {
 	width: 470px;
-	margin-left: auto;
-	margin-right: auto;
 	}
 
 .accordionButton {	

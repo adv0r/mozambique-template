@@ -254,7 +254,7 @@ function changeDiv(elem)
 
 function debugSkrollrConstants()
 {
-	for (i=1;i<10;i++)
+	for (i=1;i<25;i++)
 	{
 		console.log("pausing"+i+"="+getPausing(i,true)+"px"); 
 		console.log("offset"+i+"="+getStartingPercentageOfSection(i)+"p"); 

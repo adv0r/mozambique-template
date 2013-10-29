@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/leaflet.fullscreen.css" />
     <link  rel='stylesheet' href='css/mapbox.css'/>
-
+    <link  rel='stylesheet' href='css/timeline.css'/>
     <!-- Add fancyBox -->
     <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
@@ -48,11 +48,14 @@
 	<script src="js/ext/bootstrap.min.js"></script>
 	<script src="js/ext/skrollr.min.js"></script>
 	<script src="js/ext/skrollr.menu.min.js"></script>
-	<script src="js/ext/jquery.flexslider-min.js"></script>
 	<script src="js/ext/mapbox.js"></script>
 	<script src="js/ext/leaflet.awesome-markers.js"></script>
 	<script src="js/ext/Leaflet.fullscreen.js"></script>
 	<script src="js/ext/cartodb.js"></script>
+	<script src="js/ext/timeline.js"> </script>
+	<script src="js/ext/json2html.js"></script>
+	<script src="js/ext/jquery.json2html.js"></script>
+	<script src="js/ext/jquery.flexslider-min.js"></script>
 	<script src="js/ext/oms.min.js"></script>
 	<script src="js/ext/video.js"></script>
 	<script src="js/mozambique-map.js"></script>
@@ -154,14 +157,11 @@
 		data-_sumoffset3-400p=""
 		data-_sumoffset3-500p="transform:translate(0%, -100%);">
 	<!--keyframestop--> 	
-	<section class="title_with_grid">
-				<h1 class="ombreggiaturaTesto">3.</h1>
-		</section>
-			<video id="video_background" preload="auto" autoplay="true" loop="loop" > 
-				<source src="data/video/motionHD.m4v" type="video/m4v"> 
-				<source src="data/video/motionHD.webm" type="video/webm"> 
-				Video not supported 
-			</video>
+		<video id="video_background" preload="auto" autoplay="true" loop="loop" > 
+			<source src="data/video/motionHD.m4v" type="video/m4v"> 
+			<source src="data/video/motionHD.webm" type="video/webm"> 
+			Video not supported 
+		</video>
 	</section>
 	<!-- 3 END VID.BG.NO-TITLE -->
 	
@@ -173,17 +173,12 @@
 		data-_sumoffset4-500p=""
 		data-_sumoffset4-600p="transform:translate(0%, -100%);">
 	<!--keyframestop--> 
-	<section class="title_with_grid">
-			<p>
-				<h1 class="ombreggiaturaTesto">4.</h1>
-			</p>
-		</section>
-			<section id="video_pattern"></section><!-- Aggiunge la griglia-->
-			<video id="video_background" preload="auto" autoplay="true" loop="loop" > 
-				<source src="data/video/sunflowersHD.m4v" type="video/m4v"> 
-				<source src="data/video/sunflowersHD.webm" type="video/webm"> 
-				Video not supported 
-			</video>
+		<section id="video_pattern"></section><!-- Aggiunge la griglia-->
+		<video id="video_background" preload="auto" autoplay="true" loop="loop" > 
+			<source src="data/video/sunflowersHD.m4v" type="video/m4v"> 
+			<source src="data/video/sunflowersHD.webm" type="video/webm"> 
+			Video not supported 
+		</video>
 	</section>
 	<!-- 4 END VID.BG.GRID.NO-TITLE -->
 	
@@ -334,7 +329,6 @@
 		data-_sumoffset7-900p="transform:translate(0%, -100%);">
 	<!--keyframestop--> 	
        		<section class="containerVideo">
-       			<h1 class="ombreggiaturaTesto">7. VIDPLAYER</h1>
 			<video id="videoNonFull" class="video-js vjs-default-skin vjs-big-play-centered"
 			  controls preload="auto" width="640" height="264"
 			  poster="images/moz3.jpg"
@@ -356,7 +350,6 @@
 		data-_sumoffset8-1000p="transform:translate(0%, -100%);">
 	<!--keyframestop--> 
 	      <section class="videoSxVideoConTesto" >
-	      <h1 class="ombreggiaturaTesto">8 VID.PLAYER.SIDE-TEXT</h1>
 	      <video id="VIDPLAYERSIDE" class="col-sm-6 video-js vjs-default-skin vjs-big-play-centered"
 		  controls preload="auto" width="640" height="480"
 		  poster="images/moz5.jpg"
@@ -406,7 +399,6 @@
 		data-_sumoffset9-1000p=""
 		data-_sumoffset9-1100p="transform:translate(0%, -100%);">
 	<!--keyframestop--> 
-	<h1 class="ombreggiaturaTesto">9. IMG.FULL</h1>
 	</section>
 	<!-- 9 END IMG.FULL-->
 	
@@ -419,7 +411,6 @@
 		data-_sumoffset10-1200p="transform:translate(0%, -100%);">
 	<!--keyframestop--> 
 	<section id="video_pattern"></section><!-- Aggiunge la griglia-->
-	<h1 class="ombreggiaturaTesto">10. IMG.FULL.GRID</h1>
 	</section>
 	<!-- 10 END IMG.FULL.GRID-->
 	
@@ -432,8 +423,7 @@
 		data-_sumoffset11-1300p="transform:translate(0%, -100%);">
 	<!--keyframestop--> 
 		<section class="title_with_grid" id="imgFullText-text">
-		<h1 class="ombreggiaturaTesto">11. IMG.FULL.TEXT</h1>
-			<h2>AN INVESTIGATION ON <br> THE LAND INVESTMENT IN AFRICA</h2>
+R			<h2>AN INVESTIGATION ON <br> THE LAND INVESTMENT IN AFRICA</h2>
 			<p>Il mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>
 			</p>
 		</section>	
@@ -449,7 +439,6 @@
 		data-_sumoffset12-1400p="transform:translate(0%, -100%);">
 	<!--keyframestop--> 
 		<section class="title_with_grid" id="imgFullTextGrid-text">
-		<h1 class="ombreggiaturaTesto">12. IMG.FULL.TEXT.GRID</h1>
 			<h2>LA FOGLIA AN INVESTIGATION ON <br> THE LAND INVESTMENT IN AFRICA</h2>
 			<p>Il mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>l mondo è cattivo. Il mondo è cattivo. Il mondo è cattivo. <br>
 			</p>
@@ -514,9 +503,7 @@
 
 	       <section class="" 
 	       data-_pausing14-3000p="top:0%;" 
-	       data-_pausing14-3100p="top:-100%">
-	       
-	       <h1 class="ombreggiaturaTesto">14. ANIM.IMAGES</h1>
+	       data-_pausing14-3100p="top:-100%">	       
 	            <img class="imgFullScreen" 
 	            data-_offset14-1400p="opacity:1;" 
 	            data-_offset14-1433p="opacity:0;" src="images/anim1.png"/>
@@ -534,7 +521,6 @@
 		data-_sumoffset15-1600p=""
 		data-_sumoffset15-1700p="transform:translate(0%, -100%);">
 	<!--keyframestop--> 
-		<h1 class="ombreggiaturaTesto">15. ANIM.TEXTS</h1>
 	       <section class="ombreggiaturaTesto" 
 	       data-_offset15-1500p="top:0%;" 
 	       data-_offset15-1600p="top:-100%">
@@ -564,7 +550,6 @@
 		data-_sumoffset16-1800p="transform:translate(0%, -100%);">
 	<!--keyframestop--> 
        		<section class="containerVideo">
-	       		<h1 class="ombreggiaturaTesto">16. VIDEO.PLAYER.AUTO-TOGGLE</h1>
 	       		<video id="videoToggle" muted class="col-sm-6 video-js vjs-default-skin vjs-big-play-centered"
 				  controls preload="auto" width="640" height="264"
 				  poster="images/moz1.jpg"
@@ -585,7 +570,6 @@
 		data-_sumoffset17-1800p=""
 		data-_sumoffset17-1900p="transform:translate(0%, -100%);">
 	<!--keyframestop--> 
-	       <h1 class="ombreggiaturaTesto">17. ANIMDOUBLETEXT</h1>
 	       <section class="col-sm-3 containerVideoConTesto" id="animDoubleText-text" 
 	       data-_offset17-1700p="top:8%;" 
 	       data-_sumoffset17-1700p="top:-150%">
@@ -805,7 +789,7 @@
 	
 	  	</section> 
   	<!-- 22 MULTIPLE.DIV -->
-	
+
 	<!--Keyframes23$MAP -->
 	<div id="map"  class="col-sm-12 allPages" 
 		data-0="transform:translate(0%, 100%);"
@@ -817,6 +801,21 @@
 		  	
 	</div>
   	<!-- 23 MAP -->
+
+  	<!--Keyframes24$TIMELINE --> 
+	<section id="timeline" class="col-sm-12  timelinecontent allPages"
+		data-0="transform:translate(0%, 100%);"
+		data-_offset24-2300p ="transform:translate(0%, 100%);"
+		data-_offset24-2400p= "transform:translate(0%, 0%);"
+		data-_sumoffset24-2500p=""
+		data-_sumoffset24-2600p="transform:translate(0%, -100%);">
+	<!--keyframestop--> 
+		<div id="timeline-wrapper">
+			<div class="accordionButton"><p></p></div>
+			<div class="accordionContent"></div>     
+		</div>
+	</section>
+  	<!-- 24 END TIMELINE -->
   	
   </body>
 </html>  

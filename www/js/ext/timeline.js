@@ -55,7 +55,7 @@ $(document).ready(function() {
 
 	;
 	    
-document.getElementById('wrapper').innerHTML = json2html.transform(data,transform);
+document.getElementById('timeline-wrapper').innerHTML = json2html.transform(data,transform);
 	/********************************************************************************************************************
 	SIMPLE ACCORDIAN STYLE MENU FUNCTION
 	********************************************************************************************************************/	

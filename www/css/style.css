@@ -1,7 +1,7 @@
 /* INIZIO CSS CUSTOM */ 
 
 *{
-	font-family: 'Roboto', sans-serif !important;	
+	font-family: 'Roboto', sans-serif;	
 	font-weight: 300;
 	margin: 0;
 	padding: 0;
@@ -45,26 +45,31 @@
 }
 
 h1{
+	font-family: 'Roboto', sans-serif;
 	font-size: 70px;
 	font-weight: 700;	
 }
 
 h2{
+	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
 	font-weight: 100;	
 }
 
 h3{
+	font-family: 'Roboto', sans-serif;
 	font-size: 14px;/*ERA 15, l'ho rimpicciolito per far entrare tutto il menu nella safe area*/
 	font-weight: 700;	
 }
 
 h4{
+	font-family: 'Roboto', sans-serif;
 	font-size: 15px; /*ERA 18, l'ho rimpicciolito per far entrare tutto il menu nella safe area*/
 	font-weight: 100;	
 }
 
 h5{
+	font-family: 'Roboto', sans-serif;
 	font-size: 10px;/*ERA 12, l'ho rimpicciolito per far entrare tutto il menu nella safe area*/
 	font-weight: 100;	
 }
@@ -373,7 +378,7 @@ a{
 
 
 
-/*_________ MAP start____________*/
+/*_________ CREDITS start____________*/
 
 
     .credito {
@@ -413,4 +418,4 @@ a{
     }
 
 
-/*_________ MAP end____________*/
+/*_________ CREDITS end____________*/

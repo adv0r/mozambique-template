@@ -1,7 +1,7 @@
 .timelinecontent
 	{
-	width:500px; 
-	height:500px; 
+	margin-top: 8%;
+	height: 60%;
 	padding-right:20px; 
 	padding-left:20px; 
 	overflow:auto; 
@@ -11,6 +11,7 @@
 	border-radius:3px; 
 	background-image:url(images/bkg.png)
 	}
+
 .timelinecontent p:nth-child(even)
 	{
 	color:#999; 
@@ -88,7 +89,7 @@
 	padding:10px; 
 	font-family: 'Roboto', sans-serif; 
 	font-weight:100; f
-	ont-size:12px; 
+	font-size:12px; 
 	}
 
 .accordionContent h2

@@ -1,5 +1,3 @@
-#ombraWrapper{
-}
 
 .timelinecontent
 	{
@@ -15,11 +13,7 @@
 	padding-right:20px; 
 	padding-left:20px; 
 	overflow:auto; 
-	background:#fff; /*
-	-webkit-border-radius:3px; 
-	-moz-border-radius:3px; 
-	border-radius:3px; 
-	background-image:url(images/bkg.png)*/
+	background:#fff;
 	}
 
 .timelinecontent p:nth-child(even)

@@ -1,6 +1,6 @@
 var menuVisible = false;
 var startingPixel = new Array();
-var totalNumberOfSections= 24; //TODO CHANGE WHEN ADD A NEW SECTION!!!!
+var totalNumberOfSections= 25; //TODO CHANGE WHEN ADD A NEW SECTION!!!!
 
 /* Toggle Menu*/
 function toggleMenu()
@@ -64,7 +64,8 @@ function updateMenuHrefHeights()
 	 $("#menu-item-21").attr( 'data-menu-top', startingPixel[21]+1); 		
 	 $("#menu-item-22").attr('data-menu-top', startingPixel[22]+1);
 	 $("#menu-item-23").attr('data-menu-top', startingPixel[23]+1);	
- 	 $("#menu-item-24").attr('data-menu-top', startingPixel[23]+1);	
+ 	 $("#menu-item-24").attr('data-menu-top', startingPixel[24]+1);	
+ 	 $("#menu-item-25").attr('data-menu-top', startingPixel[25]+1);	
 
 	 //!!!Remember! if you add one  section change the variable totalNumberOfSections
 }
@@ -138,7 +139,7 @@ function getPausing(sectionNumber,percentage) /*RALLENTA IL CONTENUTO DI UNA SEC
 		case 21: sectionPausingPx = 0; break;
 		case 22: sectionPausingPx = 0; break;
 		case 23: sectionPausingPx = viewportH ; break;
-		case 24: sectionPausingPx = 0; break;
+		case 24: sectionPausingPx = viewportH; break;
 		case 25: sectionPausingPx = 0; break;
 		case 26: sectionPausingPx = 0; break;
 		case 27: sectionPausingPx = 0; break;		

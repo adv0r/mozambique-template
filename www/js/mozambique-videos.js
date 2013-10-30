@@ -30,8 +30,6 @@ function stopVideos(oldSectionID)
   	}
 }
 
-
-
 function playSingleVideo(videoElem)
 {
 	videojs(videoElem.videoid).ready(function()

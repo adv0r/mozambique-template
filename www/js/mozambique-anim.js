@@ -1,6 +1,6 @@
 var menuVisible = false;
 var startingPixel = new Array();
-var totalNumberOfSections= 25; //TODO CHANGE WHEN ADD A NEW SECTION!!!!
+var totalNumberOfSections= 26; //TODO CHANGE WHEN ADD A NEW SECTION!!!!
 
 /* Toggle Menu*/
 function toggleMenu()
@@ -66,6 +66,7 @@ function updateMenuHrefHeights()
 	 $("#menu-item-23").attr('data-menu-top', startingPixel[23]+1);	
  	 $("#menu-item-24").attr('data-menu-top', startingPixel[24]+1);	
  	 $("#menu-item-25").attr('data-menu-top', startingPixel[25]+1);	
+ 	 $("#menu-item-26").attr('data-menu-top', startingPixel[26]+1);	
 
 	 //!!!Remember! if you add one  section change the variable totalNumberOfSections
 }

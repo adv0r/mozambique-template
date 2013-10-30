@@ -3,6 +3,7 @@ var s;
 var viewportH;
 var constants; //for skrollr
 
+
 /*This function is called on page load, works on iOs*/
 window.addEventListener('DOMContentLoaded', function() {	
 	initTemplate();  
@@ -23,6 +24,7 @@ function initTemplate()
 {
 	viewportH = $(window).height();
   	document.createElement('video');document.createElement('audio'); // Needed by video.js 
+  	initVideoArray();
 	initSkrollr();
 	initSkrollrMenu(); 	
 	loadSlider();
@@ -35,6 +37,9 @@ function initTemplate()
 	debugSkrollrConstants(); //comment please, it prints on the console many variables TODO
 	//$('#scroll-pos').hide(); //un-comment if you want to hide pixels
 }
+
+
+
 
 function loadOverlays()
 {
@@ -252,6 +257,8 @@ function changeDiv(elem)
 
 }
 
+
+
 function debugSkrollrConstants()
 {
 	for (i=1;i<25;i++)
@@ -261,14 +268,5 @@ function debugSkrollrConstants()
 		console.log("sumoffset"+i+"="+getPausingSum(i)+"p"); 
 	}
 }
-
-
-/* Stops the video */
-    function restartVideo(elemID) {
-
-        var video = videojs(elemID);
-        video.currentTime(0);
-    }
-
 
 /*__________________ Multiple div functions [end]__________________*/

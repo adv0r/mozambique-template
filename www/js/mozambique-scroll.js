@@ -24,52 +24,24 @@ var currentSectionID = '#lid1';
 
 /* called on scroll*/
 $(window).scroll(function() { 
-     currentScroll = getScrollTop(); //get the current position
-     currentScrollP = Math.round(getPixelsInPercentage(currentScroll));
-     $('#scroll-pos').html(currentScroll+"px ; "+currentScrollP+"p"); //update the view with the current height
+        currentScroll = getScrollTop(); //get the current position
+        currentScrollP = Math.round(getPixelsInPercentage(currentScroll));
+        $('#scroll-pos').html(currentScroll+"px ; "+currentScrollP+"p"); //update the view with the current height
 
-
-     //Create an array of object for videos with all the video IDs and the corresponding containers and the autotoggle
-    videoList = new Array();
-    
-    videoList.push({videoid:"videoToggle", containerid:"VIDEOPLAYERAUTOTOGGLE",autotoggle:true});
-    videoList.push({videoid:"videoToggle2", containerid:"VIDPLAYERAUTOTOGGLESIDETEXT",autotoggle:true});
-    videoList.push({videoid:"videoNonFull", containerid:"VIDPLAYER",autotoggle:false});
-    videoList.push({videoid:"VIDPLAYERSIDE", containerid:"VIDPLAYERSIDE-TEXT",autotoggle:false});
-               
-    
-    for (i=0; i<videoList.length;i++)
-    {
-            tempVideoObj = videoList[i];
-            videoContainer = document.getElementById(tempVideoObj.containerid);
-            videojs(tempVideoObj.videoid).ready(function(){ //wait until the video is ready
-                    var videoElem = this;
-                    if(isScrolledIntoView(videoContainer))
-                    {
-
-                          if (videoElem.paused && tempVideoObj.autotoggle) 
-                          videoElem.play(); //play the video if the autotoggle is set to true
-                    }
-                    else
-                    {
-                        if (!videoElem.paused) 
-                            videoElem.pause(); //pause the video and set position to 0
-                            restartVideo(tempVideoObj.videoid);
-                    }
-                });
-    }
-
-     var newSectionID= getCurrentElementID(currentScroll);
-     if(newSectionID!=currentSectionID)
-    {
-       //console.log("Scrolled to a new section . Menu Section id = " +newSectionID);
-       $('#sectionTracker').html("section "+newSectionID.substring(4));
-       $(currentSectionID).removeClass('currentMenuItem');
-       $(newSectionID).addClass('currentMenuItem');
-        currentSectionID= newSectionID;
+        var newSectionID= getCurrentElementID(currentScroll);
+        if(newSectionID!=currentSectionID)
+        {
+            //console.log("Scrolled to a new section . Menu Section id = " +newSectionID);
+            newSectionNumber = newSectionID.substring(4);
+            oldSectionNumber = currentSectionID.substring(4);
+            $('#sectionTracker').html("section "+newSectionNumber);
+            $(currentSectionID).removeClass('currentMenuItem');
+            $(newSectionID).addClass('currentMenuItem');
+            currentSectionID= newSectionID;
+            stopVideos(oldSectionNumber);
+            playVideos(newSectionNumber);
     } 
 });
-
 
 
 /* Returns the ID of the current element based on scrollPosition*/

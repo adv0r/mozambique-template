@@ -1,6 +1,5 @@
                 function loadMap() {
-
-                    var southWest = new L.LatLng(-67, -55),
+ var southWest = new L.LatLng(-67, -55),
                     northEast = new L.LatLng(56, 84),
                     bounds = new L.LatLngBounds(southWest, northEast);
 
@@ -52,12 +51,12 @@
                     var language= '';
 
 
-                    var map = L.mapbox.map('map', 'distant.map-cj0on7fs', {
+                    var map = L.mapbox.map('map', 'distant.map-rusvpsoz', {
                         //maxBounds: bounds,
                         maxZoom: 6,
                         minZoom: 2,
                         scrollWheelZoom: false,
-                        layers: [layerAcademia, layerPress, layerAss, layerCompanies, layerGov]
+                        layers: [layerPress, layerAcademia, layerAss, layerCompanies, layerGov]
                     }).setView([0, 25], 4); // centro: Congo
 
                     var oms = new OverlappingMarkerSpiderfier(map);
@@ -70,18 +69,19 @@
                         L.geoJson(geojson, {
                             pointToLayer: function (feature, latlng) {
                                 var ico;
-                                if (feature.properties.source_type == "Association") {
-                                    ico = redMarker;
+                                // CAMBIA QUA!
+                                if (feature.properties.source_type == "Civil Society") {
+                                    ico = purpleMarker;
                                 } else if (feature.properties.source_type == "Press") {
-                                    ico = blueMarker;
-                                } else if (feature.properties.source_type == "Academia") {
-                                    ico = purpleMarker;   
-                                } else if (feature.properties.source_type == "Company") {
                                     ico = orangeMarker;
-                                } else if (feature.properties.source_type == "Government") {
-                                    ico = darkblueMarker;                                                  
-                                } else {
+                                } else if (feature.properties.source_type == "Academia") {
+                                    ico = redMarker;   
+                                } else if (feature.properties.source_type == "Company") {
                                     ico = greenMarker;
+                                } else if (feature.properties.source_type == "Institution") {
+                                    ico = blueMarker;                                                  
+                                } else {
+                                    ico = darkblueMarker;
                                 }
 
                                 marker = L.marker(latlng, {
@@ -90,7 +90,7 @@
 
                                 marker.title = feature.properties.title;
                                 marker.source_type = feature.properties.source_type;
-                                marker.date = feature.properties.timestamp;
+                                marker.date = feature.properties.date;
                                 marker.url = feature.properties.url;
                                 marker.source = feature.properties.source_name;
                                 marker.country = feature.properties.country;
@@ -101,7 +101,7 @@
 
                                 marker.ico = ico;
 
-                                if (marker.source_type == 'Association') { 
+                                if (marker.source_type == 'Civil Society') { 
                                   marker.addTo(layerAss);
                                 } else if (marker.source_type == 'Press') { 
                                   marker.addTo(layerPress);
@@ -109,7 +109,7 @@
                                   marker.addTo(layerAcademia);
                                 } else if (marker.source_type == 'Company') { 
                                   marker.addTo(layerCompanies);
-                                } else if (marker.source_type == 'Government') { 
+                                } else if (marker.source_type == 'Institution') { 
                                   marker.addTo(layerGov);
                                 }                              
                                 else {
@@ -139,21 +139,21 @@
 
                     
                     var overlayMaps = {
-                        "Academia": layerAcademia,
                         "Press": layerPress,
-                        "Associations": layerAss,
+                        "Academia": layerAcademia,
+                        "Civil Society": layerAss,
                         "Companies": layerCompanies,
-                        "Governments": layerGov,
-                        "Other": layerOther
+                        "Institutions": layerGov,
+                        "Other sources": layerOther
                     };  
 
                     L.control.layers(null, overlayMaps).addTo(map);
 
-                    var info = L.control( { position: 'bottomleft' } );
+                    var info = L.control( { position: 'bottomright' } );
 
                 info.onAdd = function (map) {
                         this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-                        this._div.innerHTML = "<h4>Land Grabbing in Africa</h4> Explore our crowdsourced map and read the stories on Land Grabbing published by the international press, associations, academia, companies and governments. These stories take part of the global debate on Land Grabbing.<br /><br/ ><div class=\"credito\"><a href=\"form/index.html\" target=\"_blank\">Send us a story</a></div>";
+                        this._div.innerHTML = "<h4>Land Acquisitions in Africa</h4> Explore the crowdsourced map and read the stories on large-scale land acquisitions published by the international press, the civil society, the academic world and the other actors involved. You may also send us new stories that take part of the global debate on the large-scale land acquisitions.<br /><img src=\"images/map-legend.png\" style=\"padding-top:10px;\"><br/ ><div class=\"credito\"><a href=\"http://www.datajournalist.it/landgrabbing/form/\" target=\"_blank\">Send us a story</a></div>";
                         return this._div;
                     };
 

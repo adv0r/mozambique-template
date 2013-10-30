@@ -6,17 +6,10 @@ var constants; //for skrollr
 
 /*This function is called on page load, works on iOs*/
 window.addEventListener('DOMContentLoaded', function() {	
+	preLoad();	
 	initTemplate();  
-
-	//Loading bar
-	 $("body").queryLoader2(
-		{
-		        	percentage: true,
-                   	        	barHeight: 80,
-	                	completeAnimation: "grow"
-		});
-	
 });
+
 
 
 /* On document load!*/
@@ -38,7 +31,16 @@ function initTemplate()
 	//$('#scroll-pos').hide(); //un-comment if you want to hide pixels
 }
 
-
+function preLoad()
+{
+	//Loading bar
+	 $("body").queryLoader2(
+		{
+		        	percentage: true,
+                   	        	barHeight: 80,
+	                	completeAnimation: "grow"
+		});
+}
 
 
 function loadOverlays()

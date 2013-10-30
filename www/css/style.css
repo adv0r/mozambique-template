@@ -439,6 +439,7 @@ a{
 	padding-left:20px; 
 	overflow:auto; 
 	background:#fff;
+	width: 510px;
 	}
 
 .timelinecontent p:nth-child(even)

@@ -243,6 +243,13 @@ a{
 	margin: 0 20px 0 0;
 }
 
+.introText{
+	color:black; 
+	text-transform:uppercase; 
+	font-size:40px;
+	margin-top: 8%;
+}
+
 .title_with_grid{
 	position:absolute; 
 	top:0;

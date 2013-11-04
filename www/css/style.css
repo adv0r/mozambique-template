@@ -15,7 +15,7 @@
 	height: 100%;
 	background: transparent center no-repeat;
 	background-size: cover;
-	box-shadow: 0 0 20px #000;
+	/*box-shadow: 0 0 20px #000;*/
 }
 
 
@@ -27,7 +27,7 @@
 	left:0px;
 	width: 100%;
 	height: 100%;
-	box-shadow: 0 0 20px #000;
+	/*box-shadow: 0 0 20px #000;*/
 
 }
 .sfondoBiancoFumoSlider{
@@ -37,7 +37,7 @@
 	left:0px;
 	width: 100%;
 	height: 100%;
-	box-shadow: 0 0 20px #000;
+	/*box-shadow: 0 0 20px #000;*/
 }
 
 .sfondoBiancoFumoSemplice{
@@ -200,12 +200,11 @@ a{
 }
 
 .container{ 
-	position:absolute;
+	position: absolute;
 	left:0;
 	height:100%;	 
 	margin-top: 15%;	
 }
-
 
 .containerVideo{
 	position: absolute;
@@ -527,7 +526,7 @@ a{
 	background-repeat:no-repeat;
 	padding:10px; 
 	font-family: 'Roboto', sans-serif; 
-	font-weight:100; f
+	font-weight:100; 
 	font-size:12px; 
 	}
 

@@ -67,6 +67,12 @@ function updateMenuHrefHeights()
  	 $("#menu-item-24").attr('data-menu-top', startingPixel[24]+1);	
  	 $("#menu-item-25").attr('data-menu-top', startingPixel[25]+1);	
  	 $("#menu-item-26").attr('data-menu-top', startingPixel[26]+1);	
+ 	 $("#menu-item-27").attr('data-menu-top', startingPixel[27]+1);	
+ 	 $("#menu-item-28").attr('data-menu-top', startingPixel[28]+1);	
+ 	 $("#menu-item-29").attr('data-menu-top', startingPixel[29]+1);	
+ 	 $("#menu-item-30").attr('data-menu-top', startingPixel[30]+1);	
+ 	 $("#menu-item-31").attr('data-menu-top', startingPixel[31]+1);	
+ 	 $("#menu-item-32").attr('data-menu-top', startingPixel[32]+1);	
 
 	 //!!!Remember! if you add one  section change the variable totalNumberOfSections
 }
@@ -143,7 +149,10 @@ function getPausing(sectionNumber,percentage) /*RALLENTA IL CONTENUTO DI UNA SEC
 		case 24: sectionPausingPx = viewportH; break;
 		case 25: sectionPausingPx = 0; break;
 		case 26: sectionPausingPx = 0; break;
-		case 27: sectionPausingPx = 0; break;		
+		case 27: sectionPausingPx = (2*viewportH); break;	
+		case 28: sectionPausingPx = 0; break;	
+		case 29: sectionPausingPx = 0; break;	
+		case 30: sectionPausingPx = 0; break;		
 		default: sectionPausingPx = 0; break;
 	}
 	if(percentage)

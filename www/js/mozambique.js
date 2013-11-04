@@ -265,7 +265,7 @@ function copyToClipboard (text) {
 
 function debugSkrollrConstants()
 {
-	for (i=1;i<25;i++)
+	for (i=1;i<35;i++)
 	{
 		console.log("pausing"+i+"="+getPausing(i,true)+"px"); 
 		console.log("offset"+i+"="+getStartingPercentageOfSection(i)+"p"); 

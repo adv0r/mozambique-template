@@ -46,11 +46,10 @@ function preLoad()
 function loadOverlays()
 {
 	$(".fancybox").fancybox({
-	    openEffect  : 'none',
-	    closeEffect : 'none',
+	    openEffect  : 'fade',
+	    closeEffect : 'fade',
 	    afterLoad   : function() {
-	        this.inner.prepend( '<h3>1. Get the code</h4>' );
-	        this.content = '<h4>2. embed it into your blog</h5>' + this.content.html();
+	        this.content = this.content.html();
   		  }
 	  });
 }
@@ -259,6 +258,9 @@ function changeDiv(elem)
 
 }
 
+function copyToClipboard (text) {
+	window.prompt ("Press Ctrl+C to copy the selected text, Enter", text);
+}
 
 
 function debugSkrollrConstants()

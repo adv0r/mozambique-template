@@ -1,6 +1,6 @@
 var menuVisible = false;
 var startingPixel = new Array();
-var totalNumberOfSections= 26; //TODO CHANGE WHEN ADD A NEW SECTION!!!!
+var totalNumberOfSections= 27; //TODO CHANGE WHEN ADD A NEW SECTION!!!!
 
 /* Toggle Menu*/
 function toggleMenu()
@@ -30,16 +30,13 @@ function closeMenu()
 //To be able to use anchor we need to tell the page to scroll to the right position.  
 function updateMenuHrefHeights()
 {	
-	i=0;
-	startingPixel[i]=0; //useless
-	i++;
+
 	//Compute starting pixels and put into a global array
 	for(i=1;i<=totalNumberOfSections;i++)
 	{
 		startingPixel[i]=getStartingPixelOfSection(i,viewportH);
 	}
-	i++;
-	startingPixel[i]=$(document).height(); //needed for the last section
+	startingPixel[totalNumberOfSections+1]=$(document).height(); //needed for the last section
 
 	 $("#menu-item-1").attr('data-menu-top',  startingPixel[1]+1); 
 	 $("#menu-item-2").attr( 'data-menu-top', startingPixel[2]+1); 

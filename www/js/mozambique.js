@@ -259,7 +259,7 @@ function changeDiv(elem)
 }
 
 function copyToClipboard (text) {
-	window.prompt ("Press Ctrl+C to copy the selected text, Enter", text);
+	window.prompt ("Press Ctrl+C (or Cmd+C) to copy the code, Enter", text);
 }
 
 

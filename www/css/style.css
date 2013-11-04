@@ -199,12 +199,12 @@ a{
 	z-index: 1;
 }
 
-.container{ 
+/*.container{ 
 	position: absolute;
 	left:0;
 	height:100%;	 
 	margin-top: 15%;	
-}
+}*/
 
 .containerVideo{
 	position: absolute;

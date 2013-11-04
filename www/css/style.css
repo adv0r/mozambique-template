@@ -83,43 +83,33 @@ a{
 }
 
 #scroll-pos{
- 	background-color: black;
  	color:white;
-	font-size: 26px;
-	position: fixed;
-	top : 0;
-	left:50%;
+	font-size: 16px;
 	opacity: 0.6;
-	z-index: 99999;
+	float: right;
 }
 
 #sectionTracker{
- 	background-color: black;
  	color:white;
-	font-size: 26px;
-	position: fixed;
-	top : 0;
-	left:0;
-	opacity: 0.6;
-	z-index: 99999;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 /* ----------- Menu START----------- */
 
+#testoNavigationBar{
+	margin-top:6px;
+}
 
 #toggleMenu{
- 	background-color: white;
 	font-size: 16px;
-	position: fixed;
-	top : 0;
-	right:0%;
-	opacity: 1;
-	z-index: 99999;
+	padding-left: 40px;
+	background-color: rgb(39,39,39);
+	padding-right: 10px;
+	padding-bottom: 2px;
 }
 
-#toggleMenu:hover{ 
- 	background-color: #AAA;
-}
 
 #menuSection{
 	position: fixed;
@@ -564,7 +554,9 @@ a{
 	text-align: center;
 }
 
-
+.testoBianco{
+	color: white;
+}
 .nomiCredits{
 	padding-bottom: 60px;
 }
@@ -601,3 +593,34 @@ a{
 }
 
 /*_________ CREDITS end____________*/
+
+
+/*________PROGRESS BAR_____________*/
+
+#navigationbar{
+	z-index: 999999;
+	position:fixed;
+	top:0px;
+	left:0px;
+	height: 30px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#progressbar
+{
+	height:6px;
+	background-color: rgb(198,62,6);
+}
+
+#progressinactive
+{
+    width:100%;
+position:fixed;
+top:0px;
+left:0px;
+height:6px;    
+background-color: rgb(39,39,39);
+}
+
+/*________PROGRESS BAR__end________*/

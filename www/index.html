@@ -72,9 +72,24 @@
   </head>
 
   <body>
-  	<div id="toggleMenu"><a href="javascript:toggleMenu();"><img id="menuToggleIcon" src="images/menu-open.png" /></a></div>
-	<div id="scroll-pos">0px ; 0p</div>
-	<div id="sectionTracker">section1</div>
+	<div id="navigationbar">
+		<div id="progressinactive">
+			<div id="progressbar" data-start="width:0%;" data-end="width:100%;">
+			</div>
+		</div>
+	
+		<div id="testoNavigationBar" >
+			<span id="toggleMenu">
+				<img style="margin-top:-4px;" src="images/index20.png"/>
+					<span onclick="javascript:toggleMenu();" class="testoBianco">INDEX</span></span>
+			<span id="sectionTracker">section1</span>
+			<span id="scroll-pos">0px ; 0p</span>
+		</div>
+	</div>
+
+
+  	
+	<span id="scroll-pos">0px ; 0p</span>
   	<section id="menuSection" class="col-sm-12" onclick="javascript:closeMenu();">
 		<ul class="col-sm-4 noPadding nav" >
 			<a href="#VID.BG.GRID.TITLE" id="menu-item-1" title="page1" ><li id="lid1"  class="currentMenuItem">1 vid.bg.grid.title</li></a>

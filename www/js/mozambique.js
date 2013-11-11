@@ -1,6 +1,7 @@
 /* Global variables */
 var s;
 var viewportH;
+var viewportW;
 var constants; //for skrollr
 
 
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', function() {
 function initTemplate()
 {
 	viewportH = $(window).height();
+	viewportW = $(window).width();
   	document.createElement('video');document.createElement('audio'); // Needed by video.js 
   	initVideoArray();
 	initSkrollr();
@@ -216,6 +218,7 @@ function initSkrollrMenu()
 /* This function is called when the window is resized*/
 $(window).resize(function(e){
 	viewportH = $(window).height();
+	viewportW = $(window).width();
 	updateMenuHrefHeights();
 	updateAllVideosSize();
 });

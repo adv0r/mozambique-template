@@ -559,16 +559,17 @@ a{
 }
 .nomiCredits{
 	padding-bottom: 60px;
+	color: white;
 }
 
 .colonnaCreditsSx{
 	text-align:right;
-	color: white;
 }
 
 .colonnaCreditsSx p{
-	font-weight: 400;
-
+	font-weight: 700;
+	color: white;
+	text-transform: uppercase;
 }
 
 .colonnaCreditsDx{

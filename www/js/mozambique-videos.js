@@ -40,15 +40,25 @@ function playVideos(sectionScrolledTo)
   	}
 }
 
+
 function updateAllVideosSize()
 {
 	for (i=0; i<videoList.length;i++)
 	{
 		tempVideoObj = videoList[i];
-		resizeVideo(tempVideoObj.videoid,tempVideoObj.ratio);
+		 _V_(tempVideoObj.videoid).ready(function(){
+			var myPlayer = this;	// Store the video object
+			var aspectRatio = tempVideoObj.ratio;  // Make up an aspect ratio
+			var parente=  document.getElementById(tempVideoObj.videoid).parentElement;
+			var widthVideo = parente.offsetWidth;
+			// Set widthVideo to fill parent element, Set height
+			myPlayer.width(widthVideo).height( widthVideo * aspectRatio );
+  		});
   	}
 }
 
+
+/*
 function resizeVideo(videoid,ratio)
 {
   	 _V_(videoid).ready(function(){
@@ -63,6 +73,8 @@ function resizeVideo(videoid,ratio)
 	    	}
   	});
 }
+
+*/
 
 function stopVideos(oldSectionID)
 {

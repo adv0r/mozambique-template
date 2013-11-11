@@ -24,7 +24,7 @@ function initTemplate()
 	changeDiv(1);  //Multiple div selector
 	loadMap();
 	updateMenuHrefHeights($(window).height());
-	//updateAllVideosSize();
+	updateAllVideosSize();
 	videojs.options.flash.swf = "data/video-js.swf";
 	loadOverlays();
 
@@ -217,7 +217,7 @@ function initSkrollrMenu()
 $(window).resize(function(e){
 	viewportH = $(window).height();
 	updateMenuHrefHeights();
-	//updateAllVideosSize();
+	updateAllVideosSize();
 });
 
 /*__________________ Multiple div functions [start]__________________*/

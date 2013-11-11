@@ -197,12 +197,16 @@ a{
 }*/
 
 .containerVideo{
+	background-color: rgba(255,255,255,0.5);
+}
+
+.contentContainer{
 	position: absolute;
 	z-index: 1000;
-	margin-left: 10%;
-	margin-top: 10%;
 	background-color: rgba(255,255,255,0.5);
 	padding:20px;
+	margin-top: 10%;
+	margin-left: 10%;
 }
 
 .containerVideoConTesto{

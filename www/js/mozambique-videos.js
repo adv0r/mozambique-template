@@ -3,11 +3,31 @@ var  videoList = new Array();
 function initVideoArray()
 {
    //Create an array of object for videos with all the video IDs and the corresponding containers and the autotoggle
-	videoList.push({videoid:"videoToggle", containerid:"VIDEOPLAYERAUTOTOGGLE", sectionid:16, autotoggle:true});
-	videoList.push({videoid:"videoToggle2", containerid:"VIDPLAYERAUTOTOGGLESIDETEXT", sectionid:19, autotoggle:true});
-	videoList.push({videoid:"videoNonFull", containerid:"VIDPLAYER", sectionid:7, autotoggle:false});
-	videoList.push({videoid:"VIDPLAYERSIDE", containerid:"VIDPLAYERSIDE-TEXT", sectionid:8, autotoggle:false});
+	videoList.push({videoid:"videoToggle", 
+		containerid:"VIDEOPLAYERAUTOTOGGLE",
+		 sectionid:16, 
+		 autotoggle:true,
+		 ratio:9/16});
+	
+	videoList.push({videoid:"videoToggle2", 
+		containerid:"VIDPLAYERAUTOTOGGLESIDETEXT", 
+		sectionid:19, 
+		autotoggle:true,
+		ratio:9/16});
+	
+	videoList.push({videoid:"videoNonFull", 
+		containerid:"VIDPLAYER", 
+		sectionid:7, 
+		autotoggle:false,
+		ratio:9/16});
+	
+	videoList.push({videoid:"VIDPLAYERSIDE", 
+		containerid:"VIDPLAYERSIDE-TEXT", 
+		sectionid:8, 
+		autotoggle:false,
+		ratio:9/16});
 }
+
 
 /*Called everytime the user scrolls to a new section with id (sectionScrolledTo)*/
 function playVideos(sectionScrolledTo)
@@ -18,6 +38,30 @@ function playVideos(sectionScrolledTo)
 		if(tempVideoObj.sectionid==sectionScrolledTo && tempVideoObj.autotoggle )
 			playSingleVideo(tempVideoObj);
   	}
+}
+
+function updateAllVideosSize()
+{
+	for (i=0; i<videoList.length;i++)
+	{
+		tempVideoObj = videoList[i];
+		resizeVideo(tempVideoObj.videoid,tempVideoObj.ratio);
+  	}
+}
+
+function resizeVideo(videoid,ratio)
+{
+  	 _V_(videoid).ready(function(){
+		var myPlayer = this;	// Store the video object
+		var aspectRatio = ratio;  // Make up an aspect ratio
+
+		function resizeVideoJS(){
+			// Get the parent element's actual width
+			var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
+			// Set width to fill parent element, Set height
+			myPlayer.width(width).height( width * aspectRatio );
+	    	}
+  	});
 }
 
 function stopVideos(oldSectionID)

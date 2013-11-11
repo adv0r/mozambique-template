@@ -7,25 +7,29 @@ function initVideoArray()
 		containerid:"VIDEOPLAYERAUTOTOGGLE",
 		 sectionid:16, 
 		 autotoggle:true,
-		 ratio:3/4});
+		 ratio:3/4,
+		 sidetext:false});
 	
 	videoList.push({videoid:"videoToggle2", 
 		containerid:"VIDPLAYERAUTOTOGGLESIDETEXT", 
 		sectionid:19, 
 		autotoggle:true,
-		ratio:3/4});
+		ratio:3/4,
+	 	sidetext:true});
 	
 	videoList.push({videoid:"videoNonFull", 
 		containerid:"VIDPLAYER", 
 		sectionid:7, 
 		autotoggle:false,
-		ratio:3/4});
+		ratio:3/4,
+	 	sidetext:false});
 	
 	videoList.push({videoid:"VIDPLAYERSIDE", 
 		containerid:"VIDPLAYERSIDE-TEXT", 
 		sectionid:8, 
 		autotoggle:false,
-		ratio:3/4});
+		ratio:3/4,
+		sidetext:true});
 }
 
 
@@ -53,7 +57,10 @@ function updateAllVideosSize()
 			var widthVideo = parente.offsetWidth;
 			// Set widthVideo to fill parent element, Set height
 			//myPlayer.width(widthVideo).height( (widthVideo * aspectRatio)-60 );
-			myPlayer.width(widthVideo-(widthVideo/100*5)).height(viewportH-30);
+			var leftSpace = 0;
+			if(tempVideoObj.sidetext)
+				leftSpace = widthVideo/100*5;
+			myPlayer.width(widthVideo-leftSpace).height(viewportH-30);
   		});
   	}
 }

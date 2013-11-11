@@ -52,7 +52,7 @@ function updateAllVideosSize()
 			var parente=  document.getElementById(tempVideoObj.videoid).parentElement;
 			var widthVideo = parente.offsetWidth;
 			// Set widthVideo to fill parent element, Set height
-			myPlayer.width(widthVideo).height( (widthVideo * aspectRatio)-30 );
+			myPlayer.width(widthVideo).height( (widthVideo * aspectRatio)-60 );
   		});
   	}
 }

@@ -135,7 +135,7 @@ function getPausing(sectionNumber,percentage) /*RALLENTA IL CONTENUTO DI UNA SEC
 		case 13: sectionPausingPx = viewportH +$('#imgFullTextScroll-text').innerHeight(); break;
 		case 14: sectionPausingPx = (3*viewportH); break;
 		case 15: sectionPausingPx = (3*viewportH); break;
-		case 16: sectionPausingPx = 0; break;
+		case 16: sectionPausingPx =  viewportH/2; break;
 		case 17: sectionPausingPx = $('#animDoubleText-text').innerHeight(); break;
 		case 18: sectionPausingPx = viewportH; break;
 		case 19: sectionPausingPx = $('#vidPlayerAutotoggleSideText-text').innerHeight(); break;

@@ -7,25 +7,25 @@ function initVideoArray()
 		containerid:"VIDEOPLAYERAUTOTOGGLE",
 		 sectionid:16, 
 		 autotoggle:true,
-		 ratio:9/16});
+		 ratio:3/4});
 	
 	videoList.push({videoid:"videoToggle2", 
 		containerid:"VIDPLAYERAUTOTOGGLESIDETEXT", 
 		sectionid:19, 
 		autotoggle:true,
-		ratio:9/16});
+		ratio:3/4});
 	
 	videoList.push({videoid:"videoNonFull", 
 		containerid:"VIDPLAYER", 
 		sectionid:7, 
 		autotoggle:false,
-		ratio:9/16});
+		ratio:3/4});
 	
 	videoList.push({videoid:"VIDPLAYERSIDE", 
 		containerid:"VIDPLAYERSIDE-TEXT", 
 		sectionid:8, 
 		autotoggle:false,
-		ratio:9/16});
+		ratio:3/4});
 }
 
 
@@ -52,7 +52,7 @@ function updateAllVideosSize()
 			var parente=  document.getElementById(tempVideoObj.videoid).parentElement;
 			var widthVideo = parente.offsetWidth;
 			// Set widthVideo to fill parent element, Set height
-			myPlayer.width(widthVideo).height( widthVideo * aspectRatio );
+			myPlayer.width(widthVideo).height( (widthVideo * aspectRatio)-30 );
   		});
   	}
 }

@@ -2,10 +2,9 @@
 
 ## Urls to bookmark :
 
-* [This wiki](https://bitbucket.org/adv0r/mozambique-template/wiki/Home)
 * [File sharing (Dropbox)](https://www.dropbox.com/sh/mft2mwnegjzhx6p/R3c6ifJ4n_)
 * [Documents (Google Drive)](https://drive.google.com/#folders/0B25Kqxp2xqwna2pTTFJXR1U2YUE)
-* [Code Repository (BitBucket)](https://bitbucket.org/adv0r/mozambique-template)
+* [Code Repository (GitHub)](https://github.com/adv0r/mozambique-template)
 * [Task List (Trello)](https://trello.com/b/2CsAasNb/mozambique-web-template)
 * [Test Page (ITA)](http://www.danielemeli.com/test/mozambico/ita/index.html)
 

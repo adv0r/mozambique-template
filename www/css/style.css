@@ -90,6 +90,7 @@ a{
 }
 
 #sectionTracker{
+	margin-left: 8px;
  	color:white;
 	font-size: 16px;
 	font-weight: 400;
@@ -107,7 +108,7 @@ a{
 	padding-left: 40px;
 	background-color: rgb(39,39,39);
 	padding-right: 10px;
-	padding-bottom: 2px;
+	padding-bottom: 3px;
 }
 
 
@@ -599,6 +600,9 @@ a{
 /*________PROGRESS BAR_____________*/
 
 #navigationbar{
+	margin-top: 0%;
+	margin-left: 0%;
+	padding: 0px;
 	z-index: 999999;
 	position:fixed;
 	top:0px;

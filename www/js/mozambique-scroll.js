@@ -35,6 +35,7 @@ $(window).scroll(function() {
             newSectionNumber = newSectionID.substring(4);
             oldSectionNumber = currentSectionID.substring(4);
             $('#sectionTracker').html("section "+newSectionNumber);
+            $('#sectionTrackerInMenu').html("section "+newSectionNumber);
             $(currentSectionID).removeClass('currentMenuItem');
             $(newSectionID).addClass('currentMenuItem');
             currentSectionID= newSectionID;

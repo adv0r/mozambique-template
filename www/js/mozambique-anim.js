@@ -9,12 +9,14 @@ function toggleMenu()
 	{
 		//off
 		menuVisible=false;
-		 $( "#menuSection" ).fadeOut( "fast", function() {});	
+		 $( "#menuSection" ).fadeOut( "fast", function() {});
+		 $( "#navigationbar" ).fadeIn( "fast", function() {});	
 	}
 	else
 	{
 		//on
-		 $( "#menuSection" ).fadeIn( "fast", function() {});	
+		 $( "#menuSection" ).fadeIn( "fast", function() {});
+		 $( "#navigationbar" ).fadeOut( "fast", function() {});		
 		menuVisible=true;
 	}
 }
@@ -22,8 +24,8 @@ function toggleMenu()
 function closeMenu()
 {
 	 menuVisible=false;
-	 $( "#menuSection" ).fadeOut( "fast", function() {
-	  });	
+	 $( "#menuSection" ).fadeOut( "fast", function() {});
+	 $( "#navigationbar" ).fadeIn( "fast", function() {});
 }
 
 

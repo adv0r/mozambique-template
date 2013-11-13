@@ -97,7 +97,15 @@ a{
 	text-transform: uppercase;
 }
 
+
 /* ----------- Menu START----------- */
+
+#sectionTrackerInMenu{
+ 	color:white;
+	font-size: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
 
 #testoNavigationBar{
 	margin-top:6px;
@@ -114,8 +122,7 @@ a{
 
 #menuSection{
 	position: fixed;
-	background-color: black;
-	opacity: 0.9;
+	background-color: rgba(0,0,0,0.7);
 	z-index: 9999;
 	height: 100%;
 	width: 100%;
@@ -127,7 +134,6 @@ a{
 	list-style: none;
 	z-index: 9999;
 	display: block;
-	top:20%;
 }
 
 .nav li{
@@ -140,8 +146,8 @@ a{
 
 .currentMenuItem
 {
-	font-weight: 700 !important;
-	background-color: rgb(106,70,70);
+	font-weight: 100 !important;
+	background-color: rgba(211,84,0,0.5);
 }
 
 
@@ -152,12 +158,43 @@ a{
 	z-index: 9999;
 }
 
+.nav h1{
+	text-transform: uppercase;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 46px;
+	font-weight: 700;	
+}
 
+.sottotitoloVoceMenu{
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.sottoVoce{
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: 100;
+	text-transform: uppercase;
+	padding-left: 10px;
+	line-height: 30px;
+	color: white;
+	margin-left: 50px;
+	text-decoration: none !important;
+}
+
+.contenutoMenu{
+margin-left: 100px;
+}
+
+.margineTopMenu{
+	margin-top: 80px;
+}
 /* ----------- Menu END----------- */
 
 
 .noPadding{
-	padding: 0 0 0 0;
+	padding: 0px !important;
 }
 
 #casesAnalysis{
@@ -620,7 +657,7 @@ a{
 
 #progressinactive
 {
-    width:100%;
+width:100%;
 position:fixed;
 top:0px;
 left:0px;
@@ -628,4 +665,18 @@ height:6px;
 background-color: rgb(39,39,39);
 }
 
+#progressinactiveInMenu
+{
+width:100%;
+top:0px;
+left:0px;
+height:14px;    
+background-color: rgb(52,52,52);
+}
+
+#progressbarInMenu{
+	height:14px;
+	background-color: rgb(198,62,6);
+
+}
 /*________PROGRESS BAR__end________*/

@@ -149,11 +149,18 @@
 
                     L.control.layers(null, overlayMaps).addTo(map);
 
-                    var info = L.control( { position: 'bottomright' } );
+                    var info = L.control( { position: 'bottomleft' } );
 
                 info.onAdd = function (map) {
                         this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-                        this._div.innerHTML = "<h4>Land Acquisitions in Africa</h4> Explore the crowdsourced map and read the stories on large-scale land acquisitions published by the international press, the civil society, the academic world and the other actors involved. You may also send us new stories that take part of the global debate on the large-scale land acquisitions.<br /><img src=\"images/map-legend.png\" style=\"padding-top:10px;\"><br/ ><div class=\"credito\"><a href=\"http://www.datajournalist.it/landgrabbing/form/\" target=\"_blank\">Send us a story</a></div>";
+                        this._div.innerHTML = "<h4>Land Acquisitions in Africa</h4> "+
+                        "Explore the crowdsourced map and read the stories on large-scale land acquisitions published by "+
+                        "the international press, the civil society, the academic world and the other actors involved. "+
+                        "You may also send us new stories that take part of the global debate on the large-scale land acquisitions.<br />"+
+                        "<img src=\"images/map-legend.png\" style=\"padding-top:10px;\"><br/ >"+
+                        "<div class=\"credito\">"+
+                         "   <a class=\"mapfancybox fancybox.iframe\" href=\"http://www.datajournalist.it/landgrabbing/form/\" target=\"_blank\">Send us a story</a>"+
+                        "</div>";
                         return this._div;
                     };
 

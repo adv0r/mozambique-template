@@ -48,12 +48,20 @@ function preLoad()
 
 function loadOverlays()
 {
+	//Multiple div
 	$(".fancybox").fancybox({
 	    openEffect  : 'fade',
 	    closeEffect : 'fade',
 	    afterLoad   : function() {
 	        this.content = this.content.html();
   		  }
+	  });
+
+	//Map, send us a story
+	$('a.mapfancybox').fancybox({
+	    openEffect  : 'fade',
+	    closeEffect : 'fade',
+	    'width': 800
 	  });
 }
 

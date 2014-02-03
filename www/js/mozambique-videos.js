@@ -3,33 +3,55 @@ var  videoList = new Array();
 function initVideoArray()
 {
    //Create an array of object for videos with all the video IDs and the corresponding containers and the autotoggle
-	videoList.push({videoid:"videoToggle", 
-		containerid:"VIDEOPLAYERAUTOTOGGLE",
-		 sectionid:16, 
-		 autotoggle:true,
+	videoList.push({videoid:"xaxairice_video", 
+		containerid:"slide13",
+		 sectionid:13, 
+		 autotoggle:false,
 		 ratio:3/4,
 		 sidetext:false});
+
+	videoList.push({videoid:"xai_xai_controversities_video", 
+		containerid:"slide15",
+		 sectionid:15, 
+		 autotoggle:false,
+		 ratio:3/4,
+		 sidetext:false});
+
+	videoList.push({videoid:"xaixaiproject_video", 
+		containerid:"slide19",
+		 sectionid:19, 
+		 autotoggle:false,
+		 ratio:3/4,
+		 sidetext:false});
+
+	videoList.push({videoid:"xai_xai_controversities_video2", 
+		containerid:"slide21",
+		 sectionid:21, 
+		 autotoggle:false,
+		 ratio:3/4,
+		 sidetext:false});
+
+	videoList.push({videoid:"sammartincorriere_video", 
+		containerid:"slide25",
+		 sectionid:25, 
+		 autotoggle:false,
+		 ratio:3/4,
+		 sidetext:false});
+
+	videoList.push({videoid:"hanlon_video", 
+		containerid:"slide27",
+		 sectionid:27, 
+		 autotoggle:false,
+		 ratio:3/4,
+		 sidetext:true});
+
+	videoList.push({videoid:"video32", 
+		containerid:"slide32",
+		 sectionid:32, 
+		 autotoggle:false,
+		 ratio:3/4,
+		 sidetext:true});
 	
-	videoList.push({videoid:"videoToggle2", 
-		containerid:"VIDPLAYERAUTOTOGGLESIDETEXT", 
-		sectionid:19, 
-		autotoggle:true,
-		ratio:3/4,
-	 	sidetext:true});
-	
-	videoList.push({videoid:"videoNonFull", 
-		containerid:"VIDPLAYER", 
-		sectionid:7, 
-		autotoggle:false,
-		ratio:3/4,
-	 	sidetext:false});
-	
-	videoList.push({videoid:"VIDPLAYERSIDE", 
-		containerid:"VIDPLAYERSIDE-TEXT", 
-		sectionid:8, 
-		autotoggle:false,
-		ratio:3/4,
-		sidetext:true});
 }
 
 

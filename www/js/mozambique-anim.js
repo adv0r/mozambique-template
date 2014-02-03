@@ -1,6 +1,6 @@
 var menuVisible = false;
 var startingPixel = new Array();
-var totalNumberOfSections= 27; //TODO CHANGE WHEN ADD A NEW SECTION!!!!
+var totalNumberOfSections= 36; //TODO CHANGE WHEN ADD A NEW SECTION!!!!
 
 /* Toggle Menu*/
 function toggleMenu()
@@ -72,6 +72,10 @@ function updateMenuHrefHeights()
  	 $("#menu-item-30").attr('data-menu-top', startingPixel[30]+1);	
  	 $("#menu-item-31").attr('data-menu-top', startingPixel[31]+1);	
  	 $("#menu-item-32").attr('data-menu-top', startingPixel[32]+1);	
+ 	 $("#menu-item-32").attr('data-menu-top', startingPixel[33]+1);	
+ 	 $("#menu-item-32").attr('data-menu-top', startingPixel[34]+1);	
+ 	 $("#menu-item-32").attr('data-menu-top', startingPixel[35]+1);	
+ 	 $("#menu-item-32").attr('data-menu-top', startingPixel[36]+1);	
 
 	 //!!!Remember! if you add one  section change the variable totalNumberOfSections
 }
@@ -120,38 +124,51 @@ function getPausing(sectionNumber,percentage) /*RALLENTA IL CONTENUTO DI UNA SEC
 {
 	var sectionPausingPx ;
 	var defaultTime = 800;
+	/* some example of pausing :
+	viewportH + $('#vidbgscrollabletext-text').innerHeight();
+	viewportH/2;
+	$('#imgFullText-text').innerHeight();
+	2*viewportH
+	viewportH
+	*/
 	switch(sectionNumber)
 	{
-		case 1: sectionPausingPx = 100; break;
+		case 1: sectionPausingPx = 0; break;
 		case 2: sectionPausingPx = 0; break;
 		case 3: sectionPausingPx = 0; break;
 		case 4: sectionPausingPx = 0; break;
-		case 5: sectionPausingPx = viewportH + $('#vidbgscrollabletext-text').innerHeight(); break; 
-		case 6: sectionPausingPx = viewportH + $('#vidbggridscrollabletext-text').innerHeight(); break; 
-		case 7: sectionPausingPx = viewportH/2; break;
-		case 8: sectionPausingPx = viewportH + $('#vidbggridscrollabletext-text').innerHeight(); break; 
+		case 5: sectionPausingPx = 0; break; 
+		case 6: sectionPausingPx = 0; break; 
+		case 7: sectionPausingPx = 0; break;
+		case 8: sectionPausingPx = 0; break; 
 		case 9: sectionPausingPx = 0; break;
 		case 10: sectionPausingPx = 0; break;
-		case 11: sectionPausingPx = $('#imgFullText-text').innerHeight(); break;
-		case 12: sectionPausingPx = $('#imgFullTextGrid-text').innerHeight(); break; 
-		case 13: sectionPausingPx = viewportH +$('#imgFullTextScroll-text').innerHeight(); break;
-		case 14: sectionPausingPx = (3*viewportH); break;
-		case 15: sectionPausingPx = (3*viewportH); break;
-		case 16: sectionPausingPx =  viewportH/2; break;
-		case 17: sectionPausingPx = $('#animDoubleText-text').innerHeight(); break;
-		case 18: sectionPausingPx = viewportH; break;
-		case 19: sectionPausingPx = $('#vidPlayerAutotoggleSideText-text').innerHeight(); break;
-		case 20: sectionPausingPx = $('#animTextImg-text').innerHeight(); break;
+		case 11: sectionPausingPx = 0; break;
+		case 12: sectionPausingPx = 0; break; 
+		case 13: sectionPausingPx = 0; break;
+		case 14: sectionPausingPx = 0; break;
+		case 15: sectionPausingPx = 0; break;
+		case 16: sectionPausingPx =  0; break;
+		case 17: sectionPausingPx = 0; break;
+		case 18: sectionPausingPx = 0; break;
+		case 19: sectionPausingPx = 0; break;
+		case 20: sectionPausingPx = 0; break;
 		case 21: sectionPausingPx = 0; break;
 		case 22: sectionPausingPx = 0; break;
-		case 23: sectionPausingPx = viewportH ; break;
-		case 24: sectionPausingPx = viewportH; break;
+		case 23: sectionPausingPx = 0; break;
+		case 24: sectionPausingPx = 0; break;
 		case 25: sectionPausingPx = 0; break;
 		case 26: sectionPausingPx = 0; break;
-		case 27: sectionPausingPx = (2*viewportH); break;	
+		case 27: sectionPausingPx = 0; break;	
 		case 28: sectionPausingPx = 0; break;	
 		case 29: sectionPausingPx = 0; break;	
 		case 30: sectionPausingPx = 0; break;		
+		case 31: sectionPausingPx = 0; break;		
+		case 32: sectionPausingPx = 0; break;		
+		case 33: sectionPausingPx = 0; break;		
+		case 34: sectionPausingPx = 0; break;		
+		case 35: sectionPausingPx = 0; break;		
+		case 36: sectionPausingPx = 0; break;		
 		default: sectionPausingPx = 0; break;
 	}
 	if(percentage)

@@ -18,6 +18,9 @@
 	/*box-shadow: 0 0 20px #000;*/
 }
 
+.opacitaTesto{
+	opacity: .8;
+}
 
 .sfondoBiancoFumo
 {
@@ -46,8 +49,9 @@
 
 h1{
 	font-family: 'Roboto', sans-serif;
-	font-size: 70px;
-	font-weight: 700;	
+	font-size: 160px;
+	font-weight: 200;	
+	line-height: 140px;
 }
 
 h2{
@@ -79,7 +83,7 @@ a{
 }
 
 .ombreggiaturaTesto{
-	text-shadow:5px 5px rgba(0,0,0,0.4);
+	/*text-shadow:5px 5px rgba(0,0,0,0.4);*/
 }
 
 #scroll-pos{
@@ -192,6 +196,19 @@ margin-left: 100px;
 }
 /* ----------- Menu END----------- */
 
+footer ul{
+	padding-top: 10px;
+	margin-top: 30px;
+	border-top: 1px solid white;
+}
+
+footer ul li{
+	color: #b2b2b2;
+	font-weight: 400;
+	font-size: 16px;
+	padding-right: 30px;
+	display:inline;
+}
 
 .noPadding{
 	padding: 0px !important;
@@ -282,7 +299,7 @@ margin-left: 100px;
 	top:0;
 	left:0;
 	color:white;
-	margin-top: 20%;
+	margin-top: 12%;
 	margin-left: 10%;
 	z-index: 1000;
 }

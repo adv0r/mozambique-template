@@ -9,8 +9,8 @@ function toggleMenu()
 	{
 		//off
 		menuVisible=false;
-		 $( "#menuSection" ).fadeOut( "fast", function() {});
-		 $( "#navigationbar" ).fadeIn( "fast", function() {});	
+		 $( "#menuSection" ).fadeOut( "slow", function() {});
+		 $( "#navigationbar" ).fadeIn( "slow", function() {});	
 	}
 	else
 	{
@@ -24,8 +24,8 @@ function toggleMenu()
 function closeMenu()
 {
 	 menuVisible=false;
-	 $( "#menuSection" ).fadeOut( "fast", function() {});
-	 $( "#navigationbar" ).fadeIn( "fast", function() {});
+	 $( "#menuSection" ).fadeOut( "slow", function() {});
+	 $( "#navigationbar" ).fadeIn( "slow", function() {});
 }
 
 
@@ -39,7 +39,6 @@ function updateMenuHrefHeights()
 		startingPixel[i]=getStartingPixelOfSection(i,viewportH);
 	}
 	startingPixel[totalNumberOfSections+1]=$(document).height(); //needed for the last section
-
 
 
 	 $("#menu-item-1").attr('data-menu-top',  startingPixel[1]+1); 

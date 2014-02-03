@@ -36,13 +36,70 @@ $(window).scroll(function() {
             oldSectionNumber = currentSectionID.substring(4);
             $('#sectionTracker').html("section "+newSectionNumber);
             $('#sectionTrackerInMenu').html("section "+newSectionNumber);
-            $(currentSectionID).removeClass('currentMenuItem');
-            $(newSectionID).addClass('currentMenuItem');
+
+            //Questo va fatto solo per le sezioni speciali del menu 1,5,9,10,16,22,26
+            selectOnly();
+
+            var menuElementToSelect ;
+            if(newSectionNumber < 5)
+            {
+                menuElementToSelect = '#lid1';
+            }
+
+            else if (newSectionNumber >= 5 && newSectionNumber <9 )
+            {
+                menuElementToSelect = '#lid2';
+            }
+
+            else if (newSectionNumber == 9)
+            {
+                menuElementToSelect = '#lid3';
+            }
+
+            else if (newSectionNumber >=10 && newSectionNumber <16 )
+            {
+                menuElementToSelect = '#lid4';   
+            }
+
+            else if (newSectionNumber >= 16 && newSectionNumber <22 )
+            {     
+                menuElementToSelect = '#lid5';
+            }
+
+             else if (newSectionNumber >= 22 && newSectionNumber <26 )
+            {
+                menuElementToSelect = '#lid6';
+            }
+
+         else if (newSectionNumber >26 )
+            {
+                menuElementToSelect = '#lid7';
+            }
+
+            selectOnly(menuElementToSelect);
+
+            //
             currentSectionID= newSectionID;
             stopVideos(oldSectionNumber);
             playVideos(newSectionNumber);
     } 
 });
+
+
+//Selects the 'toSelect' menu item and deselect the others
+function selectOnly(toSelect)
+{
+              for (i=1; i<=7;i++)
+              {
+                     var tempLid = '#lid'+i;
+                     $(tempLid).removeClass('currentMenuItem');            
+              }
+
+              $(toSelect).addClass('currentMenuItem');  
+}
+
+
+
 
 
 /* Returns the ID of the current element based on scrollPosition*/

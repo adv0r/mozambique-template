@@ -22,6 +22,10 @@
 	opacity: .8;
 }
 
+.titoloHomeH1{
+	margin-left: -15px;
+}
+
 .sfondoBiancoFumo
 {
 	background-color:whitesmoke  !important;
@@ -206,8 +210,12 @@ footer ul li{
 	color: #b2b2b2;
 	font-weight: 400;
 	font-size: 16px;
-	padding-right: 30px;
+	padding-left: 30px;
 	display:inline;
+}
+
+.liFirstElement{
+	padding-left: 0px !important;
 }
 
 .noPadding{
@@ -338,6 +346,11 @@ footer ul li{
 }
 /*_________SFONDI_______*/
 
+.slide02{
+	background-image: url(../images/slide02.jpg);
+	background-size: cover;	
+}
+
 #IMGFULL{
 	background-image: url(../images/moz1.jpg);
 	background-size: cover;
@@ -359,8 +372,6 @@ footer ul li{
 	}
 	
 #VIDBGSCROLLTEXT{
-	background-image: url(../images/moz5.jpg);
-	background-size: cover;	
 }
 
 /*_________ MULTIPLE.DIV start____________*/

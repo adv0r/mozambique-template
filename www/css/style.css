@@ -346,7 +346,7 @@ footer ul li{
 }
 /*_________SFONDI_______*/
 
-.slide02{
+#slide02{
 	background-image: url(../images/slide02.jpg);
 	background-size: cover;	
 }

@@ -133,6 +133,7 @@ function computeConstants()
 		offset33 : getStartingPercentageOfSection(33),
 		offset34 : getStartingPercentageOfSection(34),
 		offset35 : getStartingPercentageOfSection(35),
+		offset36 : getStartingPercentageOfSection(36),
 		pausing0 : 0,
 		pausing1 : getPausing(1,true),
 		pausing2 : getPausing(2,true),
@@ -169,6 +170,7 @@ function computeConstants()
 		pausing33 : getPausing(33,true),
 		pausing34 : getPausing(34,true),
 		pausing35 : getPausing(35,true),
+		pausing36 : getPausing(36,true),
 		pausingSum0 : 0,
 		sumoffset1 : getPausingSum(1),
 		sumoffset2 : getPausingSum(2),
@@ -204,7 +206,8 @@ function computeConstants()
 		sumoffset32 : getPausingSum(32),
 		sumoffset33 : getPausingSum(33),
 		sumoffset34 : getPausingSum(34),
-		sumoffset35 : getPausingSum(35)
+		sumoffset35 : getPausingSum(35),
+		sumoffset36 : getPausingSum(36)
 	};
 }
 

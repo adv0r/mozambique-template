@@ -606,7 +606,7 @@ article header h2{
 		
 
 /*Scrollbar*/
-
+/*
 ::-webkit-scrollbar {
     width: 7px;
 }
@@ -621,6 +621,8 @@ article header h2{
     border-radius: 7px;
     
 }
+*/
+
 #timeline{
 	background-color: whitesmoke;
 }

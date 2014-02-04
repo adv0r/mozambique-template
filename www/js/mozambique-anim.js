@@ -108,7 +108,7 @@ function getPausing(sectionNumber,percentage) /*RALLENTA IL CONTENUTO DI UNA SEC
 	{
 		case 1: sectionPausingPx = 0; break;
 		case 2: sectionPausingPx = 0; break;
-		case 3: sectionPausingPx = viewportH*1.9 ; break;
+		case 3: sectionPausingPx = viewportH*3.8 ; break;
 		case 4: sectionPausingPx = viewportH*3 + $('#slide04text').innerHeight(); break;
 		case 5: sectionPausingPx = 0; break; 
 		case 6: sectionPausingPx = 0; break; 

@@ -95,8 +95,6 @@ function initSkrollr()
 function computeConstants()
 {
 	constants = {
-		container: 400, //TODO delete
-		container2: 50, //TODO delete
 		offset0 : 0,
 		offset1 : getStartingPercentageOfSection(1),
 		offset2 : getStartingPercentageOfSection(2),

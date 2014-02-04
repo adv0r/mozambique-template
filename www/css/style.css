@@ -267,7 +267,7 @@ footer ul li{
 .contentContainer{
 	position: absolute;
 	z-index: 1000;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.8);
 	padding:20px;
 	margin-top: 10%;
 	margin-left: 10%;

@@ -66,14 +66,14 @@ h2{
 
 h3{
 	font-family: 'Roboto', sans-serif;
-	font-size: 14px;/*ERA 15, l'ho rimpicciolito per far entrare tutto il menu nella safe area*/
+	font-size: 41px;/*ERA 15, l'ho rimpicciolito per far entrare tutto il menu nella safe area*/
 	font-weight: 700;	
 }
 
 h4{
 	font-family: 'Roboto', sans-serif;
-	font-size: 15px; /*ERA 18, l'ho rimpicciolito per far entrare tutto il menu nella safe area*/
-	font-weight: 100;	
+	font-size: 31px; /*ERA 18, l'ho rimpicciolito per far entrare tutto il menu nella safe area*/
+	font-weight: 200;	
 }
 
 h5{
@@ -262,7 +262,20 @@ article header h2{
 	color: #365e6d;
     border-bottom: 1px solid #365e6d;
 }
-/*ARTICOLO END*/
+/*--------- ARTICOLO END----------*/
+
+
+/*--------- TERZA SLIDE ---------*/
+
+.orangebold{
+	color:#e99148;
+	font-weight: 700;
+}
+
+.sustainTextSlide03{
+	position: absolute;
+}
+/*--------- TERZA SLIDE END -----*/
 
 .liFirstElement{
 	padding-left: 0px !important;

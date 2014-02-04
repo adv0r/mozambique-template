@@ -200,6 +200,7 @@ margin-left: 100px;
 }
 /* ----------- Menu END----------- */
 
+/*------------ ARTICOLO START------*/
 footer ul{
 	padding-top: 10px;
 	margin-top: 30px;
@@ -213,6 +214,55 @@ footer ul li{
 	padding-left: 30px;
 	display:inline;
 }
+
+article header .titleArticle{
+	background-color: rgba(50,50,50,.88);
+	height: 68px;
+	padding:2px 0px 0px 50px; 
+	max-width: 420px;
+	min-width: 420px;
+	margin-left: 10px;
+}
+
+article header h2{
+	color: white;
+}
+
+.articleAbstract{
+	background-color: rgba(127,171,191,0.96);
+	color:white;
+	font-size: 20px;
+	font-weight: 100;
+	padding: 8px 90px 8px 60px;
+	max-width: 470px;
+	min-width: 470px;
+	line-height: 24px;
+}
+
+.articleContent{
+	padding:30px 50px 40px 50px;
+	margin:0px 0px 0px 10px !important;
+	max-width: 445px;
+	min-width: 445px;
+	border-top: 12px solid rgba(187,187,187,.8);
+	background-color: rgba(255,255,255,0.8);
+	color: rgb(45,45,45);
+	font-size: 20px;
+	font-weight: 100;
+	line-height: 24px;
+}
+
+.articleContent footer{
+	margin-top: 70px;
+}
+
+.articleContent a{
+	font-size: 22px;
+	font-weight: 700;
+	color: #365e6d;
+    border-bottom: 1px solid #365e6d;
+}
+/*ARTICOLO END*/
 
 .liFirstElement{
 	padding-left: 0px !important;
@@ -267,7 +317,6 @@ footer ul li{
 .contentContainer{
 	position: absolute;
 	z-index: 1000;
-	background-color: rgba(255,255,255,0.8);
 	padding:20px;
 	margin-top: 10%;
 	margin-left: 10%;
@@ -451,7 +500,7 @@ footer ul li{
 
     }
 
-    .credito a, a:link, a:hover, a:active {
+    .credito a,  .credito a:link, .credito a:hover, .credito a:active {
         color: black !important;
         border-bottom: 1px dotted grey;
         text-decoration:none;

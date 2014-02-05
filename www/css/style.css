@@ -26,9 +26,9 @@
 	margin-left: -15px;
 }
 
-.sfondoBiancoFumo
+.sfondoBianco
 {
-	background-color:whitesmoke  !important;
+	background-color:white  !important;
 	position: fixed;
 	top:0px;
 	left:0px;
@@ -252,11 +252,25 @@ article header h2{
 	line-height: 24px;
 }
 
-.articleContent footer{
+.articleContent2{
+	padding:30px 50px 40px 50px;
+	margin:0px 0px 0px 10px !important;
+	max-width: 445px;
+	min-width: 445px;
+	border-top: 12px solid rgba(187,187,187,.8);
+	background-color: rgba(231,231,231,1);
+	color: rgb(45,45,45);
+	font-size: 20px;
+	font-weight: 100;
+	line-height: 24px;
+}
+.articleContent footer,
+.articleContent2 footer{
 	margin-top: 70px;
 }
 
-.articleContent a{
+.articleContent a,
+.articleContent2 a{
 	font-size: 22px;
 	font-weight: 700;
 	color: #365e6d;

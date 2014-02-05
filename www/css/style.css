@@ -287,9 +287,21 @@ article header h2{
 /*--------- QUARTA SLIDE END -----*/
 
 
+/*---------- SESTA SLIDE --------*/
+
+.testoArancio{
+	color: #e88837;
+}
+
+.testoSempliceSlide06{
+	margin-top: 6%;
+	font-size: 31px;
+}
+
+/*-------- END SESTA SLIDE ------*/
 
 .liFirstElement{
-	padding-left: 0px !important;
+	padding-left: 0px !important
 }
 
 .noPadding{

@@ -724,7 +724,7 @@
     e.flexslider.defaults = {
         namespace: "flex-",
         selector: ".slides > li",
-        animation: "slide",
+        animation: "fade",
         easing: "swing",
         direction: "horizontal",
         reverse: !1,

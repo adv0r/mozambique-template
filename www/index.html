@@ -69,6 +69,19 @@
   </head>
 
   <body>
+
+	<!-- Preloader -->
+	<script>
+	$(window).load(function(){
+		$('#pnf_preloader_status').fadeOut();
+		$('#pnf_preloader').delay(350).fadeOut('slow');
+	});
+	</script>
+
+	<div id="pnf_preloader">
+	    <div id="pnf_preloader_status">&nbsp;</div>
+	</div>
+	
 	<div id="navigationbar">
 		<div id="progressinactive">
 			<div id="progressbar" data-start="width:0%;" data-end="width:100%;">

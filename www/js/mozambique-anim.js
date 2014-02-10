@@ -57,12 +57,22 @@ function updateMenuHrefHeights()
 function getStartingPixelOfSection(sectionNumber)
 {
 	var startingPixel ;
-	if(sectionNumber==0)
+	if(sectionNumber==1)
 		startingPixel=1
+	else if (sectionNumber ==2)
+	{
+		startingPixel = getStartingPixelOfSection(sectionNumber-1) + viewportH + getPausing(sectionNumber-1,false);
+	}
+	else if (sectionNumber ==3)
+	{
+		startingPixel = getStartingPixelOfSection(sectionNumber-1) + 2*viewportH + getPausing(sectionNumber-1,false);
+	}
 	else
 	{
-		startingPixel = getStartingPixelOfSection(sectionNumber-1) + viewportH + getPausing(sectionNumber-1,false)
+		startingPixel = getStartingPixelOfSection(sectionNumber-1) + viewportH + getPausing(sectionNumber-1,false);
 	}	
+
+	console.log("n="+sectionNumber+" "+startingPixel);
 	return startingPixel;
 }
 

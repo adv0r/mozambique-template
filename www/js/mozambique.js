@@ -30,7 +30,8 @@ function initTemplate()
 	videojs.options.flash.swf = "data/video-js.swf";
 	loadOverlays();
 
-	debugSkrollrConstants(); //comment please, it prints on the console many variables TODO
+	debugSkrollrConstants(); 
+	//comment please, it prints on the console many variables TODO
 	//$('#scroll-pos').hide(); //un-comment if you want to hide pixels
 }
 
@@ -279,6 +280,7 @@ function copyToClipboard (text) {
 
 function debugSkrollrConstants()
 {
+	console.log("viewportH="+viewportH);
 	for (i=1;i<35;i++)
 	{
 		console.log("pausing"+i+"="+getPausing(i,true)+"px"); 

@@ -72,7 +72,6 @@ function getStartingPixelOfSection(sectionNumber)
 		startingPixel = getStartingPixelOfSection(sectionNumber-1) + viewportH + getPausing(sectionNumber-1,false);
 	}	
 
-	console.log("n="+sectionNumber+" "+startingPixel);
 	return startingPixel;
 }
 

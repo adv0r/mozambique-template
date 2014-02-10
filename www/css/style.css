@@ -385,6 +385,11 @@ article header h2{
 	background-color: rgb(207,207,205);
 }
 
+.videoCentrato{
+	height: 395px;
+	width: 700px;
+}
+
 #video_background {
 	position: absolute;
 	top: 0px;
@@ -525,6 +530,17 @@ article header h2{
 	background-image: url(../images/Slide011Img.jpg);
 	background-size: cover;
 }
+
+#slide14{
+	background-image: url(../images/slide14bg.jpg);
+	background-size: cover;	
+}
+
+#slide17{
+	background-image: url(../images/Slide017Img.jpg);
+	background-size: cover;
+}
+
 #slide12_1{
 	position: fixed;
 	top:0px;

@@ -122,7 +122,7 @@ function getPausing(sectionNumber,percentage) /*RALLENTA IL CONTENUTO DI UNA SEC
 		case 5: sectionPausingPx = viewportH/2; break; 
 		case 6: sectionPausingPx = viewportH/2; break; 
 		case 7: sectionPausingPx = viewportH; break;
-		case 8: sectionPausingPx = viewportH/4 + $('#slide08textid').innerHeight(); break; 
+		case 8: sectionPausingPx = viewportH/1.5+ $('#slide08textid').innerHeight(); break; 
 		case 9: sectionPausingPx = viewportH*3; break;
 		case 10: sectionPausingPx = viewportH; break;
 		case 11: sectionPausingPx = viewportH; break;

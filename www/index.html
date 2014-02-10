@@ -41,7 +41,6 @@
 
 <!--- ===-======-======-======-=== Js Libraries ===-======-======-======-======-===-->
 	<script src="js/ext/jquery.js"></script>	
-	<script src="js/ext/jquery.queryloader2.min.js"></script>
 	<script src="js/ext/jquery.resize.min.js"></script>
 	<script src="js/ext/jquery.fancybox.pack.js?v=2.1.5"></script>
 	<script src="js/ext/jquery.fancybox-buttons.js?v=1.0.5"></script>
@@ -68,19 +67,6 @@
   </head>
 
   <body>
-
-	<!-- Preloader -->
-	<script>
-		$(window).load(function(){
-			$('#pnf_preloader_status').fadeOut();
-			$('#pnf_preloader').delay(350).fadeOut('slow');
-		});
-
-		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		alert("Please FUCK YOU");
-		}
-	</script>
-
 	<div id="pnf_preloader">
 	    <div id="pnf_preloader_status"> </div>
 	</div>

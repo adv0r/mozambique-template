@@ -6,7 +6,8 @@ var constants; //for skrollr
 
 
 /*This function is called on page load, works on iOs*/
-window.addEventListener('DOMContentLoaded', function() {	
+window.addEventListener('DOMContentLoaded', function() {
+	checkMobile();	
 	preLoad();	
 	initTemplate();  
 });
@@ -30,20 +31,40 @@ function initTemplate()
 	videojs.options.flash.swf = "data/video-js.swf";
 	loadOverlays();
 
-	debugSkrollrConstants(); 
+	//debugSkrollrConstants(); 
 	//comment please, it prints on the console many variables TODO
+
 	//$('#scroll-pos').hide(); //un-comment if you want to hide pixels
 }
 
 function preLoad()
 {
-	//Loading bar
+	//Loading bar with script
+	/*
 	 $("body").queryLoader2(
 		{
 		        	percentage: true,
                    	        	barHeight: 80,
 	                	completeAnimation: "grow"
 		});
+	*/
+
+	 //Loading image CSS by dan
+	$(window).load(function(){
+		$('#pnf_preloader_status').fadeOut();
+		$('#pnf_preloader').delay(350).fadeOut('slow');
+		});
+}
+
+function checkMobile()
+{
+
+	$(window).load(function(){
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
+		{
+			alert("Please FUCK YOU");
+		}
+	});
 }
 
 
@@ -75,10 +96,10 @@ function loadSlider()
 	});
 
 	$('.flexslider2').flexslider({
-        prevText: " ",
-        nextText: " ",
-        animation: "slide",
-        direction: "horizontal",
+	        prevText: " ",
+	        nextText: " ",
+	        animation: "slide",
+	        direction: "horizontal",
 		slideshow: "false"	 	    
 	 });
 }

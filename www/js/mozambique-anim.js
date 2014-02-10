@@ -126,7 +126,7 @@ function getPausing(sectionNumber,percentage) /*RALLENTA IL CONTENUTO DI UNA SEC
 		case 9: sectionPausingPx = viewportH*3; break;
 		case 10: sectionPausingPx = viewportH; break;
 		case 11: sectionPausingPx = viewportH; break;
-		case 12: sectionPausingPx = 3*viewportH; break; 
+		case 12: sectionPausingPx = 2*viewportH; break; 
 		case 13: sectionPausingPx = 0; break;
 		case 14: sectionPausingPx = 0; break;
 		case 15: sectionPausingPx = 0; break;

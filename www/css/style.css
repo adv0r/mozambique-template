@@ -37,7 +37,7 @@
 	width: 100%;
 	height: 100%;
 	background: transparent center no-repeat;
-	background-size: cover;
+	/*background-size: cover;*/
 	/*box-shadow: 0 0 20px #000;*/
 }
 
@@ -522,7 +522,7 @@ article header h2{
 
 #slide02{
 	background-image: url(../images/slide02.jpg);
-	background-size: cover;	
+	/*background-size: cover;*/	
 }
 
 #slide10{
@@ -531,17 +531,17 @@ article header h2{
 
 #slide11{
 	background-image: url(../images/Slide011Img.jpg);
-	background-size: cover;
+	/*background-size: cover;*/
 }
 
 #slide14{
 	background-image: url(../images/slide14bg.jpg);
-	background-size: cover;	
+	/*background-size: cover;*/	
 }
 
 #slide17{
 	background-image: url(../images/Slide017Img.jpg);
-	background-size: cover;
+	/*background-size: cover;*/
 }
 
 #slide12_1{
@@ -551,7 +551,7 @@ article header h2{
 	width: 100%;
 	height: 100%;
 	background-image: url(../images/slide12_01.jpg);
-	background-size: cover;
+	/*background-size: cover;*/
 }
 #slide12_2{
 	z-index: -1;
@@ -561,7 +561,7 @@ article header h2{
 	width: 100%;
 	height: 100%;
 	background-image: url(../images/slide12_02.jpg);
-	background-size: cover;
+	/*background-size: cover;*/
 }
 #slide16{
 	background-color: whitesmoke;
@@ -574,7 +574,7 @@ article header h2{
 	width: 100%;
 	height: 100%;
 	background-image: url(../images/slide18_01.jpg);
-	background-size: cover;
+	/*background-size: cover;*/
 }
 #slide18_2{
 	z-index: -1;
@@ -584,7 +584,7 @@ article header h2{
 	width: 100%;
 	height: 100%;
 	background-image: url(../images/slide18_02.jpg);
-	background-size: cover;
+	/*background-size: cover;*/
 }
 
 #slide20_1{
@@ -594,7 +594,7 @@ article header h2{
 	width: 100%;
 	height: 100%;
 	background-image: url(../images/slide20img01.jpg);
-	background-size: cover;
+	/*background-size: cover;*/
 }
 #slide20_2{
 	z-index: -1;
@@ -604,7 +604,7 @@ article header h2{
 	width: 100%;
 	height: 100%;
 	background-image: url(../images/slide20img02.jpg);
-	background-size: cover;
+	/*background-size: cover;*/
 }
 
 #slide22{
@@ -613,7 +613,7 @@ article header h2{
 
 #slide23{
 	background-image: url(../images/slide23.jpg);
-	background-size: cover;
+	/*background-size: cover;*/
 }
 
 #slide24_1{
@@ -637,27 +637,27 @@ article header h2{
 
 #slide26{
 	background-image: url(../images/slide26.jpg);
-	background-size: cover;
+	/*background-size: cover;*/
 }
 
 #IMGFULL{
 	background-image: url(../images/moz1.jpg);
-	background-size: cover;
+	/*background-size: cover;*/
 }
 
 #IMGFULLGRID{
 	background-image: url(../images/moz2.jpg);
-	background-size: cover;
+	/*background-size: cover;*/
 }
 
 #IMGFULLTEXT{
 	background-image: url(../images/moz3.jpg);
-	background-size: cover;
+	/*background-size: cover;*/
 }
 
 #IMGFULLTEXTGRID{
 	background-image: url(../images/moz4.jpg);
-	background-size: cover;
+	/*background-size: cover;*/
 	}
 	
 #VIDBGSCROLLTEXT{

@@ -45,7 +45,7 @@ function initVideoArray()
 		 ratio:3/4,
 		 sidetext:true});
 	//TODO
-	/*
+	
 
 	videoList.push({videoid:"video32", 
 		containerid:"slide32",
@@ -53,7 +53,7 @@ function initVideoArray()
 		 autotoggle:false,
 		 ratio:3/4,
 		 sidetext:true});
-	*/
+	
 	
 }
 

@@ -374,6 +374,11 @@ article header h2{
 	font-size: 31px;
 }
 
+.testoSempliceSlide35{
+	margin-top: 6%;
+	font-size: 21px;
+}
+
 /*-------- END SESTA SLIDE ------*/
 
 .liFirstElement{
@@ -642,6 +647,11 @@ article header h2{
 	background-image: url(../images/slide24img02.jpg);
 }
 
+#slide31{
+	background-image: url(../images/slide31.jpg);
+	/*background-size: cover;*/
+}
+
 
 #slide26{
 	background-image: url(../images/slide26.jpg);
@@ -901,7 +911,7 @@ article header h2{
 
 
 /*_________  CREDITS start____________*/
-#slide35{
+#slide36{
 	background-color: rgb(31,31,31) !important;
 	position: fixed;
 	top:0px;

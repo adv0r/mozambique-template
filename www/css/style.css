@@ -699,7 +699,7 @@ article header h2{
 
 	#mdright
 	{
-		height: 400px;
+		height: 500px;
 		background-color: #EAEAEA;
 	}
 
@@ -753,46 +753,52 @@ article header h2{
 
 
 /*_________ MAP CREDITS start____________*/
-  .credito {
-        font-size: 13px;
-        color: black;
-        border-top: 1px grey solid;
-        padding-top:2px;
-        margin-top:10px;
-        text-align: right;
 
-    }
+.leaflet-bar, .leaflet-touch .leaflet-bar {
+    border: 1px solid #BBB;
+    display: none;
+}
 
-    .credito a,  .credito a:link, .credito a:hover, .credito a:active {
-        color: black !important;
-        border-bottom: 1px dotted grey;
-        text-decoration:none;
-        font-family: "Palatino Linotype";
-    }
+.leaflet-control-layers-toggle{
+	display: none;
+}
 
-    .info {
-        padding: 6px 8px;
-        width: 270px;
-        padding: 20px;
-        text-align: justify;
-        margin: 10px;
-        font: 17px Arial, Helvetica, sans-serif;
-        background: white;
-        background: rgba(255,255,255,0.8);
-        box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        border-radius: 5px;
+.info {
+	width: 340px !important;
+    text-align: left !important;
+    font-family: "Roboto" !important;
+    font-size: 18px !important;
+    font-weight: 100 !important;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 0px !important;
+    padding: 6px 8px;
+    padding: 20px;
+    margin: 10px;
+    background: rgba(255,255,255,0.8);
+}
 
-        font-family: "Palatino Linotype";
-    }
+.info h4 {
+    color: black !important;
+    font-size: 25px !important;
+    font-weight: 700;
+    margin: 0 0 5px;
+    padding-bottom: 10px;
+}
 
-    .info h4 {
-        margin: 0 0 5px;
-        color: red;
-        padding-bottom: 10px;
-        font-size: 18px;
-        font-style: bold;
-    
-    }
+.credito {
+	font-family: "Roboto" !important;
+    font-size: 14px;
+    color: white;
+    line-height: 22px;
+    margin-top:10px;
+    text-align: center;
+    background-color: #e67e22;
+}
+
+.credito a,  .credito a:link, .credito a:hover, .credito a:active {
+    text-decoration:none;
+    color: white !important;
+}
 
 /*_________ MAP CREDITS end____________*/
 
@@ -1023,7 +1029,7 @@ background-color: rgb(52,52,52);
 /*________PROGRESS BAR__end________*/
 
 
-#hanlon_video{
+#hanlon_video, #video32{
 	width: 100% !important;
 	height:350px !important;
 }

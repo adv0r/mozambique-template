@@ -38,14 +38,14 @@ function initVideoArray()
 		 ratio:3/4,
 		 sidetext:false});
 
-	//TODO
-	/*videoList.push({videoid:"hanlon_video", 
+	videoList.push({videoid:"hanlon_video", 
 		containerid:"slide27",
 		 sectionid:27, 
 		 autotoggle:false,
 		 ratio:3/4,
 		 sidetext:true});
-	
+	//TODO
+	/*
 
 	videoList.push({videoid:"video32", 
 		containerid:"slide32",

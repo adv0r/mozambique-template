@@ -67,6 +67,16 @@
   </head>
 
   <body>
+
+  	<script type="text/javascript">
+    $( document ).ready( function(){
+        $('#mdleftheader').on('click','.toggleButton',function () {
+        $('.toggleButton').removeClass('toggleButtonSelected');
+        $(this).addClass('toggleButtonSelected')
+        });
+    });
+    </script>
+
 	<div id="pnf_preloader">
 	    <div id="pnf_preloader_status"> </div>
 	</div>
@@ -833,15 +843,13 @@
 			</article>		
 	    </section>
 
-	   		<section id="slide20_1" 
-	   		data-0="opacity:1;"
-	   		data-_offset20-2010p="" 
-	   		data-_offset20-2035p="opacity:0;" >
-			</section>
-	   		
-	   		<section id="slide20_2">
-			</section>
-
+   		<section id="slide20_1" 
+   		data-0="opacity:1;"
+   		data-_offset20-2010p="" 
+   		data-_offset20-2035p="opacity:0;" >
+		</section>
+   		
+   		<section id="slide20_2">
 		</section>
 	</section>
 	<!-- 20 END IMG.FULL.TEXT-SCROLL -->
@@ -1086,24 +1094,40 @@
 
 
 	<!--Keyframes30$ MULTIPLE.DIV -->
-  	<section id="slide30" class="col-sm-12 allPages" 
+  	<section id="slide30" class="col-sm-12 allPages sfondoScuro" 
 		data-0="transform:translate(0%, 100%);"
 		data-_offset30-2900p =""
 		data-_offset30-3000p= "transform:translate(0%, 0%);"
 		data-_sumoffset30-3100p=""
 		data-_sumoffset30-3200p="transform:translate(0%, -150%);">
   	<!--keyframestop--> 
-  		<div id="mdleft" class="col-sm-6" >
-  			<div id="mdleftheader">
-  				<div class="col-sm-4" id="mdimg1"><a href="javascript: changeDiv(1)" ><img src="images/md1.png" /></a></div>
-  				<div class="col-sm-4" id="mdimg2"><a href="javascript: changeDiv(2)" ><img src="images/md2.png" /></a></div>
-  				<div class="col-sm-4" id="mdimg3"><a href="javascript: changeDiv(3)" ><img src="images/md3.png" /></a></div>
-  			</div> <!-- mdleftheader-->
+  		
 
-   			<div id="mdleftbody">
-   				  <img style="width:100%; height:100%;" src="images/deletethis.png" />
-  			</div> <!-- mdleftbody--> 			
-  		</div> <!-- mdleft-->
+  		<section class="row">
+			<div id="mdleft" class="col-sm-6" >
+	  			<div id="mdleftheader">
+	  				<div class="col-sm-3 toggleButton toggleButtonSelected" id="mdimg1" onClick="javascript: changeDiv(1)">
+	  					<center>
+	  						<img src="images/slide30_ico1.png" />
+	  					</center>
+	  				</div>
+
+	  				<div class="col-sm-3 toggleButton" id="mdimg2" onClick="javascript: changeDiv(2)">
+	  					<center>
+	  						<img src="images/slide30_ico2.png" />
+	  					</center>
+	  				</div>
+
+	  				<div class="col-sm-3 toggleButton" id="mdimg3" onClick="javascript: changeDiv(3)">
+	  					<center>
+	  						<img src="images/slide30_ico3.png" />
+	  					</center>
+	  				</div>
+	  			</div> <!-- mdleftheader-->			
+	  		</div> <!-- mdleft-->
+  		</section>
+
+  		
 
   		<div  class="col-sm-5" id="mdright">
 	  		<div id="mdrighttextcontainer">
@@ -1119,49 +1143,52 @@
 
 		  	</div><!-- mdrighttextcontainer-->  	
 
-		  	<div class ="col-sm-3" id="arrowContainer">
+		  	<!-- <<div class ="col-sm-3" id="arrowContainer">
 		  		<span id="mdArrows"> 
-					<a href="#multipledivoverlay" class="fancybox">Embed this</a>
+					a href="#multipledivoverlay" class="fancybox">Embed this</a>
 					<div id="multipledivoverlay" style="display:none;width:300px;">
 						<p>
-						<h3>1. Grab the code</h3>
+						<h3>1. Grab the code</h3>-->
 
 						<!-- HTML generated using hilite.me -->
-						<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
-<span style="color: #007700">&lt;div&gt;</span>
-	<span style="color: #007700">&lt;p&gt;</span> here is the snippet to copy
-	<span style="color: #007700">&lt;p&gt;</span>
-	<span style="color: #007700">&lt;div&gt;</span>
-	<span style="color: #007700">&lt;div&gt;</span>
-	<span style="color: #007700">&lt;div&gt;</span>
-	<span style="color: #007700">&lt;div&gt;</span>
-	<span style="color: #007700">&lt;div&gt;</span>
-<span style="color: #007700">&lt;div&gt;</span>
+						<!-- <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+						<span style="color: #007700">&lt;div&gt;</span>
+							<span style="color: #007700">&lt;p&gt;</span> here is the snippet to copy
+							<span style="color: #007700">&lt;p&gt;</span>
+							<span style="color: #007700">&lt;div&gt;</span>
+							<span style="color: #007700">&lt;div&gt;</span>
+							<span style="color: #007700">&lt;div&gt;</span>
+							<span style="color: #007700">&lt;div&gt;</span>
+							<span style="color: #007700">&lt;div&gt;</span>
+						<span style="color: #007700">&lt;div&gt;</span>
 						</pre></div>
 						<a href="javascript:copyToClipboard('here should be the code snipped to be copied')">Copy to clipboard</a>
 						<h3>2. Embed it into your page</h3>
 
-						</p>
-					</div><!-- END multipledivoverlay -->
+						</p> -->
+					<!-- </div> --><!-- END multipledivoverlay	
 
 		  		</span>
-		  	</div>	<!-- END arrowContainer-->  
+		  	</div> END arrowContainer-->  
   		</div> <!-- END mdright-->
 
 	  	<!-- Insert texts below-->
-	  	<span id="md_header1" style ="display:none"><h1>DISPLACEMENTS</h1> </span>
-	  	<span id="md_subheader1" style ="display:none"> That of displacement is one of the greatest problems caused by large land acquisitions.</span>
-		<span id="md_text1" style ="display:none"><p>On this very sensitive issue, officials of ProSavana Program contradicted themselves during the same public meeting, as witnessed by members of the Mozambican civil society who attended the event. When asked, competent authorities say displacements could eventually take place, and admitting it seems the least, considering the incredibly high density of inhabitants of the Nacala Corridor. Possible displaced people will be compensated according to the law - they say. Though, we are talking of a same law that was not adequately respected in numerous - even recent - reported cases of land acquisition. </p></span>
-	
+	  	<span id="md_header1" class="col-md-6" style ="display:none;"><h4><b>DISPLACEMENTS</b></h4> </span>
+	  	<div class="col-md-3">
+	  		<span id="md_subheader1" style ="display:none;"> That of displacement is one of the greatest problems caused by large land acquisitions.</span>
+	  	</div>
+	  	<div class="col-md-3">
+			<span id="md_text1" style ="display:none;"><p>On this very sensitive issue, officials of ProSavana Program contradicted themselves during the same public meeting, as witnessed by members of the Mozambican civil society who attended the event. When asked, competent authorities say displacements could eventually take place, and admitting it seems the least, considering the incredibly high density of inhabitants of the Nacala Corridor. Possible displaced people will be compensated according to the law - they say. Though, we are talking of a same law that was not adequately respected in numerous - even recent - reported cases of land acquisition. </p></span>
+		</div>
 
-	  	<span id="md_header2" style ="display:none"><h1>PRIVATE INVESTORS</h1> </span>
-	  	<span id="md_subheader2" style ="display:none"> Authorities assure us ProSavana’s aim is that of "food security and the promotion of new agricultural models</span>
-		<span id="md_text2" style ="display:none"><p>and not the imposition of specific crops" following a "win-win" approach of cooperation in which private investors won’t rule. However, the minutes of the official meetings that generated the Program disprove the most recent statements, reporting "crops for biofuel production" as "new crops to be introduced." Moreover, a graph drawn by the Japanese International Cooperation Agency (JICA), and reported in a study by the Future Agricultures Consortium, highlights the participation of private investors (not only in the agricultural field) as one of the major benefits that Pro SAVANA will bring to Japan and Brazil - together with food security, yes, but of Japan, rather than Mozambique.
+	  	<span id="md_header2" style ="display:none;"><h4><b>PRIVATE INVESTORS</b></h4> </span>
+	  	<span id="md_subheader2" style ="display:none;"> Authorities assure us ProSavana’s aim is that of "food security and the promotion of new agricultural models</span>
+		<span id="md_text2" style ="display:none;"><p>and not the imposition of specific crops" following a "win-win" approach of cooperation in which private investors won’t rule. However, the minutes of the official meetings that generated the Program disprove the most recent statements, reporting "crops for biofuel production" as "new crops to be introduced." Moreover, a graph drawn by the Japanese International Cooperation Agency (JICA), and reported in a study by the Future Agricultures Consortium, highlights the participation of private investors (not only in the agricultural field) as one of the major benefits that Pro SAVANA will bring to Japan and Brazil - together with food security, yes, but of Japan, rather than Mozambique.
  		</p></span>
 	  
-	  	<span id="md_header3" style ="display:none"><h1>CONSULTATION</h1> </span>
-	  	<span id="md_subheader3" style ="display:none"> ProSavana is also characterised by  the nearly total lackness of a proper consultation process.</span>
-	  	<span id="md_text3" style ="display:none"> Mozambicans learned about the Program only through a leak of the Master Plan and thanks to information coming from abroad, "and not from national authorities", as denounced by Fernando Lima, Director of the most important opposition paper of the country, Savana. The very few meetings that can be proved having taken place (competent authorities provided only two, quite generic, press releases) have been labelled by civil society as promotional only. It might not be a case that official documents talk about "annual or semi-annual meetings" which "purpose" is to "form consensus on the Program." Local NGOs believe this not to be a real consultation process. For them, consultation process is a very different thing. It is one that gives voice to Mozambican people in a bottom-up process.</span>
+	  	<span id="md_header3" style ="display:none;"><h4><b>CONSULTATION</b></h4> </span>
+	  	<span id="md_subheader3" style ="display:none;"> ProSavana is also characterised by  the nearly total lackness of a proper consultation process.</span>
+	  	<span id="md_text3" style ="display:none;"> Mozambicans learned about the Program only through a leak of the Master Plan and thanks to information coming from abroad, "and not from national authorities", as denounced by Fernando Lima, Director of the most important opposition paper of the country, Savana. The very few meetings that can be proved having taken place (competent authorities provided only two, quite generic, press releases) have been labelled by civil society as promotional only. It might not be a case that official documents talk about "annual or semi-annual meetings" which "purpose" is to "form consensus on the Program." Local NGOs believe this not to be a real consultation process. For them, consultation process is a very different thing. It is one that gives voice to Mozambican people in a bottom-up process.</span>
 	
 	  	</section> 
   	<!-- 30 MULTIPLE.DIV -->

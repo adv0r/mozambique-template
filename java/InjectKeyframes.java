@@ -90,10 +90,10 @@ public class InjectKeyframes {
 		if (n!=1)
 		{
 			toReturn+=INDENT+DATA0_KEYFRAME;
-			toReturn+=INDENT+"data-_offset"+n+"-"+(n-1)+"00p =\"transform:translate(0%, 100%);\""+"\n";
+			toReturn+=INDENT+"data-_offset"+n+"-"+(n-1)+"00p =\"\""+"\n";
 			toReturn+=INDENT+"data-_offset"+n+"-"+(n)+"00p= \"transform:translate(0%, 0%);\""+"\n"; 
 			toReturn+=INDENT+"data-_sumoffset"+n+"-"+(n+1)+"00p=\"\"\n";
-			toReturn+=INDENT+"data-_sumoffset"+n+"-"+(n+2)+"00p=\"transform:translate(0%, -100%);\">\n";
+			toReturn+=INDENT+"data-_sumoffset"+n+"-"+(n+2)+"00p=\"transform:translate(0%, -150%);\">\n";
 		}
 		else
 		{

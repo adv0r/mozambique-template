@@ -44,6 +44,7 @@
 .flexslider .slides > li, 
 .flexslider2 .slides > li{ width:100%; height: 100%; display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img { width: 920px; height:700px; display: block; margin-left: auto; margin-right:auto;}
+.flexslider2 .slides img { width: 920px; height:700px; display: block; margin-left: auto; margin-right:auto;}
 
 .flex-pauseplay span {text-transform: capitalize;}
 /* Clearfix for the .slides element */
@@ -59,15 +60,21 @@ html[xmlns] .slides {display: block;}
 /* FlexSlider Default Theme
 *********************************/
 .flexslider { margin: 0 0 60px; background-image: url(images/img.gallery-trans-background.png); background-position:center; background-repeat:no-repeat;/* -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2); box-shadow: 0 1px 4px rgba(0,0,0,.2); */ zoom: 1;}
-.flexslider2 { margin: 0 0 60px;  background-image: url(images/img.gallery-trans-background.png); background-position:center; background-repeat:no-repeat; }
+.flexslider2 { margin: 0 0 60px; background-color: whitesmoke; zoom: 1;}
 
 #liSlide07img01{background-image: url(../images/slide07img01.png); background-position:center; background-repeat:no-repeat;}
 #liSlide07img02{background-image: url(../images/slide07img02.png); background-position:center; background-repeat:no-repeat;}
 #liSlide07img03{background-image: url(../images/slide07img03.png); background-position:center; background-repeat:no-repeat;}
 
+#liSlide29img01{background-image: url(../images/slide29_01.jpg); background-position:center; background-repeat:no-repeat;}
+#liSlide29img02{background-image: url(../images/slide29_02.jpg); background-position:center; background-repeat:no-repeat;}
+#liSlide29img03{background-image: url(../images/slide29_03.jpg); background-position:center; background-repeat:no-repeat;}
+#liSlide29img04{background-image: url(../images/slide29_04.jpg); background-position:center; background-repeat:no-repeat;}
+
 .flex-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
 .loading .flex-viewport { max-height: 300px; }
 .flexslider .slides { zoom: 1; }
+.flexslider2 .slides { zoom: 1; }
 .carousel li { margin-right: 5px; }
 
 /* Direction Nav */

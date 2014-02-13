@@ -764,15 +764,16 @@ article header h2{
 }
 
 .info {
+	float: left;
 	width: 340px !important;
     text-align: left !important;
     font-family: "Roboto" !important;
     font-size: 18px !important;
     font-weight: 100 !important;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0px 0px 0px !important;
     border-radius: 0px !important;
     padding: 20px;
-    margin: 10px;
+    margin: 10px 0px 10px -360px;
     background: rgba(255,255,255,0.8);
 }
 
@@ -805,6 +806,24 @@ article header h2{
     color: white !important;
 }
 
+.buttonMapShow{
+	margin-top: 10px;
+	height:55px; 
+	width:55px; 
+	background-image: url(../ico/icoMapClose.png); 
+	float:left;
+}
+
+.buttonMapShowInfo{
+	color: #e3a143 !important;
+	margin-top: 22px;
+	height:33px;
+	width: 175px;
+	background-image: url(../ico/whiteArrowMap.png); 
+	padding-top: 5px;
+	padding-left: 30px;
+	float:left;
+}
 /*_________ MAP CREDITS end____________*/
 
 
@@ -1056,3 +1075,4 @@ background-color: rgb(52,52,52);
 #slide30{
 	padding-left: 34px;
 }
+

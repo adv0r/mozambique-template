@@ -156,11 +156,12 @@
                 info.onAdd = function (map) {
                         this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
                         this._div.innerHTML = "<h4>Explore the global debate on the \"land rush\"</h4> "+
-                        "To know more on large-scale land acquisitions, here is an interactive map displaying stories belonging to the global debate on the rush for land in Africa. The map embeds articles written by all players participating in the discussion, documents by the academic world, reports by the international civil society, journalistic investigations as well as written contributions by companies and authorities. Anybody can contribute to the map by submitting a crowdsourcing form.<br />"+
-                        "<img src=\"images/map-legend.png\" style=\"padding-top:10px;\"><br/ >"+
+                        "To know more on large-scale land acquisitions, here is an interactive map displaying stories belonging to the global debate on the rush for land in Africa. The map embeds articles written by all players participating in the discussion, documents by the academic world, reports by the international civil society, journalistic investigations as well as written contributions by companies and authorities. Anybody can contribute to the map by submitting a crowdsourcing form.<br>"+
+                        "<img src=\"images/map-legend.png\" style=\"padding-top:10px;\"><br>"+
+                        "<a class=\"mapfancybox fancybox.iframe\" href=\"http://www.datajournalist.it/landgrabbing/form/\" target=\"_blank\">"+
                         "<div class=\"credito\">"+
-                        "<a class=\"mapfancybox fancybox.iframe\" href=\"http://www.datajournalist.it/landgrabbing/form/\" target=\"_blank\">Send us a story</a>"+
-                        "</div>";
+                        "Contribute"+
+                        "</div></a>";
                         return this._div;
                     };
 

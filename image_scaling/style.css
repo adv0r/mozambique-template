@@ -1,0 +1,35 @@
+.allPages{
+	position: fixed;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 100%;
+	background: transparent center no-repeat;
+}
+
+.imgFullers
+{
+	min-width: 100%;
+  	min-height: 100%;
+	background-size: 100%;
+	background-color: black;
+}
+
+
+@media only screen and (max-width: 1440px) {
+	#slidexx{
+		background-image: url('small.jpg');
+	}
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+	#slidexx{
+		background-image: url('medium.jpg');
+	}
+}
+
+@media only screen and (min-width: 1921px){
+	#slidexx{
+		background-image: url('big.jpg');
+	}
+}

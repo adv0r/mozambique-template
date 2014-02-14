@@ -1,0 +1,8 @@
+suffix, max_width, img width, img height
+_s,1440,1024,568,
+_m,1920,1440,800
+_l,,2500,1388
+
+/------------------------------/
+
+Tutte le immagini devono avere una propozione di 1.8 (w/h)

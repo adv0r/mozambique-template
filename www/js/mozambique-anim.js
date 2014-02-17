@@ -65,17 +65,11 @@ function getStartingPixelOfSection(sectionNumber)
 	if(sectionNumber==1)
 		startingPixel=1
 	else if (sectionNumber ==2)
-	{
 		startingPixel = getStartingPixelOfSection(sectionNumber-1) + viewportH + getPausing(sectionNumber-1,false);
-	}
 	else if (sectionNumber ==3)
-	{
 		startingPixel = getStartingPixelOfSection(sectionNumber-1) + 2*viewportH + getPausing(sectionNumber-1,false);
-	}
 	else
-	{
 		startingPixel = getStartingPixelOfSection(sectionNumber-1) + viewportH + getPausing(sectionNumber-1,false);
-	}	
 
 	return startingPixel;
 }

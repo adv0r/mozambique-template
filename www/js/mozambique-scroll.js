@@ -62,7 +62,7 @@ $(window).scroll(function() {
             else if (newSectionNumber >=10 && newSectionNumber <16 )
             {
                 menuElementToSelect = '#lid4';  
-                window.history.pushState("", "", "#wanabao"); 
+                window.history.pushState("", "", "#wanbao"); 
             }
 
             else if (newSectionNumber >= 16 && newSectionNumber <22 )
@@ -92,6 +92,11 @@ $(window).scroll(function() {
     } 
 });
 
+function goToSection(n)
+{   
+        console.log('should scroll to secion '+n);
+        $(window).scrollTo(getStartingPixelOfSection(n)+1, 1500); 
+}
 
 //Selects the 'toSelect' menu item and deselect the others
 function selectOnly(toSelect)

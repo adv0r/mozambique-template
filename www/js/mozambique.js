@@ -21,9 +21,7 @@ function initTemplate()
 	viewportW = $(window).width();
   	document.createElement('video');document.createElement('audio'); // Needed by video.js 
   	initVideoArray();
-  	initPaths();
 	initSkrollr();
-	initSkrollrMenu(); 	
 	loadSlider();
 	changeDiv(1);  //Multiple div selector
 	loadMap();
@@ -31,6 +29,10 @@ function initTemplate()
 	updateAllVideosSize();
 	videojs.options.flash.swf = "data/video-js.swf";
 	loadOverlays();
+
+	//TODO review for fuck sake
+	//setTimeout(function(){initPaths();},10000);
+	initPaths();
 	
 
 	//debugSkrollrConstants(); 
@@ -233,21 +235,6 @@ function computeConstants()
 	};
 }
 
-function initSkrollrMenu()
-{
-	skrollr.menu.init(s, {
-	animate: true,
-	easing: 'sqrt',
-	duration: function(currentTop, targetTop) {
-		//By default, the duration is hardcoded at 500ms.
-		return 500;
-		//But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
-		//return Math.abs(currentTop - targetTop) * 1;
-		},
-	});
-}
-
-
 /* This function is called when the window is resized*/
 $(window).resize(function(e){
 	viewportH = $(window).height();
@@ -259,40 +246,21 @@ $(window).resize(function(e){
 
 function initPaths()
 {
-	Path.map("#intro").to(function(){
-	    $(window).scrollTo(getStartingPixelOfSection(1), 100); 
-	});
-
-	Path.map("#mozambique").to(function(){
-	    $(window).scrollTo(getStartingPixelOfSection(5)+1, 500); 
-	});
-
-	Path.map("#investors").to(function(){
-	    $(window).scrollTo(getStartingPixelOfSection(9)+1, 1300); 
-	});
-
-	Path.map("#wanabao").to(function(){
-	    $(window).scrollTo(getStartingPixelOfSection(10)+1 ,1600); 
-	});
-
-	Path.map("#bananalandia").to(function(){
-	    $(window).scrollTo(getStartingPixelOfSection(16)+1, 1900); 
-	});
-
-	Path.map("#igosammartini").to(function(){
-	    $(window).scrollTo(getStartingPixelOfSection(22)+1, 2200); 
-	});
-
-	Path.map("#prosavana").to(function(){
-	    $(window).scrollTo(getStartingPixelOfSection(26)+1, 2500); 
-	});
-
+	Path.map("#intro").to(function(){ goToSection(1);});
+	Path.map("#mozambique").to(function(){ goToSection(5);});
+	Path.map("#investors").to(function(){goToSection(9);});
+	Path.map("#wanbao").to(function(){ goToSection(10);});
+	Path.map("#bananalandia").to(function(){  goToSection(16);});
+	Path.map("#igosammartini").to(function(){ goToSection(22);});
+	Path.map("#prosavana").to(function(){ goToSection(26);	});
 
 	//Not sure this is needed
 	Path.root("#intro")
 
+	$(document).ready(function(){
+	            Path.listen();
+       	 });
 
-	Path.listen();
 }
 
 

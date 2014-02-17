@@ -38,6 +38,7 @@ Mozambique template
 * [Fancybox](http://fancybox.net/)
 * https://github.com/timesheets/timesheets.js (??)
 * [hilite.me](http://hilite.me/)
+* [Path.js](http://www.javascriptoo.com/path-js)
 
 
 ## External resources

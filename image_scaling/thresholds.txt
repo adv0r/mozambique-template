@@ -1,5 +1,5 @@
 suffix, max_width, img width, img height
-_s,1440,1024,568,
+_s,1024,1024,568,
 _m,1920,1440,800
 _l,,2500,1388
 

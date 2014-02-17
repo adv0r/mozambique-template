@@ -95,7 +95,9 @@ $(window).scroll(function() {
 function goToSection(n)
 {   
         console.log('should scroll to secion '+n);
-        $(window).scrollTo(getStartingPixelOfSection(n)+1, 1500); 
+        var durationMin = 1000;
+        var duration = durationMin + n*50;
+        $(window).scrollTo(getStartingPixelOfSection(n)+1, duration,{easing:'easeOutCubic'} ); 
 }
 
 //Selects the 'toSelect' menu item and deselect the others

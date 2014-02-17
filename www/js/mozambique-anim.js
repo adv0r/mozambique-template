@@ -29,6 +29,11 @@ function closeMenu()
 }
 
 
+function getStartingPix(i)
+{
+	return
+}
+
 //To be able to use anchor we need to tell the page to scroll to the right position.  
 function updateMenuHrefHeights()
 {	

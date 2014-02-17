@@ -21,6 +21,7 @@ function initTemplate()
 	viewportW = $(window).width();
   	document.createElement('video');document.createElement('audio'); // Needed by video.js 
   	initVideoArray();
+  	initPaths();
 	initSkrollr();
 	initSkrollrMenu(); 	
 	loadSlider();
@@ -30,6 +31,7 @@ function initTemplate()
 	updateAllVideosSize();
 	videojs.options.flash.swf = "data/video-js.swf";
 	loadOverlays();
+	
 
 	//debugSkrollrConstants(); 
 	//comment please, it prints on the console many variables TODO
@@ -53,7 +55,7 @@ function preLoad()
 	$(window).load(function(){
 		$('#pnf_preloader_status').fadeOut();
 		$('#pnf_preloader').delay(350).fadeOut('slow');
-		});
+	});
 }
 
 function checkMobile()
@@ -253,6 +255,47 @@ $(window).resize(function(e){
 	updateMenuHrefHeights();
 	updateAllVideosSize();
 });
+
+
+function initPaths()
+{
+	Path.map("#intro").to(function(){
+	    $(window).scrollTo(getStartingPixelOfSection(1), 100); 
+	});
+
+	Path.map("#mozambique").to(function(){
+	    $(window).scrollTo(getStartingPixelOfSection(5)+1, 500); 
+	});
+
+	Path.map("#investors").to(function(){
+	    $(window).scrollTo(getStartingPixelOfSection(9)+1, 1300); 
+	});
+
+	Path.map("#wanabao").to(function(){
+	    $(window).scrollTo(getStartingPixelOfSection(10)+1 ,1600); 
+	});
+
+	Path.map("#bananalandia").to(function(){
+	    $(window).scrollTo(getStartingPixelOfSection(16)+1, 1900); 
+	});
+
+	Path.map("#igosammartini").to(function(){
+	    $(window).scrollTo(getStartingPixelOfSection(22)+1, 2200); 
+	});
+
+	Path.map("#prosavana").to(function(){
+	    $(window).scrollTo(getStartingPixelOfSection(26)+1, 2500); 
+	});
+
+
+	//Not sure this is needed
+	Path.root("#intro")
+
+
+	Path.listen();
+}
+
+
 
 /*__________________ Multiple div functions [start]__________________*/
 function changeDiv(elem)

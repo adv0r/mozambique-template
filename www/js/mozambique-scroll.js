@@ -44,36 +44,43 @@ $(window).scroll(function() {
             if(newSectionNumber < 5)
             {
                 menuElementToSelect = '#lid1';
+                window.history.pushState("", "", "#intro");
             }
 
             else if (newSectionNumber >= 5 && newSectionNumber <9 )
             {
                 menuElementToSelect = '#lid2';
+                window.history.pushState("", "", "#mozambique");
             }
 
             else if (newSectionNumber == 9)
             {
                 menuElementToSelect = '#lid3';
+                window.history.pushState("", "", "#investors");
             }
 
             else if (newSectionNumber >=10 && newSectionNumber <16 )
             {
-                menuElementToSelect = '#lid4';   
+                menuElementToSelect = '#lid4';  
+                window.history.pushState("", "", "#wanabao"); 
             }
 
             else if (newSectionNumber >= 16 && newSectionNumber <22 )
             {     
                 menuElementToSelect = '#lid5';
+                window.history.pushState("", "", "#bananalandia");
             }
 
              else if (newSectionNumber >= 22 && newSectionNumber <26 )
             {
                 menuElementToSelect = '#lid6';
+                window.history.pushState("", "", "#igosammartini");
             }
 
-         else if (newSectionNumber >26 )
+         else if (newSectionNumber >=26 )
             {
                 menuElementToSelect = '#lid7';
+                window.history.pushState("", "", "#prosavana");
             }
 
             selectOnly(menuElementToSelect);

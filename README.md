@@ -28,7 +28,7 @@ Mozambique template
 * [QueryLoader2](http://www.gayadesign.com/diy/queryloader2-preload-your-images-with-ease/)
 * [jQuery Resize Plugin](http://benalman.com/projects/jquery-resize-plugin/)
 * [skrollr](https://github.com/Prinzhorn/skrollr)
-* [skrollr menu](https://github.com/Prinzhorn/skrollr-menu)
+* [skrollr menu](https://github.com/Prinzhorn/skrollr-menu) 
 * [Flex Slider](http://www.woothemes.com/flexslider/)
 * [Require js](http://requirejs.org/)
 * MapBox.js
@@ -39,6 +39,7 @@ Mozambique template
 * https://github.com/timesheets/timesheets.js (??)
 * [hilite.me](http://hilite.me/)
 * [Path.js](http://www.javascriptoo.com/path-js)
+* [jQuery easing]()
 
 
 ## External resources

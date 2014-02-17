@@ -91,7 +91,6 @@ h1{
 	font-family: 'Roboto', sans-serif;
 	font-size: 150px;
 	font-weight: 200;	
-	line-height: 140px;
 }
 
 h2{
@@ -1076,3 +1075,24 @@ background-color: rgb(52,52,52);
 	padding-left: 34px;
 }
 
+.col-slide-30{
+	width: 672px;
+}
+
+.col-menu{
+	width: 672px;
+	float: left;
+}
+
+.col-fbtw-menu{
+	margin-right: 60px;
+	width: 160px;
+	height: 160px;
+	float: right;
+	clear: both;
+}
+
+.vociMenu{
+	color:white;
+	font-size:18px;
+}

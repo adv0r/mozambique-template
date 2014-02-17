@@ -189,7 +189,7 @@
                                                                     "        </p>" +
                                                                     "        <img src=\"images/map-legend.png\" style=\"padding-top:10px;\" />" +
                                                                     "        <br>" +
-                                                                    "        <a class=\"mapfancybox fancybox.iframe\" href=\"http://www.datajournalist.it/landgrabbing/form/\" target=\"_blank\">" +
+                                                                    "        <a class=\"mapfancybox fancybox.iframe\" href=\"form/form.html\" target=\"_blank\">" +
                                                                     "          <div class=\"credito\">" +
                                                                     "            <img src=\"ico/icoContribute.png\"/> " +
                                                                     "            Contribute" +

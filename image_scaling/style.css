@@ -9,27 +9,24 @@
 
 .imgFullers
 {
-	min-width: 100%;
-  	min-height: 100%;
 	background-size: 100%;
-	background-color: black;
 }
 
 
 @media only screen and (max-width: 1440px) {
 	#slidexx{
-		background-image: url('small.jpg');
+		background: url('small.jpg') no-repeat;
 	}
 }
 
 @media only screen and (min-width: 1441px) and (max-width: 1920px) {
 	#slidexx{
-		background-image: url('medium.jpg');
+		background: url('medium.jpg') no-repeat;
 	}
 }
 
 @media only screen and (min-width: 1921px){
 	#slidexx{
-		background-image: url('big.jpg');
+		background: url('big.jpg') no-repeat;
 	}
 }

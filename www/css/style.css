@@ -32,11 +32,11 @@
 
 .allPages{
 	position: fixed;
-	top:0px;
-	left:0px;
+	/*top:0px;
+	left:0px;*/
 	width: 100%;
 	height: 100%;
-	background: transparent center no-repeat;
+	/*background: transparent center no-repeat;*/
 	/*background-size: cover;*/
 }
 
@@ -531,130 +531,16 @@ article header h2{
 	left:0;
 }
 /*_________SFONDI_______*/
-
-#slide02{
-	background-image: url(../images/slide02.jpg);
-	/*background-size: cover;*/	
-}
-
 #slide10{
 	background-color: whitesmoke;
 }
 
-#slide11{
-	background-image: url(../images/Slide011Img.jpg);
-	/*background-size: cover;*/
-}
-
-#slide14{
-	background-image: url(../images/slide14bg.jpg);
-	/*background-size: cover;*/	
-}
-
-#slide17{
-	background-image: url(../images/Slide017Img.jpg);
-	/*background-size: cover;*/
-}
-
-#slide12_1{
-	position: fixed;
-	top:0px;
-	left:0px;
-	width: 100%;
-	height: 100%;
-	background-image: url(../images/slide12_01.jpg);
-	/*background-size: cover;*/
-}
-#slide12_2{
-	z-index: -1;
-	position: fixed;
-	top:0px;
-	left:0px;
-	width: 100%;
-	height: 100%;
-	background-image: url(../images/slide12_02.jpg);
-	/*background-size: cover;*/
-}
 #slide16{
 	background-color: whitesmoke;
 }
 
-#slide18_1{
-	position: fixed;
-	top:0px;
-	left:0px;
-	width: 100%;
-	height: 100%;
-	background-image: url(../images/slide18_01.jpg);
-	/*background-size: cover;*/
-}
-#slide18_2{
-	z-index: -1;
-	position: fixed;
-	top:0px;
-	left:0px;
-	width: 100%;
-	height: 100%;
-	background-image: url(../images/slide18_02.jpg);
-	/*background-size: cover;*/
-}
-
-#slide20_1{
-	position: fixed;
-	top:0px;
-	left:0px;
-	width: 100%;
-	height: 100%;
-	background-image: url(../images/slide20img01.jpg);
-	/*background-size: cover;*/
-}
-#slide20_2{
-	z-index: -1;
-	position: fixed;
-	top:0px;
-	left:0px;
-	width: 100%;
-	height: 100%;
-	background-image: url(../images/slide20img02.jpg);
-	/*background-size: cover;*/
-}
-
 #slide22{
 	background-color: whitesmoke;
-}
-
-#slide23{
-	background-image: url(../images/slide23.jpg);
-	/*background-size: cover;*/
-}
-
-#slide24_1{
-	position: fixed;
-	top:0px;
-	left:0px;
-	width: 100%;
-	height: 100%;
-	background-image: url(../images/slide24img01.jpg);
-}
-#slide24_2{
-	z-index: -1;
-	position: fixed;
-	top:0px;
-	left:0px;
-	width: 100%;
-	height: 100%;
-	background-image: url(../images/slide24img02.jpg);
-}
-
-#slide31{
-	background-image: url(../images/slide31.jpg);
-	/*background-size: cover;*/
-}
-
-
-#slide26{
-	background-image: url(../images/slide26.jpg);
-	/*background-size: cover;*/
 }
 
 #IMGFULL{
@@ -1097,4 +983,282 @@ background-color: rgb(52,52,52);
 .vociMenu{
 	color:white;
 	font-size:18px;
+}
+
+
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 1024px) {
+	#slide02{
+		background: url('../images/slide_02_s.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide11{
+		background: url('../images/slide_11_s.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide12_1{
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_12a_s.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide12_2{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_12b_s.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide14{
+		background: url('../images/slide_14_s.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide17{
+		background: url('../images/slide_17_s.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide18_1{
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_18a_s.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide18_2{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_18b_s.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide20_1{
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_20a_s.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide20_2{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_20b_s.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide23{
+		background: url('../images/slide_23_s.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide26{
+		background: url('../images/slide_26_s.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide31{
+		background: url('../images/slide_31_s.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+	#slide02{
+		background: url('../images/slide_02_m.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide11{
+		background: url('../images/slide_11_m.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide12_1{
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_12a_m.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide12_2{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_12b_m.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide14{
+		background: url('../images/slide_14_m.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide17{
+		background: url('../images/slide_17_m.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide18_1{
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_18a_m.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide18_2{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_18b_m.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide20_1{
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_20a_m.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide20_2{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_20b_m.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+
+	#slide23{
+		background: url('../images/slide_23_m.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide26{
+		background: url('../images/slide_26_m.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide31{
+		background: url('../images/slide_31_m.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+}
+
+@media only screen and (min-width: 1921px){
+	#slide02{
+		background: url('../images/slide_02.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide11{
+		background: url('../images/slide_11.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide12_1{
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_12a.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide12_2{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_12b.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide14{
+		background: url('../images/slide_14.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide17{
+		background: url('../images/slide_17.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide18_1{
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_18a.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide18_2{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_18b.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide20_1{
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_20a.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide20_2{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: url('../images/slide_20b.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide23{
+		background: url('../images/slide_23.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide26{
+		background: url('../images/slide_26.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
+
+	#slide31{
+		background: url('../images/slide_31.jpg') center no-repeat black;
+		background-size: auto 100% ;
+	}
 }

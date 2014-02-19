@@ -170,7 +170,7 @@ a{
 }
 
 #testoNavigationBar{
-	margin-top:6px;
+	margin-top:14px;
 }
 
 #toggleMenu{
@@ -178,7 +178,8 @@ a{
 	padding-left: 40px;
 	background-color: rgb(39,39,39);
 	padding-right: 20px;
-	padding-bottom: 3px;
+	padding-bottom: 5px;
+	padding-top: 20px;
 }
 
 
@@ -989,19 +990,6 @@ background-color: rgb(52,52,52);
 .col-menu{
 	width: 672px;
 	float: left;
-}
-
-.col-fbtw-menu{
-	margin-right: 60px;
-	width: 160px;
-	height: 160px;
-	float: right;
-	clear: both;
-}
-
-.vociMenu{
-	color:white;
-	font-size:18px;
 }
 
 .articleWithMargin{

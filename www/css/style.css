@@ -69,6 +69,15 @@
 	height: 100%;
 }
 
+.sfondoBlack{
+	background-color: black !important;
+	position: fixed;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 100%;
+}
+
 .sfondoBiancoSlider{
 	background-color: #dee1e2 !important;
 	position: fixed;

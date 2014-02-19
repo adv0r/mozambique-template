@@ -149,6 +149,16 @@ a{
 	text-transform: uppercase;
 }
 
+#titleToolbar{
+	margin-left: 16px;
+	margin-top: 10px;
+ 	color:white;
+	font-size: 20px;
+	font-weight: 400;
+	text-transform: uppercase;	
+}
+
+
 
 /* ----------- Menu START----------- */
 
@@ -164,10 +174,10 @@ a{
 }
 
 #toggleMenu{
-	font-size: 16px;
+	font-size: 18px;
 	padding-left: 40px;
 	background-color: rgb(39,39,39);
-	padding-right: 10px;
+	padding-right: 20px;
 	padding-bottom: 3px;
 }
 
@@ -912,14 +922,14 @@ article header h2{
 	position:fixed;
 	top:0px;
 	left:0px;
-	height: 30px;
+	height: 46px;
 	width: 100%;
 	background-color: rgba(0,0,0,0.5);
 }
 
 #progressbar
 {
-	height:6px;
+	height:12px;
 	background-color: rgb(198,62,6);
 }
 
@@ -929,7 +939,7 @@ width:100%;
 position:fixed;
 top:0px;
 left:0px;
-height:6px;    
+height:12px;    
 background-color: rgb(39,39,39);
 }
 

@@ -391,9 +391,9 @@ easily in the skin designer. http://designer.videojs.com/
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
   /* box-shadow */
-  -webkit-box-shadow: 0px 0px 1em rgba(255, 255, 255, 0.25);
+ /* -webkit-box-shadow: 0px 0px 1em rgba(255, 255, 255, 0.25);
   -moz-box-shadow: 0px 0px 1em rgba(255, 255, 255, 0.25);
-  box-shadow: 0px 0px 1em rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 0px 1em rgba(255, 255, 255, 0.25);*/
   /* transition */
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -430,9 +430,9 @@ easily in the skin designer. http://designer.videojs.com/
   /*background-color: #505050;
   background-color: rgba(50, 50, 50, 0.75);*/
   /* box-shadow */
-  -webkit-box-shadow: 0 0 3em #ffffff;
+ /* -webkit-box-shadow: 0 0 3em #ffffff;
   -moz-box-shadow: 0 0 3em #ffffff;
-  box-shadow: 0 0 3em #ffffff;
+  box-shadow: 0 0 3em #ffffff;*/
   /* transition */
   -webkit-transition: all 0s;
   -moz-transition: all 0s;

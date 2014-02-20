@@ -11,12 +11,21 @@
 /* ----------------- */
 
 .path{
-			stroke-dasharray:1000;
-			stroke-dashoffset: 1000;
-			-webkit-animation: dash 5s linear forwards infinite;
-			animation: dash 5s linear forwards infinite;}
+	stroke-dasharray:1000;
+	stroke-dashoffset: 1000;
+	-webkit-animation: dash 5s linear forwards infinite;
+	animation: dash 5s linear forwards infinite;}
 
 @keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash {
   from {
     stroke-dashoffset: 1000;
   }

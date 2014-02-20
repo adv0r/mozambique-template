@@ -9,6 +9,22 @@
 
 /* Preloader 
 /* ----------------- */
+
+.path{
+			stroke-dasharray:1000;
+			stroke-dashoffset: 1000;
+			-webkit-animation: dash 5s linear forwards infinite;
+			animation: dash 5s linear forwards infinite;}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 #pnf_preloader {
     position:fixed;
     top:0;
@@ -19,15 +35,7 @@
     z-index:99999900; /* makes sure it stays on top */
 }
 #pnf_preloader_status {
-    width:113px;
-    height:185px;
-    position:absolute;
-    left:50%; /* centers the loading animation horizontally one the screen */
-    top:50%; /* centers the loading animation vertically one the screen */
-    /* path to your loading animation */
     
-    margin:-93px 0 0 -66px; /* is width and height divided by two */
-	background: url(images/preloader.gif) no-repeat center;
 }
 
 .allPages{

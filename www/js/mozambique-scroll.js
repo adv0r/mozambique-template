@@ -45,42 +45,54 @@ $(window).scroll(function() {
             {
                 menuElementToSelect = '#lid1';
                 window.history.pushState("", "", "#intro");
+                 $('#titleToolbar').html("INTRODUCTION");
             }
 
             else if (newSectionNumber >= 5 && newSectionNumber <9 )
             {
                 menuElementToSelect = '#lid2';
                 window.history.pushState("", "", "#mozambique");
+                $('#titleToolbar').html("MOZAMBIQUE");
             }
 
             else if (newSectionNumber == 9)
             {
                 menuElementToSelect = '#lid3';
                 window.history.pushState("", "", "#investors");
+                $('#titleToolbar').html("INVESTORS AND COMMUNITIES");
+
             }
 
             else if (newSectionNumber >=10 && newSectionNumber <16 )
             {
                 menuElementToSelect = '#lid4';  
                 window.history.pushState("", "", "#wanbao"); 
+                $('#titleToolbar').html("WANBAO");
+
             }
 
             else if (newSectionNumber >= 16 && newSectionNumber <22 )
             {     
                 menuElementToSelect = '#lid5';
                 window.history.pushState("", "", "#bananalandia");
+                $('#titleToolbar').html("BANANALANDIA");
+
             }
 
              else if (newSectionNumber >= 22 && newSectionNumber <26 )
             {
                 menuElementToSelect = '#lid6';
                 window.history.pushState("", "", "#igosammartini");
+                $('#titleToolbar').html("IGO SAMMARTINI");
+
             }
 
          else if (newSectionNumber >=26 )
             {
                 menuElementToSelect = '#lid7';
                 window.history.pushState("", "", "#prosavana");
+                $('#titleToolbar').html("PROSAVANA");
+
             }
 
             selectOnly(menuElementToSelect);

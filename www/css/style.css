@@ -1302,3 +1302,15 @@ background-color: rgb(52,52,52);
 		background-size: auto 100% ;
 	}
 }
+
+.mobilePage{
+	background-color: #2c2c2c;
+	color: white;
+	font-size: 20px;
+}
+
+.titoloMobile{
+	font-weight: 100;
+	font-size: 50px;
+	line-height: 38px;
+}

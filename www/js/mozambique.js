@@ -64,10 +64,17 @@ function checkMobile()
 {
 
 	$(window).load(function(){
-		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
+		if( (navigator.userAgent.match(/Android/i)) ||
+			(navigator.userAgent.match(/webOS/i)) ||
+			(navigator.userAgent.match(/iPhone/i)) ||
+			(navigator.userAgent.match(/iPad/i)) ||
+			(navigator.userAgent.match(/iPod/i)) ||
+			(navigator.userAgent.match(/BlackBerry/i)) ||
+			(navigator.userAgent.match(/IEMobile/i)) ||
+			(navigator.userAgent.match(/Opera Mini/i)))
+
 		{
-			alert("apaodpipo ");
-			window.location.href = "http://www.google.it";
+			document.location = "mobile.html";
 		}
 	});
 }

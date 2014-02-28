@@ -66,6 +66,7 @@ function checkMobile()
 	$(window).load(function(){
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
 		{
+			alert("apaodpipo ");
 			window.location.href = "http://www.google.it";
 		}
 	});

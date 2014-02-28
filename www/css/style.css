@@ -622,7 +622,7 @@ article header h2{
 
 	#mdright
 	{
-		height: 500px;
+		height: 400px;
 		background-color: #EAEAEA;
 	}
 
@@ -731,7 +731,7 @@ article header h2{
 
 .buttonMapShow{
 	cursor: pointer;
-	margin-top: 10px;
+	margin-top: 100px;
 	height:55px; 
 	width:55px; 
 	background-image: url(../ico/icoMapClose.png); 
@@ -741,7 +741,7 @@ article header h2{
 .buttonMapShowInfo{
 	cursor: pointer;
 	color: #e3a143 !important;
-	margin-top: 22px;
+	margin-top: 112px;
 	height:33px;
 	width: 175px;
 	background-image: url(../ico/whiteArrowMap.png); 
@@ -1002,7 +1002,7 @@ background-color: rgb(52,52,52);
 }
 
 .col-slide-30{
-	width: 672px;
+	width: 75%;
 }
 
 .col-menu{

@@ -40,8 +40,9 @@
     left:0;
     right:0;
     bottom:0;
-    background-color:#fff; /* change if the mask should have another color then white */
-    z-index:99999900; /* makes sure it stays on top */
+    background-color:#fff;
+    z-index:99999900;
+    text-align: left;
 }
 #pnf_preloader_status {
     

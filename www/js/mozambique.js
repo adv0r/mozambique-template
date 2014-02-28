@@ -7,7 +7,6 @@ var constants; //for skrollr
 
 /*This function is called on page load, works on iOs*/
 window.addEventListener('DOMContentLoaded', function() {
-	checkMobile();	
 	preLoad();	
 	initTemplate();  
 });
@@ -59,7 +58,6 @@ function preLoad()
 		$('#pnf_preloader').delay(350).fadeOut('slow');
 	});
 }
-
 
 
 function loadOverlays()

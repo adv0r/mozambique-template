@@ -72,9 +72,8 @@ function checkMobile()
 			(navigator.userAgent.match(/BlackBerry/i)) ||
 			(navigator.userAgent.match(/IEMobile/i)) ||
 			(navigator.userAgent.match(/Opera Mini/i)))
-
 		{
-			document.location = "mobile.html";
+			location.replace("mobile.html");
 		}
 	});
 }

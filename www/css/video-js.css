@@ -403,10 +403,10 @@ easily in the skin designer. http://designer.videojs.com/
 /* Optionally center */
 .vjs-default-skin.vjs-big-play-centered .vjs-big-play-button {
   /* Center it horizontally */
-  left: 50%;
+  left: 10%;
   margin-left: -2.1em;
   /* Center it vertically */
-  top: 50%;
+  top: 85%;
   margin-top: -1.4000000000000001em;
 }
 /* Hide if controls are disabled */

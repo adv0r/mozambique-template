@@ -363,12 +363,8 @@ Positioning of the play button in the center or other corners can be done more
 easily in the skin designer. http://designer.videojs.com/
 */
 .vjs-default-skin .vjs-big-play-button {
-  /* Center it horizontally */
-  left: 50%;
-  margin-left: -2.1em;
-  /* Center it vertically */
-  top: 50%;
-  margin-top: -1.4000000000000001em;
+  left: 1.5em;
+  bottom: 1.5em;
   font-size: 3em;
   display: block;
   /*z-index: 2;*/
@@ -403,11 +399,11 @@ easily in the skin designer. http://designer.videojs.com/
 /* Optionally center */
 .vjs-default-skin.vjs-big-play-centered .vjs-big-play-button {
   /* Center it horizontally */
-  left: 10%;
-  margin-left: -2.1em;
+  /*left: 10%;
+  margin-left: -2.1em;*/
   /* Center it vertically */
-  top: 85%;
-  margin-top: -1.4000000000000001em;
+ /* top: 85%;
+  margin-top: -1.4000000000000001em;*/
 }
 /* Hide if controls are disabled */
 .vjs-default-skin.vjs-controls-disabled .vjs-big-play-button {
